@@ -182,23 +182,45 @@ def get_twitch_user_ids(usernames, token):
     return ids
 
 
-def get_twitch_clips(broadcaster_id, token, since_iso):
-    try:
-        r = requests.get(
-            "https://api.twitch.tv/helix/clips",
-            headers=twitch_headers(token),
-            params={
-                "broadcaster_id": broadcaster_id,
-                "started_at": since_iso,
-                "first": 50,
-            },
-            timeout=15,
-        )
-        r.raise_for_status()
-        return r.json().get("data", [])
-    except requests.RequestException as e:
-        print(f"Twitch clips -haku epäonnistui: {e}")
-        return []
+def get_twitch_clips(broadcaster_id, token, since_iso, max_pages=10):
+    """Hakee kaikki aikaikkunan klipit sivuttamalla.
+
+    HUOM: Twitch palauttaa klipit KATSELUKERTOJEN mukaan, ei aikajärjestyksessä.
+    Uusi klippi (0-2 katselua) on siis listan pohjalla. Siksi pelkkä
+    ensimmäinen sivu ei riitä isoilla kanavilla — pitää käydä läpi koko
+    ikkuna, muuten tuoreimmat jäävät löytymättä.
+    """
+    clips = []
+    cursor = None
+    for _ in range(max_pages):
+        params = {
+            "broadcaster_id": broadcaster_id,
+            "started_at": since_iso,
+            "first": 100,  # API:n maksimi
+        }
+        if cursor:
+            params["after"] = cursor
+        try:
+            r = requests.get(
+                "https://api.twitch.tv/helix/clips",
+                headers=twitch_headers(token),
+                params=params,
+                timeout=20,
+            )
+            r.raise_for_status()
+            payload = r.json()
+        except requests.RequestException as e:
+            print(f"Twitch clips -haku epäonnistui: {e}")
+            break
+
+        page = payload.get("data", [])
+        clips.extend(page)
+
+        cursor = (payload.get("pagination") or {}).get("cursor")
+        if not cursor or not page:
+            break
+
+    return clips
 
 
 def format_twitch_message(channel, clip):
