@@ -223,15 +223,17 @@ def get_twitch_clips(broadcaster_id, token, since_iso, max_pages=10):
     return clips
 
 
-def format_twitch_message(channel, clip):
+def format_twitch_message(channel, clip, count=0, threshold=0):
     title = escape_html(clip.get("title") or "Uusi klippi")
     creator = escape_html(clip.get("creator_name") or "?")
     views = clip.get("view_count", 0)
     duration = clip.get("duration", 0)
+    star = "⭐ " if is_frequent(count, threshold) else ""
+    note = creator_note(count, threshold)
     return (
-        f"🟣 <b>Twitch · {escape_html(channel)}</b>\n"
+        f"{star}🟣 <b>Twitch · {escape_html(channel)}</b>\n"
         f"<b>{title}</b>\n"
-        f"Klippasi: {creator} · {duration:.0f}s · {views} katselua\n"
+        f"Klippasi: {creator}{note} · {duration:.0f}s · {views} katselua\n"
         f"🕒 {format_time(clip.get('created_at'))}\n"
         f"{clip['url']}"
     )
@@ -267,24 +269,80 @@ def get_kick_clips(channel):
         return []
 
 
-def format_kick_message(channel, clip):
+def kick_creator(clip):
+    """Kickin klippi-endpoint on dokumentoimaton, joten tekijän kenttänimi
+    voi vaihdella. Kokeillaan tunnetut vaihtoehdot; None jos ei löydy."""
+    creator = clip.get("creator")
+    if isinstance(creator, dict):
+        for key in ("username", "slug", "name", "user_name"):
+            if creator.get(key):
+                return creator[key]
+    if isinstance(creator, str) and creator:
+        return creator
+    for key in ("creator_username", "clipper", "user_username", "username"):
+        val = clip.get(key)
+        if isinstance(val, dict):
+            val = val.get("username") or val.get("slug")
+        if val:
+            return val
+    user = clip.get("user")
+    if isinstance(user, dict):
+        return user.get("username") or user.get("slug")
+    return None
+
+
+def format_kick_message(channel, clip, count=0, threshold=0):
     clip_id = clip.get("id")
     title = escape_html(clip.get("title") or "Uusi klippi")
-    creator = clip.get("creator") or {}
-    creator_name = escape_html(creator.get("username") or "?")
-    views = clip.get("views", 0)
+    views = clip.get("views", clip.get("view_count", 0))
     duration = clip.get("duration", 0)
     link = clip.get("clip_url") or f"https://kick.com/{channel}/clips/{clip_id}"
+
+    creator_name = kick_creator(clip)
+    star = "⭐ " if is_frequent(count, threshold) else ""
+    # Jos tekijää ei saada, jätetään koko maininta pois — parempi kuin "?"
+    if creator_name:
+        note = creator_note(count, threshold)
+        meta = (
+            f"Klippasi: {escape_html(creator_name)}{note} · "
+            f"{duration}s · {views} katselua"
+        )
+    else:
+        meta = f"{duration}s · {views} katselua"
+
     return (
-        f"🟢 <b>Kick · {escape_html(channel)}</b>\n"
+        f"{star}🟢 <b>Kick · {escape_html(channel)}</b>\n"
         f"<b>{title}</b>\n"
-        f"Klippasi: {creator_name} · {duration}s · {views} katselua\n"
+        f"{meta}\n"
         f"🕒 {format_time(clip.get('created_at'))}\n"
         f"{link}"
     )
 
 
 # ---------------------------------------------------------------------------
+
+def bump_creator(state, name):
+    """Kasvattaa tekijän klippilaskuria ja palauttaa uuden lukeman."""
+    if not name:
+        return 0
+    key = str(name).strip().lower()
+    if not key:
+        return 0
+    count = state["creators"].get(key, 0) + 1
+    state["creators"][key] = count
+    return count
+
+
+def creator_note(count, threshold):
+    """Teksti tekijän nimen perään, esim ' (23 klippiä)'. Tyhjä jos 1."""
+    if count < 2:
+        return ""
+    return f" ({count} klippiä)"
+
+
+def is_frequent(count, threshold):
+    return threshold > 0 and count >= threshold
+
 
 def prune(seen_list):
     return seen_list[-MAX_REMEMBERED_PER_CHANNEL:]
@@ -295,6 +353,7 @@ def main():
     state = load_json(STATE_PATH, {"twitch": {}, "kick": {}})
     state.setdefault("twitch", {})
     state.setdefault("kick", {})
+    state.setdefault("creators", {})
 
     lookback = config.get("poll_lookback_minutes", 15)
     since_iso = (
@@ -303,6 +362,9 @@ def main():
 
     # Valinnainen: ohita klipit jotka ovat tätä vanhempia (tuntia).
     # 0 tai puuttuva = ei rajaa.
+    # Montako klippiä tekijältä ennen ⭐-merkkiä. 0 = ei merkkiä.
+    star_threshold = config.get("frequent_clipper_min_clips", 10) or 0
+
     max_age_h = config.get("max_clip_age_hours", 0) or 0
     max_age_min = max_age_h * 60 if max_age_h > 0 else None
 
@@ -335,8 +397,13 @@ def main():
                 new = [c for c in clips if c["id"] not in seen_set]
                 new.sort(key=lambda c: c.get("created_at", ""))
                 for clip in new:
+                    count = bump_creator(state, clip.get("creator_name"))
                     if not first_run and not too_old(clip):
-                        send_telegram(format_twitch_message(channel, clip))
+                        send_telegram(
+                            format_twitch_message(
+                                channel, clip, count, star_threshold
+                            )
+                        )
                         found += 1
                     seen.append(clip["id"])
                 state["twitch"][channel] = prune(seen)
@@ -349,8 +416,11 @@ def main():
         new = [c for c in clips if str(c.get("id")) not in seen_set]
         new.sort(key=lambda c: c.get("created_at", ""))
         for clip in new:
+            count = bump_creator(state, kick_creator(clip))
             if not first_run and not too_old(clip):
-                send_telegram(format_kick_message(channel, clip))
+                send_telegram(
+                    format_kick_message(channel, clip, count, star_threshold)
+                )
                 found += 1
             seen.append(str(clip.get("id")))
         state["kick"][channel] = prune(seen)
