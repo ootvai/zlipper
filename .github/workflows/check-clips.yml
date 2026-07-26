@@ -2,9 +2,9 @@ name: Klippivahti
 
 on:
   schedule:
-    # 10 min välein. GitHubin cron voi viivästyä muutamia minuutteja
+    # 5 min välein. GitHubin cron voi viivästyä muutamia minuutteja
     # ruuhka-aikoina — se on normaalia, ei vika.
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}   # manuaalinen ajo "Run workflow" -napista
 
 permissions:
