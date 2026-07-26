@@ -243,30 +243,67 @@ def format_twitch_message(channel, clip, count=0, threshold=0):
 # KICK  (epävirallinen endpoint)
 # ---------------------------------------------------------------------------
 
-def get_kick_clips(channel):
+def get_kick_clips(channel, max_pages=5):
+    """Hakee Kick-klipit sivuttamalla.
+
+    Kickin endpoint on dokumentoimaton eikä järjestys ole taattu. Jos se
+    järjestää katselukertojen mukaan (kuten Twitch), tuore 0 katselun
+    klippi on listan pohjalla — siksi haetaan useampi sivu, ei vain
+    ensimmäistä.
+    """
     url = f"https://kick.com/api/v2/channels/{channel}/clips"
-    try:
-        r = requests.get(
-            url,
-            headers=KICK_HEADERS,
-            params={"cursor": 0, "sort": "date"},
-            timeout=20,
-        )
+    collected = []
+    cursor = 0
+    seen_cursors = set()
+
+    for _ in range(max_pages):
+        try:
+            r = requests.get(
+                url,
+                headers=KICK_HEADERS,
+                params={"cursor": cursor, "sort": "date"},
+                timeout=20,
+            )
+        except requests.RequestException as e:
+            print(f"Kick: {channel} -> virhe ({e}), ohitetaan")
+            break
+
         if r.status_code == 404:
             print(f"Kick: kanavaa '{channel}' ei löytynyt — tarkista nimi")
-            return []
+            break
         if r.status_code != 200:
             print(f"Kick: {channel} -> HTTP {r.status_code}, ohitetaan")
-            return []
-        data = r.json()
-        if isinstance(data, dict):
-            return data.get("clips", [])
+            break
+
+        try:
+            data = r.json()
+        except ValueError:
+            print(f"Kick: {channel} -> vastaus ei ollut JSONia")
+            break
+
         if isinstance(data, list):
-            return data
-        return []
-    except (requests.RequestException, ValueError) as e:
-        print(f"Kick: {channel} -> virhe ({e}), ohitetaan")
-        return []
+            page = data
+            next_cursor = None
+        elif isinstance(data, dict):
+            page = data.get("clips") or data.get("data") or []
+            next_cursor = (
+                data.get("nextCursor")
+                or data.get("next_cursor")
+                or data.get("cursor")
+            )
+        else:
+            break
+
+        if not page:
+            break
+        collected.extend(page)
+
+        if not next_cursor or next_cursor in seen_cursors:
+            break
+        seen_cursors.add(next_cursor)
+        cursor = next_cursor
+
+    return collected
 
 
 def kick_creator(clip):
