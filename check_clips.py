@@ -21,6 +21,7 @@ import requests
 
 CONFIG_PATH = "config.json"
 STATE_PATH = "state.json"
+CREATORS_PATH = "creators.json"
 
 TWITCH_CLIENT_ID = os.environ.get("TWITCH_CLIENT_ID", "")
 TWITCH_CLIENT_SECRET = os.environ.get("TWITCH_CLIENT_SECRET", "")
@@ -358,15 +359,19 @@ def format_kick_message(channel, clip, count=0, threshold=0):
 
 # ---------------------------------------------------------------------------
 
-def bump_creator(state, name):
-    """Kasvattaa tekijän klippilaskuria ja palauttaa uuden lukeman."""
+def bump_creator(creators, name):
+    """Kasvattaa tekijän klippilaskuria ja palauttaa uuden lukeman.
+
+    Laskurit ovat omassa tiedostossaan (creators.json), jotta state.json:n
+    nollaus ei hävitä kertynyttä klippaajahistoriaa.
+    """
     if not name:
         return 0
     key = str(name).strip().lower()
     if not key:
         return 0
-    count = state["creators"].get(key, 0) + 1
-    state["creators"][key] = count
+    count = creators.get(key, 0) + 1
+    creators[key] = count
     return count
 
 
@@ -390,7 +395,14 @@ def main():
     state = load_json(STATE_PATH, {"twitch": {}, "kick": {}})
     state.setdefault("twitch", {})
     state.setdefault("kick", {})
-    state.setdefault("creators", {})
+
+    # Vanha sijainti: siirretään laskurit omaan tiedostoonsa jos niitä on
+    creators = load_json(CREATORS_PATH, {})
+    legacy = state.pop("creators", None)
+    if legacy:
+        for name, n in legacy.items():
+            creators[name] = max(creators.get(name, 0), n)
+        print(f"Siirretty {len(legacy)} klippaajaa creators.json-tiedostoon.")
 
     lookback = config.get("poll_lookback_minutes", 15)
     since_iso = (
@@ -434,7 +446,7 @@ def main():
                 new = [c for c in clips if c["id"] not in seen_set]
                 new.sort(key=lambda c: c.get("created_at", ""))
                 for clip in new:
-                    count = bump_creator(state, clip.get("creator_name"))
+                    count = bump_creator(creators, clip.get("creator_name"))
                     if not first_run and not too_old(clip):
                         send_telegram(
                             format_twitch_message(
@@ -453,7 +465,7 @@ def main():
         new = [c for c in clips if str(c.get("id")) not in seen_set]
         new.sort(key=lambda c: c.get("created_at", ""))
         for clip in new:
-            count = bump_creator(state, kick_creator(clip))
+            count = bump_creator(creators, kick_creator(clip))
             if not first_run and not too_old(clip):
                 send_telegram(
                     format_kick_message(channel, clip, count, star_threshold)
@@ -463,6 +475,7 @@ def main():
         state["kick"][channel] = prune(seen)
 
     save_json(STATE_PATH, state)
+    save_json(CREATORS_PATH, creators)
 
     if first_run:
         print("Perustila tallennettu. Seuraavasta ajosta alkaen tulee ilmoituksia.")
