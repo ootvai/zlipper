@@ -15,6 +15,7 @@ Ympäristömuuttujat (GitHub secrets):
 import json
 import os
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -61,6 +62,51 @@ def escape_html(text):
         .replace("<", "&lt;")
         .replace(">", "&gt;")
     )
+
+
+LOCAL_TZ = ZoneInfo("Europe/Helsinki")
+
+
+def parse_ts(raw):
+    """Jäsentää ISO-aikaleiman. Palauttaa None jos ei onnistu."""
+    if not raw:
+        return None
+    txt = str(raw).strip().replace("Z", "+00:00")
+    try:
+        dt = datetime.fromisoformat(txt)
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
+
+
+def format_time(raw):
+    """'27.7. klo 21:05 (12 min sitten)' — Suomen aikaa."""
+    dt = parse_ts(raw)
+    if dt is None:
+        return "aika tuntematon"
+    local = dt.astimezone(LOCAL_TZ)
+    stamp = local.strftime("%-d.%-m. klo %H:%M")
+
+    mins = (datetime.now(timezone.utc) - dt).total_seconds() / 60
+    if mins < 0:
+        return stamp
+    if mins < 60:
+        ago = f"{int(mins)} min sitten"
+    elif mins < 60 * 24:
+        ago = f"{int(mins // 60)} h sitten"
+    else:
+        ago = f"{int(mins // (60 * 24))} vrk sitten"
+    return f"{stamp} ({ago})"
+
+
+def age_minutes(raw):
+    """Klipin ikä minuutteina, tai None jos aikaa ei saada."""
+    dt = parse_ts(raw)
+    if dt is None:
+        return None
+    return (datetime.now(timezone.utc) - dt).total_seconds() / 60
 
 
 def send_telegram(text):
@@ -164,6 +210,7 @@ def format_twitch_message(channel, clip):
         f"🟣 <b>Twitch · {escape_html(channel)}</b>\n"
         f"<b>{title}</b>\n"
         f"Klippasi: {creator} · {duration:.0f}s · {views} katselua\n"
+        f"🕒 {format_time(clip.get('created_at'))}\n"
         f"{clip['url']}"
     )
 
@@ -210,6 +257,7 @@ def format_kick_message(channel, clip):
         f"🟢 <b>Kick · {escape_html(channel)}</b>\n"
         f"<b>{title}</b>\n"
         f"Klippasi: {creator_name} · {duration}s · {views} katselua\n"
+        f"🕒 {format_time(clip.get('created_at'))}\n"
         f"{link}"
     )
 
@@ -230,6 +278,17 @@ def main():
     since_iso = (
         datetime.now(timezone.utc) - timedelta(minutes=lookback)
     ).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    # Valinnainen: ohita klipit jotka ovat tätä vanhempia (tuntia).
+    # 0 tai puuttuva = ei rajaa.
+    max_age_h = config.get("max_clip_age_hours", 0) or 0
+    max_age_min = max_age_h * 60 if max_age_h > 0 else None
+
+    def too_old(clip):
+        if max_age_min is None:
+            return False
+        age = age_minutes(clip.get("created_at"))
+        return age is not None and age > max_age_min
 
     first_run = not state["twitch"] and not state["kick"]
     if first_run:
@@ -254,7 +313,7 @@ def main():
                 new = [c for c in clips if c["id"] not in seen_set]
                 new.sort(key=lambda c: c.get("created_at", ""))
                 for clip in new:
-                    if not first_run:
+                    if not first_run and not too_old(clip):
                         send_telegram(format_twitch_message(channel, clip))
                         found += 1
                     seen.append(clip["id"])
@@ -268,7 +327,7 @@ def main():
         new = [c for c in clips if str(c.get("id")) not in seen_set]
         new.sort(key=lambda c: c.get("created_at", ""))
         for clip in new:
-            if not first_run:
+            if not first_run and not too_old(clip):
                 send_telegram(format_kick_message(channel, clip))
                 found += 1
             seen.append(str(clip.get("id")))
