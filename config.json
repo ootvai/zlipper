@@ -17,5 +17,6 @@
     "heikrisse",
     "jetistriimaa"
   ],
-  "poll_lookback_minutes": 15
+  "poll_lookback_minutes": 60,
+  "max_clip_age_hours": 0
 }
