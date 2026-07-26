@@ -20,6 +20,6 @@
     "jetistriimaa"
   ],
   "poll_lookback_minutes": 60,
-  "max_clip_age_hours": 0,
-  "frequent_clipper_min_clips": 5
+  "max_clip_age_hours": 24,
+  "frequent_clipper_min_clips": 10
 }
