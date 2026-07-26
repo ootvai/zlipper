@@ -1,0 +1,21 @@
+{
+  "twitch_channels": [
+    "skotti"
+  ],
+  "kick_channels": [
+    "pullis",
+    "pact",
+    "aapo_olervo",
+    "jjuliaelisa",
+    "shokkiofficial",
+    "kuhlmanvirallinen",
+    "pottukoiralive",
+    "magamed_gadiev",
+    "ogumtv",
+    "sampef2",
+    "pirkkislive",
+    "heikrisse",
+    "jetistriimaa"
+  ],
+  "poll_lookback_minutes": 15
+}
