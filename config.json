@@ -20,5 +20,6 @@
   "poll_lookback_minutes": 60,
   "max_clip_age_hours": 24,
   "frequent_clipper_min_clips": 10,
-  "health_alert_after_failures": 3
+  "health_alert_after_failures": 3,
+  "heartbeat_hours": 12
 }
