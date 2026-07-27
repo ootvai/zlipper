@@ -362,7 +362,13 @@ def format_kick_message(channel, clip, count=0, threshold=0):
     title = escape_html(clip.get("title") or "Uusi klippi")
     views = clip.get("views", clip.get("view_count", 0))
     duration = clip.get("duration", 0)
-    link = clip.get("clip_url") or f"https://kick.com/{channel}/clips/{clip_id}"
+
+    # HUOM: käytetään AINA rakennettua klippisivun URL:ia, ei clip_url-kenttää.
+    # clip_url näytti osoittavan suoraan CDN-videotiedostoon, jolloin
+    # Telegram lataa/avaa videon heti napautettaessa sen sijaan että
+    # näyttäisi normaalin linkkiesikatselun. kick.com/<kanava>/clips/<id>
+    # on aina tavallinen klippisivu, josta voi itse ladata halutessaan.
+    link = f"https://kick.com/{channel}/clips/{clip_id}"
 
     creator_name = kick_creator(clip)
     star = "⭐ " if is_frequent(count, threshold) else ""
