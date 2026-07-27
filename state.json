@@ -348,7 +348,8 @@
       "clip_01KY89H1WRD54W2GH5T079FP9W",
       "clip_01KY89KV5H3PQ9956T4D3RZZ2S",
       "clip_01KY89NH58W9ZD0RPEF1VEPYH4",
-      "clip_01KYGA2B0RMMC5313P4HT318RQ"
+      "clip_01KYGA2B0RMMC5313P4HT318RQ",
+      "clip_01KYHND2BRA3HZXJNT8S3VSZF2"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -552,7 +553,8 @@
       "clip_01KYET6HQTEPY9R8G6BZY8WQZX",
       "clip_01KYET7041QEEM8YKEGYH788W9",
       "clip_01KYEV4C8D5VP8723XMP06G995",
-      "clip_01KYEWQYF71CPFWG6VP0QJRYWT"
+      "clip_01KYEWQYF71CPFWG6VP0QJRYWT",
+      "clip_01KYHRAYP69MMZZY52T762MEYH"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1516,5 +1518,9 @@
       "fails": 0,
       "alerted": false
     }
+  },
+  "heartbeat": {
+    "last": "2026-07-27T12:25:10Z",
+    "clips_since": 2
   }
 }
