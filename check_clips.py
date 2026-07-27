@@ -414,6 +414,59 @@ def is_frequent(count, threshold):
     return threshold > 0 and count >= threshold
 
 
+def heartbeat(state, config, found_now):
+    """Lähettää säännöllisen elonmerkin Telegramiin.
+
+    Tarkoitus: nähdä että putki on pystyssä myös hiljaisina jaksoina.
+    Viesti EI tule joka ajosta (niitä on satoja vuorokaudessa) vaan
+    valitulla aikavälillä. Jos viesti jää tulematta, ajastus on
+    hajonnut — se on juuri se vika jota ei muuten huomaisi.
+    """
+    hours = config.get("heartbeat_hours", 0) or 0
+    hb = state.setdefault("heartbeat", {"last": None, "clips_since": 0})
+    hb["clips_since"] = hb.get("clips_since", 0) + found_now
+
+    if hours <= 0:
+        return
+
+    now = datetime.now(timezone.utc)
+    last = parse_ts(hb.get("last"))
+
+    if last is None:
+        # Ensimmäinen kerta: aloitetaan kello, ei lähetetä heti
+        hb["last"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+        return
+
+    elapsed_h = (now - last).total_seconds() / 3600
+    if elapsed_h < hours:
+        return
+
+    n = hb.get("clips_since", 0)
+    if n == 0:
+        summary = "ei uusia klippejä"
+    elif n == 1:
+        summary = "1 uusi klippi"
+    else:
+        summary = f"{n} uutta klippiä"
+
+    tila = []
+    for platform, name in (("twitch", "Twitch"), ("kick", "Kick")):
+        stats = RUN_STATS[platform]
+        if stats["attempts"] == 0:
+            continue
+        ok = stats["errors"] < stats["attempts"]
+        tila.append(f"{name} {'✅' if ok else '❌'}")
+
+    send_telegram(
+        f"💚 <b>Klippivahti toimii</b>\n"
+        f"Viimeisen {int(round(elapsed_h))} h aikana: {summary}\n"
+        f"{' · '.join(tila)}"
+    )
+
+    hb["last"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    hb["clips_since"] = 0
+
+
 def check_health(state, config):
     """Ilmoittaa Telegramiin jos alusta on epäonnistunut monta kertaa peräkkäin.
 
@@ -553,6 +606,7 @@ def main():
         state["kick"][channel] = prune(seen)
 
     check_health(state, config)
+    heartbeat(state, config, found)
 
     save_json(STATE_PATH, state)
     save_json(CREATORS_PATH, creators)
