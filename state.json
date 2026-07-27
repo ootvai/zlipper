@@ -1506,5 +1506,15 @@
       "clip_01KWHRGFNEW52N65QTW82XGDKD",
       "clip_01KWHTBWYA14R9GMPGN40EBPYH"
     ]
+  },
+  "health": {
+    "twitch": {
+      "fails": 0,
+      "alerted": false
+    },
+    "kick": {
+      "fails": 0,
+      "alerted": false
+    }
   }
 }
