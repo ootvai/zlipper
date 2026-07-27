@@ -40,6 +40,23 @@ KICK_HEADERS = {
 
 MAX_REMEMBERED_PER_CHANNEL = 300
 
+# Ajokohtainen tilasto: montako hakuyritystä ja montako niistä epäonnistui.
+# Käytetään terveysilmoitukseen — hiljaiset viat (Kickin endpoint hajoaa,
+# Twitch-secret vanhenee) eivät muuten näy missään.
+RUN_STATS = {
+    "twitch": {"attempts": 0, "errors": 0, "details": []},
+    "kick": {"attempts": 0, "errors": 0, "details": []},
+}
+
+
+def record(platform, ok, detail=""):
+    stats = RUN_STATS[platform]
+    stats["attempts"] += 1
+    if not ok:
+        stats["errors"] += 1
+        if detail and detail not in stats["details"]:
+            stats["details"].append(detail)
+
 
 def load_json(path, default):
     if not os.path.exists(path):
@@ -136,6 +153,9 @@ def send_telegram(text):
 # TWITCH  (virallinen Helix API — vakaa)
 # ---------------------------------------------------------------------------
 
+TOKEN_ERROR = []
+
+
 def get_twitch_token():
     if not TWITCH_CLIENT_ID or not TWITCH_CLIENT_SECRET:
         print("Twitch-tunnukset puuttuvat, ohitetaan Twitch.")
@@ -154,6 +174,7 @@ def get_twitch_token():
         return r.json()["access_token"]
     except (requests.RequestException, KeyError) as e:
         print(f"Twitch-token epäonnistui: {e}")
+        TOKEN_ERROR.append(str(e)[:120])
         return None
 
 
@@ -212,7 +233,8 @@ def get_twitch_clips(broadcaster_id, token, since_iso, max_pages=10):
             payload = r.json()
         except requests.RequestException as e:
             print(f"Twitch clips -haku epäonnistui: {e}")
-            break
+            record("twitch", False, f"clips: {str(e)[:100]}")
+            return clips
 
         page = payload.get("data", [])
         clips.extend(page)
@@ -221,6 +243,7 @@ def get_twitch_clips(broadcaster_id, token, since_iso, max_pages=10):
         if not cursor or not page:
             break
 
+    record("twitch", True)
     return clips
 
 
@@ -267,20 +290,24 @@ def get_kick_clips(channel, max_pages=5):
             )
         except requests.RequestException as e:
             print(f"Kick: {channel} -> virhe ({e}), ohitetaan")
-            break
+            record("kick", False, f"{channel}: {str(e)[:80]}")
+            return collected
 
         if r.status_code == 404:
             print(f"Kick: kanavaa '{channel}' ei löytynyt — tarkista nimi")
-            break
+            record("kick", False, f"{channel}: HTTP 404 (nimi väärin?)")
+            return collected
         if r.status_code != 200:
             print(f"Kick: {channel} -> HTTP {r.status_code}, ohitetaan")
-            break
+            record("kick", False, f"{channel}: HTTP {r.status_code}")
+            return collected
 
         try:
             data = r.json()
         except ValueError:
             print(f"Kick: {channel} -> vastaus ei ollut JSONia")
-            break
+            record("kick", False, f"{channel}: vastaus ei JSONia")
+            return collected
 
         if isinstance(data, list):
             page = data
@@ -304,6 +331,7 @@ def get_kick_clips(channel, max_pages=5):
         seen_cursors.add(next_cursor)
         cursor = next_cursor
 
+    record("kick", True)
     return collected
 
 
@@ -386,11 +414,58 @@ def is_frequent(count, threshold):
     return threshold > 0 and count >= threshold
 
 
+def check_health(state, config):
+    """Ilmoittaa Telegramiin jos alusta on epäonnistunut monta kertaa peräkkäin.
+
+    Ilmoitus lähetetään KERRAN katkoksen alussa ja kerran kun yhteys
+    palautuu — ei joka ajolla. Hälytys laukeaa vain jos KAIKKI alustan
+    hakuyritykset epäonnistuivat; yksi väärin kirjoitettu kanavanimi ei
+    siis riitä.
+    """
+    threshold = config.get("health_alert_after_failures", 3) or 0
+    if threshold <= 0:
+        return
+
+    health = state.setdefault("health", {})
+    names = {"twitch": "Twitch", "kick": "Kick"}
+
+    for platform, stats in RUN_STATS.items():
+        if stats["attempts"] == 0:
+            continue
+
+        entry = health.setdefault(platform, {"fails": 0, "alerted": False})
+        all_failed = stats["errors"] == stats["attempts"]
+
+        if all_failed:
+            entry["fails"] += 1
+            print(
+                f"{names[platform]}: epäonnistunut {entry['fails']} "
+                f"kertaa peräkkäin"
+            )
+            if entry["fails"] >= threshold and not entry["alerted"]:
+                detail = "; ".join(stats["details"][:3]) or "tuntematon virhe"
+                send_telegram(
+                    f"⚠️ <b>{names[platform]}-haku epäonnistunut "
+                    f"{entry['fails']} kertaa peräkkäin</b>\n"
+                    f"{escape_html(detail)}"
+                )
+                entry["alerted"] = True
+        else:
+            if entry["alerted"]:
+                send_telegram(f"✅ <b>{names[platform]}-haku toimii taas</b>")
+            entry["fails"] = 0
+            entry["alerted"] = False
+
+
 def prune(seen_list):
     return seen_list[-MAX_REMEMBERED_PER_CHANNEL:]
 
 
 def main():
+    for stats in RUN_STATS.values():
+        stats.update({"attempts": 0, "errors": 0, "details": []})
+    TOKEN_ERROR.clear()
+
     config = load_json(CONFIG_PATH, {})
     state = load_json(STATE_PATH, {"twitch": {}, "kick": {}})
     state.setdefault("twitch", {})
@@ -433,7 +508,10 @@ def main():
     twitch_channels = [c.lower().strip() for c in config.get("twitch_channels", [])]
     if twitch_channels:
         token = get_twitch_token()
-        if token:
+        if not token:
+            detail = TOKEN_ERROR[0] if TOKEN_ERROR else "tunnukset puuttuvat"
+            record("twitch", False, f"token: {detail}")
+        else:
             ids = get_twitch_user_ids(twitch_channels, token)
             for channel in twitch_channels:
                 bid = ids.get(channel)
@@ -473,6 +551,8 @@ def main():
                 found += 1
             seen.append(str(clip.get("id")))
         state["kick"][channel] = prune(seen)
+
+    check_health(state, config)
 
     save_json(STATE_PATH, state)
     save_json(CREATORS_PATH, creators)
