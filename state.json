@@ -705,7 +705,9 @@
       "clip_01KYMTFYZXJYECXD6D49J487C4",
       "clip_01KYMXD9M77PJWB2Z1FNQF29MW",
       "clip_01KYN0X5YXDKQ9KGAF4CRMEHRT",
-      "clip_01KYN1B1KDY0J6FWF0GC07AEV2"
+      "clip_01KYN1B1KDY0J6FWF0GC07AEV2",
+      "clip_01KYN1RQ78EHE6D539H00EEVA2",
+      "clip_01KYN2CYRQV0TSP7TP743DBBNM"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1585,6 +1587,6 @@
   },
   "heartbeat": {
     "last": "2026-07-28T14:14:26Z",
-    "clips_since": 25
+    "clips_since": 27
   }
 }
