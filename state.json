@@ -564,7 +564,10 @@
       "clip_01KYHXVMRVQXS7ABH9DQR6R1SE",
       "clip_01KYJ3NYK2GTA0G6X9PZRK1Z9H",
       "clip_01KYJ3S6H743X7K06MDSZ7XNQ2",
-      "clip_01KYJ6KX1HYX9QYQXQT6YH8FT5"
+      "clip_01KYJ6KX1HYX9QYQXQT6YH8FT5",
+      "clip_01KYKXTKXPYT4BZQ6TTPX9EPT7",
+      "clip_01KYKZ2QA3QN3XRTNJS9MYZNVR",
+      "clip_01KYM1PGTNDS6W7K4E7X0F03EB"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1544,6 +1547,6 @@
   },
   "heartbeat": {
     "last": "2026-07-28T01:09:30Z",
-    "clips_since": 2
+    "clips_since": 5
   }
 }
