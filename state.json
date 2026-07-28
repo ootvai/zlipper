@@ -1425,7 +1425,9 @@
       "clip_01KYJ346XR5R24237H0XQRT0ZK",
       "clip_01KYJDDP08PTKDA0FGDT1G2FG7",
       "clip_01KYJFQYDS53KXJDSN13N40RHH",
-      "clip_01KYJNSSX3V9H54C0KNM8KSWYE"
+      "clip_01KYJNSSX3V9H54C0KNM8KSWYE",
+      "clip_01KYKH1GCS0GMX9F7KR9KYXDAH",
+      "clip_01KYKKNMEM8S0PDNXJT4F00Q1X"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -1542,6 +1544,6 @@
   },
   "heartbeat": {
     "last": "2026-07-28T01:09:30Z",
-    "clips_since": 0
+    "clips_since": 2
   }
 }
