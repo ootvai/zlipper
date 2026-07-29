@@ -465,7 +465,14 @@
       "clip_01KYMQ4NKNKGZJKK2J5PWZWRH2",
       "clip_01KYMQ993KRMK9D88ZJBM2HAF5",
       "clip_01KYMS1SHEWAPQGK44ADBS7HMA",
-      "clip_01KYMS9KXMAPKHS7352HKVJ1WZ"
+      "clip_01KYMS9KXMAPKHS7352HKVJ1WZ",
+      "clip_01KYQD67HEXKCSXDTYM7E0RE2A",
+      "clip_01KYQDB55RXN0WVGYF8AK2MD78",
+      "clip_01KYQDJ7QJQ527X4AVFCA56MFA",
+      "clip_01KYQDQBAR3VZT9FRV6FWFNDX3",
+      "clip_01KYQDX6WPC1CFFKE191MZVK7Q",
+      "clip_01KYQEDJ0YKHYT90DVGFWTRK4E",
+      "clip_01KYQEMZZHY46YNSWV368XX7EW"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -1044,7 +1051,8 @@
       "clip_01KY0K7870MT7NQ6MFDSNQ38TC",
       "clip_01KYJ7WMMD1ZD6YQP0DYYAHQMZ",
       "clip_01KYJ9E5BDTRX00VTREN4XNTK4",
-      "clip_01KYJGQNNHD46B3QJDDR5K0BQR"
+      "clip_01KYJGQNNHD46B3QJDDR5K0BQR",
+      "clip_01KYQDFB8TVJXY0Y57JV6XSKK3"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -1499,7 +1507,14 @@
       "clip_01KYQ9KQT17B3NF44TFDP0CS9E",
       "clip_01KYQ9PFKJK34ETQ8HPZH7VFS4",
       "clip_01KYQ9TZTQQ9PBPR602CF6YPC3",
-      "clip_01KYQ9W3J1WPCAQ5MFP2RQZF4N"
+      "clip_01KYQ9W3J1WPCAQ5MFP2RQZF4N",
+      "clip_01KYQA3PV7TD4HWB4J6EQCRHWF",
+      "clip_01KYQBBT0F3FQ1ESF10C7QNW8H",
+      "clip_01KYQBQD989JBMRBQRXT7QA1ZW",
+      "clip_01KYQCYHM1AWP5C1ZDB9W0M066",
+      "clip_01KYQDQSKBDAZ0B6RJR62J6BGF",
+      "clip_01KYQDYKT5AS1DJVQN2CQ3AK20",
+      "clip_01KYQEEWDDQ1Y62XX4HWM1TG88"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -2013,8 +2028,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-07-29T04:26:33Z",
-    "clips_since": 27
+    "last": "2026-07-29T17:33:20Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -2038,7 +2053,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-29T15:27:17Z",
+      "last_clip": "2026-07-29T17:32:53Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -2058,7 +2073,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-07-29T15:27:32Z",
+      "last_clip": "2026-07-29T17:33:01Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -2078,7 +2093,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-29T16:06:08Z",
+      "last_clip": "2026-07-29T17:33:12Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
