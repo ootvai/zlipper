@@ -627,7 +627,11 @@
       "clip_01KYPAP6BA561CB274MJX5797T",
       "clip_01KYPGB4HR724Z8NKDB0BHHZXK",
       "clip_01KYPVG9J3W1PQF3ZDHZBRKGQC",
-      "clip_01KYQ6J82HJ01WN41RZ8VC4RKJ"
+      "clip_01KYQ6J82HJ01WN41RZ8VC4RKJ",
+      "clip_01KYQJRC9AZXTWK6CT0E6N9Y06",
+      "clip_01KYQJVGW8APGZTYP6SYR1KB1C",
+      "clip_01KYQK25VE7XTF9FNFKZ55DH8E",
+      "clip_01KYQNC3SQZM7GVCK7S79B7HQV"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1527,7 +1531,11 @@
       "clip_01KYQH5QSD5V2DG344JVB9X638",
       "clip_01KYQJGPQ8R3SZXD9NKFPM6H5R",
       "clip_01KYQJGH6MKJ5ZW822KZNV63GC",
-      "clip_01KYQJGB94MZ6BKFFXA0ZNXHVM"
+      "clip_01KYQJGB94MZ6BKFFXA0ZNXHVM",
+      "clip_01KYQJGB3N37MEWQ4S8CXWCEZV",
+      "clip_01KYQKD9MEWXNYP756B67QAX87",
+      "clip_01KYQMTGQH3DGR4XGJ1A4A8JB2",
+      "clip_01KYQMY4Z2Q32WTFF4QS4Q0FW9"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -2027,7 +2035,9 @@
       "clip_01KYPWNSYD3H8BNAGQZ1YKDZRP",
       "clip_01KYPXT0PEPBVP4NX6ZETC2D1J",
       "clip_01KYQ594FH9PH4VP54QG93GJNJ",
-      "clip_01KYQ665TVY9PWQF081XW4H2X9"
+      "clip_01KYQ665TVY9PWQF081XW4H2X9",
+      "clip_01KYQKJTY7F4DXB5W7J2XK3ZHH",
+      "clip_01KYQKJHN2EK4ZTGZPV3XYK1DG"
     ]
   },
   "health": {
@@ -2042,7 +2052,7 @@
   },
   "heartbeat": {
     "last": "2026-07-29T17:33:20Z",
-    "clips_since": 13
+    "clips_since": 23
   },
   "silent": {
     "twitch:skotti": {
@@ -2070,7 +2080,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-07-29T15:27:20Z",
+      "last_clip": "2026-07-29T19:31:38Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -2106,7 +2116,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-29T18:35:40Z",
+      "last_clip": "2026-07-29T19:31:59Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
@@ -2130,7 +2140,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-29T15:28:20Z",
+      "last_clip": "2026-07-29T19:32:12Z",
       "alerted": false
     }
   }
