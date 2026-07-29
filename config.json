@@ -1,6 +1,9 @@
 {
   "twitch_channels": [
-    "skotti"
+    "skotti",
+    "saarelansaara",
+    "henksuliini",
+    "s11r1sof1a"
   ],
   "kick_channels": [
     "pullis",
@@ -15,11 +18,17 @@
     "sampef2",
     "pirkkislive",
     "heikrisse",
-    "jetistriimaa"
+    "jetistriimaa",
+    "bundachiara",
+    "johtajanmatkassa",
+    "thisgirlispower",
+    "whyisabell",
+    "monnirs"
   ],
   "poll_lookback_minutes": 60,
   "max_clip_age_hours": 24,
   "frequent_clipper_min_clips": 10,
   "health_alert_after_failures": 3,
-  "heartbeat_hours": 12
+  "heartbeat_hours": 12,
+  "silent_channel_days": 7
 }
