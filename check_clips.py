@@ -516,6 +516,63 @@ def check_health(state, config):
             entry["alerted"] = False
 
 
+def note_channel_activity(state, platform, channel, had_new):
+    """Merkitsee milloin kanavalta viimeksi tuli uusi klippi.
+
+    Uusi kanava alustetaan nykyhetkeen, jotta se ei hälytä heti
+    lisäämisen jälkeen.
+    """
+    silent = state.setdefault("silent", {})
+    key = f"{platform}:{channel}"
+    entry = silent.setdefault(key, {"last_clip": None, "alerted": False})
+    if entry.get("last_clip") is None or had_new:
+        entry["last_clip"] = datetime.now(timezone.utc).strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
+        entry["alerted"] = False
+
+
+def check_silent_channels(state, config):
+    """Ilmoittaa kerran jos kanavalta ei ole tullut klippejä pitkään aikaan.
+
+    Ilmoitus lähetetään vain kerran hiljaista jaksoa kohti. Lippu
+    nollautuu automaattisesti kun kanavalta tulee taas klippi.
+    """
+    days = config.get("silent_channel_days", 0) or 0
+    if days <= 0:
+        return
+
+    silent = state.setdefault("silent", {})
+
+    # Siivotaan configista poistetut kanavat pois tilasta
+    active = set()
+    for platform, cfg_key in (
+        ("twitch", "twitch_channels"),
+        ("kick", "kick_channels"),
+    ):
+        for c in config.get(cfg_key, []):
+            active.add(f"{platform}:{c.lower().strip()}")
+    for key in [k for k in silent if k not in active]:
+        silent.pop(key)
+
+    now = datetime.now(timezone.utc)
+    for key, entry in silent.items():
+        if entry.get("alerted"):
+            continue
+        last = parse_ts(entry.get("last_clip"))
+        if last is None:
+            continue
+        if (now - last).total_seconds() / 86400 >= days:
+            platform, channel = key.split(":", 1)
+            name = "Twitch" if platform == "twitch" else "Kick"
+            send_telegram(
+                f"🔇 <b>Hiljainen kanava</b>\n"
+                f"{name} · {escape_html(channel)}\n"
+                f"Ei uusia klippejä {days} vuorokauteen."
+            )
+            entry["alerted"] = True
+
+
 def prune(seen_list):
     return seen_list[-MAX_REMEMBERED_PER_CHANNEL:]
 
@@ -576,6 +633,7 @@ def main():
                 bid = ids.get(channel)
                 if not bid:
                     print(f"Twitch: kanavaa '{channel}' ei löytynyt — tarkista nimi")
+                    note_channel_activity(state, "twitch", channel, False)
                     continue
                 seen = state["twitch"].get(channel, [])
                 seen_set = set(seen)
@@ -593,6 +651,7 @@ def main():
                         found += 1
                     seen.append(clip["id"])
                 state["twitch"][channel] = prune(seen)
+                note_channel_activity(state, "twitch", channel, bool(new))
 
     # --- Kick ---
     for channel in [c.lower().strip() for c in config.get("kick_channels", [])]:
@@ -610,8 +669,10 @@ def main():
                 found += 1
             seen.append(str(clip.get("id")))
         state["kick"][channel] = prune(seen)
+        note_channel_activity(state, "kick", channel, bool(new))
 
     check_health(state, config)
+    check_silent_channels(state, config)
     heartbeat(state, config, found)
 
     save_json(STATE_PATH, state)
