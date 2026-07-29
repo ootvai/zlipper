@@ -1,33 +1,26 @@
 name: Klippivahti
-
 on:
   schedule:
     # 10 min välein. GitHubin cron voi viivästyä muutamia minuutteja
     # ruuhka-aikoina — se on normaalia, ei vika.
     - cron: "*/10 * * * *"
   workflow_dispatch: {}   # manuaalinen ajo "Run workflow" -napista
-
 permissions:
   contents: write   # state.json:n commitointiin
-
 concurrency:
   group: klippivahti
   cancel-in-progress: false   # älä aja kahta rinnakkain, muuten state sotkeutuu
-
 jobs:
   tarkista:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-
       - name: Asenna riippuvuudet
         run: pip install -r requirements.txt
-
       - name: Tarkista uudet klipit
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
@@ -35,16 +28,18 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python check_clips.py
-
       - name: Tallenna tila
         run: |
           git config user.name "klippivahti"
           git config user.email "actions@users.noreply.github.com"
-          if [ -n "$(git status --porcelain state.json creators.json)" ]; then
-            git add state.json creators.json
-            git commit -m "state [skip ci]"
-            git pull --rebase --autostash origin ${{ github.ref_name }} || true
-            git push
-          else
+          cp state.json creators.json /tmp/
+          git fetch origin ${{ github.ref_name }}
+          git reset --hard origin/${{ github.ref_name }}
+          cp /tmp/state.json /tmp/creators.json .
+          git add state.json creators.json
+          if git diff --cached --quiet; then
             echo "Ei muutoksia."
+          else
+            git commit -m "state [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
           fi
