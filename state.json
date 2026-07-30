@@ -1579,7 +1579,9 @@
       "clip_01KYRDGQJGTC8DZBG921Z1D5NB",
       "clip_01KYRG6F1KFH27BA4TT9GE4SHQ",
       "clip_01KYRGD58KV0QV8TNF7FHC7Z73",
-      "clip_01KYRGWRJ0N4HWCW0NJJZMHB40"
+      "clip_01KYRGWRJ0N4HWCW0NJJZMHB40",
+      "clip_01KYRRAVCVYH0GKJQEZZX1XB1R",
+      "clip_01KYRRHGSYSCH26HTQ61MB94GP"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -1959,7 +1961,8 @@
       "clip_01KYNBPBJMKGGX832G3MSHP1T0",
       "clip_01KYNFKXF3SW7WP376F6QAYVC2",
       "clip_01KYR2NE8JDEZXGQDF6KWV3GBB",
-      "clip_01KYRNEG4MMY7C1JW82V6YTEHX"
+      "clip_01KYRNEG4MMY7C1JW82V6YTEHX",
+      "clip_01KYRXXGFBHJM8MKZ5NBZ7F1XM"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -2091,7 +2094,9 @@
       "clip_01KYQZFTY91GJE7J8QNWT434B8",
       "clip_01KYQZSTPNBQD1CHS80RPA2GQ0",
       "clip_01KYR006V82D9KF0SQCJ8QGMAT",
-      "clip_01KYR0709DRMDZ7GRKQY2GFNRW"
+      "clip_01KYR0709DRMDZ7GRKQY2GFNRW",
+      "clip_01KYRVD8PSAMX50RQVH2MPW8F1",
+      "clip_01KYRX3E3W44CW81RBB4ZT39KX"
     ]
   },
   "health": {
@@ -2105,8 +2110,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-07-29T17:33:20Z",
-    "clips_since": 77
+    "last": "2026-07-30T07:55:56Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -2170,7 +2175,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-30T05:28:14Z",
+      "last_clip": "2026-07-30T07:55:41Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
@@ -2186,7 +2191,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-07-30T05:28:20Z",
+      "last_clip": "2026-07-30T07:55:53Z",
       "alerted": false
     },
     "kick:whyisabell": {
@@ -2194,7 +2199,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-29T22:57:11Z",
+      "last_clip": "2026-07-30T07:55:56Z",
       "alerted": false
     }
   }
