@@ -481,7 +481,22 @@
       "clip_01KYQG8ACR74V4JWSJFRXHK582",
       "clip_01KYQGHW09YSSV926N3TFS5RF4",
       "clip_01KYSDKX8SSSJW5HCWQTFHPPPB",
-      "clip_01KYSFPGVV2CJXF3BCK1XF8CZ4"
+      "clip_01KYSFPGVV2CJXF3BCK1XF8CZ4",
+      "clip_01KYSZK414WY6QTZ4ZQ1TJBE9Z",
+      "clip_01KYSZSMF3JV4KMQFMGVQT2C1S",
+      "clip_01KYSZWSK3W9CPGR5EPSWVXR4X",
+      "clip_01KYT03K3NENN2TN1WRFESD054",
+      "clip_01KYT08CP52CMWZ9JMJ1T6T7C4",
+      "clip_01KYT0G53QVTM1KYEXFD745H2X",
+      "clip_01KYT0M2ABQ6GMM9RAVM64E2MF",
+      "clip_01KYT0RJCNC746Z1NKFQHHHRTW",
+      "clip_01KYT0YA732H5GHBPZGFF3G67C",
+      "clip_01KYT13DP6ZW67N250CB4ZVEBQ",
+      "clip_01KYT16G2N7M0DXYGHGKB2CB8C",
+      "clip_01KYT1D41S41KPR9VSAN0YACAH",
+      "clip_01KYT1HHZGFHCK5FJCH64R4TPV",
+      "clip_01KYT1QZJNMJA22GYBN1SH06ZF",
+      "clip_01KYT217VSMA4VBJVWFYVBBG82"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -976,7 +991,12 @@
       "clip_01KYJG33TC8RE8MQ3SEZQ4WTX6",
       "clip_01KYJG8N4785Y68XVH7NWHAXHG",
       "clip_01KYST48E2S01PADHYCS0DDKNR",
-      "clip_01KYST6964JPZ3BHA0EZE7SNCV"
+      "clip_01KYST6964JPZ3BHA0EZE7SNCV",
+      "clip_01KYSY1AQSVXGBY7RAJEZPXZ9T",
+      "clip_01KYSY9726G2NRGAXGDXXBERGX",
+      "clip_01KYSZTEE1PABPBCAHJEAQK9DK",
+      "clip_01KYSZTTEG8WEY7NXXAAEDAF38",
+      "clip_01KYT0RF0TDWQAVKV5TRJT3V2K"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1598,7 +1618,8 @@
       "clip_01KYRGD58KV0QV8TNF7FHC7Z73",
       "clip_01KYRGWRJ0N4HWCW0NJJZMHB40",
       "clip_01KYRRAVCVYH0GKJQEZZX1XB1R",
-      "clip_01KYRRHGSYSCH26HTQ61MB94GP"
+      "clip_01KYRRHGSYSCH26HTQ61MB94GP",
+      "clip_01KYT1PA97NBNZY3DGTFY1K5A2"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -1817,7 +1838,13 @@
       "clip_01KYSW5QHFNZ1VQDZTRJYT37H1",
       "clip_01KYSW80ATSEZACYPTX91WFJ15",
       "clip_01KYSWC8C3V8X9ZV2306SR85YJ",
-      "clip_01KYSWG0D7WCXE696BXMF9A2Q8"
+      "clip_01KYSWG0D7WCXE696BXMF9A2Q8",
+      "clip_01KYSWH9KCVZZ77K9GWC1AJS44",
+      "clip_01KYSWQ80ZRDT6J39QTKWHBF5A",
+      "clip_01KYSYZC7H6GDRRWRH9QEH8HJS",
+      "clip_01KYT0CNFNVMQ2JR5AVVM8ZHTD",
+      "clip_01KYT0H3MPZQRFQA4EGSKZKRG3",
+      "clip_01KYT1MK6PYZA1ME98CZ2Q7QN6"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2146,7 +2173,10 @@
       "clip_01KYSMCCMDQHVAS8186RNX2QQD",
       "clip_01KYSMNKSEF3PMGZ8WN2AT1DWW",
       "clip_01KYSQKE5AK4NYA0C2NBCAJC74",
-      "clip_01KYSRGE190VVP11YQ2V1ZTZ2B"
+      "clip_01KYSRGE190VVP11YQ2V1ZTZ2B",
+      "clip_01KYSWTKDAA4A340RE1KZQXCBC",
+      "clip_01KYSZFEY0XKW2KEZKKVT20YBF",
+      "clip_01KYT0B6PNQ8BMAXH8TKP6K9Q1"
     ]
   },
   "health": {
@@ -2161,7 +2191,7 @@
   },
   "heartbeat": {
     "last": "2026-07-30T07:55:56Z",
-    "clips_since": 49
+    "clips_since": 79
   },
   "silent": {
     "twitch:skotti": {
@@ -2185,7 +2215,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-30T14:29:28Z",
+      "last_clip": "2026-07-30T17:45:37Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -2201,7 +2231,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-07-30T16:08:12Z",
+      "last_clip": "2026-07-30T17:45:48Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -2225,7 +2255,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-30T07:55:41Z",
+      "last_clip": "2026-07-30T17:46:00Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
@@ -2233,7 +2263,7 @@
       "alerted": false
     },
     "kick:bundachiara": {
-      "last_clip": "2026-07-30T16:08:27Z",
+      "last_clip": "2026-07-30T17:46:06Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -2249,7 +2279,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-30T16:08:33Z",
+      "last_clip": "2026-07-30T17:46:14Z",
       "alerted": false
     }
   }
