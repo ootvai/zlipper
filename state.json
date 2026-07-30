@@ -1570,7 +1570,13 @@
       "clip_01KYR00JATB3CYFC1AZXSGYXN9",
       "clip_01KYR2TFF1YHD4APR2976J8JWH",
       "clip_01KYR3NDJZR4X3QBF6VA2CFNEQ",
-      "clip_01KYR3P4AD3AM1FNZZ9K3GH7HH"
+      "clip_01KYR3P4AD3AM1FNZZ9K3GH7HH",
+      "clip_01KYR5ZCSPG3QNP368W7J6YDD3",
+      "clip_01KYR6FJDCPX8WRBQ529M5KM7J",
+      "clip_01KYR6Z2R8TZZNZ4T9HE8SZPJ3",
+      "clip_01KYR7ET9PD8JGB8N9K6WF97TV",
+      "clip_01KYR7P38KYGT614V7KZXF0B2V",
+      "clip_01KYRDGQJGTC8DZBG921Z1D5NB"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -2096,7 +2102,7 @@
   },
   "heartbeat": {
     "last": "2026-07-29T17:33:20Z",
-    "clips_since": 67
+    "clips_since": 73
   },
   "silent": {
     "twitch:skotti": {
@@ -2160,7 +2166,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-29T23:59:07Z",
+      "last_clip": "2026-07-30T02:42:34Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
