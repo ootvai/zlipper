@@ -247,7 +247,9 @@
       "WanderingRacyFlamingoSeemsGood-sp6KKDH4L2ZysLZJ"
     ],
     "saarelansaara": [],
-    "henksuliini": [],
+    "henksuliini": [
+      "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-"
+    ],
     "s11r1sof1a": []
   },
   "kick": {
@@ -477,7 +479,8 @@
       "clip_01KYQFY9K2HE2TE2XPB68JSBDC",
       "clip_01KYQG3965HKQGKRC3TR34XTF3",
       "clip_01KYQG8ACR74V4JWSJFRXHK582",
-      "clip_01KYQGHW09YSSV926N3TFS5RF4"
+      "clip_01KYQGHW09YSSV926N3TFS5RF4",
+      "clip_01KYSDKX8SSSJW5HCWQTFHPPPB"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -638,7 +641,9 @@
       "clip_01KYQSEPTCQTVR1EYTEEY83XAZ",
       "clip_01KYQT9T0CPCKQJNM1XZREZH5X",
       "clip_01KYQX7MAB47H4928RVJZ4PZNJ",
-      "clip_01KYS2FCTBKH5FB8N6ND0XZY1Q"
+      "clip_01KYS2FCTBKH5FB8N6ND0XZY1Q",
+      "clip_01KYS9VFTTQ1R7896MSV2MBYHG",
+      "clip_01KYSD87PN00B68RNCDXK1JBK6"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1782,7 +1787,9 @@
       "clip_01KYN026T1QRBT98XAHDDFVW35",
       "clip_01KYNCH2BJ7D74APEXKSXKMPSE",
       "clip_01KYNFN4DH6NVF95SKNDCKB03Q",
-      "clip_01KYNFXS4CQ64J2C95J5WHJHCJ"
+      "clip_01KYNFXS4CQ64J2C95J5WHJHCJ",
+      "clip_01KYS9N2B5F3E4DVYTY38CQAK6",
+      "clip_01KYS9V2R7QGXSTNR0K30ZXSB6"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2100,7 +2107,11 @@
       "clip_01KYR006V82D9KF0SQCJ8QGMAT",
       "clip_01KYR0709DRMDZ7GRKQY2GFNRW",
       "clip_01KYRVD8PSAMX50RQVH2MPW8F1",
-      "clip_01KYRX3E3W44CW81RBB4ZT39KX"
+      "clip_01KYRX3E3W44CW81RBB4ZT39KX",
+      "clip_01KYSANS7VCEGJ68JA7P92VSHF",
+      "clip_01KYSASJQMCH0YV87HZ00W06HP",
+      "clip_01KYSBPKYSW1HVPZVFSN783R6W",
+      "clip_01KYSC28Q288PK98A2202F2EP6"
     ]
   },
   "health": {
@@ -2115,7 +2126,7 @@
   },
   "heartbeat": {
     "last": "2026-07-30T07:55:56Z",
-    "clips_since": 4
+    "clips_since": 14
   },
   "silent": {
     "twitch:skotti": {
@@ -2127,7 +2138,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-07-29T15:27:09Z",
+      "last_clip": "2026-07-30T12:09:14Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -2139,11 +2150,11 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-29T18:08:49Z",
+      "last_clip": "2026-07-30T12:09:19Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-07-30T10:19:46Z",
+      "last_clip": "2026-07-30T12:09:22Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -2187,7 +2198,7 @@
       "alerted": false
     },
     "kick:bundachiara": {
-      "last_clip": "2026-07-29T15:28:00Z",
+      "last_clip": "2026-07-30T12:09:45Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -2203,7 +2214,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-30T07:55:56Z",
+      "last_clip": "2026-07-30T12:09:54Z",
       "alerted": false
     }
   }
