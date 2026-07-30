@@ -1576,7 +1576,10 @@
       "clip_01KYR6Z2R8TZZNZ4T9HE8SZPJ3",
       "clip_01KYR7ET9PD8JGB8N9K6WF97TV",
       "clip_01KYR7P38KYGT614V7KZXF0B2V",
-      "clip_01KYRDGQJGTC8DZBG921Z1D5NB"
+      "clip_01KYRDGQJGTC8DZBG921Z1D5NB",
+      "clip_01KYRG6F1KFH27BA4TT9GE4SHQ",
+      "clip_01KYRGD58KV0QV8TNF7FHC7Z73",
+      "clip_01KYRGWRJ0N4HWCW0NJJZMHB40"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -1955,7 +1958,8 @@
       "clip_01KYMKSCHEA2AZPV3H71E4814P",
       "clip_01KYNBPBJMKGGX832G3MSHP1T0",
       "clip_01KYNFKXF3SW7WP376F6QAYVC2",
-      "clip_01KYR2NE8JDEZXGQDF6KWV3GBB"
+      "clip_01KYR2NE8JDEZXGQDF6KWV3GBB",
+      "clip_01KYRNEG4MMY7C1JW82V6YTEHX"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -2102,7 +2106,7 @@
   },
   "heartbeat": {
     "last": "2026-07-29T17:33:20Z",
-    "clips_since": 73
+    "clips_since": 77
   },
   "silent": {
     "twitch:skotti": {
@@ -2166,7 +2170,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-07-30T02:42:34Z",
+      "last_clip": "2026-07-30T05:28:14Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
@@ -2182,7 +2186,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-07-29T23:59:13Z",
+      "last_clip": "2026-07-30T05:28:20Z",
       "alerted": false
     },
     "kick:whyisabell": {
