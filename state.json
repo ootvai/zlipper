@@ -362,7 +362,9 @@
       "clip_01KYNVGFGNG8J7BMGBT8M1DBFY",
       "clip_01KYNXJ33KC413QYE3DXESBCVH",
       "clip_01KYNXN42MC9Y8RDN3EM1TE7AC",
-      "clip_01KYWE5KTSFC2DZQGVW4CGP39J"
+      "clip_01KYWE5KTSFC2DZQGVW4CGP39J",
+      "clip_01KYWX1J4AD3ETRVYMGS7EWS1R",
+      "clip_01KYWYAHVJVTHSSXGFB00WPHMP"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -825,7 +827,8 @@
       "clip_01KYNE1AD26AV9XV2J0BJ8Q7QS",
       "clip_01KYNEVR3D9ACF7WBTB1P6TDMN",
       "clip_01KYQRA1GG768RRT0G5R9NECVX",
-      "clip_01KYW257JC5JMPXKSK0R7NBA8R"
+      "clip_01KYW257JC5JMPXKSK0R7NBA8R",
+      "clip_01KYWXCVWFCAYA0V7NTCCHDQ0B"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1045,7 +1048,9 @@
       "clip_01KYT2Z3AXM58RNA6Y9MRNNWM1",
       "clip_01KYWN8VHHMHZ1RQ5FATKMC2GN",
       "clip_01KYWQXGBPH7TNHH6Y8WKYHZAN",
-      "clip_01KYWTDHWG3XTNQDZV0RNM4A1Z"
+      "clip_01KYWTDHWG3XTNQDZV0RNM4A1Z",
+      "clip_01KYWWMEJE10N801KWG6KM9SG4",
+      "clip_01KYWWY11EZSZ9MVXRB74HE2PD"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1913,7 +1918,9 @@
       "clip_01KYT8554PE1NAK8TFRJHXYBHY",
       "clip_01KYWRFG5YAPCN0QF06GFB6PC4",
       "clip_01KYWRFCMNMPTXWX50VY81PG1E",
-      "clip_01KYWSETPMAR6NKA0ZZ2Z7R6YC"
+      "clip_01KYWSETPMAR6NKA0ZZ2Z7R6YC",
+      "clip_01KYWX6MW4V1ZEJ8QK69KCXXN4",
+      "clip_01KYWX8RH2J5YFC3C5VYBMF25H"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2284,7 +2291,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T10:13:35Z",
-    "clips_since": 57
+    "clips_since": 64
   },
   "silent": {
     "twitch:skotti": {
@@ -2304,7 +2311,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-07-31T16:26:32Z",
+      "last_clip": "2026-07-31T20:46:59Z",
       "alerted": false
     },
     "kick:pact": {
@@ -2316,7 +2323,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-07-31T14:41:53Z",
+      "last_clip": "2026-07-31T20:47:07Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -2324,7 +2331,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-07-31T19:47:44Z",
+      "last_clip": "2026-07-31T20:47:13Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -2356,7 +2363,7 @@
       "alerted": false
     },
     "kick:bundachiara": {
-      "last_clip": "2026-07-31T19:48:05Z",
+      "last_clip": "2026-07-31T20:47:32Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
