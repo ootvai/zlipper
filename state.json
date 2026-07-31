@@ -361,7 +361,8 @@
       "clip_01KYN7BBQ8SHTN9ZE568BZ3GDG",
       "clip_01KYNVGFGNG8J7BMGBT8M1DBFY",
       "clip_01KYNXJ33KC413QYE3DXESBCVH",
-      "clip_01KYNXN42MC9Y8RDN3EM1TE7AC"
+      "clip_01KYNXN42MC9Y8RDN3EM1TE7AC",
+      "clip_01KYWE5KTSFC2DZQGVW4CGP39J"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -510,7 +511,8 @@
       "clip_01KYVZX7VBW9E31TS7PPQXZMAJ",
       "clip_01KYW929T1HGGHDZBNVHWG9E2P",
       "clip_01KYW95ZJ4GMERX2GHPXNQP5G2",
-      "clip_01KYW9XB7XPZWE22QEWCQQ4ZVB"
+      "clip_01KYW9XB7XPZWE22QEWCQQ4ZVB",
+      "clip_01KYWA7BWAART28JBWVDGSGKWQ"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -685,7 +687,11 @@
       "clip_01KYTCHQJSW8WAKYZFX86MYEPW",
       "clip_01KYVDH1BTA9T83JBM87KKDRZC",
       "clip_01KYVE2B5QV6QXE39GFTT3573H",
-      "clip_01KYVTJZ5B5Y316WMW014BF32C"
+      "clip_01KYVTJZ5B5Y316WMW014BF32C",
+      "clip_01KYWAB5F547Y2W8NF24PBA2AC",
+      "clip_01KYWC7CWMQ3N21Y4EHMRSKW3M",
+      "clip_01KYWD1TDXD5FH1HPNF0RCDG3A",
+      "clip_01KYWECQVFGVHYHRRG5JX0KYJG"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2235,7 +2241,10 @@
       "clip_01KYW43SJ64VMJ2ATP2VF1GGBK",
       "clip_01KYW5VWE8KAWNZ6VQZ8CZEEHB",
       "clip_01KYW5VH2VCGW4YDR3KVARZC7H",
-      "clip_01KYW8MX0E3A9SEFPDCDN33JPS"
+      "clip_01KYW8MX0E3A9SEFPDCDN33JPS",
+      "clip_01KYWCR7C2965EJP1PY2TXCCN9",
+      "clip_01KYWDTVN4TTB12D9S5B2M16MH",
+      "clip_01KYWEAYX7KJH4C3TXKHHS1GD6"
     ]
   },
   "health": {
@@ -2250,7 +2259,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T10:13:35Z",
-    "clips_since": 23
+    "clips_since": 32
   },
   "silent": {
     "twitch:skotti": {
@@ -2270,15 +2279,15 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-07-29T15:27:13Z",
+      "last_clip": "2026-07-31T16:26:32Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-31T14:41:50Z",
+      "last_clip": "2026-07-31T16:26:36Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-07-31T10:13:14Z",
+      "last_clip": "2026-07-31T16:26:40Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -2338,7 +2347,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-31T14:42:18Z",
+      "last_clip": "2026-07-31T16:27:15Z",
       "alerted": false
     }
   }
