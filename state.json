@@ -1043,7 +1043,9 @@
       "clip_01KYSZTTEG8WEY7NXXAAEDAF38",
       "clip_01KYT0RF0TDWQAVKV5TRJT3V2K",
       "clip_01KYT2Z3AXM58RNA6Y9MRNNWM1",
-      "clip_01KYWN8VHHMHZ1RQ5FATKMC2GN"
+      "clip_01KYWN8VHHMHZ1RQ5FATKMC2GN",
+      "clip_01KYWQXGBPH7TNHH6Y8WKYHZAN",
+      "clip_01KYWTDHWG3XTNQDZV0RNM4A1Z"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1908,7 +1910,10 @@
       "clip_01KYT1MK6PYZA1ME98CZ2Q7QN6",
       "clip_01KYT6DGV9ME8W0065C4XSQ8M0",
       "clip_01KYT6PSWJRPYY92Y73NWS9T7Z",
-      "clip_01KYT8554PE1NAK8TFRJHXYBHY"
+      "clip_01KYT8554PE1NAK8TFRJHXYBHY",
+      "clip_01KYWRFG5YAPCN0QF06GFB6PC4",
+      "clip_01KYWRFCMNMPTXWX50VY81PG1E",
+      "clip_01KYWSETPMAR6NKA0ZZ2Z7R6YC"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2014,7 +2019,8 @@
       "clip_01KYQ9BJ1JN6T0ED5CCRPRG71X",
       "clip_01KYSKM6GXSHA0DBFZ6TM77H7P",
       "clip_01KYSKMD7AW6EPV60VRRX3596C",
-      "clip_01KYT47KBE0ZNJB2B6RR04R2FZ"
+      "clip_01KYT47KBE0ZNJB2B6RR04R2FZ",
+      "clip_01KYWVDD4DMS08VF9ZQBFXV12W"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -2262,7 +2268,8 @@
       "clip_01KYW8MX0E3A9SEFPDCDN33JPS",
       "clip_01KYWCR7C2965EJP1PY2TXCCN9",
       "clip_01KYWDTVN4TTB12D9S5B2M16MH",
-      "clip_01KYWEAYX7KJH4C3TXKHHS1GD6"
+      "clip_01KYWEAYX7KJH4C3TXKHHS1GD6",
+      "clip_01KYWPF543ED96AJ28MJF7T6P6"
     ]
   },
   "health": {
@@ -2277,7 +2284,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T10:13:35Z",
-    "clips_since": 50
+    "clips_since": 57
   },
   "silent": {
     "twitch:skotti": {
@@ -2317,7 +2324,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-07-31T18:03:23Z",
+      "last_clip": "2026-07-31T19:47:44Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -2349,11 +2356,11 @@
       "alerted": false
     },
     "kick:bundachiara": {
-      "last_clip": "2026-07-30T20:23:39Z",
+      "last_clip": "2026-07-31T19:48:05Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-07-30T19:02:57Z",
+      "last_clip": "2026-07-31T19:48:08Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -2365,7 +2372,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-31T16:27:15Z",
+      "last_clip": "2026-07-31T19:48:16Z",
       "alerted": false
     }
   }
