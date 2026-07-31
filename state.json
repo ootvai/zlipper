@@ -1122,7 +1122,8 @@
       "clip_01KYS3R8VQ53BJ163SHPWGB1KS",
       "clip_01KYT7T7J7QRB62EQW92J6JE8X",
       "clip_01KYT8XCPJ901PC5EV9S2JQTZX",
-      "clip_01KYT8Y3PT9K2636VD5X4B7SJT"
+      "clip_01KYT8Y3PT9K2636VD5X4B7SJT",
+      "clip_01KYV3WRA7EVW2K8KJ6K6WKZ3M"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -2216,7 +2217,7 @@
   },
   "heartbeat": {
     "last": "2026-07-30T20:23:47Z",
-    "clips_since": 3
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -2260,7 +2261,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-07-30T20:23:24Z",
+      "last_clip": "2026-07-31T04:45:57Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
