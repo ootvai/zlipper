@@ -512,7 +512,23 @@
       "clip_01KYW929T1HGGHDZBNVHWG9E2P",
       "clip_01KYW95ZJ4GMERX2GHPXNQP5G2",
       "clip_01KYW9XB7XPZWE22QEWCQQ4ZVB",
-      "clip_01KYWA7BWAART28JBWVDGSGKWQ"
+      "clip_01KYWA7BWAART28JBWVDGSGKWQ",
+      "clip_01KYWJ9AW3A9GJ6RH6BYC4F4JB",
+      "clip_01KYWJCGH02BMCTGW2DNF2KMZ3",
+      "clip_01KYWJG36MP5712FEX42ZT4F8S",
+      "clip_01KYWJMS6A9FQ9S6DMKTKX25ZF",
+      "clip_01KYWJQJ1TAZFW2QWVY857KCZ2",
+      "clip_01KYWJX9V5PV0Z2ADK1ES5KAFH",
+      "clip_01KYWK0ZF4R8PVMQAJ7JJQN0GM",
+      "clip_01KYWK6JSWCYA7X8VZAEFDZCDD",
+      "clip_01KYWKB00639Y9TCJGGP5ABHA0",
+      "clip_01KYWKVVNN1W85Y9287JY1Q0PJ",
+      "clip_01KYWM1VHMG6HAQKYWC8ZQY2XE",
+      "clip_01KYWM5C5ZJMX99RRNHF2YW05A",
+      "clip_01KYWMFBYTX8157Z8CDKZYJJ3Y",
+      "clip_01KYWMFZ0RJK0HBCMD6T4TE24T",
+      "clip_01KYWMKTA5V0S951C5NGQQTNC4",
+      "clip_01KYWMT8PH0XAE301M9PSKWGG1"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -911,7 +927,8 @@
       "clip_01KTCF85R3SXHAWJ8FCQPTE84J",
       "clip_01KTFMTMSN6KZSGACY8JTB5SHB",
       "clip_01KTFSESK45Y5364FMKSSJ9N22",
-      "clip_01KTFSX01D1ETHKYEGMSF5Q7TH"
+      "clip_01KTFSX01D1ETHKYEGMSF5Q7TH",
+      "clip_01KYWHK6KEJDFH4P78RCD51AFH"
     ],
     "kuhlmanvirallinen": [
       "clip_01KY5DPBARCW3WKXEBFFKJJ6W5",
@@ -1025,7 +1042,8 @@
       "clip_01KYSZTEE1PABPBCAHJEAQK9DK",
       "clip_01KYSZTTEG8WEY7NXXAAEDAF38",
       "clip_01KYT0RF0TDWQAVKV5TRJT3V2K",
-      "clip_01KYT2Z3AXM58RNA6Y9MRNNWM1"
+      "clip_01KYT2Z3AXM58RNA6Y9MRNNWM1",
+      "clip_01KYWN8VHHMHZ1RQ5FATKMC2GN"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2259,7 +2277,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T10:13:35Z",
-    "clips_since": 32
+    "clips_since": 50
   },
   "silent": {
     "twitch:skotti": {
@@ -2283,7 +2301,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-31T16:26:36Z",
+      "last_clip": "2026-07-31T18:03:12Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -2295,11 +2313,11 @@
       "alerted": false
     },
     "kick:shokkiofficial": {
-      "last_clip": "2026-07-29T15:27:28Z",
+      "last_clip": "2026-07-31T18:03:20Z",
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-07-30T19:02:45Z",
+      "last_clip": "2026-07-31T18:03:23Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
