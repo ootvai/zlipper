@@ -246,7 +246,10 @@
       "HardBlushingMarrowStoneLightning-OL0OR957GlYTND8s",
       "WanderingRacyFlamingoSeemsGood-sp6KKDH4L2ZysLZJ"
     ],
-    "saarelansaara": [],
+    "saarelansaara": [
+      "ResilientSuperYakinikuHotPokket-RH0v9MKRM3nh6kWD",
+      "BumblingRudeFlamingoFunRun-L5dX39Sw-AFaJBJG"
+    ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-"
     ],
@@ -504,7 +507,10 @@
       "clip_01KYVQW0TPCCWQ3NQJNFKHA3HW",
       "clip_01KYVSKR62D5TG775PHR0CG0T7",
       "clip_01KYVYZQSY9Q5WP3TA0PPCRZ73",
-      "clip_01KYVZX7VBW9E31TS7PPQXZMAJ"
+      "clip_01KYVZX7VBW9E31TS7PPQXZMAJ",
+      "clip_01KYW929T1HGGHDZBNVHWG9E2P",
+      "clip_01KYW95ZJ4GMERX2GHPXNQP5G2",
+      "clip_01KYW9XB7XPZWE22QEWCQQ4ZVB"
     ],
     "aapo_olervo": [
       "clip_01KYEXNBNSP2BANWMHEY3R7M93",
@@ -796,7 +802,8 @@
       "clip_01KYNCMP06XB5DMWPR0MG53KZD",
       "clip_01KYNE1AD26AV9XV2J0BJ8Q7QS",
       "clip_01KYNEVR3D9ACF7WBTB1P6TDMN",
-      "clip_01KYQRA1GG768RRT0G5R9NECVX"
+      "clip_01KYQRA1GG768RRT0G5R9NECVX",
+      "clip_01KYW257JC5JMPXKSK0R7NBA8R"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1271,7 +1278,9 @@
       "clip_01KYVSATE9PK4X40ET2HD5H608",
       "clip_01KYVTR39EP07G00FF3HNGPT42",
       "clip_01KYVX17CJ0CKVQVZRK0NDTHK3",
-      "clip_01KYVYCTS0Z792HPMZE789HSEP"
+      "clip_01KYVYCTS0Z792HPMZE789HSEP",
+      "clip_01KYW28MZ58BD4105WMFXBK6FD",
+      "clip_01KYW2ENXC5Z0HNMM3Z6X4P7AB"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2219,7 +2228,14 @@
       "clip_01KYTE5A6C96NRHXTPPQ6KE89C",
       "clip_01KYVXZBV6S4JAXHFEQWDSG895",
       "clip_01KYW0E8G8FRQ4D3E7ZG9RN1Y4",
-      "clip_01KYW10TBV5M4GGWKWNW6YF337"
+      "clip_01KYW10TBV5M4GGWKWNW6YF337",
+      "clip_01KYW2YPJ30Q5NA47F76KF20CT",
+      "clip_01KYW3X3JT0GYF0NPS46RC8MDZ",
+      "clip_01KYW3ZF1SRDVKE76DCPTH88Y5",
+      "clip_01KYW43SJ64VMJ2ATP2VF1GGBK",
+      "clip_01KYW5VWE8KAWNZ6VQZ8CZEEHB",
+      "clip_01KYW5VH2VCGW4YDR3KVARZC7H",
+      "clip_01KYW8MX0E3A9SEFPDCDN33JPS"
     ]
   },
   "health": {
@@ -2234,7 +2250,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T10:13:35Z",
-    "clips_since": 8
+    "clips_since": 23
   },
   "silent": {
     "twitch:skotti": {
@@ -2242,7 +2258,7 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-07-29T15:27:09Z",
+      "last_clip": "2026-07-31T14:41:45Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -2258,7 +2274,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-07-31T12:19:33Z",
+      "last_clip": "2026-07-31T14:41:50Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -2266,7 +2282,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-07-29T20:52:01Z",
+      "last_clip": "2026-07-31T14:41:53Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -2286,7 +2302,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-07-31T12:19:50Z",
+      "last_clip": "2026-07-31T14:42:01Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -2322,7 +2338,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-07-31T12:20:12Z",
+      "last_clip": "2026-07-31T14:42:18Z",
       "alerted": false
     }
   }
