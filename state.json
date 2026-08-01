@@ -251,7 +251,9 @@
       "BumblingRudeFlamingoFunRun-L5dX39Sw-AFaJBJG"
     ],
     "henksuliini": [
-      "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-"
+      "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
+      "ShinySingleRaisinKippa-dGKRqecFJM70n9Fp",
+      "ObeseCaringAardvarkJKanStyle-fzYXeYUa05bMMZV1"
     ],
     "s11r1sof1a": []
   },
@@ -722,7 +724,9 @@
       "clip_01KYY6TPPTRCWW4692N84VEFXD",
       "clip_01KYY968RGW38EWDX0PTYRFPXE",
       "clip_01KYYC239RGD774VRG4HV8BHS0",
-      "clip_01KYYDDMA07KTNYGMC3GEDGJKF"
+      "clip_01KYYDDMA07KTNYGMC3GEDGJKF",
+      "clip_01KYYGG92CX1BNA4BER6WQV040",
+      "clip_01KYYHF05AE69555NGKYV7W3MH"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2341,7 +2345,7 @@
   },
   "heartbeat": {
     "last": "2026-08-01T10:57:47Z",
-    "clips_since": 0
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -2353,7 +2357,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-07-30T12:09:14Z",
+      "last_clip": "2026-08-01T11:33:19Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -2369,7 +2373,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-01T10:57:12Z",
+      "last_clip": "2026-08-01T11:33:24Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
