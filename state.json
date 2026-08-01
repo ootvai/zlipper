@@ -714,7 +714,9 @@
       "clip_01KYWD1TDXD5FH1HPNF0RCDG3A",
       "clip_01KYWECQVFGVHYHRRG5JX0KYJG",
       "clip_01KYX18MCGK6068GFSHS9XK99R",
-      "clip_01KYX1VMAZ95BMRKBV08H40DYA"
+      "clip_01KYX1VMAZ95BMRKBV08H40DYA",
+      "clip_01KYXYRPYZDKGNRWYVC9PKZX4V",
+      "clip_01KYY0GTJ5VX7M2HHA0FZPP3AQ"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -833,7 +835,8 @@
       "clip_01KYNEVR3D9ACF7WBTB1P6TDMN",
       "clip_01KYQRA1GG768RRT0G5R9NECVX",
       "clip_01KYW257JC5JMPXKSK0R7NBA8R",
-      "clip_01KYWXCVWFCAYA0V7NTCCHDQ0B"
+      "clip_01KYWXCVWFCAYA0V7NTCCHDQ0B",
+      "clip_01KYY192KV9FGC92R10JEV8429"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1072,7 +1075,8 @@
       "clip_01KYXP0HK5ZB66B4FS60W7SMA0",
       "clip_01KYXPGSNZQYJ6VSPXNQC29RGP",
       "clip_01KYXR9FPP4QV70AEA7XWV91GD",
-      "clip_01KYXRBFQRMJ08BYCT2CGZKDR1"
+      "clip_01KYXRBFQRMJ08BYCT2CGZKDR1",
+      "clip_01KYY2HEQHAGS86G0VNB1TH1FT"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2054,7 +2058,8 @@
       "clip_01KYX3N270W0V6R32N89K24JZW",
       "clip_01KYX3YVH5F4Y466QJ1C6Z5TN2",
       "clip_01KYXDTK14K2R4D9KSCT8QBRB6",
-      "clip_01KYXEHWFD574W759969KW17QY"
+      "clip_01KYXEHWFD574W759969KW17QY",
+      "clip_01KYY2TSR62JVDB3DRV77WMPW4"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -2319,7 +2324,7 @@
   },
   "heartbeat": {
     "last": "2026-07-31T22:45:48Z",
-    "clips_since": 15
+    "clips_since": 20
   },
   "silent": {
     "twitch:skotti": {
@@ -2347,11 +2352,11 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-07-31T21:49:41Z",
+      "last_clip": "2026-08-01T07:17:13Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-07-31T20:47:07Z",
+      "last_clip": "2026-08-01T07:17:15Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -2359,7 +2364,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-01T04:41:46Z",
+      "last_clip": "2026-08-01T07:17:19Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -2395,7 +2400,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-01T04:42:08Z",
+      "last_clip": "2026-08-01T07:17:33Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
