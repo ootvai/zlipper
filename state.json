@@ -248,7 +248,9 @@
     ],
     "saarelansaara": [
       "ResilientSuperYakinikuHotPokket-RH0v9MKRM3nh6kWD",
-      "BumblingRudeFlamingoFunRun-L5dX39Sw-AFaJBJG"
+      "BumblingRudeFlamingoFunRun-L5dX39Sw-AFaJBJG",
+      "TriumphantBusySwallowArsonNoSexy-QdG3hmPBgDazr93x",
+      "RoundPlayfulPeanutPicoMause-5SvBUavqFuVK8i2m"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -1969,7 +1971,17 @@
       "clip_01KYWX6MW4V1ZEJ8QK69KCXXN4",
       "clip_01KYWX8RH2J5YFC3C5VYBMF25H",
       "clip_01KYYVB33ZK8X70REEPCQYCEH6",
-      "clip_01KYYVZW4PJX7Y5AG8DAXXXBCC"
+      "clip_01KYYVZW4PJX7Y5AG8DAXXXBCC",
+      "clip_01KYYWW9Y8BSTDGXEXNHDHZFGV",
+      "clip_01KYYX8QQVW5ACV4FW85K6NXJP",
+      "clip_01KYYXR77GA2DF4XS9YD03924Y",
+      "clip_01KYYXRHSEG1GGA2PRDEDR09ZS",
+      "clip_01KYYXRC7C33W13X99QMC0JPEC",
+      "clip_01KYYXS68FMGR9SG09C507AAJY",
+      "clip_01KYYXZPYBF10GB7E759ZP4H4R",
+      "clip_01KYYYMM9H3122PJHJDGF7ENCD",
+      "clip_01KYYYPF35MY2QSDJW1YD3E0JV",
+      "clip_01KYYYRH18243YVGY3XBA8G8RW"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2347,7 +2359,8 @@
       "clip_01KYYSR5BTEK95FB15Q8H5G7A1",
       "clip_01KYYSVCMGK0P9PHJW2P1QNJAA",
       "clip_01KYYVG4AZTHYM1SNB5CMTVYH1",
-      "clip_01KYYVG7GQE6HRNWN07B8X58NW"
+      "clip_01KYYVG7GQE6HRNWN07B8X58NW",
+      "clip_01KYYXMAMRVE5GX3QYWG140WXQ"
     ]
   },
   "health": {
@@ -2362,7 +2375,7 @@
   },
   "heartbeat": {
     "last": "2026-08-01T10:57:47Z",
-    "clips_since": 21
+    "clips_since": 34
   },
   "silent": {
     "twitch:skotti": {
@@ -2370,7 +2383,7 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-07-31T14:41:45Z",
+      "last_clip": "2026-08-01T15:46:04Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -2434,7 +2447,7 @@
       "alerted": false
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-01T14:48:17Z",
+      "last_clip": "2026-08-01T15:46:42Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -2450,7 +2463,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-01T14:35:35Z",
+      "last_clip": "2026-08-01T15:46:51Z",
       "alerted": false
     }
   }
