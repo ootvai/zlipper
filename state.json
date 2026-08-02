@@ -763,7 +763,9 @@
       "clip_01KZ14WJ787FP9J8WF8HRGXYP0",
       "clip_01KZ16NJZGW8BQ1SBNN1MQQ2TQ",
       "clip_01KZ1AFXJ3RWM1DBP5RDXBHCW1",
-      "clip_01KZ1ENYJYHBYDB0VV5P30MSQP"
+      "clip_01KZ1ENYJYHBYDB0VV5P30MSQP",
+      "clip_01KZ1Z0HZVVBKWYSCDMJWG3X8X",
+      "clip_01KZ1Z6FCWT9FB6VWF33BNYS7B"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2429,7 +2431,7 @@
   },
   "heartbeat": {
     "last": "2026-08-02T12:17:05Z",
-    "clips_since": 21
+    "clips_since": 23
   },
   "silent": {
     "twitch:skotti": {
@@ -2457,7 +2459,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-02T15:13:54Z",
+      "last_clip": "2026-08-02T19:37:14Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
