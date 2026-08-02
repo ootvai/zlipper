@@ -164,7 +164,7 @@
   "tuhmateme": 1,
   "jumpeee": 2,
   "ogmutsisunelma": 4,
-  "klippimeisteri": 11,
+  "klippimeisteri": 14,
   "antisocialterrorist": 37,
   "abatoolervo": 6,
   "f_fz": 2,
@@ -233,7 +233,7 @@
   "animetyty": 1,
   "leijjuvalerssi": 1,
   "tilttis": 5,
-  "tehosekoitin": 16,
+  "tehosekoitin": 17,
   "kemppi": 1,
   "mayradog": 3,
   "huutomerkki_olli": 1,
@@ -577,5 +577,6 @@
   "proga": 1,
   "realjeiko": 1,
   "makeutusainemarko": 1,
-  "oikuas": 1
+  "oikuas": 1,
+  "juudea": 1
 }
