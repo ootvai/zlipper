@@ -261,7 +261,8 @@
       "ObeseCaringAardvarkJKanStyle-fzYXeYUa05bMMZV1",
       "TacitExuberantMoosePlanking-8m7bGCOdMY_4uqmb",
       "AbrasiveSeductiveSnoodBrainSlug-uJtBbT_gCp75dOSX",
-      "SplendidHeadstrongPassionfruitOMGScoots-3BwnWW34_i-2oXA1"
+      "SplendidHeadstrongPassionfruitOMGScoots-3BwnWW34_i-2oXA1",
+      "RudeAmazingSpindleTheThing-88jPGHPr9OFCEeZd"
     ],
     "s11r1sof1a": []
   },
@@ -380,7 +381,10 @@
       "clip_01KYXDAYE1ZKYZ0ZQNZBYXASBW",
       "clip_01KYZHNJ7Y1FBNK2W6DJD9X0Q5",
       "clip_01KYZPCWH1TFD82XTC7NVA9CQP",
-      "clip_01KZ3N73VN2B9YCER82NHA6GNJ"
+      "clip_01KZ3N73VN2B9YCER82NHA6GNJ",
+      "clip_01KZ3R3PFKHV96XP9XC6C02CHH",
+      "clip_01KZ3TMVGJJXMWQQ191WXEYQ57",
+      "clip_01KZ3TPA076E3Z4W7XN8ZS58QD"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -788,7 +792,11 @@
       "clip_01KZ2GJ2CB0SPEK6S5H1RSRH3W",
       "clip_01KZ3CMEX2AF42J48JF9H59DBP",
       "clip_01KZ3E3XE233JH3ZFQH8XNZ8BJ",
-      "clip_01KZ3GPY6RVQ3NRPQYJMJCSQWZ"
+      "clip_01KZ3GPY6RVQ3NRPQYJMJCSQWZ",
+      "clip_01KZ3SEE91WGDJ62QYPB9FC5R9",
+      "clip_01KZ3SG1ASFY699VYK8C8X6NWZ",
+      "clip_01KZ3SZ227XF44DMM7K45FEGFF",
+      "clip_01KZ3T543CYR39547FEN113497"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1449,7 +1457,15 @@
       "clip_01KZ3MPKRN9XBCMZWT68GYAB0Q",
       "clip_01KZ3MPSJK0XAJN6SW8P3FWA7K",
       "clip_01KZ3P9DG9ZKNF74TFMB67C0HF",
-      "clip_01KZ3PYJEJ07YNBBD86KQ3R9N5"
+      "clip_01KZ3PYJEJ07YNBBD86KQ3R9N5",
+      "clip_01KZ3RK7K24NAGE0D62DD0P1AS",
+      "clip_01KZ3RPZT3SMJERDC6ZKHSR5WM",
+      "clip_01KZ3SGPYS0YBHEW1XV03ZTRR8",
+      "clip_01KZ3VHTBE1Z7GQ5D22YVZTK3N",
+      "clip_01KZ3X6H0DVFJER371JA7CXJ5F",
+      "clip_01KZ3XA50BRK0RT6XN8J56CJ37",
+      "clip_01KZ3XPY28692VD5YJ30ZNV0VB",
+      "clip_01KZ3YZ9T9YNBCE9681A48Z7YW"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -1836,7 +1852,8 @@
       "clip_01KZ36WRY8N8GWFNRYCNPV1PYF",
       "clip_01KZ378JWRFC8S6V9ZNVKZQCFM",
       "clip_01KZ3CEEJBS7EDN1YF5PSBFYAR",
-      "clip_01KZ3PR6QP8AR79ADGJEX3201F"
+      "clip_01KZ3PR6QP8AR79ADGJEX3201F",
+      "clip_01KZ3Y2KZEE9YMZT6115E3VR8C"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -2490,8 +2507,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-03T01:12:06Z",
-    "clips_since": 37
+    "last": "2026-08-03T14:05:27Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -2503,7 +2520,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-01T13:47:57Z",
+      "last_clip": "2026-08-03T14:04:50Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -2511,7 +2528,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-03T11:23:25Z",
+      "last_clip": "2026-08-03T14:04:53Z",
       "alerted": false
     },
     "kick:pact": {
@@ -2519,7 +2536,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-03T11:23:31Z",
+      "last_clip": "2026-08-03T14:04:59Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -2543,7 +2560,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-03T11:48:13Z",
+      "last_clip": "2026-08-03T14:05:12Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -2555,7 +2572,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-08-03T11:48:20Z",
+      "last_clip": "2026-08-03T14:05:17Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
