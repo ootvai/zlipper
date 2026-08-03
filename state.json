@@ -802,7 +802,10 @@
       "clip_01KZ3SG1ASFY699VYK8C8X6NWZ",
       "clip_01KZ3SZ227XF44DMM7K45FEGFF",
       "clip_01KZ3T543CYR39547FEN113497",
-      "clip_01KZ45G2GXZM7Y8H2B0B367MK2"
+      "clip_01KZ45G2GXZM7Y8H2B0B367MK2",
+      "clip_01KZ4DXXXGQ32PMY3AZJSB8DZ8",
+      "clip_01KZ4ENSPTSKE3PX8C4CBB4G63",
+      "clip_01KZ4F7V6ZNMJVJ5HEWGCM8P1B"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -923,7 +926,8 @@
       "clip_01KYW257JC5JMPXKSK0R7NBA8R",
       "clip_01KYWXCVWFCAYA0V7NTCCHDQ0B",
       "clip_01KYY192KV9FGC92R10JEV8429",
-      "clip_01KZ2HQ2C646FD2AW2VMR9NHW2"
+      "clip_01KZ2HQ2C646FD2AW2VMR9NHW2",
+      "clip_01KZ4FTT5MM8AG54QT6H9SJ1GQ"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1297,7 +1301,10 @@
       "clip_01KZ402WYSFE8EPKW3M7GFMA6H",
       "clip_01KZ46849ZTEFWGB1PH53STT3F",
       "clip_01KZ498S8E0NT64EG0FJQR9B81",
-      "clip_01KZ4B94X8697730S9QWJBGKGQ"
+      "clip_01KZ4B94X8697730S9QWJBGKGQ",
+      "clip_01KZ4FRP6NWN7W33KFQVWZ8VYT",
+      "clip_01KZ4JR6WRHBRM7H5TAYHSJX8P",
+      "clip_01KZ4K7D9E7J0PRXKY6Z11EFDF"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -1490,7 +1497,32 @@
       "clip_01KZ4BQA5BP9C7EX9SQ7K8Z5DN",
       "clip_01KZ4C7A6Y3VRGQ5B9N5T63R6E",
       "clip_01KZ4DEE4BS06QFNKQTMTKQXXY",
-      "clip_01KZ4DEKB3QPHMY5D0C3ASAF1J"
+      "clip_01KZ4DEKB3QPHMY5D0C3ASAF1J",
+      "clip_01KZ4E4S70F4DDBSJ6P6PF55C0",
+      "clip_01KZ4ETSKBAKPJ5A3YS98A846W",
+      "clip_01KZ4F7C6KKBPFDHCNGGYJNDNP",
+      "clip_01KZ4FCQTT5B5F55V8YCAVS4MJ",
+      "clip_01KZ4FDFKZME1GTWEV2KGEWVSZ",
+      "clip_01KZ4FS17SR4MV3CQQYWHPGNR6",
+      "clip_01KZ4FZV2Q48R99ERHYNXSYG96",
+      "clip_01KZ4G00RVH4VFPG1Z0GWZWRZV",
+      "clip_01KZ4G1P3GYD8PZWQ22K1R33N8",
+      "clip_01KZ4G49EP0C6NQPSJQ57DEJ4A",
+      "clip_01KZ4G4QDYXXC5E11MGP8F80YT",
+      "clip_01KZ4GQAYAKE0RRS0NJPCRHFT5",
+      "clip_01KZ4HB0AVM785NBV4JBRM1QTP",
+      "clip_01KZ4HB3J90JDVNQH6S5VFMZSV",
+      "clip_01KZ4HARHENEG10DVRTZAMDETB",
+      "clip_01KZ4HBWXA1AAT3VMNZESZR815",
+      "clip_01KZ4HCR2PXJDYDN8EA594HASS",
+      "clip_01KZ4HD30AYJVKD1X8W6Y1J4JN",
+      "clip_01KZ4HYFGHVBERFW576DYS85PG",
+      "clip_01KZ4J8WEVK0E9R15WEAB9GPVZ",
+      "clip_01KZ4J93Y28SXP7WWGFQK5YQ9S",
+      "clip_01KZ4J6FG4VBRKA2WNYA0H2GF6",
+      "clip_01KZ4J9FWWNASHFMTV29AJ9PB1",
+      "clip_01KZ4JN7851JA24YNDV80PSQHF",
+      "clip_01KZ4K0N6D6ZK14TJPNSW7Z3KC"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2538,7 +2570,7 @@
   },
   "heartbeat": {
     "last": "2026-08-03T14:05:27Z",
-    "clips_since": 30
+    "clips_since": 62
   },
   "silent": {
     "twitch:skotti": {
@@ -2566,11 +2598,11 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-03T16:36:44Z",
+      "last_clip": "2026-08-03T20:03:12Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-03T01:11:38Z",
+      "last_clip": "2026-08-03T20:03:16Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -2582,7 +2614,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-03T18:23:09Z",
+      "last_clip": "2026-08-03T20:03:31Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -2590,7 +2622,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-03T18:23:16Z",
+      "last_clip": "2026-08-03T20:03:50Z",
       "alerted": false
     },
     "kick:sampef2": {
