@@ -869,7 +869,8 @@
       "clip_01KZ6ZCVWZXV2QERZ6KFACGDDD",
       "clip_01KZ73DYFCWR8C9Q5VV9RVME87",
       "clip_01KZ73GZQFJF450QSG3D7CJTJB",
-      "clip_01KZ765E2XAZPYBB8480YMF2KJ"
+      "clip_01KZ765E2XAZPYBB8480YMF2KJ",
+      "clip_01KZ7ASAG4ZM70YVYX08E6C67Z"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1021,7 +1022,16 @@
       "clip_01KZ78CWPSFPZC9AP5GNJRPTWW",
       "clip_01KZ78D3G1DF8X6DXZG4D9GRR8",
       "clip_01KZ78FFZN9T01PE3G6A3NN0VD",
-      "clip_01KZ7932Q2FEQ3MJG241RZ643J"
+      "clip_01KZ7932Q2FEQ3MJG241RZ643J",
+      "clip_01KZ79J6X3R87441SJXVCRVKFC",
+      "clip_01KZ7A2PCQHX8M7HS9KTVF53P0",
+      "clip_01KZ7BH98W7DK46DA72D27EP9A",
+      "clip_01KZ7BN09B5VJE10K2CHSGZSWV",
+      "clip_01KZ7BSPYERDMJABS61XS7HKN3",
+      "clip_01KZ7BXEX8QP4ZDZVDVQ1G98V5",
+      "clip_01KZ7C4CT4ZFEAQN3MHE26FCPM",
+      "clip_01KZ7CN2TXBSQ12R086C9BMH2Z",
+      "clip_01KZ7D46Y8F6HWJZCKHABVAW7E"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -2772,7 +2782,7 @@
   },
   "heartbeat": {
     "last": "2026-08-04T18:06:08Z",
-    "clips_since": 40
+    "clips_since": 50
   },
   "silent": {
     "twitch:skotti": {
@@ -2800,11 +2810,11 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-04T21:06:07Z",
+      "last_clip": "2026-08-04T22:20:06Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-04T21:06:12Z",
+      "last_clip": "2026-08-04T22:20:12Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
