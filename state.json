@@ -1330,7 +1330,8 @@
       "clip_01KZ4VGE68170MCG6A01YW5FPX",
       "clip_01KZ4W1YR05A5HQNPQ5WKH9B0X",
       "clip_01KZ5HRAR86VGGH0YJN7CAPJDR",
-      "clip_01KZ5HWQJB1MKW23MW8BWVEDMF"
+      "clip_01KZ5HWQJB1MKW23MW8BWVEDMF",
+      "clip_01KZ6069FZWCED79V1DBV7RYM2"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -1588,7 +1589,11 @@
       "clip_01KZ5A9P35J8Q9A8RB7VKKK4PD",
       "clip_01KZ5A24GDH5SKQNQ1ECDDFSE3",
       "clip_01KZ5AZF9QNVD8V377HQ9NVZ0R",
-      "clip_01KZ5AZZW6GFKE7KQH2YFK5T8T"
+      "clip_01KZ5AZZW6GFKE7KQH2YFK5T8T",
+      "clip_01KZ5YR9P2VM28CYBER4A5GEMZ",
+      "clip_01KZ611YD97WWJN9GVTD2VWXNJ",
+      "clip_01KZ61SDS52C0Q22S6DJ3Y1NAE",
+      "clip_01KZ6252WK3W515NVZ8BMV6G5S"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2629,7 +2634,9 @@
       "clip_01KZ4KRBJYWRY1FPZT60X3JQWT",
       "clip_01KZ4KVM30P25PA4A94WNNXJZK",
       "clip_01KZ4NCTQX4BJKNXHTDRX9YPWE",
-      "clip_01KZ4VGBMSQRA5VR3QQXKA6MAA"
+      "clip_01KZ4VGBMSQRA5VR3QQXKA6MAA",
+      "clip_01KZ5VQY29FQ3D3PNQ24CJJXB3",
+      "clip_01KZ60C6J1DGPRQRJMTCD4875T"
     ]
   },
   "health": {
@@ -2644,7 +2651,7 @@
   },
   "heartbeat": {
     "last": "2026-08-04T04:25:36Z",
-    "clips_since": 2
+    "clips_since": 9
   },
   "silent": {
     "twitch:skotti": {
@@ -2688,7 +2695,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-04T06:57:07Z",
+      "last_clip": "2026-08-04T09:49:30Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -2696,7 +2703,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-04T04:25:23Z",
+      "last_clip": "2026-08-04T09:49:35Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -2732,7 +2739,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-03T22:30:31Z",
+      "last_clip": "2026-08-04T09:49:49Z",
       "alerted": false
     }
   }
