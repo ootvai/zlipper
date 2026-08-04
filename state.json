@@ -809,7 +809,8 @@
       "clip_01KZ45G2GXZM7Y8H2B0B367MK2",
       "clip_01KZ4DXXXGQ32PMY3AZJSB8DZ8",
       "clip_01KZ4ENSPTSKE3PX8C4CBB4G63",
-      "clip_01KZ4F7V6ZNMJVJ5HEWGCM8P1B"
+      "clip_01KZ4F7V6ZNMJVJ5HEWGCM8P1B",
+      "clip_01KZ63QJ4GWGK31T4NBKGX73M8"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1331,7 +1332,9 @@
       "clip_01KZ4W1YR05A5HQNPQ5WKH9B0X",
       "clip_01KZ5HRAR86VGGH0YJN7CAPJDR",
       "clip_01KZ5HWQJB1MKW23MW8BWVEDMF",
-      "clip_01KZ6069FZWCED79V1DBV7RYM2"
+      "clip_01KZ6069FZWCED79V1DBV7RYM2",
+      "clip_01KZ64PK0DNQ9VAT9SNB0WFWX3",
+      "clip_01KZ64Q2Y73M3G9RPMBM0AK4Q4"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -1593,7 +1596,10 @@
       "clip_01KZ5YR9P2VM28CYBER4A5GEMZ",
       "clip_01KZ611YD97WWJN9GVTD2VWXNJ",
       "clip_01KZ61SDS52C0Q22S6DJ3Y1NAE",
-      "clip_01KZ6252WK3W515NVZ8BMV6G5S"
+      "clip_01KZ6252WK3W515NVZ8BMV6G5S",
+      "clip_01KZ62YFQ003MQVA20H95Y95C6",
+      "clip_01KZ6306EV0GZJ28VCKRYJZE0J",
+      "clip_01KZ63YEDXA68M113C79894MM9"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2636,7 +2642,10 @@
       "clip_01KZ4NCTQX4BJKNXHTDRX9YPWE",
       "clip_01KZ4VGBMSQRA5VR3QQXKA6MAA",
       "clip_01KZ5VQY29FQ3D3PNQ24CJJXB3",
-      "clip_01KZ60C6J1DGPRQRJMTCD4875T"
+      "clip_01KZ60C6J1DGPRQRJMTCD4875T",
+      "clip_01KZ63SASN642H5R2C7NTMSCG0",
+      "clip_01KZ66Y8YA4CRFJADAZHXTCEHW",
+      "clip_01KZ66YVASC6WE5H3NZGCEKZ9M"
     ]
   },
   "health": {
@@ -2651,7 +2660,7 @@
   },
   "heartbeat": {
     "last": "2026-08-04T04:25:36Z",
-    "clips_since": 9
+    "clips_since": 18
   },
   "silent": {
     "twitch:skotti": {
@@ -2679,7 +2688,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-03T20:03:12Z",
+      "last_clip": "2026-08-04T11:51:24Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -2695,7 +2704,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-04T09:49:30Z",
+      "last_clip": "2026-08-04T11:51:35Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -2703,7 +2712,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-04T09:49:35Z",
+      "last_clip": "2026-08-04T11:51:39Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -2739,7 +2748,7 @@
       "alerted": false
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-04T09:49:49Z",
+      "last_clip": "2026-08-04T11:51:59Z",
       "alerted": false
     }
   }
