@@ -932,7 +932,13 @@
       "clip_01KYY192KV9FGC92R10JEV8429",
       "clip_01KZ2HQ2C646FD2AW2VMR9NHW2",
       "clip_01KZ4FTT5MM8AG54QT6H9SJ1GQ",
-      "clip_01KZ4M6CGT5BBCQ3Q276M8GGAX"
+      "clip_01KZ4M6CGT5BBCQ3Q276M8GGAX",
+      "clip_01KZ50VQ9SS89XM12AYCV5XKQ7",
+      "clip_01KZ51CDTC07D68A28941312DN",
+      "clip_01KZ51PDTSQV8QC7F8YN451F0Z",
+      "clip_01KZ52W99ABGKH20DVGNBCRV82",
+      "clip_01KZ532G2MACSWKEPZYD4QHAV8",
+      "clip_01KZ54SNC66QSPVK96TAWVSQST"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1558,7 +1564,13 @@
       "clip_01KZ4XBQ0RD86PXSQJW17PZ6R8",
       "clip_01KZ4XBKA9XXMEG98JX717FNFS",
       "clip_01KZ4XE36GHX4ZGSEFBK0VW01B",
-      "clip_01KZ4YZHPMTZ44Y8G65V9F8W8B"
+      "clip_01KZ4YZHPMTZ44Y8G65V9F8W8B",
+      "clip_01KZ5171N7Y70BV5ZQ2MJW73QP",
+      "clip_01KZ51G4Q1FAKC1S9J7D02WKZ2",
+      "clip_01KZ51WJB6CFBEHJZAYFXCFEPX",
+      "clip_01KZ530213CQ69ZDM0V4N1KHW8",
+      "clip_01KZ53B78QNK3766YWK106PKW4",
+      "clip_01KZ54KVH5XQSXYZAHH12K4Q6W"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2614,7 +2626,7 @@
   },
   "heartbeat": {
     "last": "2026-08-03T14:05:27Z",
-    "clips_since": 106
+    "clips_since": 118
   },
   "silent": {
     "twitch:skotti": {
@@ -2646,7 +2658,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-03T21:20:26Z",
+      "last_clip": "2026-08-04T01:05:37Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -2666,7 +2678,7 @@
       "alerted": false
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-03T23:40:07Z",
+      "last_clip": "2026-08-04T01:05:47Z",
       "alerted": false
     },
     "kick:sampef2": {
