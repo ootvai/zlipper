@@ -1819,7 +1819,8 @@
       "clip_01KZ9XFVDH5VW2TFGYNC22GRJM",
       "clip_01KZ9Y4GN69DKVF7YWJMWKQTZT",
       "clip_01KZ9YBS0TX97CXBME5BARB3ZD",
-      "clip_01KZ9YNKAHF3C985B0K73KSP4C"
+      "clip_01KZ9YNKAHF3C985B0K73KSP4C",
+      "clip_01KZA85E84DR5KS12KJXY9F2SH"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2699,7 +2700,8 @@
       "clip_01KYT4BJ9DG6XCW0RSWC7Y74RM",
       "clip_01KYTA1YAQ4SA8ZAMKNMSZ936D",
       "clip_01KZ6ZQSMBW6210QG0FWGJ96X9",
-      "clip_01KZ6ZQNTM971VC4HWQTY7T2PC"
+      "clip_01KZ6ZQNTM971VC4HWQTY7T2PC",
+      "clip_01KZA5K7FQ82NMF7PN5195B838"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -2932,7 +2934,7 @@
   },
   "heartbeat": {
     "last": "2026-08-05T18:46:30Z",
-    "clips_since": 39
+    "clips_since": 41
   },
   "silent": {
     "twitch:skotti": {
@@ -2984,7 +2986,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-05T22:40:09Z",
+      "last_clip": "2026-08-06T01:02:16Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3012,7 +3014,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-04T19:52:27Z",
+      "last_clip": "2026-08-06T01:02:32Z",
       "alerted": false
     },
     "kick:whyisabell": {
