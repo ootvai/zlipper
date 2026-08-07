@@ -399,7 +399,10 @@
       "clip_01KZ6H49DB4NKECHSCW03FEDSS",
       "clip_01KZBY7N83DCYRC75913AVWQNY",
       "clip_01KZCBB0GHP32P2ZD56ZGHP8VN",
-      "clip_01KZCJPGXM3EKDDZNY1F0GYRA5"
+      "clip_01KZCJPGXM3EKDDZNY1F0GYRA5",
+      "clip_01KZDJDKD5GXW9NYGQP902V9K2",
+      "clip_01KZDJH2W79AZG0ZEQQZNHR4AG",
+      "clip_01KZDJHWK7DJTJP0YYC82MVDAF"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -674,7 +677,6 @@
       "clip_01KZCBQYCY4R3R8K5J80PP1MG8"
     ],
     "aapo_olervo": [
-      "clip_01KYF0CMDWQJ29ZCYM9FEHR6P2",
       "clip_01KYF18Z8HPM1D70AH9TX0C1XZ",
       "clip_01KYF1BZDES5VE0YB504G82PHM",
       "clip_01KYF387X6S3Q5BV7Q0339DZVH",
@@ -973,7 +975,8 @@
       "clip_01KZC541VCXS0H6KGJ281NW40R",
       "clip_01KZC546VGX23JS3THRM4QCZ0W",
       "clip_01KZC57F9ARYWVM0S3AWEJ1V2M",
-      "clip_01KZC6XRRXNNY9VZPW0YHR3KC6"
+      "clip_01KZC6XRRXNNY9VZPW0YHR3KC6",
+      "clip_01KZDJW0WXH4R3NVCB24WFC596"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -3005,7 +3008,8 @@
       "clip_01KZC3V418V6DC05A80XBHFS0E",
       "clip_01KZC43VSWTVAX7G7C0V0EVS71",
       "clip_01KZC7P0D4KKQETHCGRYAT3X90",
-      "clip_01KZC9SEZ8JHDYQZ4X0S0P0YGV"
+      "clip_01KZC9SEZ8JHDYQZ4X0S0P0YGV",
+      "clip_01KZDEGG2PZS84HHKZ7B6PXFD6"
     ]
   },
   "health": {
@@ -3020,7 +3024,7 @@
   },
   "heartbeat": {
     "last": "2026-08-07T00:13:16Z",
-    "clips_since": 0
+    "clips_since": 5
   },
   "silent": {
     "twitch:skotti": {
@@ -3040,7 +3044,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-07T00:12:23Z",
+      "last_clip": "2026-08-07T07:45:04Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3048,7 +3052,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-07T00:12:40Z",
+      "last_clip": "2026-08-07T07:45:07Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3108,7 +3112,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-07T00:13:16Z",
+      "last_clip": "2026-08-07T07:45:26Z",
       "alerted": false
     }
   }
