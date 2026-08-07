@@ -1437,7 +1437,8 @@
       "clip_01KZEPHBS6HCD6DW4X8X0G5NEQ",
       "clip_01KZEPKJ68VW0FQAXHFSRJXA56",
       "clip_01KZEV87VFPAHJ1G9263NA524Z",
-      "clip_01KZEY4NBBJAFANH3NNSWZTB9N"
+      "clip_01KZEY4NBBJAFANH3NNSWZTB9N",
+      "clip_01KZF2S9W2DF4A0MVHRDP9BHD9"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2789,7 +2790,9 @@
       "clip_01KZEW9HCFSSJMFKBFH2TP0SSE",
       "clip_01KZEX00JHYRM9HZJTWT9Q6J2V",
       "clip_01KZF0EFEJJCMCKNCCRMKT522T",
-      "clip_01KZF1W3FXSTQM95P0Z5NKZES1"
+      "clip_01KZF1W3FXSTQM95P0Z5NKZES1",
+      "clip_01KZF3BC6TC5SVZEGMHR0TA9Q2",
+      "clip_01KZF3CXX19D4AWVGP1EG3ZJN5"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -2877,7 +2880,8 @@
       "clip_01KYTA1YAQ4SA8ZAMKNMSZ936D",
       "clip_01KZ6ZQSMBW6210QG0FWGJ96X9",
       "clip_01KZ6ZQNTM971VC4HWQTY7T2PC",
-      "clip_01KZA5K7FQ82NMF7PN5195B838"
+      "clip_01KZA5K7FQ82NMF7PN5195B838",
+      "clip_01KZF3FC75BMN4FGA38FQSKVQE"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3136,7 +3140,7 @@
   },
   "heartbeat": {
     "last": "2026-08-07T13:41:57Z",
-    "clips_since": 53
+    "clips_since": 57
   },
   "silent": {
     "twitch:skotti": {
@@ -3176,7 +3180,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-07T20:54:12Z",
+      "last_clip": "2026-08-07T22:09:20Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3212,11 +3216,11 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-07T21:34:05Z",
+      "last_clip": "2026-08-07T22:09:33Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-06T01:02:32Z",
+      "last_clip": "2026-08-07T22:09:35Z",
       "alerted": false
     },
     "kick:whyisabell": {
