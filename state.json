@@ -402,7 +402,8 @@
       "clip_01KZCJPGXM3EKDDZNY1F0GYRA5",
       "clip_01KZDJDKD5GXW9NYGQP902V9K2",
       "clip_01KZDJH2W79AZG0ZEQQZNHR4AG",
-      "clip_01KZDJHWK7DJTJP0YYC82MVDAF"
+      "clip_01KZDJHWK7DJTJP0YYC82MVDAF",
+      "clip_01KZDY1FM90JNTSGG53RF20J4K"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -1587,7 +1588,8 @@
       "clip_01KZBJE4RKEB9RM5ZY09MKNVPF",
       "clip_01KZBNDA495NMKQ4M581Z8J7SB",
       "clip_01KZBT15EGMP30J7K2P21HYCPW",
-      "clip_01KZBTGNTAA0QKTSGVESEGCNSC"
+      "clip_01KZBTGNTAA0QKTSGVESEGCNSC",
+      "clip_01KZDZ63CCAGK9TBDVYYK221A4"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3027,7 +3029,7 @@
   },
   "heartbeat": {
     "last": "2026-08-07T00:13:16Z",
-    "clips_since": 9
+    "clips_since": 11
   },
   "silent": {
     "twitch:skotti": {
@@ -3047,7 +3049,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-07T07:45:04Z",
+      "last_clip": "2026-08-07T11:28:45Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3071,7 +3073,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-07T00:12:49Z",
+      "last_clip": "2026-08-07T11:29:00Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
