@@ -1435,7 +1435,8 @@
       "clip_01KZEPC9FNAYY2EAGQC5V7375D",
       "clip_01KZEPGPEBZF7TRDE2HWTSXMP9",
       "clip_01KZEPHBS6HCD6DW4X8X0G5NEQ",
-      "clip_01KZEPKJ68VW0FQAXHFSRJXA56"
+      "clip_01KZEPKJ68VW0FQAXHFSRJXA56",
+      "clip_01KZEV87VFPAHJ1G9263NA524Z"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2783,7 +2784,9 @@
       "clip_01KZEQTRG7Q7FQ5RKM8HKY3G1E",
       "clip_01KZEQZRS59KBM8XMS00A8M0ZT",
       "clip_01KZES7ZFXP7EK0C1ZF7B5G3JR",
-      "clip_01KZESMC6M20N4DR5GSHTWTVZQ"
+      "clip_01KZESMC6M20N4DR5GSHTWTVZQ",
+      "clip_01KZEW9HCFSSJMFKBFH2TP0SSE",
+      "clip_01KZEX00JHYRM9HZJTWT9Q6J2V"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3130,7 +3133,7 @@
   },
   "heartbeat": {
     "last": "2026-08-07T13:41:57Z",
-    "clips_since": 47
+    "clips_since": 50
   },
   "silent": {
     "twitch:skotti": {
@@ -3170,7 +3173,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-07T18:23:44Z",
+      "last_clip": "2026-08-07T20:05:39Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3206,7 +3209,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-07T19:27:58Z",
+      "last_clip": "2026-08-07T20:05:51Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
