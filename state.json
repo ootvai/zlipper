@@ -1650,7 +1650,11 @@
       "clip_01KZGWKVXPW3WHHY1RYNY50PBJ",
       "clip_01KZGWSZ6HFXMM85KDHZMEM65Y",
       "clip_01KZGWT5KXDSRJHWRFGD4PYJJ7",
-      "clip_01KZGWSQGGG5V1ZR1XF5VN8YQW"
+      "clip_01KZGWSQGGG5V1ZR1XF5VN8YQW",
+      "clip_01KZGWWT334TAQ3GC210VDQ3Z8",
+      "clip_01KZGWWJYWQAH92DW2ZXCKR4NN",
+      "clip_01KZGX3WM8WJMP3S40HSVQ5609",
+      "clip_01KZGX7AXENKN830MPE9XF05DB"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3197,7 +3201,12 @@
       "clip_01KZGM0K78XQ9SS8WPD963J361",
       "clip_01KZGM15RZ6WYY4ER0WYWB6ESV",
       "clip_01KZGMGDRJ7QE79QYK38HZ4AGX",
-      "clip_01KZGR9GC22HNJEWMPN0TB914W"
+      "clip_01KZGR9GC22HNJEWMPN0TB914W",
+      "clip_01KZGWWC4EGWK7D7KCTAP7XR5V",
+      "clip_01KZGXG307V662N5034B3C2RX3",
+      "clip_01KZGXH7R00QS51DBDM3CVZ7EJ",
+      "clip_01KZGXJV8PJYXCS6N66REKPN6X",
+      "clip_01KZGXXDNSNR9C748WWSN999RB"
     ]
   },
   "health": {
@@ -3212,7 +3221,7 @@
   },
   "heartbeat": {
     "last": "2026-08-08T14:37:14Z",
-    "clips_since": 0
+    "clips_since": 9
   },
   "silent": {
     "twitch:skotti": {
@@ -3256,7 +3265,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-08T14:36:52Z",
+      "last_clip": "2026-08-08T15:01:37Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -3300,7 +3309,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-08T13:59:44Z",
+      "last_clip": "2026-08-08T15:02:00Z",
       "alerted": false
     }
   }
