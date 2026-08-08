@@ -2635,7 +2635,8 @@
       "clip_01KZCM4BWH54V16DKWHG3D7YGV",
       "clip_01KZCMBKRBTERHX90XXYCS21AK",
       "clip_01KZCN6MBKCGK4D9JXNYRJ6S4P",
-      "clip_01KZGZJ6SKPR0A5NAA1K42GV5Y"
+      "clip_01KZGZJ6SKPR0A5NAA1K42GV5Y",
+      "clip_01KZH0NT4SYVE8Q6AVA7DT7TGK"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -3211,7 +3212,8 @@
       "clip_01KZGXG307V662N5034B3C2RX3",
       "clip_01KZGXH7R00QS51DBDM3CVZ7EJ",
       "clip_01KZGXJV8PJYXCS6N66REKPN6X",
-      "clip_01KZGXXDNSNR9C748WWSN999RB"
+      "clip_01KZGXXDNSNR9C748WWSN999RB",
+      "clip_01KZH0TGENST6GNFZ7SCX0SZ6W"
     ]
   },
   "health": {
@@ -3226,7 +3228,7 @@
   },
   "heartbeat": {
     "last": "2026-08-08T14:37:14Z",
-    "clips_since": 14
+    "clips_since": 16
   },
   "silent": {
     "twitch:skotti": {
@@ -3298,7 +3300,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-08T15:40:37Z",
+      "last_clip": "2026-08-08T16:11:40Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -3314,7 +3316,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-08T15:02:00Z",
+      "last_clip": "2026-08-08T16:11:45Z",
       "alerted": false
     }
   }
