@@ -1160,7 +1160,8 @@
       "clip_01KZ9TY8V8NC64HVGJGHS3QZTR",
       "clip_01KZGVXH2R1Z18J3NW3CTH544Z",
       "clip_01KZGWQ8B6MC2Q5XNNNT03ANVV",
-      "clip_01KZH301375R7BC1D739JBDS0Z"
+      "clip_01KZH301375R7BC1D739JBDS0Z",
+      "clip_01KZH7MP35P8D2A3W0HY73PNM2"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1463,7 +1464,8 @@
       "clip_01KZGV6HD6MSS39JVQ7FM3R202",
       "clip_01KZGV6CVT7FWEGAB0B2W4WJ17",
       "clip_01KZH3J9JNVCG4JD6CR4ZH84R4",
-      "clip_01KZH4D6B5QBTQHRW23BC8ZZXF"
+      "clip_01KZH4D6B5QBTQHRW23BC8ZZXF",
+      "clip_01KZH7BD2AEBZF08TEMJMEHVMP"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1658,7 +1660,8 @@
       "clip_01KZGWWJYWQAH92DW2ZXCKR4NN",
       "clip_01KZGX3WM8WJMP3S40HSVQ5609",
       "clip_01KZGX7AXENKN830MPE9XF05DB",
-      "clip_01KZH400HEPQWM2MHSQ2HNF9QJ"
+      "clip_01KZH400HEPQWM2MHSQ2HNF9QJ",
+      "clip_01KZH6HMXPAK16CCB644671YSH"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -2644,7 +2647,9 @@
       "clip_01KZH2W015SZTYPN7A6R24R3VJ",
       "clip_01KZH3R78Z2AANZ0QHS0FMRYGE",
       "clip_01KZH3X8VW4BG9GN5TP5KKRSYD",
-      "clip_01KZH6CZX13M4WKJDA4PGMRSZF"
+      "clip_01KZH6CZX13M4WKJDA4PGMRSZF",
+      "clip_01KZH6GE7J0VPP6SQR9NSWH5CD",
+      "clip_01KZH74VX6V24BXM1KWWT9SE4P"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -3223,7 +3228,8 @@
       "clip_01KZGXXDNSNR9C748WWSN999RB",
       "clip_01KZH0TGENST6GNFZ7SCX0SZ6W",
       "clip_01KZH593QCJNMVA8N42AHWWJ06",
-      "clip_01KZH5AZT23GJWAJK0FNNE4S39"
+      "clip_01KZH5AZT23GJWAJK0FNNE4S39",
+      "clip_01KZH74WA4PJFFGQ71A0Z0VHX1"
     ]
   },
   "health": {
@@ -3238,7 +3244,7 @@
   },
   "heartbeat": {
     "last": "2026-08-08T14:37:14Z",
-    "clips_since": 27
+    "clips_since": 33
   },
   "silent": {
     "twitch:skotti": {
@@ -3270,7 +3276,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-08T16:54:33Z",
+      "last_clip": "2026-08-08T17:55:53Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -3278,11 +3284,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-08T16:54:39Z",
+      "last_clip": "2026-08-08T17:55:56Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-08T16:54:41Z",
+      "last_clip": "2026-08-08T17:55:58Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -3310,7 +3316,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-08T17:24:39Z",
+      "last_clip": "2026-08-08T17:56:07Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -3326,7 +3332,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-08T17:24:50Z",
+      "last_clip": "2026-08-08T17:56:12Z",
       "alerted": false
     }
   }
