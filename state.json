@@ -1442,7 +1442,15 @@
       "clip_01KZF9GRPCSZH80WA9QJCFSGPX",
       "clip_01KZF9HQ02VGECSCCN6EANTX9K",
       "clip_01KZFA5ETKRD5MJYRPDWSEEJ24",
-      "clip_01KZFACTKJ3C0WCAWNTYZMF8PX"
+      "clip_01KZFACTKJ3C0WCAWNTYZMF8PX",
+      "clip_01KZFETCSN778DZZPENQ9E9NS2",
+      "clip_01KZFEYPTMAAHB643AA5FZXYE5",
+      "clip_01KZFFBG267DQMK9MDNT2CSJS4",
+      "clip_01KZFFSM9MFQAXABYD6Z28E1TH",
+      "clip_01KZFGYHA2FZ2HTDVK600H1EQY",
+      "clip_01KZFGZETZCZ7VTW7S1A25PCSK",
+      "clip_01KZFHTC9B5M4581HX3ER70BS8",
+      "clip_01KZFHY9AZK7G5Q92S1P6CEQDF"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2800,7 +2808,10 @@
       "clip_01KZF4V9T6XTM156R1APCQX6GD",
       "clip_01KZF667F5K45R7MQFWQAW6T3V",
       "clip_01KZF6FRG314XMEWR24Y5D1M05",
-      "clip_01KZFAHK5KW7737GGK5NAYX9QY"
+      "clip_01KZFAHK5KW7737GGK5NAYX9QY",
+      "clip_01KZFAQM73NPJ93K9QP7B59J56",
+      "clip_01KZFAZ0QAHCHFYC2DVARSQ056",
+      "clip_01KZFBCQCW897S41HRMQ8XP54Y"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3147,8 +3158,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-07T13:41:57Z",
-    "clips_since": 65
+    "last": "2026-08-08T02:08:29Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -3188,7 +3199,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-08T00:00:22Z",
+      "last_clip": "2026-08-08T02:08:08Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3224,7 +3235,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-08T00:00:38Z",
+      "last_clip": "2026-08-08T02:08:25Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
