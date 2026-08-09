@@ -2922,7 +2922,16 @@
       "clip_01KZK6KQ9JHS95P5WAM38TRN9S",
       "clip_01KZK6QJ59M9N1HC68TT74WXMF",
       "clip_01KZK9PG8TBZBHX292WAB0C86W",
-      "clip_01KZKA1XGPJB8Q6JRG34ZXT7RF"
+      "clip_01KZKA1XGPJB8Q6JRG34ZXT7RF",
+      "clip_01KZKAK9QNRQ1AF0DQE5GRYQSF",
+      "clip_01KZKAQN477AM9CSZJQVYSZECH",
+      "clip_01KZKAWBWTN4ZWS4T1P4AS1GFP",
+      "clip_01KZKBE1TZ5HQ4TD2021VF2TWT",
+      "clip_01KZKBNXGFMEQZDGSMYJ4VBVVR",
+      "clip_01KZKC1YRQEAW4X6VRFYP5CWVE",
+      "clip_01KZKC97QB1DQ4R3PSTTQHBZ2X",
+      "clip_01KZKCZFEPGTRR4V3DYX4E6MAD",
+      "clip_01KZKD3VPS1Q4MZCBD1RQGACP6"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3283,7 +3292,11 @@
       "clip_01KZHKG83ESH0G7R826QFFNY6X",
       "clip_01KZHKWW44K8CV5ZJE9GAX23ZE",
       "clip_01KZHKWR8C63VQDGW6RCNMXYRW",
-      "clip_01KZHKZYF0YGN9DKKRQMD8AS3Y"
+      "clip_01KZHKZYF0YGN9DKKRQMD8AS3Y",
+      "clip_01KZKBFZYM9ZYTS5YBR2285DBA",
+      "clip_01KZKCEDD7A0W4S6JSR30V2AFT",
+      "clip_01KZKCKSC6MCHN3K0T6MX2N3MA",
+      "clip_01KZKCMN0YFATPE8790HVRPACF"
     ]
   },
   "health": {
@@ -3298,7 +3311,7 @@
   },
   "heartbeat": {
     "last": "2026-08-09T03:09:51Z",
-    "clips_since": 22
+    "clips_since": 35
   },
   "silent": {
     "twitch:skotti": {
@@ -3374,7 +3387,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-09T13:11:59Z",
+      "last_clip": "2026-08-09T14:01:32Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -3386,7 +3399,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-08T21:24:41Z",
+      "last_clip": "2026-08-09T14:01:37Z",
       "alerted": false
     }
   }
