@@ -3297,7 +3297,8 @@
       "clip_01KZKBFZYM9ZYTS5YBR2285DBA",
       "clip_01KZKCEDD7A0W4S6JSR30V2AFT",
       "clip_01KZKCKSC6MCHN3K0T6MX2N3MA",
-      "clip_01KZKCMN0YFATPE8790HVRPACF"
+      "clip_01KZKCMN0YFATPE8790HVRPACF",
+      "clip_01KZKFZAQK7SV6YN69ZWCHXVYX"
     ]
   },
   "health": {
@@ -3311,8 +3312,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-09T03:09:51Z",
-    "clips_since": 36
+    "last": "2026-08-09T15:16:19Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -3400,7 +3401,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-09T14:01:37Z",
+      "last_clip": "2026-08-09T15:16:19Z",
       "alerted": false
     }
   }
