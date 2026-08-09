@@ -687,7 +687,9 @@
       "clip_01KZDK9C0NK114YSPJ3CVCHH4Y",
       "clip_01KZDKAR8NBRW6Z5D2YFGT448M",
       "clip_01KZG119V67EBQSG4PHPQDEGQT",
-      "clip_01KZG19EYF4VJ805CFWB5Y520C"
+      "clip_01KZG19EYF4VJ805CFWB5Y520C",
+      "clip_01KZK4RRZVA9HE2JVPVR4595HH",
+      "clip_01KZK4WTMQP9YS8TA2J1HZ2PQ1"
     ],
     "aapo_olervo": [
       "clip_01KY566AXN7DSZQD153CH77YZS",
@@ -3288,7 +3290,7 @@
   },
   "heartbeat": {
     "last": "2026-08-09T03:09:51Z",
-    "clips_since": 11
+    "clips_since": 13
   },
   "silent": {
     "twitch:skotti": {
@@ -3312,7 +3314,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-08T07:11:37Z",
+      "last_clip": "2026-08-09T11:39:42Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
