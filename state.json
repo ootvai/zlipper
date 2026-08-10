@@ -280,7 +280,8 @@
       "SmoggyBraveWalletHotPokket-vlrmyx1v3GZlIreL",
       "CleanThankfulCobraMVGame-iAa2dSpgxpDvTlem",
       "RoughKathishSharkKeepo-8sVyf7xa-wxd-B3A",
-      "FamousCautiousCroquetteTebowing-41IhflpPR27iyiFt"
+      "FamousCautiousCroquetteTebowing-41IhflpPR27iyiFt",
+      "FantasticDeterminedEagleBabyRage-dRJV6epJ7cO1iBYH"
     ]
   },
   "kick": {
@@ -421,7 +422,8 @@
       "clip_01KZER0JPY93VPSK92KJWW3HCQ",
       "clip_01KZG0WT48K32H5GT2MGXBNVHS",
       "clip_01KZPBK8PFWPNT2F9KH856166A",
-      "clip_01KZPBNJJ38QXQ2C4XM1G3EPVM"
+      "clip_01KZPBNJJ38QXQ2C4XM1G3EPVM",
+      "clip_01KZPNN8G3RBH5R3CCBNM3T16E"
     ],
     "pact": [
       "clip_01KYFQN5BP7J5MZSF50CNA4D67",
@@ -1554,7 +1556,8 @@
       "clip_01KZPDS5V2N6FB02HAS0N2YFGZ",
       "clip_01KZPET2HGW63K5V8HXT9Z18TT",
       "clip_01KZPH92XB8FWCKGK2V49WC7CZ",
-      "clip_01KZPHZQHY65ZB3ZR0JR6RDYMV"
+      "clip_01KZPHZQHY65ZB3ZR0JR6RDYMV",
+      "clip_01KZPPQ6VN3CGMBSRARWCB9YZQ"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3454,7 +3457,7 @@
   },
   "heartbeat": {
     "last": "2026-08-10T16:36:12Z",
-    "clips_since": 38
+    "clips_since": 41
   },
   "silent": {
     "twitch:skotti": {
@@ -3470,11 +3473,11 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-10T20:19:06Z",
+      "last_clip": "2026-08-10T21:05:48Z",
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-10T18:28:49Z",
+      "last_clip": "2026-08-10T21:05:50Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3494,7 +3497,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-10T19:32:33Z",
+      "last_clip": "2026-08-10T21:05:59Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
