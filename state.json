@@ -1,7 +1,9 @@
 {
   "twitch": {
     "skotti": [
-      "GentleZanyMouseNotLikeThis-nlM7X1Hdb98hKwz6"
+      "GentleZanyMouseNotLikeThis-nlM7X1Hdb98hKwz6",
+      "GoodFrozenLorisOneHand-zGE0hJTJ1EcgFkt0",
+      "HyperJoyousAlligatorRlyTho-hC6YJe9osQx8t2z-"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -276,7 +278,8 @@
       "SuspiciousInquisitiveWasabiLitFam-lrdYQfbjML0R3ILv",
       "BovineAmazingTurtleM4xHeh-0MRI8Lb7nSDgkt5M",
       "SmoggyBraveWalletHotPokket-vlrmyx1v3GZlIreL",
-      "CleanThankfulCobraMVGame-iAa2dSpgxpDvTlem"
+      "CleanThankfulCobraMVGame-iAa2dSpgxpDvTlem",
+      "RoughKathishSharkKeepo-8sVyf7xa-wxd-B3A"
     ]
   },
   "kick": {
@@ -701,7 +704,8 @@
       "clip_01KZKV9NCXB69BZ0N1XZ8NK8D0",
       "clip_01KZNCRJG44N2NCFBWQK8SNEYB",
       "clip_01KZPDX35WSQZTYF347JZJ8KXF",
-      "clip_01KZPE3GSKX3X017AN298KQQZ2"
+      "clip_01KZPE3GSKX3X017AN298KQQZ2",
+      "clip_01KZPJ8T1S7AXXG16WZZ8794W3"
     ],
     "aapo_olervo": [
       "clip_01KY5KSXRCYC8P1DG8K38DQPG8",
@@ -1547,7 +1551,9 @@
       "clip_01KZPD56QJMYF81F80DD0CQNTM",
       "clip_01KZPD8TQA795SJZJ46QFRDA2P",
       "clip_01KZPDS5V2N6FB02HAS0N2YFGZ",
-      "clip_01KZPET2HGW63K5V8HXT9Z18TT"
+      "clip_01KZPET2HGW63K5V8HXT9Z18TT",
+      "clip_01KZPH92XB8FWCKGK2V49WC7CZ",
+      "clip_01KZPHZQHY65ZB3ZR0JR6RDYMV"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1748,7 +1754,10 @@
       "clip_01KZHCJ843PMD05P65FA345T0Q",
       "clip_01KZHCKE0ARDRTBQGQXJANS14M",
       "clip_01KZNC36FEJM7YMN1TCNBJ56B5",
-      "clip_01KZPEVNGV4D8YWHJZAZSD73C8"
+      "clip_01KZPEVNGV4D8YWHJZAZSD73C8",
+      "clip_01KZPFKNT1C8HC7ACJXVHCHX0S",
+      "clip_01KZPG0G4TPP4MVFJKB7HAGXBA",
+      "clip_01KZPG5CTA1XDWVHQXHJSAQBS7"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3444,11 +3453,11 @@
   },
   "heartbeat": {
     "last": "2026-08-10T16:36:12Z",
-    "clips_since": 26
+    "clips_since": 35
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-08T14:36:32Z",
+      "last_clip": "2026-08-10T19:32:20Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3460,7 +3469,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-10T18:28:47Z",
+      "last_clip": "2026-08-10T19:32:21Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -3468,7 +3477,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-10T18:28:52Z",
+      "last_clip": "2026-08-10T19:32:25Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3484,11 +3493,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-10T18:29:04Z",
+      "last_clip": "2026-08-10T19:32:33Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-10T18:29:06Z",
+      "last_clip": "2026-08-10T19:32:37Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
