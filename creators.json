@@ -111,7 +111,7 @@
   "perustiedot": 19,
   "ggslettu": 1,
   "halinalleinen": 1,
-  "epola": 255,
+  "epola": 256,
   "badsanta81": 2,
   "janiro": 1,
   "isomunkki": 73,
@@ -756,5 +756,7 @@
   "kesaseteli": 1,
   "nakumaton": 1,
   "jebinaki": 1,
-  "risujasaatana": 2
+  "risujasaatana": 2,
+  "egalin": 1,
+  "urposnautti": 1
 }
