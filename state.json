@@ -279,7 +279,8 @@
       "BovineAmazingTurtleM4xHeh-0MRI8Lb7nSDgkt5M",
       "SmoggyBraveWalletHotPokket-vlrmyx1v3GZlIreL",
       "CleanThankfulCobraMVGame-iAa2dSpgxpDvTlem",
-      "RoughKathishSharkKeepo-8sVyf7xa-wxd-B3A"
+      "RoughKathishSharkKeepo-8sVyf7xa-wxd-B3A",
+      "FamousCautiousCroquetteTebowing-41IhflpPR27iyiFt"
     ]
   },
   "kick": {
@@ -2769,8 +2770,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
-      "clip_01KTRQ3NP55VJFKYPPK2V9Z7JN",
       "clip_01KVRG5JPJ0SN99CHRMBYTG1YK",
       "clip_01KVRGPQZAR8QD61A1TSCGZF0K",
       "clip_01KVRKTEA4YF9R6SPR0PC7VXP0",
@@ -3068,7 +3067,9 @@
       "clip_01KZP2JQVMW0QNHGC6T3NZF23A",
       "clip_01KZP2NJ2NRJWMYYSGK0ZPS3NF",
       "clip_01KZP50CC0C4HHH1HDW2JKE3G7",
-      "clip_01KZPASEF9H5BHYWZ9H26WNGZ4"
+      "clip_01KZPASEF9H5BHYWZ9H26WNGZ4",
+      "clip_01KZPKK71EZ4GYQVME8HQWV39F",
+      "clip_01KZPMCD5W9FBX8639CKVZKX2F"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3453,7 +3454,7 @@
   },
   "heartbeat": {
     "last": "2026-08-10T16:36:12Z",
-    "clips_since": 35
+    "clips_since": 38
   },
   "silent": {
     "twitch:skotti": {
@@ -3469,7 +3470,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-10T19:32:21Z",
+      "last_clip": "2026-08-10T20:19:06Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -3529,7 +3530,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-10T17:32:18Z",
+      "last_clip": "2026-08-10T20:19:40Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
