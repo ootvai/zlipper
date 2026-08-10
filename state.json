@@ -1501,7 +1501,14 @@
       "clip_01KZM5QX3RT0EJESWCQN1W3MD7",
       "clip_01KZM72C16VSC70ZJNWA4AYSX4",
       "clip_01KZM7KH0MX26NRT0DJP2ZHV70",
-      "clip_01KZMFCZCY4TG5QX026W1QN40M"
+      "clip_01KZMFCZCY4TG5QX026W1QN40M",
+      "clip_01KZNS573ZKK19AJB2QX78YNQR",
+      "clip_01KZNS5A7Y8V5E20Q7F13XVAZY",
+      "clip_01KZNS6MK80ASTBS56M9Q7SQTG",
+      "clip_01KZNS8QS6DRKC680HWBA543XG",
+      "clip_01KZNS9EGG3EPFYSB58GQYKVH5",
+      "clip_01KZNSH4F26HWD6VTT7PAC0AMG",
+      "clip_01KZNSH1TT8J9MT4GTTWECQB4P"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2693,7 +2700,9 @@
       "clip_01KZH6CZX13M4WKJDA4PGMRSZF",
       "clip_01KZH6GE7J0VPP6SQR9NSWH5CD",
       "clip_01KZH74VX6V24BXM1KWWT9SE4P",
-      "clip_01KZHK06F0781BS59TQXY2NS8J"
+      "clip_01KZHK06F0781BS59TQXY2NS8J",
+      "clip_01KZNSK0EEGSM5K26C4C4FHR4T",
+      "clip_01KZNSM08JWX46C92BYD14G61A"
     ],
     "johtajanmatkassa": [
       "clip_01KTM0M5PDGJPCHV1JV0WHG42M",
@@ -2986,7 +2995,8 @@
       "clip_01KZN8AZM6NNAZD6HNW20RPB7M",
       "clip_01KZNBHB43DYWYAYRVGKZEQXX5",
       "clip_01KZNFVBMENVZE8MBKYBATC91C",
-      "clip_01KZNHF5NKHKN2K3NKRYZDJ10Y"
+      "clip_01KZNHF5NKHKN2K3NKRYZDJ10Y",
+      "clip_01KZNSKCPWYHCJW8A61EWTPSKZ"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3371,7 +3381,7 @@
   },
   "heartbeat": {
     "last": "2026-08-10T04:15:28Z",
-    "clips_since": 10
+    "clips_since": 20
   },
   "silent": {
     "twitch:skotti": {
@@ -3411,7 +3421,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-10T00:01:41Z",
+      "last_clip": "2026-08-10T12:20:39Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3443,11 +3453,11 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-08T21:24:33Z",
+      "last_clip": "2026-08-10T12:20:49Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-10T09:58:18Z",
+      "last_clip": "2026-08-10T12:20:51Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
