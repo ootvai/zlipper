@@ -712,7 +712,20 @@
       "clip_01KZPDX35WSQZTYF347JZJ8KXF",
       "clip_01KZPE3GSKX3X017AN298KQQZ2",
       "clip_01KZPJ8T1S7AXXG16WZZ8794W3",
-      "clip_01KZQA4TTCFC98ZAQ86AZFCR7S"
+      "clip_01KZQA4TTCFC98ZAQ86AZFCR7S",
+      "clip_01KZRXBXF7F6PTWCJFJKY3T226",
+      "clip_01KZRXD6XCM3V1WSN5BM6TEDZQ",
+      "clip_01KZRXD6RW6CGQ2EB056C86N3Y",
+      "clip_01KZRXGT468NYZZ591QT3KK9H7",
+      "clip_01KZRXGKWBPBZWMWTTNWY59EHT",
+      "clip_01KZRXKQZW1TK65MSQGAZYGKH2",
+      "clip_01KZRXRW1N45G4KZ0892BAKKY6",
+      "clip_01KZRXVVVK0P17XNV4SW8SX544",
+      "clip_01KZRXYXR74K0HM8E5FHBKCY8A",
+      "clip_01KZRXYVE2WVF90094YDTQ0Z2A",
+      "clip_01KZRY2WKX9XJY92X2CG3H8N81",
+      "clip_01KZRY8GAVJBH03PK0WEG6NGK7",
+      "clip_01KZRYAKQW5SHYQF8Q4TJ5QA7E"
     ],
     "aapo_olervo": [
       "clip_01KY9JGQEGHBFMHKTHPSYNGQ92",
@@ -1568,7 +1581,8 @@
       "clip_01KZR4PYV5B02J0J00851H5TE7",
       "clip_01KZR5J9WTTTE9NF8Z5SXR47JP",
       "clip_01KZR9FFYZAVCV2H8DQ3JHEP9P",
-      "clip_01KZRCV661J3YFCHYKM528PX5Z"
+      "clip_01KZRCV661J3YFCHYKM528PX5Z",
+      "clip_01KZRXVGTPCCNRGJHQ9ZVZMZ5K"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3174,7 +3188,8 @@
       "clip_01KZ6ZQSMBW6210QG0FWGJ96X9",
       "clip_01KZ6ZQNTM971VC4HWQTY7T2PC",
       "clip_01KZA5K7FQ82NMF7PN5195B838",
-      "clip_01KZF3FC75BMN4FGA38FQSKVQE"
+      "clip_01KZF3FC75BMN4FGA38FQSKVQE",
+      "clip_01KZRWBRC16MJYFHFJ84DDS5K0"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3476,8 +3491,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-11T04:42:37Z",
-    "clips_since": 30
+    "last": "2026-08-11T17:39:29Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -3501,7 +3516,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-11T03:12:15Z",
+      "last_clip": "2026-08-11T17:39:03Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3517,7 +3532,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-11T13:37:33Z",
+      "last_clip": "2026-08-11T17:39:10Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3557,7 +3572,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-07T22:09:35Z",
+      "last_clip": "2026-08-11T17:39:27Z",
       "alerted": false
     },
     "kick:whyisabell": {
