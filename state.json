@@ -429,7 +429,8 @@
       "clip_01KZPBNJJ38QXQ2C4XM1G3EPVM",
       "clip_01KZPNN8G3RBH5R3CCBNM3T16E",
       "clip_01KZRYEGKHK00ZQJ2KRZEYPE4F",
-      "clip_01KZS0WKR1NDZW3F2630NEZQ4W"
+      "clip_01KZS0WKR1NDZW3F2630NEZQ4W",
+      "clip_01KZSD1266JMGF177GD0PYABQ3"
     ],
     "pact": [
       "clip_01KYFSDQC41DSV2W99Q4Z6XTYB",
@@ -3202,7 +3203,8 @@
       "clip_01KZ6ZQNTM971VC4HWQTY7T2PC",
       "clip_01KZA5K7FQ82NMF7PN5195B838",
       "clip_01KZF3FC75BMN4FGA38FQSKVQE",
-      "clip_01KZRWBRC16MJYFHFJ84DDS5K0"
+      "clip_01KZRWBRC16MJYFHFJ84DDS5K0",
+      "clip_01KZSDQC92RQYRJNZ37RMGPYV5"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3505,7 +3507,7 @@
   },
   "heartbeat": {
     "last": "2026-08-11T17:39:29Z",
-    "clips_since": 29
+    "clips_since": 31
   },
   "silent": {
     "twitch:skotti": {
@@ -3525,7 +3527,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-11T18:33:18Z",
+      "last_clip": "2026-08-11T22:07:26Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3585,7 +3587,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-11T17:39:27Z",
+      "last_clip": "2026-08-11T22:07:58Z",
       "alerted": false
     },
     "kick:whyisabell": {
