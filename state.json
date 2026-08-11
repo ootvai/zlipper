@@ -262,7 +262,8 @@
       "BlueCorrectTriangleKeyboardCat-hLb0J5Ds20MTeM4L",
       "CrunchyDependableTroutCeilingCat-qa_xuwxpfAL_m6QS",
       "ProudPopularJalapenoBudStar-42fLXbB4gA9T7XU0",
-      "SavageDullMinkHassanChop-QP-0uuLQg56Z5INy"
+      "SavageDullMinkHassanChop-QP-0uuLQg56Z5INy",
+      "PoisedRockyDadCclamChamp-DEo3Yo8OSoshqAsV"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -426,17 +427,11 @@
       "clip_01KZG0WT48K32H5GT2MGXBNVHS",
       "clip_01KZPBK8PFWPNT2F9KH856166A",
       "clip_01KZPBNJJ38QXQ2C4XM1G3EPVM",
-      "clip_01KZPNN8G3RBH5R3CCBNM3T16E"
+      "clip_01KZPNN8G3RBH5R3CCBNM3T16E",
+      "clip_01KZRYEGKHK00ZQJ2KRZEYPE4F",
+      "clip_01KZS0WKR1NDZW3F2630NEZQ4W"
     ],
     "pact": [
-      "clip_01KYFQN5BP7J5MZSF50CNA4D67",
-      "clip_01KYFQZ5BT1RGHQQMFRF21SE1A",
-      "clip_01KYFR46FMBNEA2V5M2TMDWM9R",
-      "clip_01KYFR6CZCJFZMBH8CF0H13TAN",
-      "clip_01KYFR9RMNKJ57WR32ZT2Z5M4B",
-      "clip_01KYFR490M2B7QHT4KD3SD6NJE",
-      "clip_01KYFRFF923MG23Q6QHXCQN82Q",
-      "clip_01KYFRKG8D2AVJAH8MYM54XPZZ",
       "clip_01KYFRP97GAFQZXVZ9A10028X2",
       "clip_01KYFRPGJ6X8QCHHYWAZ1JGSBS",
       "clip_01KYFRV67969BPPR5KWEW71AZQ",
@@ -725,7 +720,18 @@
       "clip_01KZRXYVE2WVF90094YDTQ0Z2A",
       "clip_01KZRY2WKX9XJY92X2CG3H8N81",
       "clip_01KZRY8GAVJBH03PK0WEG6NGK7",
-      "clip_01KZRYAKQW5SHYQF8Q4TJ5QA7E"
+      "clip_01KZRYAKQW5SHYQF8Q4TJ5QA7E",
+      "clip_01KZRYF71FWFYC0PSSXQSTVGF8",
+      "clip_01KZRYJQXJNPQTGMZ2XC703C9T",
+      "clip_01KZRYKDXQ6V8X3ZR20SDQP0YH",
+      "clip_01KZRYX3REMXMEQRKVY3SQ8BRE",
+      "clip_01KZRZAST9182Y3A94Y5VMARDN",
+      "clip_01KZRZNKNC4XD1P3RZSW8RM7N9",
+      "clip_01KZRZRMYPVSDTJD1B8Z9D9F00",
+      "clip_01KZRZTXKT55A5VG8S126M2JNF",
+      "clip_01KZS01VXZZJ74XVBHCB42YRBE",
+      "clip_01KZS05KF50NAEZ1MNZGMGKJCC",
+      "clip_01KZS0ANQQTCZAXD4NFRZG8H34"
     ],
     "aapo_olervo": [
       "clip_01KY9JGQEGHBFMHKTHPSYNGQ92",
@@ -2499,7 +2505,8 @@
       "clip_01KZ95GAS2M07GH7B3VPZEQQTE",
       "clip_01KZ95K3YWHBXSWWBCR47BH9GN",
       "clip_01KZNZTYWHFT9AQVEHNBSH6MV5",
-      "clip_01KZRTP3KQPKJHE20XB5CVG399"
+      "clip_01KZRTP3KQPKJHE20XB5CVG399",
+      "clip_01KZS0GBGEP9090JWYST8X3YP9"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -2800,7 +2807,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KW1CYTN5QG89CPN96GWA8S9Y",
       "clip_01KW1H7Z48SEXE26GMFD4SDMP4",
       "clip_01KW1MDK8M74VSXH9V7WD5KWH5",
       "clip_01KW1PKMPHD4VNS74PT1KES8E5",
@@ -3099,7 +3105,8 @@
       "clip_01KZRA650MNPPEG59D2Y1418P1",
       "clip_01KZRA9ERDG90N2MPSGZDYG5KC",
       "clip_01KZRAFQDHNCVKAA089GXZQAB4",
-      "clip_01KZRBJ06FGCQ930N1MTE3HTY9"
+      "clip_01KZRBJ06FGCQ930N1MTE3HTY9",
+      "clip_01KZRZ3BBT5PHS1VN0SB7MXV7M"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3492,7 +3499,7 @@
   },
   "heartbeat": {
     "last": "2026-08-11T17:39:29Z",
-    "clips_since": 0
+    "clips_since": 16
   },
   "silent": {
     "twitch:skotti": {
@@ -3500,7 +3507,7 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-08-09T01:15:25Z",
+      "last_clip": "2026-08-11T18:33:15Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -3512,11 +3519,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-10T21:05:50Z",
+      "last_clip": "2026-08-11T18:33:18Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-11T17:39:03Z",
+      "last_clip": "2026-08-11T18:33:24Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3556,7 +3563,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-08-11T16:39:23Z",
+      "last_clip": "2026-08-11T18:33:48Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
@@ -3568,7 +3575,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-11T13:37:46Z",
+      "last_clip": "2026-08-11T18:33:56Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
