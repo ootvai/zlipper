@@ -448,7 +448,6 @@
       "clip_01KZSN9F1P51V3ZWD231TD8G12"
     ],
     "pact": [
-      "clip_01KYFZFTAEMXSAA7QCAWSJH5PF",
       "clip_01KXXQ8P6E2Q6J7PKZ5MB0WH3R",
       "clip_01KXXQCKBZYJWQXE2KYZYK45DA",
       "clip_01KXXQCP26ESX05V8EM0H2JFFX",
@@ -747,7 +746,8 @@
       "clip_01KZVF8C93QX1KE9F1HQVDBZ5F",
       "clip_01KZVFHD37919XDKCKQ0YV8WZA",
       "clip_01KZVFRS772ETJYN5EHK0G3PJ9",
-      "clip_01KZVG95CTXYR490MCYMWBRHVZ"
+      "clip_01KZVG95CTXYR490MCYMWBRHVZ",
+      "clip_01KZVH7GZ0J5FYTM0V48NHCA0E"
     ],
     "aapo_olervo": [
       "clip_01KY9QV4G2KCBY3H59E34ZZ0XH",
@@ -1613,7 +1613,10 @@
       "clip_01KZSGMW5R2CXQHN8SNSEAB6S9",
       "clip_01KZSJ49CRNW529RMBCJTVE8PD",
       "clip_01KZSK8MWCZW73AE8G0WRTQF3B",
-      "clip_01KZSNF1K2S4SN9CRQFC1G81PX"
+      "clip_01KZSNF1K2S4SN9CRQFC1G81PX",
+      "clip_01KZVGYA3R2CEWF8Q4PR68NDK2",
+      "clip_01KZVH97W696N0FZXFE0KXT8H7",
+      "clip_01KZVHEXAY5H8P4MKV1D1TW80V"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1821,7 +1824,8 @@
       "clip_01KZRBEP5HJGEA7NVJY3H0VPW5",
       "clip_01KZS3ANKN6TEY64N7BGRJR0W0",
       "clip_01KZS3AX5J8YDPD9HH34WSAX3K",
-      "clip_01KZVG39955AJF9GRFH79005SF"
+      "clip_01KZVG39955AJF9GRFH79005SF",
+      "clip_01KZVKX3E1P3PE4EBQ6P44S07T"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3528,7 +3532,7 @@
   },
   "heartbeat": {
     "last": "2026-08-12T06:39:03Z",
-    "clips_since": 15
+    "clips_since": 20
   },
   "silent": {
     "twitch:skotti": {
@@ -3552,7 +3556,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-12T17:39:11Z",
+      "last_clip": "2026-08-12T18:34:10Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3568,11 +3572,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-12T00:43:57Z",
+      "last_clip": "2026-08-12T18:34:19Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-12T17:39:24Z",
+      "last_clip": "2026-08-12T18:34:21Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
