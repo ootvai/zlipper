@@ -445,10 +445,10 @@
       "clip_01KZSKFNXJF392V1E7SJVZ3DCP",
       "clip_01KZSKTNJ5HJ020KSYFEBGTCN5",
       "clip_01KZSMFWX7Z80ETFGQME90GWK8",
-      "clip_01KZSN9F1P51V3ZWD231TD8G12"
+      "clip_01KZSN9F1P51V3ZWD231TD8G12",
+      "clip_01KZVR113RZR82SF1XX6WQB572"
     ],
     "pact": [
-      "clip_01KXXQCKBZYJWQXE2KYZYK45DA",
       "clip_01KXXQCP26ESX05V8EM0H2JFFX",
       "clip_01KXXQJVNKH5D4MGV34ZWY9X94",
       "clip_01KXXR3NTSEJ0EPCFQ14N8VG4G",
@@ -747,7 +747,8 @@
       "clip_01KZVFRS772ETJYN5EHK0G3PJ9",
       "clip_01KZVG95CTXYR490MCYMWBRHVZ",
       "clip_01KZVH7GZ0J5FYTM0V48NHCA0E",
-      "clip_01KZVNRKCBDAP0V95ZN3HXQVHK"
+      "clip_01KZVNRKCBDAP0V95ZN3HXQVHK",
+      "clip_01KZVRY094EJJSKA9CCW4JF1YA"
     ],
     "aapo_olervo": [
       "clip_01KY9S5WZ68RSTJ0GPZC4WVZWE",
@@ -2843,7 +2844,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KW4CDN6P52FDBEXHF6GPGGTZ",
       "clip_01KW59CH6992CJGM725JJD8X5W",
       "clip_01KW7601MH7PS88FRM2GQ1SSV3",
       "clip_01KW76FXBY02HDEQ7579V3G69C",
@@ -3142,7 +3142,8 @@
       "clip_01KZRZ3BBT5PHS1VN0SB7MXV7M",
       "clip_01KZVBZANC1T9052E4KS95X5SB",
       "clip_01KZVC42BBREK1YGP483M3E0GB",
-      "clip_01KZVE7GP43PP70H8S0PHFAQ1K"
+      "clip_01KZVE7GP43PP70H8S0PHFAQ1K",
+      "clip_01KZVR5CYHR2E98A8THXPVNWR7"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3536,7 +3537,7 @@
   },
   "heartbeat": {
     "last": "2026-08-12T19:44:26Z",
-    "clips_since": 0
+    "clips_since": 3
   },
   "silent": {
     "twitch:skotti": {
@@ -3556,11 +3557,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-12T00:43:47Z",
+      "last_clip": "2026-08-12T20:24:55Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-12T19:44:00Z",
+      "last_clip": "2026-08-12T20:24:57Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3612,7 +3613,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-12T17:39:40Z",
+      "last_clip": "2026-08-12T20:25:15Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
