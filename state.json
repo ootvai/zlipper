@@ -7,7 +7,8 @@
       "EnthusiasticImportantQueleaBudBlast-A5QjJp1yho7LOOzU",
       "StylishAdventurousPigStinkyCheese-SXDDjfAaTeB426Ga",
       "RepleteBadAsteriskThisIsSparta-9FKIJOyDBIvMn6kC",
-      "SmokyCrazyAlpacaMVGame-sLwdzDr-yegnFRWP"
+      "SmokyCrazyAlpacaMVGame-sLwdzDr-yegnFRWP",
+      "GorgeousCrispyPelicanBleedPurple-wa8k2MD3kb5bhkTL"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -1631,7 +1632,9 @@
       "clip_01KZVZHZM6GBN7Y6WDR4J65RGM",
       "clip_01KZVZJXXG3F5YN2ZZQP7QJD2Q",
       "clip_01KZVZRYDBMTQ66TD0CJMBNCXP",
-      "clip_01KZVZMEA0DQGKARW6EDXYWN2X"
+      "clip_01KZVZMEA0DQGKARW6EDXYWN2X",
+      "clip_01KZW09ENWPCVD8S5BTN9T5QK6",
+      "clip_01KZW27HSMQVHYD1PE3BREXZBF"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2854,7 +2857,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KW59CH6992CJGM725JJD8X5W",
       "clip_01KW7601MH7PS88FRM2GQ1SSV3",
       "clip_01KW76FXBY02HDEQ7579V3G69C",
       "clip_01KW770YDJYBJNM8B7GQ407Q1V",
@@ -3153,7 +3155,8 @@
       "clip_01KZVBZANC1T9052E4KS95X5SB",
       "clip_01KZVC42BBREK1YGP483M3E0GB",
       "clip_01KZVE7GP43PP70H8S0PHFAQ1K",
-      "clip_01KZVR5CYHR2E98A8THXPVNWR7"
+      "clip_01KZVR5CYHR2E98A8THXPVNWR7",
+      "clip_01KZW1BDW6H1J2V60139J8PXZQ"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3547,11 +3550,11 @@
   },
   "heartbeat": {
     "last": "2026-08-12T19:44:26Z",
-    "clips_since": 14
+    "clips_since": 18
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-12T22:05:12Z",
+      "last_clip": "2026-08-12T22:55:54Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3587,7 +3590,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-12T22:05:29Z",
+      "last_clip": "2026-08-12T22:56:06Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3623,7 +3626,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-12T20:25:15Z",
+      "last_clip": "2026-08-12T22:56:21Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
