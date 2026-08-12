@@ -265,7 +265,9 @@
       "SavageDullMinkHassanChop-QP-0uuLQg56Z5INy",
       "PoisedRockyDadCclamChamp-DEo3Yo8OSoshqAsV",
       "ProtectiveAbstrusePigeonKappaRoss-attDGqfUz49-t8Xq",
-      "NurturingJazzyPeppermintBlargNaut-EQMGPHY40p9gqAY2"
+      "NurturingJazzyPeppermintBlargNaut-EQMGPHY40p9gqAY2",
+      "LazyRespectfulGnatMrDestructoid-GisL13f_6aK9uqhR",
+      "ProudSplendidChoughOptimizePrime-nYdBq_R8DmWyIhvK"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -275,7 +277,9 @@
       "AbrasiveSeductiveSnoodBrainSlug-uJtBbT_gCp75dOSX",
       "SplendidHeadstrongPassionfruitOMGScoots-3BwnWW34_i-2oXA1",
       "RudeAmazingSpindleTheThing-88jPGHPr9OFCEeZd",
-      "ProudNimbleJaguarNononoCat-uqoh4HIsw-hyLduY"
+      "ProudNimbleJaguarNononoCat-uqoh4HIsw-hyLduY",
+      "SpinelessCleverTrollSmoocherZ-q2l52JkPjf1y1TFB",
+      "MotionlessMagnificentBubbleteaWow-zVnL-wikWyJvKT_f"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -2829,8 +2833,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KW1H7Z48SEXE26GMFD4SDMP4",
-      "clip_01KW1MDK8M74VSXH9V7WD5KWH5",
       "clip_01KW1PKMPHD4VNS74PT1KES8E5",
       "clip_01KW4CDN6P52FDBEXHF6GPGGTZ",
       "clip_01KW59CH6992CJGM725JJD8X5W",
@@ -3128,7 +3130,9 @@
       "clip_01KZRA9ERDG90N2MPSGZDYG5KC",
       "clip_01KZRAFQDHNCVKAA089GXZQAB4",
       "clip_01KZRBJ06FGCQ930N1MTE3HTY9",
-      "clip_01KZRZ3BBT5PHS1VN0SB7MXV7M"
+      "clip_01KZRZ3BBT5PHS1VN0SB7MXV7M",
+      "clip_01KZVBZANC1T9052E4KS95X5SB",
+      "clip_01KZVC42BBREK1YGP483M3E0GB"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3522,7 +3526,7 @@
   },
   "heartbeat": {
     "last": "2026-08-12T06:39:03Z",
-    "clips_since": 2
+    "clips_since": 8
   },
   "silent": {
     "twitch:skotti": {
@@ -3530,11 +3534,11 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-08-12T15:42:16Z",
+      "last_clip": "2026-08-12T16:38:44Z",
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-07T16:32:04Z",
+      "last_clip": "2026-08-12T16:38:45Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -3598,7 +3602,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-11T18:33:56Z",
+      "last_clip": "2026-08-12T16:39:21Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
