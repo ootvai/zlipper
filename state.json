@@ -449,7 +449,6 @@
       "clip_01KZVR113RZR82SF1XX6WQB572"
     ],
     "pact": [
-      "clip_01KXXQCP26ESX05V8EM0H2JFFX",
       "clip_01KXXQJVNKH5D4MGV34ZWY9X94",
       "clip_01KXXR3NTSEJ0EPCFQ14N8VG4G",
       "clip_01KXXR3HYTVSB3HGPWCNHCZ3Y2",
@@ -748,7 +747,8 @@
       "clip_01KZVG95CTXYR490MCYMWBRHVZ",
       "clip_01KZVH7GZ0J5FYTM0V48NHCA0E",
       "clip_01KZVNRKCBDAP0V95ZN3HXQVHK",
-      "clip_01KZVRY094EJJSKA9CCW4JF1YA"
+      "clip_01KZVRY094EJJSKA9CCW4JF1YA",
+      "clip_01KZVTF737X9W6PDWJ06W6KZFB"
     ],
     "aapo_olervo": [
       "clip_01KY9S5WZ68RSTJ0GPZC4WVZWE",
@@ -1621,7 +1621,8 @@
       "clip_01KZVMC9F464WGY1H80SAFMVKH",
       "clip_01KZVN1A2X0817A6XWQWMYNBYD",
       "clip_01KZVNHPDN6PWCAHVVSHWY1ZN4",
-      "clip_01KZVP2YJXDWZXAFK6YMCK6XQA"
+      "clip_01KZVP2YJXDWZXAFK6YMCK6XQA",
+      "clip_01KZVX1H29VT5SJ34S2VDCMK2R"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3537,7 +3538,7 @@
   },
   "heartbeat": {
     "last": "2026-08-12T19:44:26Z",
-    "clips_since": 3
+    "clips_since": 5
   },
   "silent": {
     "twitch:skotti": {
@@ -3561,7 +3562,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-12T20:24:57Z",
+      "last_clip": "2026-08-12T21:12:15Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3577,7 +3578,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-12T19:44:09Z",
+      "last_clip": "2026-08-12T21:12:25Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
