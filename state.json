@@ -6,7 +6,8 @@
       "HyperJoyousAlligatorRlyTho-hC6YJe9osQx8t2z-",
       "EnthusiasticImportantQueleaBudBlast-A5QjJp1yho7LOOzU",
       "StylishAdventurousPigStinkyCheese-SXDDjfAaTeB426Ga",
-      "RepleteBadAsteriskThisIsSparta-9FKIJOyDBIvMn6kC"
+      "RepleteBadAsteriskThisIsSparta-9FKIJOyDBIvMn6kC",
+      "SmokyCrazyAlpacaMVGame-sLwdzDr-yegnFRWP"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -446,7 +447,9 @@
       "clip_01KZSKTNJ5HJ020KSYFEBGTCN5",
       "clip_01KZSMFWX7Z80ETFGQME90GWK8",
       "clip_01KZSN9F1P51V3ZWD231TD8G12",
-      "clip_01KZVR113RZR82SF1XX6WQB572"
+      "clip_01KZVR113RZR82SF1XX6WQB572",
+      "clip_01KZVXBT6GKD4MJ6QGWVQ1VTY3",
+      "clip_01KZVZGRGQPXSEZRA7390CKB3Y"
     ],
     "pact": [
       "clip_01KXXQJVNKH5D4MGV34ZWY9X94",
@@ -1622,7 +1625,13 @@
       "clip_01KZVN1A2X0817A6XWQWMYNBYD",
       "clip_01KZVNHPDN6PWCAHVVSHWY1ZN4",
       "clip_01KZVP2YJXDWZXAFK6YMCK6XQA",
-      "clip_01KZVX1H29VT5SJ34S2VDCMK2R"
+      "clip_01KZVX1H29VT5SJ34S2VDCMK2R",
+      "clip_01KZVZBC4GG5WY9V1CK5QMEWA1",
+      "clip_01KZVZBV9AYEP6SQS8P96E535G",
+      "clip_01KZVZHZM6GBN7Y6WDR4J65RGM",
+      "clip_01KZVZJXXG3F5YN2ZZQP7QJD2Q",
+      "clip_01KZVZRYDBMTQ66TD0CJMBNCXP",
+      "clip_01KZVZMEA0DQGKARW6EDXYWN2X"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3538,11 +3547,11 @@
   },
   "heartbeat": {
     "last": "2026-08-12T19:44:26Z",
-    "clips_since": 5
+    "clips_since": 14
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-11T01:15:26Z",
+      "last_clip": "2026-08-12T22:05:12Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3558,7 +3567,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-12T20:24:55Z",
+      "last_clip": "2026-08-12T22:05:15Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3578,7 +3587,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-12T21:12:25Z",
+      "last_clip": "2026-08-12T22:05:29Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
