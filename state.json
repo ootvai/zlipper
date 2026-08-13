@@ -12,7 +12,8 @@
       "ShakingThoughtfulAmazonResidentSleeper-leE9sjO_LmZOfQmw",
       "TenderCrazyYogurtRaccAttack-Bbvu6VSw2v83oZ3T",
       "PoisedSteamyClintmullinsKappaWealth-Mz4HEHKHZSeqwXSw",
-      "OutstandingSingleStrawberryWutFace-AlLMBITcuGVTcEwl"
+      "OutstandingSingleStrawberryWutFace-AlLMBITcuGVTcEwl",
+      "ZanyConsiderateOilPeteZaroll-J07qv_z_7bDdF79O"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -1247,7 +1248,9 @@
       "clip_01KZS4CRPZCSC3C5T6AZV6M23S",
       "clip_01KZX9XN8C5XBP5NVH0YPRS3XY",
       "clip_01KZYFN5DN8X4GN5NE4TW4R3E3",
-      "clip_01KZYGSAZXQPP3VM1SG1Q8MZ8P"
+      "clip_01KZYGSAZXQPP3VM1SG1Q8MZ8P",
+      "clip_01KZYKGFTX3RAC5BPJZD4324GD",
+      "clip_01KZYKRBS4ASP3KVXME5616JZK"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3569,11 +3572,11 @@
   },
   "heartbeat": {
     "last": "2026-08-13T20:19:40Z",
-    "clips_since": 8
+    "clips_since": 11
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-13T21:08:07Z",
+      "last_clip": "2026-08-13T22:50:48Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3601,7 +3604,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-13T21:59:46Z",
+      "last_clip": "2026-08-13T22:50:57Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
