@@ -8,7 +8,8 @@
       "StylishAdventurousPigStinkyCheese-SXDDjfAaTeB426Ga",
       "RepleteBadAsteriskThisIsSparta-9FKIJOyDBIvMn6kC",
       "SmokyCrazyAlpacaMVGame-sLwdzDr-yegnFRWP",
-      "GorgeousCrispyPelicanBleedPurple-wa8k2MD3kb5bhkTL"
+      "GorgeousCrispyPelicanBleedPurple-wa8k2MD3kb5bhkTL",
+      "ShakingThoughtfulAmazonResidentSleeper-leE9sjO_LmZOfQmw"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -450,7 +451,8 @@
       "clip_01KZSN9F1P51V3ZWD231TD8G12",
       "clip_01KZVR113RZR82SF1XX6WQB572",
       "clip_01KZVXBT6GKD4MJ6QGWVQ1VTY3",
-      "clip_01KZVZGRGQPXSEZRA7390CKB3Y"
+      "clip_01KZVZGRGQPXSEZRA7390CKB3Y",
+      "clip_01KZW62DEY0SVVYT0EYFN1MCK2"
     ],
     "pact": [
       "clip_01KXXQJVNKH5D4MGV34ZWY9X94",
@@ -3550,11 +3552,11 @@
   },
   "heartbeat": {
     "last": "2026-08-12T19:44:26Z",
-    "clips_since": 18
+    "clips_since": 20
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-12T22:55:54Z",
+      "last_clip": "2026-08-13T00:42:10Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3570,7 +3572,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-12T22:05:15Z",
+      "last_clip": "2026-08-13T00:42:13Z",
       "alerted": false
     },
     "kick:pact": {
