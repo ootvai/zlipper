@@ -111,7 +111,7 @@
   "perustiedot": 19,
   "ggslettu": 1,
   "halinalleinen": 1,
-  "epola": 310,
+  "epola": 311,
   "badsanta81": 2,
   "janiro": 1,
   "isomunkki": 74,
@@ -233,7 +233,7 @@
   "animetyty": 1,
   "leijjuvalerssi": 1,
   "tilttis": 8,
-  "tehosekoitin": 32,
+  "tehosekoitin": 33,
   "kemppi": 1,
   "mayradog": 3,
   "huutomerkki_olli": 3,
@@ -312,7 +312,7 @@
   "urgotti": 51,
   "ebeli82": 27,
   "kopsu": 1,
-  "kimppu87": 64,
+  "kimppu87": 65,
   "ilppi": 1,
   "hullujorma": 16,
   "argie": 3,
@@ -840,5 +840,8 @@
   "elvanse_enjoyer": 1,
   "nnebis": 1,
   "zanuidaa": 1,
-  "massiton": 1
+  "massiton": 1,
+  "itm0": 1,
+  "olska1": 1,
+  "verkkarijalka": 1
 }
