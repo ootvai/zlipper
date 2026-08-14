@@ -1652,7 +1652,8 @@
       "clip_01KZVZRYDBMTQ66TD0CJMBNCXP",
       "clip_01KZVZMEA0DQGKARW6EDXYWN2X",
       "clip_01KZW09ENWPCVD8S5BTN9T5QK6",
-      "clip_01KZW27HSMQVHYD1PE3BREXZBF"
+      "clip_01KZW27HSMQVHYD1PE3BREXZBF",
+      "clip_01KZZF2ZF5ADWSRTHBWVSZGA6A"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3575,7 +3576,7 @@
   },
   "heartbeat": {
     "last": "2026-08-13T20:19:40Z",
-    "clips_since": 16
+    "clips_since": 17
   },
   "silent": {
     "twitch:skotti": {
@@ -3615,7 +3616,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-12T22:56:06Z",
+      "last_clip": "2026-08-14T06:39:11Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
