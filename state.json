@@ -1653,7 +1653,8 @@
       "clip_01KZVZMEA0DQGKARW6EDXYWN2X",
       "clip_01KZW09ENWPCVD8S5BTN9T5QK6",
       "clip_01KZW27HSMQVHYD1PE3BREXZBF",
-      "clip_01KZZF2ZF5ADWSRTHBWVSZGA6A"
+      "clip_01KZZF2ZF5ADWSRTHBWVSZGA6A",
+      "clip_01KZZJGVZGGX0XB61FACWJBKWZ"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1865,7 +1866,8 @@
       "clip_01KZVKX3E1P3PE4EBQ6P44S07T",
       "clip_01KZXAP04Y0GH7EBHYWYSE2GTJ",
       "clip_01KZY7THHG6QGF5MZBN6YK5WPM",
-      "clip_01KZYAZEFH532WDB8JHP586GA8"
+      "clip_01KZYAZEFH532WDB8JHP586GA8",
+      "clip_01KZZGV25386MKX8ETYV6GHXCV"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -2883,10 +2885,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KWVRMGG8N1S9W6M0QA2J288Q",
-      "clip_01KWXTPHCAW0NH1PX4FK63QFW4",
-      "clip_01KWY4GNMB3H1FHYP6DDMBM8EA",
-      "clip_01KWYXF90DZBTV27BTS314W14M",
       "clip_01KWYXHADAR6EZVKSBCXPQGNJ0",
       "clip_01KX1RFTNM1ZTWVBRQJWQS3ATD",
       "clip_01KX5SKFAG6H5XGB2TG79752HH",
@@ -3182,7 +3180,11 @@
       "clip_01KZY4B8ZAS5PXDP38BJT9W9WJ",
       "clip_01KZY7FR02T16Z71D3CJJ28C18",
       "clip_01KZY7YQH4N4CNH0BYZP87YH79",
-      "clip_01KZYA8G265H7YPQCSGKPMC0M7"
+      "clip_01KZYA8G265H7YPQCSGKPMC0M7",
+      "clip_01KZZGKSPB77DSYHBTCZAM1E6W",
+      "clip_01KZZHMJE152CXQW9153R1QYGQ",
+      "clip_01KZZJNQ9BG5KMMTD6Z8GKHBAN",
+      "clip_01KZZJWPVE8657SVX0QPZ1SMHV"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3576,7 +3578,7 @@
   },
   "heartbeat": {
     "last": "2026-08-13T20:19:40Z",
-    "clips_since": 17
+    "clips_since": 23
   },
   "silent": {
     "twitch:skotti": {
@@ -3616,11 +3618,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-14T06:39:11Z",
+      "last_clip": "2026-08-14T08:01:03Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-13T20:19:21Z",
+      "last_clip": "2026-08-14T08:01:05Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -3652,7 +3654,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-13T20:19:35Z",
+      "last_clip": "2026-08-14T08:01:15Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
