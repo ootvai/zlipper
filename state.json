@@ -303,7 +303,9 @@
       "FamousCautiousCroquetteTebowing-41IhflpPR27iyiFt",
       "FantasticDeterminedEagleBabyRage-dRJV6epJ7cO1iBYH",
       "AttractiveShinyEndiveGingerPower-nPsJ17iTCRHLFfSq",
-      "VenomousTentativeCoyoteTheTarFu-i8YfgG13dHLDmUcR"
+      "VenomousTentativeCoyoteTheTarFu-i8YfgG13dHLDmUcR",
+      "OddGiftedGaurWoofer-1OGbW6nBWyCi3M9T",
+      "ArtsyResilientOstrichSmoocherZ-_rV_cF57I1RVBkQT"
     ]
   },
   "kick": {
@@ -2892,8 +2894,6 @@
       "clip_01KZPBEP4KEDP3TJS9SCTV5Q5Y"
     ],
     "johtajanmatkassa": [
-      "clip_01KX5SKFAG6H5XGB2TG79752HH",
-      "clip_01KX6K0BVK2K0J0WQYQHDJTREP",
       "clip_01KX6K3Z25P50WG6BGSBJ0YKKX",
       "clip_01KX8HHSPSC29SQ2DZZ1QYK5VS",
       "clip_01KX919AQJHNW672HXD6KYZRRQ",
@@ -3191,7 +3191,9 @@
       "clip_01KZZJNQ9BG5KMMTD6Z8GKHBAN",
       "clip_01KZZJWPVE8657SVX0QPZ1SMHV",
       "clip_01KZZTD1D5XJFXC6RSKFCDSNAA",
-      "clip_01KZZVR2M6QMPDVGE18MRQFJ0R"
+      "clip_01KZZVR2M6QMPDVGE18MRQFJ0R",
+      "clip_01M008HBJ4NST705EH26MN21AM",
+      "clip_01M008PGACMVN3PT1SRFYM6WZ5"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3573,7 +3575,8 @@
       "clip_01KZRQMPGE6B1XZENR5B0E0MBN",
       "clip_01M004EXRC44PPDMSFJDVNY2Z2",
       "clip_01M006HWDYDNRWN42PBTRFTW3F",
-      "clip_01M006NCGJFGMWJVZDW2408GRD"
+      "clip_01M006NCGJFGMWJVZDW2408GRD",
+      "clip_01M00A8DNNYB3RFAMFT5JC1EDK"
     ]
   },
   "health": {
@@ -3588,7 +3591,7 @@
   },
   "heartbeat": {
     "last": "2026-08-14T09:17:06Z",
-    "clips_since": 16
+    "clips_since": 21
   },
   "silent": {
     "twitch:skotti": {
@@ -3604,7 +3607,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-13T18:33:53Z",
+      "last_clip": "2026-08-14T14:27:51Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -3664,7 +3667,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-14T10:26:40Z",
+      "last_clip": "2026-08-14T14:28:11Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -3676,7 +3679,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-14T13:18:29Z",
+      "last_clip": "2026-08-14T14:28:14Z",
       "alerted": false
     }
   }
