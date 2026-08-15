@@ -1886,7 +1886,9 @@
       "clip_01M00MJ7BRQ9NNG5MKQPPW2VMK",
       "clip_01M00MJT3KAY4KZNW171378X1P",
       "clip_01M00PGHCTQJREHHXPXMF9S7DR",
-      "clip_01M012J03FTGT642PHA4EN7WWR"
+      "clip_01M012J03FTGT642PHA4EN7WWR",
+      "clip_01M02MD8CNNAZVCGG66H5KKFYC",
+      "clip_01M02MHMHE7AMM2CGJ5NN1TQ04"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3599,7 +3601,8 @@
       "clip_01M00NG2Y12EQ98004SAMRZMWZ",
       "clip_01M00NKN81R58E3V8YP1N66YTZ",
       "clip_01M00RGF4F53Q2W3PQA75SYQ67",
-      "clip_01M00SFQBNQHYVR51TFE5RCPHF"
+      "clip_01M00SFQBNQHYVR51TFE5RCPHF",
+      "clip_01M02P3AN94P9C70GCGC0E19YY"
     ]
   },
   "health": {
@@ -3614,7 +3617,7 @@
   },
   "heartbeat": {
     "last": "2026-08-15T09:49:01Z",
-    "clips_since": 5
+    "clips_since": 8
   },
   "silent": {
     "twitch:skotti": {
@@ -3658,7 +3661,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-14T21:29:56Z",
+      "last_clip": "2026-08-15T12:26:22Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -3702,7 +3705,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-14T19:11:24Z",
+      "last_clip": "2026-08-15T12:26:43Z",
       "alerted": false
     }
   }
