@@ -2407,7 +2407,8 @@
       "clip_01KW6R1PA0P5D4VS4ZCVX80JDY",
       "clip_01KW6RRTWP6B7DH6EZQQ59BEPP",
       "clip_01KZEHX8K7W95JCD93ZW2XVKM9",
-      "clip_01KZHMVQ7WVT3SD8DVGDB2SPH6"
+      "clip_01KZHMVQ7WVT3SD8DVGDB2SPH6",
+      "clip_01M02002X3R29XRFWE5ZE1GNQE"
     ],
     "heikrisse": [
       "clip_01KXYCZHFTAFQ3HH4Z7PKP05PZ",
@@ -3613,7 +3614,7 @@
   },
   "heartbeat": {
     "last": "2026-08-14T21:30:16Z",
-    "clips_since": 7
+    "clips_since": 8
   },
   "silent": {
     "twitch:skotti": {
@@ -3673,7 +3674,7 @@
       "alerted": false
     },
     "kick:pirkkislive": {
-      "last_clip": "2026-08-08T21:54:49Z",
+      "last_clip": "2026-08-15T06:02:06Z",
       "alerted": false
     },
     "kick:heikrisse": {
