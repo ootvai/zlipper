@@ -468,7 +468,8 @@
       "clip_01M00JB9EKC85YHQREXMKFPX94",
       "clip_01M00PK2FCMKNSBHCYA93JV50M",
       "clip_01M02Z7GSGS07YY0E3B3CMRQ11",
-      "clip_01M02ZSPVWZ2QG9CF56K0NQMZ3"
+      "clip_01M02ZSPVWZ2QG9CF56K0NQMZ3",
+      "clip_01M031H3JFVFFHK9MT2BEJ126Y"
     ],
     "pact": [
       "clip_01KY5G3H1N5VP10XE9E16TCM92",
@@ -2412,7 +2413,8 @@
       "clip_01KW6RRTWP6B7DH6EZQQ59BEPP",
       "clip_01KZEHX8K7W95JCD93ZW2XVKM9",
       "clip_01KZHMVQ7WVT3SD8DVGDB2SPH6",
-      "clip_01M02002X3R29XRFWE5ZE1GNQE"
+      "clip_01M02002X3R29XRFWE5ZE1GNQE",
+      "clip_01M031BPSNCZYS9SHCEBHWCRJS"
     ],
     "heikrisse": [
       "clip_01KXYCZHFTAFQ3HH4Z7PKP05PZ",
@@ -2913,7 +2915,6 @@
       "clip_01M00KC47SKWA0GF2FACN58XN3"
     ],
     "johtajanmatkassa": [
-      "clip_01KY9MZ3W6YH41X9AZK5CK1ZDF",
       "clip_01KY9NEFS89G0EGPHETGQG21ZG",
       "clip_01KYA5JTPEF429D73ZTWXCFDDW",
       "clip_01KYA5M0CJQ824EQ1263MFDRRT",
@@ -3212,7 +3213,8 @@
       "clip_01M02YDD06F3366MRHWG1VZEJ0",
       "clip_01M02Z7W1KHQEBK7JK28PM6W2S",
       "clip_01M02ZPB9SG0P8E0SCHB9VZ9QQ",
-      "clip_01M030BJA3KHJN9CQ7E23KSG0Z"
+      "clip_01M030BJA3KHJN9CQ7E23KSG0Z",
+      "clip_01M031V6P8249QN8ZQK16ZYCHB"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3610,7 +3612,9 @@
       "clip_01M02S5GPP2TR3BJA1Y1X08KPE",
       "clip_01M02Y6ZDJFE6KQRANT6A5HTZ0",
       "clip_01M02YD2HBHX5S8871XSRM5ZF1",
-      "clip_01M030Q7K1JKQ0CVCDYNWB2EDN"
+      "clip_01M030Q7K1JKQ0CVCDYNWB2EDN",
+      "clip_01M031REAXPS8CHY8468CDDM32",
+      "clip_01M031QZBP1B9E3G6M0ZH7XGJT"
     ]
   },
   "health": {
@@ -3625,7 +3629,7 @@
   },
   "heartbeat": {
     "last": "2026-08-15T09:49:01Z",
-    "clips_since": 39
+    "clips_since": 44
   },
   "silent": {
     "twitch:skotti": {
@@ -3645,7 +3649,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-15T15:32:01Z",
+      "last_clip": "2026-08-15T15:52:42Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3685,7 +3689,7 @@
       "alerted": false
     },
     "kick:pirkkislive": {
-      "last_clip": "2026-08-15T06:02:06Z",
+      "last_clip": "2026-08-15T15:53:03Z",
       "alerted": false
     },
     "kick:heikrisse": {
@@ -3701,7 +3705,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-15T15:32:31Z",
+      "last_clip": "2026-08-15T15:53:14Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -3713,7 +3717,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-15T15:32:36Z",
+      "last_clip": "2026-08-15T15:53:19Z",
       "alerted": false
     }
   }
