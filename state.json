@@ -783,7 +783,6 @@
       "clip_01M038JCBQRJ50MP4ZMZ0R284X"
     ],
     "aapo_olervo": [
-      "clip_01KYHV215GMGB95NRXWRM9CK1C",
       "clip_01KYHV7ZR9HP16PGVCW697XX7X",
       "clip_01KYHXVMRVQXS7ABH9DQR6R1SE",
       "clip_01KYJ3NYK2GTA0G6X9PZRK1Z9H",
@@ -1082,7 +1081,8 @@
       "clip_01M04TGRD4PRBSP5TTHQMH727Z",
       "clip_01M04TY3VPT97GXJ0K93Q2ZAF9",
       "clip_01M04V7AHNS1R6VKHKR3J1753S",
-      "clip_01M04WWT5BS1STN9H1HCCKGBS9"
+      "clip_01M04WWT5BS1STN9H1HCCKGBS9",
+      "clip_01M055BPD10RWAK023230AZWYA"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2934,7 +2934,12 @@
       "clip_01M0536MBHCWQWZTYK8X0BM4ZE",
       "clip_01M0536WSCPC8YJ312AXX34RHR",
       "clip_01M053XV90T9D9QXHE38B8C5CZ",
-      "clip_01M054GFN4WV21GKQ9HNARPX7A"
+      "clip_01M054GFN4WV21GKQ9HNARPX7A",
+      "clip_01M054PC4P99BB512HDCYQABQM",
+      "clip_01M054RGTXGYRJ2JJSD6NKAQ6E",
+      "clip_01M054XRT685CD3JJ73CWTNVJ7",
+      "clip_01M0551BAMAQ2X3AXRKB27BXKY",
+      "clip_01M0555KTEN626F69ZK9EV0BVT"
     ],
     "johtajanmatkassa": [
       "clip_01KYPNH6XQEJJSJ8ZWJPXRRCJD",
@@ -3660,7 +3665,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T10:01:57Z",
-    "clips_since": 10
+    "clips_since": 16
   },
   "silent": {
     "twitch:skotti": {
@@ -3688,7 +3693,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-16T09:10:51Z",
+      "last_clip": "2026-08-16T11:37:26Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3732,7 +3737,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-16T11:15:25Z",
+      "last_clip": "2026-08-16T11:37:54Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
