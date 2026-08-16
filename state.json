@@ -493,7 +493,12 @@
       "clip_01M05ZH50166RVDP133Y3860HF",
       "clip_01M06057277XY0CYA7ZDVP4KWB",
       "clip_01M062KBKGFKXVT4DS56HP0PQ7",
-      "clip_01M063BPKD3Q2R51JW189JQDM3"
+      "clip_01M063BPKD3Q2R51JW189JQDM3",
+      "clip_01M063JD790JW2VC0YF8E79RCS",
+      "clip_01M063TWYV6ZJT530XATZTCFGG",
+      "clip_01M063MCJWN00AF9XMJ0C0SZ68",
+      "clip_01M0647PTK8HAWWJ4QXG7Z9BRB",
+      "clip_01M064THR0Y0CEAMWTG9HVD8ZT"
     ],
     "pact": [
       "clip_01KY81GPVPP8JEYS947KC3C741",
@@ -1394,7 +1399,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KY09M0F9CKT60CDPXBXX065M",
       "clip_01KY0BR2MXQQ77NG4Q0TSF6CXK",
       "clip_01KY0D342BYA05YR7QFYEWS5S1",
       "clip_01KY0DPEN7EWJXSQ0MGZYAVQXK",
@@ -1693,7 +1697,8 @@
       "clip_01M05VA3KR88EEMK7HF5CD5ZRR",
       "clip_01M05VGWADBM9SRYVPNVE0Z4TT",
       "clip_01M05W7PMFNM8R85HR1VC1G0V4",
-      "clip_01M05YFW0417D8WSS2R1CQ0BXS"
+      "clip_01M05YFW0417D8WSS2R1CQ0BXS",
+      "clip_01M064V1BB0APYJZG605M83705"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1919,7 +1924,8 @@
       "clip_01M03C8B48G00GYD4Y14BVF0VN",
       "clip_01M04VVYTKDQER8AMVNTTM6XV1",
       "clip_01M04Y800SJXF1KP12M21BNM0F",
-      "clip_01M051VK29AQ5E1Z6HP6SA471D"
+      "clip_01M051VK29AQ5E1Z6HP6SA471D",
+      "clip_01M0647GZ9RRS7C5YTW63V02W7"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3684,7 +3690,8 @@
       "clip_01M058S8DRTAM2EP1M3SSEACBX",
       "clip_01M05E6K9T7B6ZXZVTRVY0MGJP",
       "clip_01M05H4EPN35GRZXMXWKJA9CTA",
-      "clip_01M05RAE55HTJBCBJ13AMVRNPH"
+      "clip_01M05RAE55HTJBCBJ13AMVRNPH",
+      "clip_01M064GNMPCZ2D14ATJTPTEWNY"
     ]
   },
   "health": {
@@ -3699,7 +3706,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T10:01:57Z",
-    "clips_since": 92
+    "clips_since": 100
   },
   "silent": {
     "twitch:skotti": {
@@ -3719,7 +3726,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-16T20:15:06Z",
+      "last_clip": "2026-08-16T20:41:16Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3739,11 +3746,11 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-16T18:51:02Z",
+      "last_clip": "2026-08-16T20:41:28Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-16T10:34:44Z",
+      "last_clip": "2026-08-16T20:41:30Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -3787,7 +3794,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-16T17:05:48Z",
+      "last_clip": "2026-08-16T20:41:52Z",
       "alerted": false
     }
   }
