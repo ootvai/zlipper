@@ -783,7 +783,6 @@
       "clip_01M038JCBQRJ50MP4ZMZ0R284X"
     ],
     "aapo_olervo": [
-      "clip_01KYHT6R65P31GD7GBSTXCRC5W",
       "clip_01KYHV215GMGB95NRXWRM9CK1C",
       "clip_01KYHV7ZR9HP16PGVCW697XX7X",
       "clip_01KYHXVMRVQXS7ABH9DQR6R1SE",
@@ -1082,7 +1081,8 @@
       "clip_01M04S269VNNFEPWPVWMFGW7S2",
       "clip_01M04TGRD4PRBSP5TTHQMH727Z",
       "clip_01M04TY3VPT97GXJ0K93Q2ZAF9",
-      "clip_01M04V7AHNS1R6VKHKR3J1753S"
+      "clip_01M04V7AHNS1R6VKHKR3J1753S",
+      "clip_01M04WWT5BS1STN9H1HCCKGBS9"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1379,7 +1379,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KXXF22QC8TQ27Q7126WP7H24",
       "clip_01KXXFJYZWK6BMGEME9GX8RPRT",
       "clip_01KXXMSCZWREK68ZF9147S7V4W",
       "clip_01KXXQKMQ1VDYT0AGVXHEPG1ST",
@@ -1678,7 +1677,8 @@
       "clip_01M04ACTRJFEKS6NTQKPR36XFQ",
       "clip_01M04BHPAFWTPM2586NKNKF1VF",
       "clip_01M04CQE5YEQS0HM57Q506W3EN",
-      "clip_01M04DN0363JP05WAS16SVQ0FZ"
+      "clip_01M04DN0363JP05WAS16SVQ0FZ",
+      "clip_01M04WAC7DD93AD6CZ6BD3QW3C"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1901,7 +1901,8 @@
       "clip_01M012J03FTGT642PHA4EN7WWR",
       "clip_01M02MD8CNNAZVCGG66H5KKFYC",
       "clip_01M02MHMHE7AMM2CGJ5NN1TQ04",
-      "clip_01M03C8B48G00GYD4Y14BVF0VN"
+      "clip_01M03C8B48G00GYD4Y14BVF0VN",
+      "clip_01M04VVYTKDQER8AMVNTTM6XV1"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3649,7 +3650,7 @@
   },
   "heartbeat": {
     "last": "2026-08-15T21:53:07Z",
-    "clips_since": 36
+    "clips_since": 39
   },
   "silent": {
     "twitch:skotti": {
@@ -3677,7 +3678,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-16T08:42:50Z",
+      "last_clip": "2026-08-16T09:10:51Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3689,11 +3690,11 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-16T04:53:20Z",
+      "last_clip": "2026-08-16T09:10:58Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-15T18:55:06Z",
+      "last_clip": "2026-08-16T09:11:01Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
