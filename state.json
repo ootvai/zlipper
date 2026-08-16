@@ -2932,7 +2932,9 @@
       "clip_01M0532RFC57KB8WTE1V6QVDQN",
       "clip_01M05346719ANB10EQA272VMYZ",
       "clip_01M0536MBHCWQWZTYK8X0BM4ZE",
-      "clip_01M0536WSCPC8YJ312AXX34RHR"
+      "clip_01M0536WSCPC8YJ312AXX34RHR",
+      "clip_01M053XV90T9D9QXHE38B8C5CZ",
+      "clip_01M054GFN4WV21GKQ9HNARPX7A"
     ],
     "johtajanmatkassa": [
       "clip_01KYPNH6XQEJJSJ8ZWJPXRRCJD",
@@ -3325,7 +3327,8 @@
       "clip_01KZA5K7FQ82NMF7PN5195B838",
       "clip_01KZF3FC75BMN4FGA38FQSKVQE",
       "clip_01KZRWBRC16MJYFHFJ84DDS5K0",
-      "clip_01KZSDQC92RQYRJNZ37RMGPYV5"
+      "clip_01KZSDQC92RQYRJNZ37RMGPYV5",
+      "clip_01M053K2K4X967FE4NAT2NJJCZ"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3657,7 +3660,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T10:01:57Z",
-    "clips_since": 7
+    "clips_since": 10
   },
   "silent": {
     "twitch:skotti": {
@@ -3729,7 +3732,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-16T10:55:16Z",
+      "last_clip": "2026-08-16T11:15:25Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -3737,7 +3740,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-11T22:07:58Z",
+      "last_clip": "2026-08-16T11:15:30Z",
       "alerted": false
     },
     "kick:whyisabell": {
