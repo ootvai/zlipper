@@ -783,9 +783,6 @@
       "clip_01M038JCBQRJ50MP4ZMZ0R284X"
     ],
     "aapo_olervo": [
-      "clip_01KYEWQYF71CPFWG6VP0QJRYWT",
-      "clip_01KYHRAYP69MMZZY52T762MEYH",
-      "clip_01KYHRWVSM9TDV7335N6QB03Q2",
       "clip_01KYHT6R65P31GD7GBSTXCRC5W",
       "clip_01KYHV215GMGB95NRXWRM9CK1C",
       "clip_01KYHV7ZR9HP16PGVCW697XX7X",
@@ -1082,7 +1079,10 @@
       "clip_01M02SKF54CQZZRETS13QXPHN1",
       "clip_01M02SQ5XD46P44AN48242ZN98",
       "clip_01M04S1V2STD2Y0QFVQYRNNWTS",
-      "clip_01M04S269VNNFEPWPVWMFGW7S2"
+      "clip_01M04S269VNNFEPWPVWMFGW7S2",
+      "clip_01M04TGRD4PRBSP5TTHQMH727Z",
+      "clip_01M04TY3VPT97GXJ0K93Q2ZAF9",
+      "clip_01M04V7AHNS1R6VKHKR3J1753S"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2927,8 +2927,6 @@
       "clip_01M00KC47SKWA0GF2FACN58XN3"
     ],
     "johtajanmatkassa": [
-      "clip_01KYHVX3GJ8N3CFFKH98FNZZAC",
-      "clip_01KYJM15NRJGMMDJXGNGXCVAAM",
       "clip_01KYJM6GR5Q1Y39ACTBT86EZWN",
       "clip_01KYPNH6XQEJJSJ8ZWJPXRRCJD",
       "clip_01KYPTJ7BEZ97QKSMXSS5FXD7V",
@@ -3226,7 +3224,9 @@
       "clip_01M03FH6V6SH6F47XACYMCCKPX",
       "clip_01M03G36V0EJ1FWPVZ5CP99QFK",
       "clip_01M04J1S60GREJ7R4D31MCWXQT",
-      "clip_01M04P6TD97JCB5S053EJPQX58"
+      "clip_01M04P6TD97JCB5S053EJPQX58",
+      "clip_01M04TFMD4R42NWRNK7QGT8337",
+      "clip_01M04V14G2N1JQGWFHF3R9EGPP"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3649,7 +3649,7 @@
   },
   "heartbeat": {
     "last": "2026-08-15T21:53:07Z",
-    "clips_since": 31
+    "clips_since": 36
   },
   "silent": {
     "twitch:skotti": {
@@ -3677,7 +3677,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-16T08:03:37Z",
+      "last_clip": "2026-08-16T08:42:50Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3725,7 +3725,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-16T07:10:58Z",
+      "last_clip": "2026-08-16T08:43:19Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
