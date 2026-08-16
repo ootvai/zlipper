@@ -1380,10 +1380,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KXXQKMQ1VDYT0AGVXHEPG1ST",
-      "clip_01KXY1XNWBZXFN3KDZC42V3GMQ",
-      "clip_01KXY28P0317VMDZ7FJGQ6TKXP",
-      "clip_01KXY2CDFRQ662G36FF300QFNN",
       "clip_01KXY3FJ6JX049XXS190A6F05R",
       "clip_01KXY3P94H7042EGZ4Q35A4CPC",
       "clip_01KXY3XB7TM5BZDWCFRPZ6RC52",
@@ -1679,7 +1675,11 @@
       "clip_01M04DN0363JP05WAS16SVQ0FZ",
       "clip_01M04WAC7DD93AD6CZ6BD3QW3C",
       "clip_01M05H4ZNNBR9SENTEHV36E1V9",
-      "clip_01M05HZ06WR18NH6Q4YSZP8KQ4"
+      "clip_01M05HZ06WR18NH6Q4YSZP8KQ4",
+      "clip_01M05JPES8EHK3K6WC9KWJQRA2",
+      "clip_01M05JV74Q8W1FPS36NNYJJ75C",
+      "clip_01M05KCKEHQSAQKTC5EVW3M19D",
+      "clip_01M05KKMH4CF0TYTMB4BJDAG7X"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2949,7 +2949,6 @@
       "clip_01M05A4FWJ4K4B180R8RXMVKJZ"
     ],
     "johtajanmatkassa": [
-      "clip_01KYY2TSR62JVDB3DRV77WMPW4",
       "clip_01KYYEP3VYTW865ZZ6EV7YXFX0",
       "clip_01KYYNQDW48JY695YPAQ33WZ98",
       "clip_01KYYPR9EACVRQM8MVR01NZDB9",
@@ -3248,7 +3247,8 @@
       "clip_01M05CTK964ZDR4JQADS7SAQJB",
       "clip_01M05CTJXP2NNFECHBPDJ2ZGFP",
       "clip_01M05CWZG8KJ2KQEG6CMVENB7S",
-      "clip_01M05CX7P0QM26CEVH0P8SV120"
+      "clip_01M05CX7P0QM26CEVH0P8SV120",
+      "clip_01M05JXPDDVYP3SRN9GW5YBGWH"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3675,7 +3675,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T10:01:57Z",
-    "clips_since": 41
+    "clips_since": 46
   },
   "silent": {
     "twitch:skotti": {
@@ -3715,7 +3715,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-16T15:16:09Z",
+      "last_clip": "2026-08-16T15:40:00Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3751,7 +3751,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-16T13:44:31Z",
+      "last_clip": "2026-08-16T15:40:11Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
