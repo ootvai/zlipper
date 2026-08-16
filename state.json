@@ -290,7 +290,8 @@
       "ProudNimbleJaguarNononoCat-uqoh4HIsw-hyLduY",
       "SpinelessCleverTrollSmoocherZ-q2l52JkPjf1y1TFB",
       "MotionlessMagnificentBubbleteaWow-zVnL-wikWyJvKT_f",
-      "UnsightlyLaconicStinkbugPermaSmug-rG9TYxmbP-Ka3GIz"
+      "UnsightlyLaconicStinkbugPermaSmug-rG9TYxmbP-Ka3GIz",
+      "TubularTriangularDragonflyHeyGirl-u6kUwkeNlUezHjIz"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -3657,7 +3658,8 @@
       "clip_01M03ABT31Z9ENQZHVBGNZZGBY",
       "clip_01M03ANJ18HK4CR50QQH781F0Z",
       "clip_01M03BS4MT69A63HBQH6AERK1R",
-      "clip_01M058S8DRTAM2EP1M3SSEACBX"
+      "clip_01M058S8DRTAM2EP1M3SSEACBX",
+      "clip_01M05E6K9T7B6ZXZVTRVY0MGJP"
     ]
   },
   "health": {
@@ -3672,7 +3674,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T10:01:57Z",
-    "clips_since": 36
+    "clips_since": 38
   },
   "silent": {
     "twitch:skotti": {
@@ -3684,7 +3686,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-14T15:22:13Z",
+      "last_clip": "2026-08-16T14:34:20Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -3760,7 +3762,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-16T13:10:29Z",
+      "last_clip": "2026-08-16T14:35:01Z",
       "alerted": false
     }
   }
