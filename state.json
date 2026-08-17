@@ -530,14 +530,10 @@
       "clip_01M07VBXKBZJKG2WTJ7MNXCG4Q",
       "clip_01M0829WK2XPED9VVEPRZ6AFB4",
       "clip_01M0855RVJVC2QXDTJA21EM8ZM",
-      "clip_01M088TFSJK3MNAAWQDVCGM4J1"
+      "clip_01M088TFSJK3MNAAWQDVCGM4J1",
+      "clip_01M08BMR5TVFNCVK6SEAY5A3VR"
     ],
     "pact": [
-      "clip_01KY81NTZZYSMX6C35R7FFABV1",
-      "clip_01KY81XZ82XDK371FJ8HXYXYNR",
-      "clip_01KY81Y6D6V41PTXY9V3HAT77T",
-      "clip_01KY86T4Q2Y9KQKV1XXAGWMGR5",
-      "clip_01KYAHS1638QK19KWVKRMSM1TA",
       "clip_01KYAHV7DWQQ3871XBREDCJEJ8",
       "clip_01KYAJAJFGK61WV81MDVBBH5HT",
       "clip_01KYAKAYXCXN3ZM5NGC4JHR27Y",
@@ -832,7 +828,12 @@
       "clip_01M05VMF0CMTJKSXG20N0N7FA6",
       "clip_01M05VNQVMQNWNZ3GSAJ63KMGD",
       "clip_01M05VQ8BR7NVC0XGRJQY0J4HQ",
-      "clip_01M065KCGMG9GGGJS0V5P7BH1J"
+      "clip_01M065KCGMG9GGGJS0V5P7BH1J",
+      "clip_01M08B6QT8EXDFHW0SQQKF99SE",
+      "clip_01M08B8FYF742RKM923CQ64KZ6",
+      "clip_01M08BCVH0NY4JE9YCD289P4PR",
+      "clip_01M08BNTV9Z7XVYV82MGWJBWK5",
+      "clip_01M08CVP3VKAX2PZ6Y6CGAFKCQ"
     ],
     "aapo_olervo": [
       "clip_01KYJ3S6H743X7K06MDSZ7XNQ2",
@@ -1995,9 +1996,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KV0TCZ7W3030RY6X1P1X4191",
-      "clip_01KV0YFDH8ZENBVTQKZEJP7E14",
-      "clip_01KV12SEX2QBK9CD9XMNAVD5QG",
       "clip_01KV1JEWTW1GGQ62V2PMQZ9FVZ",
       "clip_01KV32J20Q5RGD35A66THCSQVM",
       "clip_01KV38CMTGZFYS2ZBF9PVV1V7G",
@@ -2294,7 +2292,10 @@
       "clip_01M08A163C0M1F6GJ9QDGYDM74",
       "clip_01M08A32G2BP1BQ84PRHYEZM16",
       "clip_01M08AEFAZ16W5HN4CP23P6YAZ",
-      "clip_01M08AMSQE0DFE5Z76FK8FC9B8"
+      "clip_01M08AMSQE0DFE5Z76FK8FC9B8",
+      "clip_01M08BC0YH4BCTXH8NWJ4F04EW",
+      "clip_01M08C4HXEF8BMKVD1GMZN7PFZ",
+      "clip_01M08CAXKJAMJNSGJMQ6QF6PHR"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3772,7 +3773,7 @@
   },
   "heartbeat": {
     "last": "2026-08-17T10:50:05Z",
-    "clips_since": 71
+    "clips_since": 80
   },
   "silent": {
     "twitch:skotti": {
@@ -3792,11 +3793,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-17T16:40:02Z",
+      "last_clip": "2026-08-17T17:38:55Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-16T21:00:19Z",
+      "last_clip": "2026-08-17T17:39:00Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3824,7 +3825,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-17T17:02:01Z",
+      "last_clip": "2026-08-17T17:39:08Z",
       "alerted": false
     },
     "kick:sampef2": {
