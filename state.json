@@ -828,7 +828,6 @@
       "clip_01M065KCGMG9GGGJS0V5P7BH1J"
     ],
     "aapo_olervo": [
-      "clip_01KYHXVMRVQXS7ABH9DQR6R1SE",
       "clip_01KYJ3NYK2GTA0G6X9PZRK1Z9H",
       "clip_01KYJ3S6H743X7K06MDSZ7XNQ2",
       "clip_01KYJ6KX1HYX9QYQXQT6YH8FT5",
@@ -1127,7 +1126,8 @@
       "clip_01M04V7AHNS1R6VKHKR3J1753S",
       "clip_01M04WWT5BS1STN9H1HCCKGBS9",
       "clip_01M055BPD10RWAK023230AZWYA",
-      "clip_01M078TX1JJYR6B1F616RW6ZVX"
+      "clip_01M078TX1JJYR6B1F616RW6ZVX",
+      "clip_01M07AC94WB493GJ4FCHBKXSFF"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2257,7 +2257,8 @@
       "clip_01KZHGJ46B8JRN91HTQZQ0MASD",
       "clip_01KZHH6A87B8CJMVP85BSZK4VN",
       "clip_01M039XGC2NY451XPYMKG0KVHP",
-      "clip_01M03NJGE9305Z2R3WKZYCNJYK"
+      "clip_01M03NJGE9305Z2R3WKZYCNJYK",
+      "clip_01M07BFHHE0GY69PY8FTYNXDRV"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2680,7 +2681,8 @@
       "clip_01M05XATMB5HBAAYQH1WA5QMS4",
       "clip_01M05Z637G3YYFJMFMCX7TM38D",
       "clip_01M065T37BX6HTN7D534RY44RN",
-      "clip_01M0751VCC89N5VN4WAA9T521R"
+      "clip_01M0751VCC89N5VN4WAA9T521R",
+      "clip_01M07AF4YJ4JVGTQ9A20HKTYK8"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -3733,7 +3735,7 @@
   },
   "heartbeat": {
     "last": "2026-08-16T22:15:19Z",
-    "clips_since": 38
+    "clips_since": 41
   },
   "silent": {
     "twitch:skotti": {
@@ -3761,7 +3763,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-17T07:12:24Z",
+      "last_clip": "2026-08-17T08:02:28Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3785,7 +3787,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-15T21:52:56Z",
+      "last_clip": "2026-08-17T08:02:40Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3797,7 +3799,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-08-17T07:12:44Z",
+      "last_clip": "2026-08-17T08:02:48Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
