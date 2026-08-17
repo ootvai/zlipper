@@ -546,7 +546,11 @@
       "clip_01M08TSJ2NHFFYF9BGHY6B6VSH",
       "clip_01M08TVG6PA5F3YNGVZP89H9W2",
       "clip_01M08V4YXAHBS01VV9JQD8XM56",
-      "clip_01M08VARAEYD9HDB4D67QV76RP"
+      "clip_01M08VARAEYD9HDB4D67QV76RP",
+      "clip_01M08VNEBBWVVA3MRBKYRGXSC2",
+      "clip_01M08VPB0S2F8VVP7WNSJP5RAH",
+      "clip_01M08VZE5PK44ZV81T3W19BX7Z",
+      "clip_01M08W36E4H5GYNJKP3J0MMKNM"
     ],
     "pact": [
       "clip_01KYAHV7DWQQ3871XBREDCJEJ8",
@@ -3791,7 +3795,7 @@
   },
   "heartbeat": {
     "last": "2026-08-17T10:50:05Z",
-    "clips_since": 134
+    "clips_since": 138
   },
   "silent": {
     "twitch:skotti": {
@@ -3811,7 +3815,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-17T21:55:43Z",
+      "last_clip": "2026-08-17T22:19:52Z",
       "alerted": false
     },
     "kick:pact": {
