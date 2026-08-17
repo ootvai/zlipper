@@ -310,7 +310,8 @@
       "AttractiveShinyEndiveGingerPower-nPsJ17iTCRHLFfSq",
       "VenomousTentativeCoyoteTheTarFu-i8YfgG13dHLDmUcR",
       "OddGiftedGaurWoofer-1OGbW6nBWyCi3M9T",
-      "ArtsyResilientOstrichSmoocherZ-_rV_cF57I1RVBkQT"
+      "ArtsyResilientOstrichSmoocherZ-_rV_cF57I1RVBkQT",
+      "WanderingHeartlessPineappleBigBrother-yMzrQS8bRsh2HpcS"
     ]
   },
   "kick": {
@@ -1999,12 +2000,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KV3P6D56F5G4TPD3399N6DZ0",
-      "clip_01KV3P8DD3MQRX3MV4MJRM3YDX",
-      "clip_01KV3PGAQ95CT8JCVKRNP7ZPRA",
-      "clip_01KV3PQTVW9HSZ05XQ07N5PN74",
-      "clip_01KV3PZ946AKD83BPSX2GW16C9",
-      "clip_01KV3Q67ZH8E1NNEZ11VX5R0Q1",
       "clip_01KV3QBW933AXZWVQEY8D33P1H",
       "clip_01KV3QJQ0FK0W4R256W46091NQ",
       "clip_01KV3QS5HFHG256NSABF3VJX94",
@@ -2298,7 +2293,13 @@
       "clip_01M08FF2W9XZPS1N61GE6BKH8J",
       "clip_01M08FJWZDP6Z7J0TQS1AE4V67",
       "clip_01M08GAYMM01MWNANH3M4JYYYX",
-      "clip_01M08H0ZCSYHQSAZD9MDYYCGHN"
+      "clip_01M08H0ZCSYHQSAZD9MDYYCGHN",
+      "clip_01M08HJSBS9DBR2621N3EFSWFN",
+      "clip_01M08HQB27D0PWR08KKBQ5K459",
+      "clip_01M08HQG3R2QEXYH4868XX3E3X",
+      "clip_01M08HQS001X0H4TZ4X2898G7V",
+      "clip_01M08J1DN62GGK0A2PGNWTQNFY",
+      "clip_01M08JFWFQQ1Q7YTBMGFCBSG8W"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3776,7 +3777,7 @@
   },
   "heartbeat": {
     "last": "2026-08-17T10:50:05Z",
-    "clips_since": 99
+    "clips_since": 106
   },
   "silent": {
     "twitch:skotti": {
@@ -3792,7 +3793,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-14T14:27:51Z",
+      "last_clip": "2026-08-17T19:22:42Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -3828,7 +3829,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-17T18:54:14Z",
+      "last_clip": "2026-08-17T19:22:58Z",
       "alerted": false
     },
     "kick:sampef2": {
