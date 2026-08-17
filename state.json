@@ -279,7 +279,8 @@
       "ApatheticProtectiveClintPeteZarollTie-TUDze5D65XcaTcs7",
       "WealthyFitBarracudaAliens-0Zagc24hobQ6uxx8",
       "SpikyAggressiveCodMau5-BpwTRQ-RSxRq920P",
-      "SuperPlausibleWalletBrainSlug-t8kp1V_JozhpIETN"
+      "SuperPlausibleWalletBrainSlug-t8kp1V_JozhpIETN",
+      "EnjoyableShyCiderShadyLulu-qdKMck1RJx9h4W_4"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -528,7 +529,8 @@
       "clip_01M06RGE27TAYFSRHDRNF98CZP",
       "clip_01M07VBXKBZJKG2WTJ7MNXCG4Q",
       "clip_01M0829WK2XPED9VVEPRZ6AFB4",
-      "clip_01M0855RVJVC2QXDTJA21EM8ZM"
+      "clip_01M0855RVJVC2QXDTJA21EM8ZM",
+      "clip_01M088TFSJK3MNAAWQDVCGM4J1"
     ],
     "pact": [
       "clip_01KY81NTZZYSMX6C35R7FFABV1",
@@ -1430,7 +1432,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KYWWY11EZSZ9MVXRB74HE2PD",
       "clip_01KYWZJBD1SH4MSJJ8HTPBHYS5",
       "clip_01KYWZKM9S7YC31S7M59VNAWTJ",
       "clip_01KYX1NBDAHP5TQDGWC197ZTG8",
@@ -1729,7 +1730,8 @@
       "clip_01M0848XA5NZJFCN5PYN8305KH",
       "clip_01M0855740CHAZ95T3HAM40QRJ",
       "clip_01M086ME6N739SBT7HW78K95KB",
-      "clip_01M086ZW8NPBM264QKQ6309VMX"
+      "clip_01M086ZW8NPBM264QKQ6309VMX",
+      "clip_01M0880KJRHZD6KH70TQP6PXQH"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -1993,8 +1995,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KW1CT50JHFCSG5HQ74NTD59K",
-      "clip_01KW1VEQCYBFPJ86KF5GK98KCH",
       "clip_01KW1XDHETCPD5ZDS35NKEGFYJ",
       "clip_01KW1ZSRV4Z39S9TC3YX56THN7",
       "clip_01KW59RD65JXQXRR2YQXM01XH5",
@@ -2292,7 +2292,9 @@
       "clip_01M082ZDZYMWVCSM4XT3MATAXZ",
       "clip_01M08342BW7CN6F1W21BVPS756",
       "clip_01M083S5RQZY9R4C0T8Y7W9R65",
-      "clip_01M085ZCJ1HA071G8209YNCY4N"
+      "clip_01M085ZCJ1HA071G8209YNCY4N",
+      "clip_01M088W085J2AF1DCYCA1BH530",
+      "clip_01M089DHTT00CSR2PD97QR0VR3"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3042,8 +3044,6 @@
       "clip_01M05TXCYR1NA64KA9JFXK90PS"
     ],
     "johtajanmatkassa": [
-      "clip_01KZ4M51ZQPTX01N1GV89T6Y0F",
-      "clip_01KZ9975H8FP69B4S81R8TGP1H",
       "clip_01KY5P9M4V3P49TZF3FDMFBNCM",
       "clip_01KY5PB1CKW1RPGM8QTRADXPPS",
       "clip_01KY6XJ1G65JDKXK42HDH2XKGF",
@@ -3341,7 +3341,9 @@
       "clip_01M07X2694GH937DX3Y0RRP5BB",
       "clip_01M07X9W8WQ2E8K6RRWCBHQ03T",
       "clip_01M080WFJSMZBRXBAP3874WHVF",
-      "clip_01M0849BQESSZFQBPCEDZ760PR"
+      "clip_01M0849BQESSZFQBPCEDZ760PR",
+      "clip_01M08961NM3PW7BS9RDES20G8D",
+      "clip_01M08988YE4P942RY2D48E408Z"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3770,7 +3772,7 @@
   },
   "heartbeat": {
     "last": "2026-08-17T10:50:05Z",
-    "clips_since": 56
+    "clips_since": 63
   },
   "silent": {
     "twitch:skotti": {
@@ -3778,7 +3780,7 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-08-17T15:10:52Z",
+      "last_clip": "2026-08-17T16:39:59Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -3790,7 +3792,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-17T15:42:58Z",
+      "last_clip": "2026-08-17T16:40:02Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3810,7 +3812,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-17T16:01:11Z",
+      "last_clip": "2026-08-17T16:40:14Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3822,7 +3824,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-17T15:43:15Z",
+      "last_clip": "2026-08-17T16:40:20Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3846,7 +3848,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-17T15:11:33Z",
+      "last_clip": "2026-08-17T16:40:37Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
