@@ -869,10 +869,6 @@
       "clip_01M08CVP3VKAX2PZ6Y6CGAFKCQ"
     ],
     "aapo_olervo": [
-      "clip_01KYJ3S6H743X7K06MDSZ7XNQ2",
-      "clip_01KYJ6KX1HYX9QYQXQT6YH8FT5",
-      "clip_01KYKXTKXPYT4BZQ6TTPX9EPT7",
-      "clip_01KYKZ2QA3QN3XRTNJS9MYZNVR",
       "clip_01KYM1PGTNDS6W7K4E7X0F03EB",
       "clip_01KYM3Y79APMGM46WRTMY7W9FS",
       "clip_01KYM4JVE867RWK0ZZGMV149TK",
@@ -1168,7 +1164,11 @@
       "clip_01M055BPD10RWAK023230AZWYA",
       "clip_01M078TX1JJYR6B1F616RW6ZVX",
       "clip_01M07AC94WB493GJ4FCHBKXSFF",
-      "clip_01M07DKVN6TWGH8E73609CP4R8"
+      "clip_01M07DKVN6TWGH8E73609CP4R8",
+      "clip_01M09SA66SMNN7J59ZXBY0K0B7",
+      "clip_01M09SBJV8S3B2NBQGNKT8YK0T",
+      "clip_01M09SD1SZG9RGG5Q8G3VA29EX",
+      "clip_01M09SQT83D6T7VXT26GX4E7Y1"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2029,12 +2029,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KVDW379QHB1TQZR6X48ZCARN",
-      "clip_01KVDW8KHYCWRCFFZ92E04H4NS",
-      "clip_01KVDWP79R0XFMD80J8G9R3G9B",
-      "clip_01KVE193N7X2X3GRHSSJ4K1K9J",
-      "clip_01KVE2GM6CBMHBJN34TY4AVFPG",
-      "clip_01KVE2GS2GSNXG69A73Z69DNK2",
       "clip_01KVE2JZ9PQP0GHMKQGAZM70A4",
       "clip_01KVE2QWZKV5S96CRYFY15CHCG",
       "clip_01KVE38TM34BVG1M5XDJH83FVE",
@@ -2328,7 +2322,13 @@
       "clip_01M0957007BQFXRFDJ936KB91W",
       "clip_01M095B22XBGMT1D68Q47SKD1K",
       "clip_01M098BQG3AHCP8WTAG68T3XA8",
-      "clip_01M098YN11EPKA1FD5MZVY1TE3"
+      "clip_01M098YN11EPKA1FD5MZVY1TE3",
+      "clip_01M09S1GZNYC78BFTZMMGVMY50",
+      "clip_01M09SXBFEXGNDKBAM8EEMQNFN",
+      "clip_01M09T9ED74K5FY5M1NJP9134Q",
+      "clip_01M09TCWVGATQYKMJE1WZFMRPV",
+      "clip_01M09TM8EFEYWFB9AEVPA6MW7A",
+      "clip_01M09TT3J1JY4RQ2HXR15RN3F9"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3811,7 +3811,7 @@
   },
   "heartbeat": {
     "last": "2026-08-17T23:02:08Z",
-    "clips_since": 27
+    "clips_since": 37
   },
   "silent": {
     "twitch:skotti": {
@@ -3839,7 +3839,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-17T08:56:22Z",
+      "last_clip": "2026-08-18T07:08:07Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3863,7 +3863,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T02:13:23Z",
+      "last_clip": "2026-08-18T07:08:21Z",
       "alerted": false
     },
     "kick:sampef2": {
