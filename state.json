@@ -588,7 +588,10 @@
       "clip_01M0B8497A9M7KWT5CBZDV6XPM",
       "clip_01M0B8NRBWPTEF9VGWCVN2MF8C",
       "clip_01M0B9SWE5DGG4EYWVTBGY3EZ0",
-      "clip_01M0B9X9YEAA4QGT3G8K18CFZQ"
+      "clip_01M0B9X9YEAA4QGT3G8K18CFZQ",
+      "clip_01M0BBZDB7EATWP4N7C0EBXRGZ",
+      "clip_01M0BBZXQZAF6E4254AJWAJ830",
+      "clip_01M0BC09H6TTEB8Q23WJF2A9Y8"
     ],
     "pact": [
       "clip_01KYAMKK575V0ZC31T2GZS23BE",
@@ -1490,8 +1493,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZ1FAPVFWTJN88PPJ3DCFHRK",
-      "clip_01KZ1FRMM7HJ7SMDDW2AT2Y904",
       "clip_01KZ1GQJGGTGPW0B31MTV5N7SA",
       "clip_01KZ44MC4M6RNY3B6K4M9XAYKG",
       "clip_01KZ4565QPDC2736RDSNWZ5JGK",
@@ -1789,7 +1790,9 @@
       "clip_01M0B6GW308B6TA5HQJB372YS6",
       "clip_01M0B7YJAJV655S6YHZ604DZW4",
       "clip_01M0B81FREAKNHDTWENCDGNRSJ",
-      "clip_01M0B995T62F3CJPTEBGMVKCC6"
+      "clip_01M0B995T62F3CJPTEBGMVKCC6",
+      "clip_01M0BAWPV6HCBZ5B6C4WMDEH9Z",
+      "clip_01M0BC1VZQ533F5EWMFXHCWFVT"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2055,15 +2058,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZ3HJP9MNZ7FS8E6TWMTH4CJ",
-      "clip_01KZ3HJPRCVW55TS1S41XHJNEN",
-      "clip_01KZ3HJZE56ZXEMVQ4EQF52DWX",
-      "clip_01KZ3HJZEEZ1BFHNYX5BFS8B2A",
-      "clip_01KZ3HK4PN5JY91N7166D5YFAX",
-      "clip_01KZ3HRNSZFK974NB64624V3RS",
-      "clip_01KZ3HWFDQM4JB1ES0N6YW3A13",
-      "clip_01KZ3J6WEGQZJ25NKK901GV9R2",
-      "clip_01KZ3JF3VRWNM71KH16CTTD2JA",
       "clip_01KZ3JSN7HSQZJE7SFA8NYNE4B",
       "clip_01KZ3K6T489V759XPZ7J6FJ3R6",
       "clip_01KZ3K79AJ2KNQ6CNPR55GB1DS",
@@ -2354,7 +2348,16 @@
       "clip_01M0B7R792P5WXVQAYAS0AER0F",
       "clip_01M0B8GH7Z7QGA2HW8SFWTQ75N",
       "clip_01M0B8RTF685975DC8YGZ4GP0W",
-      "clip_01M0B91PSVXXZ51H23F2D6GFPS"
+      "clip_01M0B91PSVXXZ51H23F2D6GFPS",
+      "clip_01M0BC2GVD205TTK069T6K0T36",
+      "clip_01M0BC49AB4TG3Y8GVTHNP9CTB",
+      "clip_01M0BC6B5KSQSF10BSJKFT70A6",
+      "clip_01M0BC69Z4C8KGTKZ8676AN478",
+      "clip_01M0BC68Z2F8QKZZVZXZPX9XQC",
+      "clip_01M0BC6ECGVW91RPV5V91SPNDM",
+      "clip_01M0BC70GXY1NQY9C7TET7XDKG",
+      "clip_01M0BC6WVA2X15G69X6FEZMMBD",
+      "clip_01M0BCADZKXJYGQ0YCS3DMJ8K2"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3524,8 +3527,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KXKM5ZK30YCJN7GP2KH58XQC",
-      "clip_01KXKMG8C3F9WSW9ADZJSNT84T",
       "clip_01KXNGGKHBDBCH01XM1YMAHY10",
       "clip_01KXNPSP6WJNZZMRCNPJJMK6F1",
       "clip_01KXNTRYTHMQMD2ZVTF29ZPKKJ",
@@ -3823,7 +3824,9 @@
       "clip_01M0AK72J22MT7FV0RC30BDPKA",
       "clip_01M0AMAPP9570J7553JXY46X6T",
       "clip_01M0ARMPMXQWDFXE23CR5NPEZF",
-      "clip_01M0AZN55K6FWMGYXE5DY3N9KF"
+      "clip_01M0AZN55K6FWMGYXE5DY3N9KF",
+      "clip_01M0BC6BX4VY7WWG2DRBHXTN9H",
+      "clip_01M0BC72T2QM68GXDPX0DVJKZE"
     ]
   },
   "health": {
@@ -3838,7 +3841,7 @@
   },
   "heartbeat": {
     "last": "2026-08-18T11:05:35Z",
-    "clips_since": 101
+    "clips_since": 117
   },
   "silent": {
     "twitch:skotti": {
@@ -3858,7 +3861,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-18T21:02:54Z",
+      "last_clip": "2026-08-18T21:34:44Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3878,7 +3881,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-18T20:43:07Z",
+      "last_clip": "2026-08-18T21:34:55Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3890,7 +3893,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T20:43:13Z",
+      "last_clip": "2026-08-18T21:35:03Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3926,7 +3929,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-18T17:55:32Z",
+      "last_clip": "2026-08-18T21:35:20Z",
       "alerted": false
     }
   }
