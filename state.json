@@ -14,7 +14,8 @@
       "PoisedSteamyClintmullinsKappaWealth-Mz4HEHKHZSeqwXSw",
       "OutstandingSingleStrawberryWutFace-AlLMBITcuGVTcEwl",
       "ZanyConsiderateOilPeteZaroll-J07qv_z_7bDdF79O",
-      "SpineyTiredPidgeonDxCat-dVvpRi_1pPJ1CbsC"
+      "SpineyTiredPidgeonDxCat-dVvpRi_1pPJ1CbsC",
+      "BashfulDifferentDiamondShadyLulu-SDHqZqZ5bHOQzGZL"
     ],
     "stableronaldo": [
       "WimpyDullFalconThunBeast-QcfPMn2qXv3UaR3v",
@@ -567,7 +568,6 @@
       "clip_01M08Y3VVAJ0MGY92RQEE1RDZT"
     ],
     "pact": [
-      "clip_01KYAJAJFGK61WV81MDVBBH5HT",
       "clip_01KYAKAYXCXN3ZM5NGC4JHR27Y",
       "clip_01KYAKNG04EGE0GJE6DMFFNH2D",
       "clip_01KYAM8SH3PWW0GB6DQWXTB5ER",
@@ -866,10 +866,10 @@
       "clip_01M08BCVH0NY4JE9YCD289P4PR",
       "clip_01M08BNTV9Z7XVYV82MGWJBWK5",
       "clip_01M08CVP3VKAX2PZ6Y6CGAFKCQ",
-      "clip_01M0A9YDFX0EDSJHCVEB51M83Y"
+      "clip_01M0A9YDFX0EDSJHCVEB51M83Y",
+      "clip_01M0AN3W9FC8XJ0K0GY45J0S6M"
     ],
     "aapo_olervo": [
-      "clip_01KYM4JVE867RWK0ZZGMV149TK",
       "clip_01KYM55A8314JWRVHS6TEWV5WV",
       "clip_01KYM68JWC3HEXHK0BCTTZ4YS8",
       "clip_01KYM97V8Z0HM9JAQAYKYJSQGX",
@@ -1168,7 +1168,8 @@
       "clip_01M09SD1SZG9RGG5Q8G3VA29EX",
       "clip_01M09SQT83D6T7VXT26GX4E7Y1",
       "clip_01M0AGGET0XEGAM8CE6GX6S9QS",
-      "clip_01M0AKAGWSWT4E5SBZF3V4N7J4"
+      "clip_01M0AKAGWSWT4E5SBZF3V4N7J4",
+      "clip_01M0ANASXFAT7P26A5EEPYRFBA"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2029,8 +2030,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KYVX17CJ0CKVQVZRK0NDTHK3",
-      "clip_01KYVYCTS0Z792HPMZE789HSEP",
       "clip_01KYW28MZ58BD4105WMFXBK6FD",
       "clip_01KYW2ENXC5Z0HNMM3Z6X4P7AB",
       "clip_01KZ3A1M3VVVHZ8Y4NZ3G7JAN5",
@@ -2328,7 +2327,9 @@
       "clip_01M0AFACR8ZCC1BDAR834KACG6",
       "clip_01M0AFA54TSEM3N4EAY0W0Z8JA",
       "clip_01M0AGZ1B53R9MG6SAYQRK49MK",
-      "clip_01M0AHKSZ14NQX5FPYN5XSNV7X"
+      "clip_01M0AHKSZ14NQX5FPYN5XSNV7X",
+      "clip_01M0ANBHCBV6M259B0DS0NNMR3",
+      "clip_01M0ANBH1WBBK1H4AAF83XGN10"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3474,7 +3475,8 @@
       "clip_01KZF3FC75BMN4FGA38FQSKVQE",
       "clip_01KZRWBRC16MJYFHFJ84DDS5K0",
       "clip_01KZSDQC92RQYRJNZ37RMGPYV5",
-      "clip_01M053K2K4X967FE4NAT2NJJCZ"
+      "clip_01M053K2K4X967FE4NAT2NJJCZ",
+      "clip_01M0AM7WTCCQ90QX3YGK6K71PT"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3497,7 +3499,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KXGM0QQZ427WCHE865WATJNK",
       "clip_01KXGS7GS2HXCXPQX05ADS033R",
       "clip_01KXGWJ95M3A0117SY5NNF1XMX",
       "clip_01KXKM5ZK30YCJN7GP2KH58XQC",
@@ -3796,7 +3797,8 @@
       "clip_01M0AC2XEYK3SNR5S23KQNGJX3",
       "clip_01M0ACHD7YBHYHCKDDMC4J662E",
       "clip_01M0AJSFY57N0H5TPFHDF04JR4",
-      "clip_01M0AK72J22MT7FV0RC30BDPKA"
+      "clip_01M0AK72J22MT7FV0RC30BDPKA",
+      "clip_01M0AMAPP9570J7553JXY46X6T"
     ]
   },
   "health": {
@@ -3811,11 +3813,11 @@
   },
   "heartbeat": {
     "last": "2026-08-18T11:05:35Z",
-    "clips_since": 28
+    "clips_since": 35
   },
   "silent": {
     "twitch:skotti": {
-      "last_clip": "2026-08-14T11:13:09Z",
+      "last_clip": "2026-08-18T14:54:19Z",
       "alerted": false
     },
     "twitch:saarelansaara": {
@@ -3835,11 +3837,11 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-18T11:35:14Z",
+      "last_clip": "2026-08-18T14:54:23Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-18T14:10:51Z",
+      "last_clip": "2026-08-18T14:54:24Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3863,7 +3865,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T14:11:04Z",
+      "last_clip": "2026-08-18T14:54:31Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3891,7 +3893,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-16T11:15:30Z",
+      "last_clip": "2026-08-18T14:54:41Z",
       "alerted": false
     },
     "kick:whyisabell": {
@@ -3899,7 +3901,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-18T14:11:25Z",
+      "last_clip": "2026-08-18T14:54:43Z",
       "alerted": false
     }
   }
