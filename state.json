@@ -1466,8 +1466,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KYX85EXCND5B89FXJ08K1Z9H",
-      "clip_01KYX8VB8W52HVFXB9348JVNXG",
       "clip_01KYX9JMWRHR2MTWY5T3XEVHMG",
       "clip_01KYXBW12RSN8P9RV28F2YVPSW",
       "clip_01KYXBXJ93773DZ9MQ9W7EWKCV",
@@ -1765,7 +1763,9 @@
       "clip_01M08EV48XDC94MQA2PVV5A83C",
       "clip_01M08FAQR45T1YQ6G3MAXWE84P",
       "clip_01M08GECZRC4RYGR05AYZ0QATN",
-      "clip_01M0A6BMN82EP6BVF6GEZV1KFZ"
+      "clip_01M0A6BMN82EP6BVF6GEZV1KFZ",
+      "clip_01M0A7G2KYWSW126KQ3NKY28TG",
+      "clip_01M0A8FBMT7B8RHGAH5NAQXBME"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2029,9 +2029,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KVGSEDDNEHKRGSTGC1RKX621",
-      "clip_01KVGT87NTSJW0CWYS4R75F5NA",
-      "clip_01KVGT8M44VWP77YNAXZGW06JP",
       "clip_01KVJB7QCTE9SZNX8BZ1R5RSZ1",
       "clip_01KVJE9DWH44B5ZXVVE6MDB6Q4",
       "clip_01KVJMT7M7RJTHN0PVV1M24EZH",
@@ -2328,7 +2325,10 @@
       "clip_01M09ZQNYY1C1FK7YXPY0HN9C5",
       "clip_01M0A1T226Q6Z3NTCT9YVC5Z0V",
       "clip_01M0A63PR24D1A54F1S8T0KNCA",
-      "clip_01M0A64BQPEVN015FD78X5FZ6C"
+      "clip_01M0A64BQPEVN015FD78X5FZ6C",
+      "clip_01M0A7MTZ6PZYHC7QQ0ABZVDK2",
+      "clip_01M0A846A5TTXP8428GFZX61W9",
+      "clip_01M0A8H90QSC319C84Q2TPXWP0"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3810,8 +3810,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-17T23:02:08Z",
-    "clips_since": 60
+    "last": "2026-08-18T11:05:35Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -3851,7 +3851,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-18T10:42:07Z",
+      "last_clip": "2026-08-18T11:05:07Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3863,7 +3863,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T10:42:14Z",
+      "last_clip": "2026-08-18T11:05:14Z",
       "alerted": false
     },
     "kick:sampef2": {
