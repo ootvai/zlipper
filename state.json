@@ -3805,7 +3805,7 @@
       "alerted": false
     },
     "kick": {
-      "fails": 0,
+      "fails": 1,
       "alerted": false
     }
   },
