@@ -308,7 +308,9 @@
       "FriendlyAffluentAlpacaDBstyle-7H5dDL8uwLelWMBf",
       "KindEnergeticPandaPraiseIt-cRofXW9JVsknIdUT",
       "CourteousComfortableJellyfishChocolateRain-3jsEkBj8hYNPHQjs",
-      "ImpossibleSourOtterPanicBasket-ovlmX-sqhZgykJgo"
+      "ImpossibleSourOtterPanicBasket-ovlmX-sqhZgykJgo",
+      "OptimisticThirstyAlmondBIRB-mzv4HDPGbVGQJYF5",
+      "PeacefulGrotesqueMarrowANELE-iuZNAI7nSqCor9hk"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -2031,7 +2033,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZ3CK4M3WQSAYEDJ0QN9GHC5",
       "clip_01KZ3E3WSJZG1ABDN1GHQVBRWW",
       "clip_01KZ3EE722QAHHQN49WGRZN4VV",
       "clip_01KZ3EE624EJC4XYE8KBWGK7MK",
@@ -2330,7 +2331,8 @@
       "clip_01M0ANBH1WBBK1H4AAF83XGN10",
       "clip_01M0APXY7VFVJ21X9XS8FGKA6J",
       "clip_01M0AQ4WK8Q31YK84P7AQ0RX3R",
-      "clip_01M0AQCHR36KZZ8TY5PHFD7VKV"
+      "clip_01M0AQCHR36KZZ8TY5PHFD7VKV",
+      "clip_01M0ATSEX3VY66ZZX6B8ZE9B4G"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3814,7 +3816,7 @@
   },
   "heartbeat": {
     "last": "2026-08-18T11:05:35Z",
-    "clips_since": 41
+    "clips_since": 44
   },
   "silent": {
     "twitch:skotti": {
@@ -3826,7 +3828,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-18T15:55:54Z",
+      "last_clip": "2026-08-18T16:26:34Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -3866,7 +3868,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T15:25:39Z",
+      "last_clip": "2026-08-18T16:26:46Z",
       "alerted": false
     },
     "kick:sampef2": {
