@@ -904,9 +904,6 @@
       "clip_01M0B06BBA3KTPKPSMH7ZV3MAN"
     ],
     "aapo_olervo": [
-      "clip_01KYMG1SJA01WM6BMPJWYKSQD7",
-      "clip_01KYMJKQWTQ4JDR3E2J4V5MGE9",
-      "clip_01KYMJT2KPV5TFA4ZS79KKYHC3",
       "clip_01KYMJVAGYHKZHJYQQH50GZTBN",
       "clip_01KYMKKSRCWPFW2A5C0X7DK2AW",
       "clip_01KYMKMKJ5K3P6R8ZYA2BR7XJK",
@@ -1203,7 +1200,10 @@
       "clip_01M0AZ4HSZARG2BCPTW62N97DM",
       "clip_01M0AZ4VWWJGDWGC8MB1PXGAPW",
       "clip_01M0AZE16FMT2FTGZ05MX7FD05",
-      "clip_01M0B4MVXC3KNW1J3WSQTNP2SF"
+      "clip_01M0B4MVXC3KNW1J3WSQTNP2SF",
+      "clip_01M0CCPCMCGG96DBVWBKM9T4E7",
+      "clip_01M0CCTPZY8F21YCK7F6TGZJEF",
+      "clip_01M0CD147TXVR65WRDKMC16MH4"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2066,8 +2066,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZ3MPKRN9XBCMZWT68GYAB0Q",
-      "clip_01KZ3MPSJK0XAJN6SW8P3FWA7K",
       "clip_01KZ3P9DG9ZKNF74TFMB67C0HF",
       "clip_01KZ3PYJEJ07YNBBD86KQ3R9N5",
       "clip_01KZ3RK7K24NAGE0D62DD0P1AS",
@@ -2365,7 +2363,9 @@
       "clip_01M0BEXW1WENED5YB8JWKJJKRT",
       "clip_01M0BF2WF07GYP3YT7G43NXZSN",
       "clip_01M0BF0N121NQ5WPGP95V7YC7K",
-      "clip_01M0BG7ZMPSGNCQHM60V54049Q"
+      "clip_01M0BG7ZMPSGNCQHM60V54049Q",
+      "clip_01M0CATN8A8MZ4SHAZN6H270M1",
+      "clip_01M0CBZJDCAAHK92BJW0HJRHYB"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3849,7 +3849,7 @@
   },
   "heartbeat": {
     "last": "2026-08-18T23:32:25Z",
-    "clips_since": 12
+    "clips_since": 17
   },
   "silent": {
     "twitch:skotti": {
@@ -3877,7 +3877,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-18T19:37:19Z",
+      "last_clip": "2026-08-19T07:09:53Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3901,7 +3901,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-18T22:44:47Z",
+      "last_clip": "2026-08-19T07:10:04Z",
       "alerted": false
     },
     "kick:sampef2": {
