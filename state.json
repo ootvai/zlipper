@@ -1501,9 +1501,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZ99RHXQN4ZN0JSDRH67P8M5",
-      "clip_01KZ9A2ETPMXRXRR87RAH8ZQXG",
-      "clip_01KZBJ7MAPC0YCDSTR9CJ35YDQ",
       "clip_01KZBKRV8WG6MSZ7NJ94TT5MMQ",
       "clip_01KZEBVS9PN93MCYPD1FP74EPC",
       "clip_01KZECV7GATGE7GDSP9R22VCGJ",
@@ -1800,7 +1797,10 @@
       "clip_01M0C23ZGMNW0YPP1B25Q0H5G4",
       "clip_01M0C3FZFKRDDCTMKQNW2ZGWEK",
       "clip_01M0C3JMZRXHH3A2FY3015HFB3",
-      "clip_01M0C92J691PG4QGGMATZN4Z70"
+      "clip_01M0C92J691PG4QGGMATZN4Z70",
+      "clip_01M0CGGD6GVB3KNXE4WSQKV5TV",
+      "clip_01M0CGHX4J7MGQ4K9YDMSJC9P7",
+      "clip_01M0CGMNJJJXEEDTJKVS1XRN6Q"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2066,8 +2066,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZ3RPZT3SMJERDC6ZKHSR5WM",
-      "clip_01KZ3SGPYS0YBHEW1XV03ZTRR8",
       "clip_01KZ3VHTBE1Z7GQ5D22YVZTK3N",
       "clip_01KZ3X6H0DVFJER371JA7CXJ5F",
       "clip_01KZ3XA50BRK0RT6XN8J56CJ37",
@@ -2365,7 +2363,9 @@
       "clip_01M0CBZJDCAAHK92BJW0HJRHYB",
       "clip_01M0CFJ8RF1G078BE8N6PJZD2B",
       "clip_01M0CFSJ5Z09WMSJ014BT7M87N",
-      "clip_01M0CFW61X8RJ8570EHEY7DBXA"
+      "clip_01M0CFW61X8RJ8570EHEY7DBXA",
+      "clip_01M0CGNPMQM332FYC85TKXW3JG",
+      "clip_01M0CHY16T8JDQANTQ64SYHFP9"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3849,7 +3849,7 @@
   },
   "heartbeat": {
     "last": "2026-08-18T23:32:25Z",
-    "clips_since": 20
+    "clips_since": 25
   },
   "silent": {
     "twitch:skotti": {
@@ -3889,7 +3889,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-19T06:18:30Z",
+      "last_clip": "2026-08-19T08:30:38Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3901,7 +3901,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-19T07:52:47Z",
+      "last_clip": "2026-08-19T08:30:41Z",
       "alerted": false
     },
     "kick:sampef2": {
