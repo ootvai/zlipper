@@ -615,11 +615,11 @@
       "clip_01M0DBK7B17ZKAT76JAE20E5QD",
       "clip_01M0DCZC3RBD8982D2HWT0425Y",
       "clip_01M0DQHB8VRNPKSYA40F6W3KQM",
-      "clip_01M0DQZBVKNBQ047RQ212FKGD4"
+      "clip_01M0DQZBVKNBQ047RQ212FKGD4",
+      "clip_01M0DV4M2A3Q5CNXAEJ3PBSGWD",
+      "clip_01M0DVAWTA45DZSBKA4EVBG5QW"
     ],
     "pact": [
-      "clip_01KYD661P4R1F73T9J4MCGKS2X",
-      "clip_01KYD68AB47DJ94Z1H2YE3CS2K",
       "clip_01KYD6AB13YEJ4NS9W3ZAGGYAJ",
       "clip_01KYD6H8FC7Q4102Z7DFY9XK01",
       "clip_01KYD6J7ZDNN7QTXJVZA4ZKDGD",
@@ -917,7 +917,9 @@
       "clip_01M0DQRQB3JBV60GRWST79HTK0",
       "clip_01M0DR7Z0Z1C5P6BQR6S1WBZDE",
       "clip_01M0DRHDD3XR604XH6SSQ0MPKH",
-      "clip_01M0DS4ZAS2KB2T36F80VPSC5S"
+      "clip_01M0DS4ZAS2KB2T36F80VPSC5S",
+      "clip_01M0DT0R7QM3BHM52TR947G0ST",
+      "clip_01M0DTQC08WRC3XTHNGGY62VTG"
     ],
     "aapo_olervo": [
       "clip_01KYMKMKJ5K3P6R8ZYA2BR7XJK",
@@ -2083,10 +2085,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZ4G4QDYXXC5E11MGP8F80YT",
-      "clip_01KZ4GQAYAKE0RRS0NJPCRHFT5",
-      "clip_01KZ4HB0AVM785NBV4JBRM1QTP",
-      "clip_01KZ4HB3J90JDVNQH6S5VFMZSV",
       "clip_01KZ4HARHENEG10DVRTZAMDETB",
       "clip_01KZ4HBWXA1AAT3VMNZESZR815",
       "clip_01KZ4HCR2PXJDYDN8EA594HASS",
@@ -2382,7 +2380,11 @@
       "clip_01M0DBTQFCD9QMBWQZK42HRPNY",
       "clip_01M0DC6ZFQMSJCJAFMVNBB79EC",
       "clip_01M0DH8G70JBF4BDCGCESFJMEY",
-      "clip_01M0DK2W1N8VJM7B1CNPV982YW"
+      "clip_01M0DK2W1N8VJM7B1CNPV982YW",
+      "clip_01M0DTYXFN7WVMXNP1HH7RJS9T",
+      "clip_01M0DVQG81ZBYAK4VZQPEJ6BCT",
+      "clip_01M0DVTA6QR1WZWT78FHG3MWS8",
+      "clip_01M0DVT64T9ZH77D3RWBJE3EP7"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3531,7 +3533,8 @@
       "clip_01KZRWBRC16MJYFHFJ84DDS5K0",
       "clip_01KZSDQC92RQYRJNZ37RMGPYV5",
       "clip_01M053K2K4X967FE4NAT2NJJCZ",
-      "clip_01M0AM7WTCCQ90QX3YGK6K71PT"
+      "clip_01M0AM7WTCCQ90QX3YGK6K71PT",
+      "clip_01M0DT1TCWBACQPA305AN2MC42"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -3868,7 +3871,7 @@
   },
   "heartbeat": {
     "last": "2026-08-19T11:43:37Z",
-    "clips_since": 69
+    "clips_since": 78
   },
   "silent": {
     "twitch:skotti": {
@@ -3888,11 +3891,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-19T19:42:06Z",
+      "last_clip": "2026-08-19T20:39:54Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-19T20:01:33Z",
+      "last_clip": "2026-08-19T20:39:57Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3920,7 +3923,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-19T18:49:54Z",
+      "last_clip": "2026-08-19T20:40:10Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3948,7 +3951,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-18T14:54:41Z",
+      "last_clip": "2026-08-19T20:40:25Z",
       "alerted": false
     },
     "kick:whyisabell": {
