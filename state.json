@@ -612,7 +612,8 @@
       "clip_01M0DA6AX8F4X34F1ATFK8Y1ND",
       "clip_01M0DAAGWJN2FF1HAKZPN2WD4A",
       "clip_01M0DBHNGBCHQC6J6DMXBPVDEB",
-      "clip_01M0DBK7B17ZKAT76JAE20E5QD"
+      "clip_01M0DBK7B17ZKAT76JAE20E5QD",
+      "clip_01M0DCZC3RBD8982D2HWT0425Y"
     ],
     "pact": [
       "clip_01KYAMKK575V0ZC31T2GZS23BE",
@@ -1514,7 +1515,6 @@
       "clip_01KZEMKN81QBPJY63BMK213SE3"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZBKRV8WG6MSZ7NJ94TT5MMQ",
       "clip_01KZEBVS9PN93MCYPD1FP74EPC",
       "clip_01KZECV7GATGE7GDSP9R22VCGJ",
       "clip_01KZED6TN43JEH56BVN4ENKAHA",
@@ -1813,7 +1813,8 @@
       "clip_01M0C92J691PG4QGGMATZN4Z70",
       "clip_01M0CGGD6GVB3KNXE4WSQKV5TV",
       "clip_01M0CGHX4J7MGQ4K9YDMSJC9P7",
-      "clip_01M0CGMNJJJXEEDTJKVS1XRN6Q"
+      "clip_01M0CGMNJJJXEEDTJKVS1XRN6Q",
+      "clip_01M0DEG5BQZSJ3CCX3SHTGD1AG"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2042,7 +2043,8 @@
       "clip_01M051VK29AQ5E1Z6HP6SA471D",
       "clip_01M0647GZ9RRS7C5YTW63V02W7",
       "clip_01M0B5MK9THT2K4WMB0MSTRGYQ",
-      "clip_01M0B6X0VT5YTTZ117A91VH6A7"
+      "clip_01M0B6X0VT5YTTZ117A91VH6A7",
+      "clip_01M0DDNX6WM4BVMMBJE6ECYR8Z"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3864,7 +3866,7 @@
   },
   "heartbeat": {
     "last": "2026-08-19T11:43:37Z",
-    "clips_since": 48
+    "clips_since": 51
   },
   "silent": {
     "twitch:skotti": {
@@ -3884,7 +3886,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-19T16:10:55Z",
+      "last_clip": "2026-08-19T16:49:11Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3904,11 +3906,11 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-19T08:30:38Z",
+      "last_clip": "2026-08-19T16:49:18Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-18T20:17:03Z",
+      "last_clip": "2026-08-19T16:49:19Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
