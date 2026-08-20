@@ -25,6 +25,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.parse
 
 import requests
 
@@ -81,9 +82,18 @@ def parse_clip_url(url):
 # ---------------------------------------------------------------------------
 
 def kick_headers(token):
+    """Otsakkeet selaimen oikean pyynnön mukaan.
+
+    Bearer-token ja evästeen session_token ovat sama arvo; selain
+    lähettää molemmat, joten tehdään samoin. Evästeessä arvo on
+    URL-koodattuna.
+    """
     return {
         "Authorization": f"Bearer {token}",
+        "Cookie": f"session_token={urllib.parse.quote(token, safe='')}",
         "Accept": "application/json",
+        "Accept-Language": "fi-FI,fi;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Content-Type": "application/json",
         "Origin": "https://kick.com",
         "Referer": "https://kick.com/",
         "User-Agent": (
@@ -123,7 +133,11 @@ def find_url(payload, depth=0):
 def request_download_url(clip_id, token):
     url = KICK_DOWNLOAD_URL.format(clip_id=clip_id)
     try:
-        r = requests.post(url, headers=kick_headers(token), timeout=60)
+        # Runko on tyhjä JSON-objekti: selaimen pyynnössä
+        # Content-Length on 2, eli täsmälleen "{}".
+        r = requests.post(
+            url, headers=kick_headers(token), json={}, timeout=60
+        )
     except requests.RequestException as e:
         raise ProcessError(f"Kickin latauskutsu ei mennyt läpi: {e}")
 

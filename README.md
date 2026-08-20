@@ -85,6 +85,9 @@ curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook" -d "url=https://zl
 Sen jälkeen: vastaa mihin tahansa Kick-klippi-ilmoitukseen numerolla
 **1** (zoomattu) tai **2** (koko kuva).
 
+Putki päättyy siihen, että rajattu video tulee Telegramiin. Loput
+editointi tehdään käsin — mitään ei julkaista automaattisesti.
+
 > `repository_dispatch` ajaa workflown aina default-branchista. Putki ei
 > siis toimi ennen kuin `process-clip.yml` on mainissa.
 
