@@ -1,0 +1,49 @@
+name: Rajaa klippi
+
+# Tapahtumapohjainen, ei cronia: Cloudflare Worker laukaisee tämän kun
+# Telegramissa vastataan klippi-ilmoitukseen numerolla 1 tai 2.
+#
+# HUOM: repository_dispatch ajaa workflown aina default-branchista, joten
+# tämän tiedoston on oltava mainissa ennen kuin putki toimii.
+on:
+  repository_dispatch:
+    types: [process_clip]
+
+jobs:
+  rajaa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Asenna riippuvuudet
+        run: pip install -r requirements.txt
+
+      - name: Tarkista ffmpeg
+        run: ffmpeg -version | head -1
+
+      - name: Lataa ja rajaa klippi
+        env:
+          # client_payload tulee ulkopuolelta, joten se välitetään
+          # ympäristömuuttujina eikä koskaan suoraan komentoriville.
+          CLIP_URL: ${{ github.event.client_payload.clip_url }}
+          MODEL: ${{ github.event.client_payload.model }}
+          REQUEST_MESSAGE_ID: ${{ github.event.client_payload.message_id }}
+          KICK_AUTH_TOKEN: ${{ secrets.KICK_AUTH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python process_clip.py
+
+      - name: Talleta rajattu video artifaktiksi
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rajattu-klippi
+          path: work/*.mp4
+          if-no-files-found: ignore
+          retention-days: 7

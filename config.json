@@ -30,5 +30,11 @@
   "frequent_clipper_min_clips": 10,
   "health_alert_after_failures": 3,
   "heartbeat_hours": 12,
-  "silent_channel_days": 7
+  "silent_channel_days": 7,
+  "crop": {
+    "width": 1080,
+    "height": 1920,
+    "zoom_height_pct": 67,
+    "blur_sigma": 40
+  }
 }
