@@ -352,8 +352,12 @@ def await_job(clip_id, job_id, token):
 
 
 def download(url, dest):
+    # Valmis tiedosto tarjoillaan mpe.kick.com -osoitteesta Cloudflaren
+    # takaa. Ilman selaimen kaltaista User-Agentia Cloudflare voi torjua
+    # pyynnon (error 1010), joten sellainen annetaan aina.
+    headers = {"User-Agent": kick_headers("")["User-Agent"]}
     try:
-        with requests.get(url, stream=True, timeout=180) as r:
+        with requests.get(url, stream=True, timeout=180, headers=headers) as r:
             r.raise_for_status()
             with open(dest, "wb") as f:
                 for chunk in r.iter_content(chunk_size=1 << 20):
