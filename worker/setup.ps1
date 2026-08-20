@@ -36,11 +36,27 @@ Write-Host "`n[0/4] Tarkistetaan tyokalut" -ForegroundColor Cyan
 node --version | Out-Null
 if ($LASTEXITCODE -ne 0) { throw "Node.js puuttuu." }
 
-npx @wrangler whoami
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "`nEt ole kirjautunut Cloudflareen. Selain aukeaa nyt." -ForegroundColor Yellow
+# wrangler whoami palauttaa nollan myos kirjautumattomana ja kertoo
+# tilanteen vain tekstina, joten paluukoodiin ei voi luottaa. Luetaan
+# molemmat virrat ja katsotaan mita se sanoo.
+$prevEap = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
+$who = (npx @wrangler whoami 2>&1 | Out-String)
+$ErrorActionPreference = $prevEap
+Write-Host $who
+
+if ($who -match "not authenticated|wrangler login") {
+    Write-Host "Et ole kirjautunut Cloudflareen. Selain aukeaa nyt." -ForegroundColor Yellow
     npx @wrangler login
     if ($LASTEXITCODE -ne 0) { throw "Cloudflare-kirjautuminen epaonnistui." }
+
+    $ErrorActionPreference = "Continue"
+    $who = (npx @wrangler whoami 2>&1 | Out-String)
+    $ErrorActionPreference = $prevEap
+    if ($who -match "not authenticated") {
+        throw "Kirjautuminen ei nayta menneen lapi. Aja 'npx wrangler login' kasin."
+    }
+    Write-Host "Kirjautuminen OK." -ForegroundColor Green
 }
 
 # --- 1. Salaisuudet -------------------------------------------------------
