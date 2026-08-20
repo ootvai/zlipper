@@ -4,17 +4,15 @@ Ajetaan GitHub Actionsissa repository_dispatch-tapahtumasta, jonka
 Cloudflare Worker laukaisee kun Telegramissa vastataan klippi-ilmoitukseen
 numerolla 1 tai 2.
 
-Lataus käyttää Kickin API v1 -endpointtia
-(POST https://web.kick.com/api/v1/clips/{clip_id}/download), joka palauttaa
-puhtaan MP4:n. Kickin sivun oma Download-nappi lisää nykyään vesileiman,
-joten sitä ei käytetä. Endpoint on dokumentoimaton ja voi muuttua ilman
-varoitusta — siksi vastauksesta etsitään osoite useasta eri kentästä ja
-tuntematon vastaus lokitetaan sellaisenaan.
+Lähteenä on klipin oma toistolahde: kick.com/api/v2/clips/{id} kertoo
+HLS-soittolistan, jota selaimen soitin käyttää. Se on julkinen, ei vaadi
+tunnistautumista, ja siinä on täysi laatu ilman Kickin mainoskorttia.
+Sivuston Download-nappi sen sijaan liittää klipin perään 1,4 sekunnin
+KICK-kortin, joten sitä ei käytetä.
 
 Ympäristömuuttujat:
   CLIP_URL             https://kick.com/<kanava>/clips/<clip_id>
   MODEL                1 = zoomattu, 2 = koko kuva
-  KICK_AUTH_TOKEN      Kickin istuntotoken (GitHub secret)
   TELEGRAM_BOT_TOKEN   (GitHub secret)
   TELEGRAM_CHAT_ID     (GitHub secret)
   REQUEST_MESSAGE_ID   valinnainen: viesti johon vastataan
@@ -25,9 +23,7 @@ import os
 import re
 import subprocess
 import sys
-import time
 import traceback
-import urllib.parse
 
 import requests
 
@@ -37,29 +33,14 @@ from telegram import escape_html
 CONFIG_PATH = "config.json"
 WORK_DIR = "work"
 
-KICK_DOWNLOAD_URL = "https://web.kick.com/api/v1/clips/{clip_id}/download"
+# Klipin tiedot, mukaan lukien soittimen HLS-lähde. Julkinen endpoint:
+# tunnistautumista ei tarvita.
+KICK_CLIP_API = "https://kick.com/api/v2/clips/{clip_id}"
 
-# POST yllä olevaan osoitteeseen ei palauta MP4:ää vaan käynnistää työn:
-# 201 {"data":{"job_id":"...","status":"pending"},"message":"success"}
-# Valmis osoite haetaan erikseen alla olevasta osoitteesta.
-#
-# Vahvistettu selaimen Network-välilehdeltä 20.8.2026: Kickin oma
-# Download-nappi kyselee tätä muutaman sekunnin välein kunnes työ on
-# valmis (GET -> 200 OK). Loput vaihtoehdot ovat varalla siltä varalta
-# että polku muuttuu; ensimmäinen vastaava jää käyttöön.
-KICK_JOB_STATUS_URLS = [
-    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/jobs/{job_id}"),
-    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
-    ("POST", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
-    ("GET", "https://web.kick.com/api/v1/download/jobs/{job_id}"),
-]
-
-# Kickin nopeusrajoitus on tiukka — kaksi pyyntöä puolessa minuutissa
-# riitti laukaisemaan RATE_LIMIT_EXCEEDED.
-KICK_RATE_LIMIT_WAIT_S = 15
-KICK_MAX_ATTEMPTS = 5
-KICK_JOB_POLL_S = 6
-KICK_JOB_TIMEOUT_S = 300
+BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+)
 
 # Bot API:n yläraja lähetettävälle tiedostolle.
 TELEGRAM_MAX_BYTES = 50 * 1024 * 1024
@@ -113,48 +94,22 @@ def parse_clip_url(url):
 # LATAUS
 # ---------------------------------------------------------------------------
 
-def kick_headers(token):
-    """Otsakkeet selaimen oikean pyynnön mukaan.
-
-    Bearer-token ja evästeen session_token ovat sama arvo; selain
-    lähettää molemmat, joten tehdään samoin. Evästeessä arvo on
-    URL-koodattuna.
-    """
-    return {
-        "Authorization": f"Bearer {token}",
-        "Cookie": f"session_token={urllib.parse.quote(token, safe='')}",
-        "Accept": "application/json",
-        "Accept-Language": "fi-FI,fi;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Content-Type": "application/json",
-        "Origin": "https://kick.com",
-        "Referer": "https://kick.com/",
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-        ),
-    }
+def kick_headers():
+    return {"Accept": "application/json", "User-Agent": BROWSER_UA}
 
 
 def find_url(payload, depth=0):
-    """Etsii MP4-osoitteen tuntemattoman muotoisesta vastauksesta."""
+    """Etsii videon osoitteen vastauksesta."""
     if depth > 4:
         return None
     if isinstance(payload, str):
         return payload if payload.startswith("http") else None
     if isinstance(payload, dict):
-        for key in (
-            "url",
-            "download_url",
-            "downloadUrl",
-            "signed_url",
-            "signedUrl",
-            "video_url",
-            "src",
-        ):
+        for key in ("video_url", "clip_url", "url", "src"):
             value = payload.get(key)
             if isinstance(value, str) and value.startswith("http"):
                 return value
-        for key in ("data", "clip", "result", "download"):
+        for key in ("clip", "data", "result"):
             if key in payload:
                 found = find_url(payload[key], depth + 1)
                 if found:
@@ -162,109 +117,31 @@ def find_url(payload, depth=0):
     return None
 
 
-def find_job_id(payload, depth=0):
-    """Etsii latausjobin tunnisteen vastauksesta."""
-    if depth > 4 or not isinstance(payload, dict):
-        return None
-    for key in ("job_id", "jobId", "id", "uuid"):
-        value = payload.get(key)
-        if isinstance(value, str) and value:
-            return value
-    for key in ("data", "job", "result", "download"):
-        if key in payload:
-            found = find_job_id(payload[key], depth + 1)
-            if found:
-                return found
-    return None
+def resolve_source(clip_id):
+    """Hakee klipin toistolahteen Kickin julkisesta APIsta.
 
+    Palauttaa HLS-soittolistan (playlist.m3u8) — saman jota selaimen
+    soitin kayttaa.
 
-def find_status(payload, depth=0):
-    if depth > 4 or not isinstance(payload, dict):
-        return None
-    value = payload.get("status") or payload.get("state")
-    if isinstance(value, str):
-        return value.lower()
-    for key in ("data", "job", "result", "download"):
-        if key in payload:
-            found = find_status(payload[key], depth + 1)
-            if found:
-                return found
-    return None
-
-
-def kick_request(method, url, token, **kwargs):
-    """Kutsuu Kickia ja kunnioittaa nopeusrajoitusta.
-
-    Kickin raja on tiukka: kaksi pyyntöä puolen minuutin sisällä riitti
-    laukaisemaan RATE_LIMIT_EXCEEDED. 429 ei siis ole poikkeustila vaan
-    odotettavissa, joten sitä odotetaan pois eikä kaaduta.
+    Aiemmin tassa kaytettiin osoitetta
+    POST web.kick.com/api/v1/clips/{id}/download, mutta se osoittautui
+    huonommaksi joka mittarilla: se on asynkroninen jobi jota pitaa
+    pollata, sen nopeusrajoitus laukesi kahdesta pyynnosta puolessa
+    minuutissa, se vaatii istuntotokenin joka vanhenee, sen bitrate oli
+    matalampi (4.2 vs 6.1 Mbps) ja se liittaa klipin perään 1,4 sekunnin
+    KICK-mainoskortin. Toistolahteessa ei ole naista mitaan.
     """
-    backoff = KICK_RATE_LIMIT_WAIT_S
-    last = None
+    url = KICK_CLIP_API.format(clip_id=clip_id)
+    try:
+        r = requests.get(url, headers=kick_headers(), timeout=30)
+    except requests.RequestException as e:
+        raise ProcessError(f"Kickin klippihaku ei mennyt lapi: {e}")
 
-    for attempt in range(1, KICK_MAX_ATTEMPTS + 1):
-        try:
-            r = requests.request(
-                method, url, headers=kick_headers(token), timeout=60, **kwargs
-            )
-        except requests.RequestException as e:
-            raise ProcessError(f"Kick-kutsu ei mennyt läpi: {e}")
-
-        if r.status_code == 429:
-            last = r
-            if attempt == KICK_MAX_ATTEMPTS:
-                break
-            wait = backoff
-            retry_after = r.headers.get("Retry-After")
-            if retry_after:
-                try:
-                    wait = max(wait, float(retry_after))
-                except ValueError:
-                    pass
-            log(f"Kick 429 (yritys {attempt}) — odotetaan {wait:.0f} s.")
-            time.sleep(wait)
-            backoff = min(backoff * 2, 60)
-            continue
-
-        return r
-
-    raise ProcessError(
-        "Kickin nopeusrajoitus ei hellittänyt "
-        f"{KICK_MAX_ATTEMPTS} yrityksellä. Odota hetki ja vastaa uudelleen."
-        + (f" Viimeisin vastaus: {last.text[:150]}" if last is not None else "")
-    )
-
-
-def check_common_errors_code(code):
-    if code in (401, 403):
-        raise ProcessError(
-            f"Kick hylkäsi tunnistautumisen (HTTP {code}). "
-            "KICK_AUTH_TOKEN on todennäköisesti vanhentunut — päivitä "
-            "GitHub-secret."
-        )
-
-
-def check_common_errors(r, clip_id):
-    check_common_errors_code(r.status_code)
     if r.status_code == 404:
-        raise ProcessError(f"Kick ei tunne kohdetta {clip_id} (HTTP 404).")
-
-
-def request_download_url(clip_id, token):
-    """Käynnistää latausjobin ja palauttaa valmiin MP4-osoitteen.
-
-    Endpoint on asynkroninen: POST vastaa 201:llä ja antaa job_id:n sekä
-    tilan "pending". Varsinainen osoite haetaan erikseen, kun työ on
-    valmistunut.
-    """
-    url = KICK_DOWNLOAD_URL.format(clip_id=clip_id)
-    # Runko on tyhjä JSON-objekti: selaimen pyynnössä Content-Length on 2.
-    r = kick_request("POST", url, token, json={})
-    check_common_errors(r, clip_id)
-
-    if r.status_code not in (200, 201, 202):
+        raise ProcessError(f"Kick ei tunne klippia {clip_id} (HTTP 404).")
+    if r.status_code != 200:
         raise ProcessError(
-            f"Kickin latauskutsu palautti HTTP {r.status_code}: {r.text[:200]}"
+            f"Kickin klippihaku palautti HTTP {r.status_code}: {r.text[:200]}"
         )
 
     try:
@@ -272,113 +149,38 @@ def request_download_url(clip_id, token):
     except ValueError:
         raise ProcessError("Kickin vastaus ei ollut JSONia: " + r.text[:200])
 
-    # Jos osoite tulee heti, ei tarvitse kysellä perään.
     found = find_url(payload)
-    if found:
-        return found
-
-    job_id = find_job_id(payload)
-    if not job_id:
+    if not found:
         log(f"Tuntematon vastausmuoto: {json.dumps(payload)[:800]}")
         raise ProcessError(
-            "Kickin vastauksessa ei ollut latauslinkkiä eikä job_id:tä — "
-            "endpointin muoto on ilmeisesti muuttunut. Katso Actions-loki."
+            "Klipin tiedoista ei loytynyt toisto-osoitetta — APIn muoto on "
+            "ilmeisesti muuttunut. Katso Actions-loki."
         )
-
-    log(f"Latausjobi {job_id} kaynnistetty, odotetaan valmistumista.")
-    return await_job(clip_id, job_id, token)
+    return found
 
 
-def probe(method, url, token):
-    """Kokeilee yhtä tilaosoitetta. Palauttaa (statuskoodi, payload|None)."""
-    kwargs = {"json": {}} if method == "POST" else {}
-    r = kick_request(method, url, token, **kwargs)
-    try:
-        return r.status_code, r.json()
-    except ValueError:
-        return r.status_code, None
+def fetch_source(source_url, dest):
+    """Hakee lahteen levylle sellaisenaan.
 
+    -c copy: virrat siirretaan pakkaamatta uudelleen, joten laatu sailyy
+    tarkalleen ja haku kestaa sekunteja. Rajaus tekee ainoan enkoodauksen.
+    """
+    cmd = [
+        "ffmpeg", "-y", "-loglevel", "error",
+        "-user_agent", BROWSER_UA,
+        "-i", source_url,
+        "-c", "copy",
+        dest,
+    ]
+    log(" ".join(cmd))
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise ProcessError("Lahteen haku epaonnistui: " + (result.stderr or "")[-400:])
 
-def await_job(clip_id, job_id, token):
-    """Kyselee jobin tilaa kunnes MP4-osoite on saatavilla."""
-    deadline = time.monotonic() + KICK_JOB_TIMEOUT_S
-    candidates = [(m, u.format(clip_id=clip_id, job_id=job_id))
-                  for m, u in KICK_JOB_STATUS_URLS]
-    working = None
-    last_payload = None
-    # Kootaan jokaisen kokeilun lopputulos: jos mikaan ei osu, tama kertoo
-    # seuraavalle korjaajalle enemman kuin pelkka "ei loytynyt". Esim. 405
-    # tarkoittaisi etta polku on oikea mutta metodi vaara.
-    attempts = []
-
-    while time.monotonic() < deadline:
-        time.sleep(KICK_JOB_POLL_S)
-
-        for method, url in ([working] if working else candidates):
-            code, payload = probe(method, url, token)
-            path = url.replace("https://web.kick.com/api/v1", "")
-
-            if not working:
-                note = f"{method} {path} -> {code}"
-                log("  kokeilu: " + note)
-                attempts.append(note)
-
-            if code in (401, 403):
-                check_common_errors_code(code)
-            if code >= 300 or payload is None:
-                continue
-
-            if not working:
-                working = (method, url)
-                log(f"Jobin tila luetaan: {method} {path}")
-            last_payload = payload
-
-            found = find_url(payload)
-            if found:
-                return found
-
-            status = find_status(payload)
-            log(f"Jobi {job_id}: {status or 'tila tuntematon'}")
-            if status in ("failed", "error", "cancelled"):
-                raise ProcessError(f"Kickin latausjobi epäonnistui: {status}")
-            break
-
-        if not working:
-            log("Yksikaan tilaosoite ei vastannut:")
-            for note in attempts:
-                log("  " + note)
-            raise ProcessError(
-                "En löytänyt osoitetta josta latausjobin tilan voi lukea.\n"
-                + "\n".join(attempts)
-                + "\n\nKatso DevToolsista mihin Kick kyselee POSTin jälkeen."
-            )
-
-    if last_payload is not None:
-        log(f"Viimeisin tila: {json.dumps(last_payload)[:800]}")
-    raise ProcessError(
-        f"Kickin latausjobi ei valmistunut {KICK_JOB_TIMEOUT_S} sekunnissa."
-    )
-
-
-def download(url, dest):
-    # Valmis tiedosto tarjoillaan mpe.kick.com -osoitteesta Cloudflaren
-    # takaa. Ilman selaimen kaltaista User-Agentia Cloudflare voi torjua
-    # pyynnon (error 1010), joten sellainen annetaan aina.
-    headers = {"User-Agent": kick_headers("")["User-Agent"]}
-    try:
-        with requests.get(url, stream=True, timeout=180, headers=headers) as r:
-            r.raise_for_status()
-            with open(dest, "wb") as f:
-                for chunk in r.iter_content(chunk_size=1 << 20):
-                    if chunk:
-                        f.write(chunk)
-    except requests.RequestException as e:
-        raise ProcessError(f"Klipin lataus epäonnistui: {e}")
-
-    size = os.path.getsize(dest)
+    size = os.path.getsize(dest) if os.path.exists(dest) else 0
     if size < 10000:
-        raise ProcessError(f"Ladattu tiedosto on liian pieni ({size} tavua).")
-    log(f"Ladattu {size / 1024 / 1024:.1f} MB -> {dest}")
+        raise ProcessError(f"Haettu tiedosto on liian pieni ({size} tavua).")
+    log(f"Haettu {size / 1024 / 1024:.1f} MB -> {dest}")
     return dest
 
 
@@ -521,13 +323,10 @@ def fit_under_limit(src, dest, model, crop):
 def main():
     clip_url = os.environ.get("CLIP_URL", "").strip()
     model = os.environ.get("MODEL", "").strip()
-    kick_token = os.environ.get("KICK_AUTH_TOKEN", "").strip()
     reply_to = os.environ.get("REQUEST_MESSAGE_ID", "").strip()
 
     if model not in MODEL_NAMES:
         raise ProcessError(f"Tuntematon rajausmalli {model!r} (odotin 1 tai 2).")
-    if not kick_token:
-        raise ProcessError("KICK_AUTH_TOKEN puuttuu GitHub-secreteistä.")
 
     channel, clip_id = parse_clip_url(clip_url)
     crop = load_crop_settings()
@@ -537,7 +336,7 @@ def main():
 
     log(f"Klippi {clip_id} kanavalta {channel}, malli {model}")
 
-    download(request_download_url(clip_id, kick_token), raw)
+    fetch_source(resolve_source(clip_id), raw)
     out, size = fit_under_limit(raw, out, model, crop)
 
     caption = (
