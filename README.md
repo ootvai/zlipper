@@ -60,27 +60,27 @@ Testaa: **Actions → Klippivahti → Run workflow**.
 
 ### 3. Rajausputki (valinnainen)
 
-Vaatii Cloudflare-tilin ja `wrangler`-työkalun.
+Vaatii Cloudflare-tilin. Aja PowerShellissa:
 
-```bash
+```powershell
 cd worker
-wrangler secret put TELEGRAM_BOT_TOKEN
-wrangler secret put TELEGRAM_WEBHOOK_SECRET
-wrangler secret put GITHUB_TOKEN
-wrangler deploy
+.\setup.ps1
 ```
 
-- `TELEGRAM_WEBHOOK_SECRET` on itse keksitty satunnainen merkkijono.
-- `GITHUB_TOKEN` on henkilökohtainen access token, jolla on tähän repoon
-  oikeus **Contents: read & write** (fine-grained) tai `repo` (classic).
-- Aseta `ALLOWED_CHAT_ID` tiedostoon `wrangler.toml` — sama luku kuin
-  `TELEGRAM_CHAT_ID`.
+Skripti kirjaa sinut Cloudflareen, kysyy tunnukset, vie ne Workerin
+secreteiksi, deployaa ja rekisteröi webhookin. Tunnuksia ei kirjoiteta
+levylle eikä komentoriville.
 
-Rekisteröi webhook Telegramille:
+Se kysyy kolme asiaa:
 
-```bash
-curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook" -d "url=https://zlipper-webhook.<tili>.workers.dev" -d "secret_token=<TELEGRAM_WEBHOOK_SECRET>"
-```
+| Kysyy | Mistä |
+|---|---|
+| `TELEGRAM_BOT_TOKEN` | @BotFather antoi botin luonnissa |
+| `GITHUB_TOKEN` | GitHub PAT, oikeus **Contents: read & write** tähän repoon |
+| `ALLOWED_CHAT_ID` | Sama luku kuin GitHubin `TELEGRAM_CHAT_ID` |
+
+`TELEGRAM_WEBHOOK_SECRET` arvotaan automaattisesti — sitä ei tarvitse
+keksiä eikä muistaa.
 
 Sen jälkeen: vastaa mihin tahansa Kick-klippi-ilmoitukseen numerolla
 **1** (zoomattu) tai **2** (koko kuva).
