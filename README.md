@@ -44,12 +44,6 @@ Kick / Twitch  ──►  klippivahti (cron 10 min)  ──►  Telegram-ilmoitu
 | `TWITCH_CLIENT_SECRET` | sama |
 | `TELEGRAM_BOT_TOKEN` | @BotFather → `/newbot` |
 | `TELEGRAM_CHAT_ID` | `https://api.telegram.org/bot<TOKEN>/getUpdates` |
-| `KICK_AUTH_TOKEN` | Kickin istuntotoken, tarvitaan vain rajausputkeen |
-
-`KICK_AUTH_TOKEN` löytyy kirjautuneena kick.comilta selaimen
-kehitystyökaluista (Network → mikä tahansa API-kutsu →
-`Authorization: Bearer …`). Se vanhenee aikanaan; kun rajaus alkaa
-vastata "Kick hylkäsi tunnistautumisen", token on päivitettävä.
 
 ### 2. Klippivahti
 
@@ -106,6 +100,11 @@ Tekstityksiä, logoja tai muita kerroksia ei lisätä kumpaankaan.
 
 Mitat ja sumennus säädetään `config.json`-tiedoston `crop`-lohkosta.
 
+Lähteenä käytetään klipin omaa toistolähdettä (HLS), ei sivuston
+Download-nappia. Nappi liittää klipin perään 1,4 sekunnin KICK-kortin ja
+tarjoaa matalamman bitraten; toistolähteessä ei ole kumpaakaan eikä se
+vaadi tunnistautumista.
+
 ## Kanavien muokkaus
 
 Muokkaa `config.json`-tiedostoa suoraan GitHubissa. Käytä URL-nimeä, ei
@@ -140,7 +139,7 @@ laskurit säilyvät, koska ne ovat erillisessä `creators.json`-tiedostossa.
 
 ## Tunnetut rajoitukset
 
-- **Kickin API.** Sekä klippilistaus että lataus käyttävät
+- **Kickin API.** Sekä klippilistaus että klipin toistolähde käyttävät
   dokumentoimattomia endpointteja. Ne toimivat nyt, mutta voivat hajota
   ilman varoitusta. Silloin Actions-lokiin tulee HTTP-virhe ja
   klippivahti lähettää terveyshälytyksen; Twitch jatkaa normaalisti.

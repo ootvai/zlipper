@@ -40,7 +40,6 @@ jobs:
           CLIP_URL: ${{ github.event.client_payload.clip_url }}
           MODEL: ${{ github.event.client_payload.model }}
           REQUEST_MESSAGE_ID: ${{ github.event.client_payload.message_id }}
-          KICK_AUTH_TOKEN: ${{ secrets.KICK_AUTH_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python process_clip.py
