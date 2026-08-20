@@ -40,20 +40,17 @@ KICK_DOWNLOAD_URL = "https://web.kick.com/api/v1/clips/{clip_id}/download"
 
 # POST yllä olevaan osoitteeseen ei palauta MP4:ää vaan käynnistää työn:
 # 201 {"data":{"job_id":"...","status":"pending"},"message":"success"}
-# Valmis osoite haetaan erikseen. Kickin API on dokumentoimaton eikä
-# tilaosoite näkynyt selaimesta kaapatussa pyynnössä, joten vaihtoehtoja
-# kokeillaan järjestyksessä ja ensimmäinen vastaava jää käyttöön.
+# Valmis osoite haetaan erikseen alla olevasta osoitteesta.
 #
-# Kaksi ensimmäistä eivät oleta uutta polkua lainkaan: sama osoite GETillä,
-# ja saman POSTin toisto — moni tämäntyylinen API palauttaa valmiin
-# osoitteen kun työ on ehtinyt valmistua.
+# Vahvistettu selaimen Network-välilehdeltä 20.8.2026: Kickin oma
+# Download-nappi kyselee tätä muutaman sekunnin välein kunnes työ on
+# valmis (GET -> 200 OK). Loput vaihtoehdot ovat varalla siltä varalta
+# että polku muuttuu; ensimmäinen vastaava jää käyttöön.
 KICK_JOB_STATUS_URLS = [
+    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/jobs/{job_id}"),
     ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
     ("POST", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
-    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/{job_id}"),
-    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/status"),
-    ("GET", "https://web.kick.com/api/v1/download-jobs/{job_id}"),
-    ("GET", "https://web.kick.com/api/v1/jobs/{job_id}"),
+    ("GET", "https://web.kick.com/api/v1/download/jobs/{job_id}"),
 ]
 
 # Kickin nopeusrajoitus on tiukka — kaksi pyyntöä puolessa minuutissa
