@@ -64,6 +64,14 @@ KICK_JOB_TIMEOUT_S = 300
 # Bot API:n yläraja lähetettävälle tiedostolle.
 TELEGRAM_MAX_BYTES = 50 * 1024 * 1024
 
+# Budjetti johon enkoodaus tähtää. Rajaa pienempi, koska mp4-kontti vie
+# oman osansa eikä x264 osu kattoon tarkalleen.
+TELEGRAM_BUDGET_MB = 45
+AUDIO_KBPS = 160
+# Alaraja, ettei erittäin pitkä klippi mene mössöksi. Jos tämä ei riitä
+# mahtumaan, fit_under_limit kiristää crf:ää erikseen.
+MIN_VIDEO_BPS = 900_000
+
 MODEL_NAMES = {"1": "zoomattu", "2": "koko kuva"}
 
 DEFAULT_CROP = {
@@ -395,6 +403,9 @@ def build_filter(model, crop):
     h = int(crop["height"])
     sigma = float(crop["blur_sigma"])
 
+    # Tausta sumennetaan joka tapauksessa, joten skaalaimella ei ole
+    # sille merkitystä. Pääkuvassa on: lanczos säilyttää yksityiskohdan
+    # ylöspäin skaalatessa selvästi oletusta paremmin.
     background = (
         f"[bg]scale={w}:{h}:force_original_aspect_ratio=increase,"
         f"crop={w}:{h},gblur=sigma={sigma}[bgb]"
@@ -405,12 +416,13 @@ def build_filter(model, crop):
         fg_h = int(h * pct)
         fg_h -= fg_h % 2  # x264 vaatii parillisen korkeuden
         foreground = (
-            f"[fg]scale={w}:{fg_h}:force_original_aspect_ratio=increase,"
-            f"crop={w}:{fg_h}[fgs]"
+            f"[fg]scale={w}:{fg_h}:force_original_aspect_ratio=increase"
+            f":flags=lanczos,crop={w}:{fg_h}[fgs]"
         )
     else:
         foreground = (
-            f"[fg]scale={w}:{h}:force_original_aspect_ratio=decrease[fgs]"
+            f"[fg]scale={w}:{h}:force_original_aspect_ratio=decrease"
+            f":flags=lanczos[fgs]"
         )
 
     return (
@@ -419,7 +431,39 @@ def build_filter(model, crop):
     )
 
 
-def run_ffmpeg(src, dest, model, crop, crf=20):
+def probe_duration(path):
+    """Klipin kesto sekunteina, tai None jos ffprobe ei kerro."""
+    try:
+        result = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=noprint_wrappers=1:nokey=1", path],
+            capture_output=True, text=True,
+        )
+        return float(result.stdout.strip())
+    except (ValueError, OSError):
+        return None
+
+
+def bitrate_cap(duration):
+    """Suurin videobitrate jolla klippi mahtuu budjettiin.
+
+    Telegramin raja on 50 MB. Budjetti on tarkoituksella pienempi, koska
+    mp4-kontti ja äänivirta vievät oman osansa eikä x264 osu kattoon
+    tarkalleen.
+
+    Paluuarvo on katto, ei tavoite: lyhyet klipit enkoodautuvat crf:n
+    ehdoilla selvästi tämän alle ja pysyvät terävinä. Vain pitkät klipit
+    törmäävät kattoon ja puristuvat mahtumaan.
+    """
+    if not duration or duration <= 0:
+        return None
+    total_bits = TELEGRAM_BUDGET_MB * 1024 * 1024 * 8
+    video_bits = total_bits - (AUDIO_KBPS * 1000 * duration)
+    bps = int(video_bits / duration)
+    return max(bps, MIN_VIDEO_BPS)
+
+
+def run_ffmpeg(src, dest, model, crop, crf=20, cap=None):
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
         "-i", src,
@@ -427,10 +471,16 @@ def run_ffmpeg(src, dest, model, crop, crf=20):
         "-map", "[v]",
         "-map", "0:a?",
         "-c:v", "libx264",
-        "-preset", "veryfast",
+        # slow pakkaa tehokkaammin kuin veryfast; 23 s klippi enkoodautui
+        # 7 sekunnissa, joten nopeus ei ole pullonkaula.
+        "-preset", "slow",
         "-crf", str(crf),
+    ]
+    if cap:
+        cmd += ["-maxrate", str(cap), "-bufsize", str(cap * 2)]
+    cmd += [
         "-c:a", "aac",
-        "-b:a", "160k",
+        "-b:a", f"{AUDIO_KBPS}k",
         "-movflags", "+faststart",
         dest,
     ]
@@ -442,17 +492,27 @@ def run_ffmpeg(src, dest, model, crop, crf=20):
 
 
 def fit_under_limit(src, dest, model, crop):
-    """Enkoodaa uudelleen, jos tulos ei mahdu Telegramin 50 MB rajaan."""
-    run_ffmpeg(src, dest, model, crop)
+    """Enkoodaa niin että tulos mahtuu Telegramin rajaan."""
+    duration = probe_duration(src)
+    cap = bitrate_cap(duration)
+    if cap:
+        log(f"Kesto {duration:.1f} s -> bitraten katto {cap / 1e6:.1f} Mbps")
+
+    run_ffmpeg(src, dest, model, crop, cap=cap)
     size = os.path.getsize(dest)
     log(f"Rajattu tiedosto {size / 1024 / 1024:.1f} MB")
     if size <= TELEGRAM_MAX_BYTES:
         return dest, size
 
-    log("Yli 50 MB — enkoodataan uudelleen tiukemmalla laadulla.")
-    run_ffmpeg(src, dest, model, crop, crf=27)
-    size = os.path.getsize(dest)
-    log(f"Toinen yritys {size / 1024 / 1024:.1f} MB")
+    # Kattolaskenta pitäisi estää tämän, mutta jos x264 ylittää arvion,
+    # kiristetään portaittain eikä romahdeta kerralla.
+    for crf in (23, 26):
+        log(f"Yli rajan — uusi yritys crf {crf}.")
+        run_ffmpeg(src, dest, model, crop, crf=crf, cap=cap)
+        size = os.path.getsize(dest)
+        log(f"crf {crf}: {size / 1024 / 1024:.1f} MB")
+        if size <= TELEGRAM_MAX_BYTES:
+            break
     return dest, size
 
 
