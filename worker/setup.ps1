@@ -36,16 +36,60 @@ Write-Host "`n[0/4] Tarkistetaan tyokalut" -ForegroundColor Cyan
 node --version | Out-Null
 if ($LASTEXITCODE -ne 0) { throw "Node.js puuttuu." }
 
-npx @wrangler whoami
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "`nEt ole kirjautunut Cloudflareen. Selain aukeaa nyt." -ForegroundColor Yellow
+# wrangler whoami palauttaa nollan myos kirjautumattomana ja kertoo
+# tilanteen vain tekstina, joten paluukoodiin ei voi luottaa. Luetaan
+# molemmat virrat ja katsotaan mita se sanoo.
+$prevEap = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
+$who = (npx @wrangler whoami 2>&1 | Out-String)
+$ErrorActionPreference = $prevEap
+Write-Host $who
+
+if ($who -match "not authenticated|wrangler login") {
+    Write-Host "Et ole kirjautunut Cloudflareen. Selain aukeaa nyt." -ForegroundColor Yellow
     npx @wrangler login
     if ($LASTEXITCODE -ne 0) { throw "Cloudflare-kirjautuminen epaonnistui." }
+
+    $ErrorActionPreference = "Continue"
+    $who = (npx @wrangler whoami 2>&1 | Out-String)
+    $ErrorActionPreference = $prevEap
+    if ($who -match "not authenticated") {
+        throw "Kirjautuminen ei nayta menneen lapi. Aja 'npx wrangler login' kasin."
+    }
+    Write-Host "Kirjautuminen OK." -ForegroundColor Green
 }
 
-# --- 1. Salaisuudet -------------------------------------------------------
+# --- 1. Deploy ------------------------------------------------------------
 
-Write-Host "`n[1/4] Salaisuudet" -ForegroundColor Cyan
+# Deploy tehdaan ENNEN tunnusten kysymista. Jos tili ei ole valmis — esim.
+# workers.dev-alidomain on rekisteroimatta — se paljastuu tassa, ei vasta
+# sen jalkeen kun kolme tunnusta on naputeltu kasin.
+Write-Host "`n[1/4] Deployataan Worker" -ForegroundColor Cyan
+# Ei 2>&1: PowerShell 5.1 kaaria natiivin stderrin ErrorRecordeiksi, jolloin
+# wranglerin normaali edistymistuloste nayttaisi virheelta.
+$deployOutput = npx @wrangler deploy
+if ($LASTEXITCODE -ne 0) {
+    Write-Host ""
+    Write-Host "Jos virhe puhuu workers.dev-alidomainista, se pitaa rekisteroida" -ForegroundColor Yellow
+    Write-Host "kerran Cloudflaren dashboardissa (Workers -> onboarding). Tee se ja" -ForegroundColor Yellow
+    Write-Host "aja tama skripti uudelleen." -ForegroundColor Yellow
+    throw "wrangler deploy epaonnistui."
+}
+$deployOutput | ForEach-Object { Write-Host $_ }
+
+$match = [regex]::Match(($deployOutput -join "`n"), 'https://[A-Za-z0-9.\-]+\.workers\.dev')
+if ($match.Success) {
+    $workerUrl = $match.Value
+    Write-Host "`nWorkerin osoite: $workerUrl" -ForegroundColor Green
+} else {
+    Write-Host "`nEn loytanyt osoitetta deployn tulosteesta." -ForegroundColor Yellow
+    $workerUrl = (Read-Host "Syota Workerin osoite (https://...workers.dev)").Trim()
+}
+if ($workerUrl -notmatch '^https://') { throw "Kelvoton Worker-osoite." }
+
+# --- 2. Salaisuudet -------------------------------------------------------
+
+Write-Host "`n[2/4] Salaisuudet" -ForegroundColor Cyan
 Write-Host "Telegram-botin token (@BotFather antoi, muotoa 1234567890:AAF...)"
 $botToken = Read-Secret "TELEGRAM_BOT_TOKEN"
 
@@ -67,25 +111,6 @@ Put-Secret "TELEGRAM_BOT_TOKEN"      $botToken
 Put-Secret "GITHUB_TOKEN"            $githubToken
 Put-Secret "ALLOWED_CHAT_ID"         $chatId
 Put-Secret "TELEGRAM_WEBHOOK_SECRET" $webhookSecret
-
-# --- 2. Deploy ------------------------------------------------------------
-
-Write-Host "`n[2/4] Deployataan Worker" -ForegroundColor Cyan
-# Ei 2>&1: PowerShell 5.1 kaaria natiivin stderrin ErrorRecordeiksi, jolloin
-# wranglerin normaali edistymistuloste nayttaisi virheelta.
-$deployOutput = npx @wrangler deploy
-if ($LASTEXITCODE -ne 0) { throw "wrangler deploy epaonnistui." }
-$deployOutput | ForEach-Object { Write-Host $_ }
-
-$match = [regex]::Match(($deployOutput -join "`n"), 'https://[A-Za-z0-9.\-]+\.workers\.dev')
-if ($match.Success) {
-    $workerUrl = $match.Value
-    Write-Host "`nWorkerin osoite: $workerUrl" -ForegroundColor Green
-} else {
-    Write-Host "`nEn loytanyt osoitetta deployn tulosteesta." -ForegroundColor Yellow
-    $workerUrl = (Read-Host "Syota Workerin osoite (https://...workers.dev)").Trim()
-}
-if ($workerUrl -notmatch '^https://') { throw "Kelvoton Worker-osoite." }
 
 # --- 3. Webhook -----------------------------------------------------------
 
