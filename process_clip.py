@@ -26,6 +26,7 @@ import re
 import subprocess
 import sys
 import time
+import traceback
 import urllib.parse
 
 import requests
@@ -511,5 +512,17 @@ if __name__ == "__main__":
         # Kerrotaan vika Telegramiin, ettei putki jää hiljaa jumiin.
         telegram.send_message(
             f"❌ <b>Rajaus epäonnistui</b>\n{escape_html(str(e))}"
+        )
+        sys.exit(1)
+    except Exception as e:
+        # Odottamaton poikkeus ohitti aiemmin ilmoituksen kokonaan: puuttuva
+        # ffmpeg nosti FileNotFoundErrorin, eikä Telegramiin tullut mitään.
+        # Nyt kaikki viat kerrotaan, myös ne joita ei osattu ennakoida.
+        log(f"ODOTTAMATON VIRHE: {type(e).__name__}: {e}")
+        traceback.print_exc()
+        telegram.send_message(
+            f"❌ <b>Rajaus kaatui odottamattomaan virheeseen</b>\n"
+            f"{escape_html(type(e).__name__)}: {escape_html(str(e))}\n"
+            f"Tarkemmat tiedot Actions-lokissa."
         )
         sys.exit(1)
