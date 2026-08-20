@@ -40,13 +40,20 @@ KICK_DOWNLOAD_URL = "https://web.kick.com/api/v1/clips/{clip_id}/download"
 
 # POST yllä olevaan osoitteeseen ei palauta MP4:ää vaan käynnistää työn:
 # 201 {"data":{"job_id":"...","status":"pending"},"message":"success"}
-# Valmis osoite haetaan erikseen. Kickin API on dokumentoimaton, joten
-# tilaosoitetta kokeillaan useammasta vaihtoehdosta ja toimiva jää käyttöön.
+# Valmis osoite haetaan erikseen. Kickin API on dokumentoimaton eikä
+# tilaosoite näkynyt selaimesta kaapatussa pyynnössä, joten vaihtoehtoja
+# kokeillaan järjestyksessä ja ensimmäinen vastaava jää käyttöön.
+#
+# Kaksi ensimmäistä eivät oleta uutta polkua lainkaan: sama osoite GETillä,
+# ja saman POSTin toisto — moni tämäntyylinen API palauttaa valmiin
+# osoitteen kun työ on ehtinyt valmistua.
 KICK_JOB_STATUS_URLS = [
-    "https://web.kick.com/api/v1/clips/{clip_id}/download/{job_id}",
-    "https://web.kick.com/api/v1/clips/download/jobs/{job_id}",
-    "https://web.kick.com/api/v1/download-jobs/{job_id}",
-    "https://web.kick.com/api/v1/jobs/{job_id}",
+    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
+    ("POST", "https://web.kick.com/api/v1/clips/{clip_id}/download"),
+    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/{job_id}"),
+    ("GET", "https://web.kick.com/api/v1/clips/{clip_id}/download/status"),
+    ("GET", "https://web.kick.com/api/v1/download-jobs/{job_id}"),
+    ("GET", "https://web.kick.com/api/v1/jobs/{job_id}"),
 ]
 
 # Kickin nopeusrajoitus on tiukka — kaksi pyyntöä puolessa minuutissa
@@ -222,13 +229,17 @@ def kick_request(method, url, token, **kwargs):
     )
 
 
-def check_common_errors(r, clip_id):
-    if r.status_code in (401, 403):
+def check_common_errors_code(code):
+    if code in (401, 403):
         raise ProcessError(
-            f"Kick hylkäsi tunnistautumisen (HTTP {r.status_code}). "
+            f"Kick hylkäsi tunnistautumisen (HTTP {code}). "
             "KICK_AUTH_TOKEN on todennäköisesti vanhentunut — päivitä "
             "GitHub-secret."
         )
+
+
+def check_common_errors(r, clip_id):
+    check_common_errors_code(r.status_code)
     if r.status_code == 404:
         raise ProcessError(f"Kick ei tunne kohdetta {clip_id} (HTTP 404).")
 
@@ -272,33 +283,48 @@ def request_download_url(clip_id, token):
     return await_job(clip_id, job_id, token)
 
 
+def probe(method, url, token):
+    """Kokeilee yhtä tilaosoitetta. Palauttaa (statuskoodi, payload|None)."""
+    kwargs = {"json": {}} if method == "POST" else {}
+    r = kick_request(method, url, token, **kwargs)
+    try:
+        return r.status_code, r.json()
+    except ValueError:
+        return r.status_code, None
+
+
 def await_job(clip_id, job_id, token):
     """Kyselee jobin tilaa kunnes MP4-osoite on saatavilla."""
     deadline = time.monotonic() + KICK_JOB_TIMEOUT_S
-    candidates = [u.format(clip_id=clip_id, job_id=job_id)
-                  for u in KICK_JOB_STATUS_URLS]
+    candidates = [(m, u.format(clip_id=clip_id, job_id=job_id))
+                  for m, u in KICK_JOB_STATUS_URLS]
     working = None
     last_payload = None
+    # Kootaan jokaisen kokeilun lopputulos: jos mikaan ei osu, tama kertoo
+    # seuraavalle korjaajalle enemman kuin pelkka "ei loytynyt". Esim. 405
+    # tarkoittaisi etta polku on oikea mutta metodi vaara.
+    attempts = []
 
     while time.monotonic() < deadline:
         time.sleep(KICK_JOB_POLL_S)
 
-        for url in ([working] if working else candidates):
-            r = kick_request("GET", url, token)
-            if r.status_code == 404 and not working:
-                continue  # vaara arvaus endpointista, kokeillaan seuraavaa
-            check_common_errors(r, job_id)
-            if r.status_code != 200:
-                continue
+        for method, url in ([working] if working else candidates):
+            code, payload = probe(method, url, token)
+            path = url.replace("https://web.kick.com/api/v1", "")
 
-            try:
-                payload = r.json()
-            except ValueError:
+            if not working:
+                note = f"{method} {path} -> {code}"
+                log("  kokeilu: " + note)
+                attempts.append(note)
+
+            if code in (401, 403):
+                check_common_errors_code(code)
+            if code >= 300 or payload is None:
                 continue
 
             if not working:
-                working = url
-                log(f"Jobin tila luetaan osoitteesta: {url}")
+                working = (method, url)
+                log(f"Jobin tila luetaan: {method} {path}")
             last_payload = payload
 
             found = find_url(payload)
@@ -312,11 +338,13 @@ def await_job(clip_id, job_id, token):
             break
 
         if not working:
-            log(f"Tuntemattomat tilaosoitteet: {candidates}")
+            log("Yksikaan tilaosoite ei vastannut:")
+            for note in attempts:
+                log("  " + note)
             raise ProcessError(
-                "En löytänyt osoitetta josta latausjobin tilan voi lukea. "
-                "Katso selaimen DevToolsista mihin Kick kyselee POSTin "
-                "jälkeen ja kerro se, niin korjataan KICK_JOB_STATUS_URLS."
+                "En löytänyt osoitetta josta latausjobin tilan voi lukea.\n"
+                + "\n".join(attempts)
+                + "\n\nKatso DevToolsista mihin Kick kyselee POSTin jälkeen."
             )
 
     if last_payload is not None:
