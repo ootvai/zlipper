@@ -19,14 +19,16 @@ from zoneinfo import ZoneInfo
 
 import requests
 
+import telegram
+from telegram import escape_html
+
 CONFIG_PATH = "config.json"
 STATE_PATH = "state.json"
 CREATORS_PATH = "creators.json"
 
 TWITCH_CLIENT_ID = os.environ.get("TWITCH_CLIENT_ID", "")
 TWITCH_CLIENT_SECRET = os.environ.get("TWITCH_CLIENT_SECRET", "")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+# Telegram-tunnukset luetaan telegram-moduulissa.
 
 KICK_HEADERS = {
     # Kickin klippi-endpoint ei ole osa virallista docs.kick.com -APIa.
@@ -70,18 +72,6 @@ def save_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def escape_html(text):
-    """Telegramin HTML-parse_mode vaatii näiden escapetuksen."""
-    if not text:
-        return ""
-    return (
-        str(text)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
-
-
 LOCAL_TZ = ZoneInfo("Europe/Helsinki")
 
 
@@ -105,7 +95,9 @@ def format_time(raw):
     if dt is None:
         return "aika tuntematon"
     local = dt.astimezone(LOCAL_TZ)
-    stamp = local.strftime("%-d.%-m. klo %H:%M")
+    # Ei %-d/%-m: ne ovat glibc-laajennoksia eivätkä toimi Windowsilla,
+    # mikä esti skriptin ajamisen paikallisesti testiksi.
+    stamp = f"{local.day}.{local.month}. klo {local:%H:%M}"
 
     mins = (datetime.now(timezone.utc) - dt).total_seconds() / 60
     if mins < 0:
@@ -128,25 +120,14 @@ def age_minutes(raw):
 
 
 def send_telegram(text):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("VAROITUS: Telegram-token tai chat_id puuttuu, ei lähetetä.")
-        return
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    try:
-        r = requests.post(
-            url,
-            json={
-                "chat_id": TELEGRAM_CHAT_ID,
-                "text": text,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": False,
-            },
-            timeout=15,
-        )
-        if r.status_code >= 300:
-            print(f"Telegram epäonnistui ({r.status_code}): {r.text[:300]}")
-    except requests.RequestException as e:
-        print(f"Telegram-virhe: {e}")
+    """Huoltoilmoitus (terveys, heartbeat, hiljainen kanava).
+
+    Näille riittää paras yritys: jos yksi heartbeat jää väliin, seuraava
+    tulee joka tapauksessa. Klippi-ilmoitukset sen sijaan käyttävät
+    telegram.send_messageä suoraan, koska niiden lopputulos ratkaisee
+    merkitäänkö klippi nähdyksi.
+    """
+    return telegram.send_message(text)
 
 
 # ---------------------------------------------------------------------------
@@ -387,11 +368,31 @@ def format_kick_message(channel, clip, count=0, threshold=0):
         f"<b>{title}</b>\n"
         f"{meta}\n"
         f"🕒 {format_time(clip.get('created_at'))}\n"
-        f"{link}"
+        f"{link}\n"
+        f"✂️ Vastaa <b>1</b> = zoomattu · <b>2</b> = koko kuva"
     )
 
 
 # ---------------------------------------------------------------------------
+
+def creator_key(name):
+    if not name:
+        return ""
+    return str(name).strip().lower()
+
+
+def peek_creator(creators, name):
+    """Mikä tekijän lukema OLISI tämän klipin jälkeen — ei muuta tilaa.
+
+    Viesti muotoillaan ennen lähetystä, mutta laskuri saa kasvaa vasta kun
+    klippi oikeasti merkitään nähdyksi. Muuten epäonnistunut lähetys ja sen
+    uusinta laskisivat saman klipin kahteen kertaan.
+    """
+    key = creator_key(name)
+    if not key:
+        return 0
+    return creators.get(key, 0) + 1
+
 
 def bump_creator(creators, name):
     """Kasvattaa tekijän klippilaskuria ja palauttaa uuden lukeman.
@@ -399,9 +400,7 @@ def bump_creator(creators, name):
     Laskurit ovat omassa tiedostossaan (creators.json), jotta state.json:n
     nollaus ei hävitä kertynyttä klippaajahistoriaa.
     """
-    if not name:
-        return 0
-    key = str(name).strip().lower()
+    key = creator_key(name)
     if not key:
         return 0
     count = creators.get(key, 0) + 1
@@ -641,15 +640,30 @@ def main():
                 new = [c for c in clips if c["id"] not in seen_set]
                 new.sort(key=lambda c: c.get("created_at", ""))
                 for clip in new:
-                    count = bump_creator(creators, clip.get("creator_name"))
-                    if not first_run and not too_old(clip):
-                        send_telegram(
-                            format_twitch_message(
-                                channel, clip, count, star_threshold
-                            )
+                    name = clip.get("creator_name")
+                    if first_run or too_old(clip):
+                        bump_creator(creators, name)
+                        seen.append(clip["id"])
+                        continue
+                    count = peek_creator(creators, name)
+                    status = telegram.send_message(
+                        format_twitch_message(
+                            channel, clip, count, star_threshold
                         )
-                        found += 1
+                    )
+                    if status == telegram.FAILED:
+                        # Ei merkitä nähdyksi — klippi yritetään uudelleen
+                        # seuraavalla ajolla. max_clip_age_hours katkaisee
+                        # kierteen, jos vika ei korjaannu itsestään.
+                        print(
+                            f"Twitch: {clip['id']} — ilmoitus ei mennyt "
+                            f"läpi, uusi yritys seuraavalla ajolla"
+                        )
+                        continue
+                    bump_creator(creators, name)
                     seen.append(clip["id"])
+                    if status == telegram.SENT:
+                        found += 1
                 state["twitch"][channel] = prune(seen)
                 note_channel_activity(state, "twitch", channel, bool(new))
 
@@ -661,13 +675,26 @@ def main():
         new = [c for c in clips if str(c.get("id")) not in seen_set]
         new.sort(key=lambda c: c.get("created_at", ""))
         for clip in new:
-            count = bump_creator(creators, kick_creator(clip))
-            if not first_run and not too_old(clip):
-                send_telegram(
-                    format_kick_message(channel, clip, count, star_threshold)
+            name = kick_creator(clip)
+            clip_id = str(clip.get("id"))
+            if first_run or too_old(clip):
+                bump_creator(creators, name)
+                seen.append(clip_id)
+                continue
+            count = peek_creator(creators, name)
+            status = telegram.send_message(
+                format_kick_message(channel, clip, count, star_threshold)
+            )
+            if status == telegram.FAILED:
+                print(
+                    f"Kick: {clip_id} — ilmoitus ei mennyt läpi, uusi "
+                    f"yritys seuraavalla ajolla"
                 )
+                continue
+            bump_creator(creators, name)
+            seen.append(clip_id)
+            if status == telegram.SENT:
                 found += 1
-            seen.append(str(clip.get("id")))
         state["kick"][channel] = prune(seen)
         note_channel_activity(state, "kick", channel, bool(new))
 

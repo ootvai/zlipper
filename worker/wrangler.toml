@@ -1,0 +1,15 @@
+name = "zlipper-webhook"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+[vars]
+GITHUB_REPO = "ootvai/zlipper"
+
+# Kaikki muu asetetaan secreteina, EI tähän tiedostoon — myös chat id,
+# jotta sitä ei tarvitse committoida julkiseen repoon:
+#   wrangler secret put TELEGRAM_BOT_TOKEN
+#   wrangler secret put TELEGRAM_WEBHOOK_SECRET
+#   wrangler secret put GITHUB_TOKEN
+#   wrangler secret put ALLOWED_CHAT_ID
+#
+# Helpoiten: aja .\setup.ps1, joka tekee nämä ja rekisteröi webhookin.
