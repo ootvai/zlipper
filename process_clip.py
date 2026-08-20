@@ -25,6 +25,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 
 import requests
@@ -36,6 +37,24 @@ CONFIG_PATH = "config.json"
 WORK_DIR = "work"
 
 KICK_DOWNLOAD_URL = "https://web.kick.com/api/v1/clips/{clip_id}/download"
+
+# POST yllä olevaan osoitteeseen ei palauta MP4:ää vaan käynnistää työn:
+# 201 {"data":{"job_id":"...","status":"pending"},"message":"success"}
+# Valmis osoite haetaan erikseen. Kickin API on dokumentoimaton, joten
+# tilaosoitetta kokeillaan useammasta vaihtoehdosta ja toimiva jää käyttöön.
+KICK_JOB_STATUS_URLS = [
+    "https://web.kick.com/api/v1/clips/{clip_id}/download/{job_id}",
+    "https://web.kick.com/api/v1/clips/download/jobs/{job_id}",
+    "https://web.kick.com/api/v1/download-jobs/{job_id}",
+    "https://web.kick.com/api/v1/jobs/{job_id}",
+]
+
+# Kickin nopeusrajoitus on tiukka — kaksi pyyntöä puolessa minuutissa
+# riitti laukaisemaan RATE_LIMIT_EXCEEDED.
+KICK_RATE_LIMIT_WAIT_S = 15
+KICK_MAX_ATTEMPTS = 5
+KICK_JOB_POLL_S = 6
+KICK_JOB_TIMEOUT_S = 300
 
 # Bot API:n yläraja lähetettävälle tiedostolle.
 TELEGRAM_MAX_BYTES = 50 * 1024 * 1024
@@ -130,17 +149,80 @@ def find_url(payload, depth=0):
     return None
 
 
-def request_download_url(clip_id, token):
-    url = KICK_DOWNLOAD_URL.format(clip_id=clip_id)
-    try:
-        # Runko on tyhjä JSON-objekti: selaimen pyynnössä
-        # Content-Length on 2, eli täsmälleen "{}".
-        r = requests.post(
-            url, headers=kick_headers(token), json={}, timeout=60
-        )
-    except requests.RequestException as e:
-        raise ProcessError(f"Kickin latauskutsu ei mennyt läpi: {e}")
+def find_job_id(payload, depth=0):
+    """Etsii latausjobin tunnisteen vastauksesta."""
+    if depth > 4 or not isinstance(payload, dict):
+        return None
+    for key in ("job_id", "jobId", "id", "uuid"):
+        value = payload.get(key)
+        if isinstance(value, str) and value:
+            return value
+    for key in ("data", "job", "result", "download"):
+        if key in payload:
+            found = find_job_id(payload[key], depth + 1)
+            if found:
+                return found
+    return None
 
+
+def find_status(payload, depth=0):
+    if depth > 4 or not isinstance(payload, dict):
+        return None
+    value = payload.get("status") or payload.get("state")
+    if isinstance(value, str):
+        return value.lower()
+    for key in ("data", "job", "result", "download"):
+        if key in payload:
+            found = find_status(payload[key], depth + 1)
+            if found:
+                return found
+    return None
+
+
+def kick_request(method, url, token, **kwargs):
+    """Kutsuu Kickia ja kunnioittaa nopeusrajoitusta.
+
+    Kickin raja on tiukka: kaksi pyyntöä puolen minuutin sisällä riitti
+    laukaisemaan RATE_LIMIT_EXCEEDED. 429 ei siis ole poikkeustila vaan
+    odotettavissa, joten sitä odotetaan pois eikä kaaduta.
+    """
+    backoff = KICK_RATE_LIMIT_WAIT_S
+    last = None
+
+    for attempt in range(1, KICK_MAX_ATTEMPTS + 1):
+        try:
+            r = requests.request(
+                method, url, headers=kick_headers(token), timeout=60, **kwargs
+            )
+        except requests.RequestException as e:
+            raise ProcessError(f"Kick-kutsu ei mennyt läpi: {e}")
+
+        if r.status_code == 429:
+            last = r
+            if attempt == KICK_MAX_ATTEMPTS:
+                break
+            wait = backoff
+            retry_after = r.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    wait = max(wait, float(retry_after))
+                except ValueError:
+                    pass
+            log(f"Kick 429 (yritys {attempt}) — odotetaan {wait:.0f} s.")
+            time.sleep(wait)
+            backoff = min(backoff * 2, 60)
+            continue
+
+        return r
+
+    raise ProcessError(
+        "Kickin nopeusrajoitus ei hellittänyt "
+        f"{KICK_MAX_ATTEMPTS} yrityksellä. Odota hetki ja vastaa uudelleen."
+        + (f" Viimeisin vastaus: {last.text[:150]}" if last is not None else "")
+    )
+
+
+def check_common_errors(r, clip_id):
     if r.status_code in (401, 403):
         raise ProcessError(
             f"Kick hylkäsi tunnistautumisen (HTTP {r.status_code}). "
@@ -148,8 +230,22 @@ def request_download_url(clip_id, token):
             "GitHub-secret."
         )
     if r.status_code == 404:
-        raise ProcessError(f"Kick ei tunne klippiä {clip_id} (HTTP 404).")
-    if r.status_code != 200:
+        raise ProcessError(f"Kick ei tunne kohdetta {clip_id} (HTTP 404).")
+
+
+def request_download_url(clip_id, token):
+    """Käynnistää latausjobin ja palauttaa valmiin MP4-osoitteen.
+
+    Endpoint on asynkroninen: POST vastaa 201:llä ja antaa job_id:n sekä
+    tilan "pending". Varsinainen osoite haetaan erikseen, kun työ on
+    valmistunut.
+    """
+    url = KICK_DOWNLOAD_URL.format(clip_id=clip_id)
+    # Runko on tyhjä JSON-objekti: selaimen pyynnössä Content-Length on 2.
+    r = kick_request("POST", url, token, json={})
+    check_common_errors(r, clip_id)
+
+    if r.status_code not in (200, 201, 202):
         raise ProcessError(
             f"Kickin latauskutsu palautti HTTP {r.status_code}: {r.text[:200]}"
         )
@@ -159,16 +255,75 @@ def request_download_url(clip_id, token):
     except ValueError:
         raise ProcessError("Kickin vastaus ei ollut JSONia: " + r.text[:200])
 
+    # Jos osoite tulee heti, ei tarvitse kysellä perään.
     found = find_url(payload)
-    if not found:
-        # Endpoint on dokumentoimaton: jos muoto muuttuu, tämä loki kertoo
-        # mitä kenttiä uusi vastaus sisältää.
+    if found:
+        return found
+
+    job_id = find_job_id(payload)
+    if not job_id:
         log(f"Tuntematon vastausmuoto: {json.dumps(payload)[:800]}")
         raise ProcessError(
-            "Kickin vastauksesta ei löytynyt latauslinkkiä — endpointin "
-            "muoto on ilmeisesti muuttunut. Katso Actions-loki."
+            "Kickin vastauksessa ei ollut latauslinkkiä eikä job_id:tä — "
+            "endpointin muoto on ilmeisesti muuttunut. Katso Actions-loki."
         )
-    return found
+
+    log(f"Latausjobi {job_id} kaynnistetty, odotetaan valmistumista.")
+    return await_job(clip_id, job_id, token)
+
+
+def await_job(clip_id, job_id, token):
+    """Kyselee jobin tilaa kunnes MP4-osoite on saatavilla."""
+    deadline = time.monotonic() + KICK_JOB_TIMEOUT_S
+    candidates = [u.format(clip_id=clip_id, job_id=job_id)
+                  for u in KICK_JOB_STATUS_URLS]
+    working = None
+    last_payload = None
+
+    while time.monotonic() < deadline:
+        time.sleep(KICK_JOB_POLL_S)
+
+        for url in ([working] if working else candidates):
+            r = kick_request("GET", url, token)
+            if r.status_code == 404 and not working:
+                continue  # vaara arvaus endpointista, kokeillaan seuraavaa
+            check_common_errors(r, job_id)
+            if r.status_code != 200:
+                continue
+
+            try:
+                payload = r.json()
+            except ValueError:
+                continue
+
+            if not working:
+                working = url
+                log(f"Jobin tila luetaan osoitteesta: {url}")
+            last_payload = payload
+
+            found = find_url(payload)
+            if found:
+                return found
+
+            status = find_status(payload)
+            log(f"Jobi {job_id}: {status or 'tila tuntematon'}")
+            if status in ("failed", "error", "cancelled"):
+                raise ProcessError(f"Kickin latausjobi epäonnistui: {status}")
+            break
+
+        if not working:
+            log(f"Tuntemattomat tilaosoitteet: {candidates}")
+            raise ProcessError(
+                "En löytänyt osoitetta josta latausjobin tilan voi lukea. "
+                "Katso selaimen DevToolsista mihin Kick kyselee POSTin "
+                "jälkeen ja kerro se, niin korjataan KICK_JOB_STATUS_URLS."
+            )
+
+    if last_payload is not None:
+        log(f"Viimeisin tila: {json.dumps(last_payload)[:800]}")
+    raise ProcessError(
+        f"Kickin latausjobi ei valmistunut {KICK_JOB_TIMEOUT_S} sekunnissa."
+    )
 
 
 def download(url, dest):
