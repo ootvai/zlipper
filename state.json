@@ -343,7 +343,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01KY8KJWHGBX0VNC2JY3C37KM2",
       "clip_01KY8KN3SG2YK471TESB9T6YKA",
       "clip_01KY8KV3513MY53ZZBMYEVDS1Z",
       "clip_01KY8N6V9B8MSJWTFKES91Q28R",
@@ -642,7 +641,8 @@
       "clip_01M0JEWHGT7Z3HB1PPXN1VF7SN",
       "clip_01M0JEXW3CGDR2NP86NYRFSM5T",
       "clip_01M0JQVRPYKHQ41XSDNYXKBB08",
-      "clip_01M0JQY72KC0915QBP1XN5EKVG"
+      "clip_01M0JQY72KC0915QBP1XN5EKVG",
+      "clip_01M0JW772QA8SFX6XS079846N3"
     ],
     "pact": [
       "clip_01KYEV5MAE8ZK83QMCDZ1PNR3F",
@@ -947,8 +947,6 @@
       "clip_01M0JP4N4K3DGRA8EE9BP9FAHE"
     ],
     "aapo_olervo": [
-      "clip_01KYQS64Y5XXKHKSX44PSXVX5B",
-      "clip_01KYQSEPTCQTVR1EYTEEY83XAZ",
       "clip_01KYQT9T0CPCKQJNM1XZREZH5X",
       "clip_01KYQX7MAB47H4928RVJZ4PZNJ",
       "clip_01KYS2FCTBKH5FB8N6ND0XZY1Q",
@@ -1246,7 +1244,9 @@
       "clip_01M0JHTKY5YWZ4266G8SWXZAK3",
       "clip_01M0JKZNVM8HR4AWP459KMHJSZ",
       "clip_01M0JNG45WVYJNBQXQEFN70YKS",
-      "clip_01M0JS5NTQHA2C991E24111Z7G"
+      "clip_01M0JS5NTQHA2C991E24111Z7G",
+      "clip_01M0JTPPFCAV6362JBZY92F23V",
+      "clip_01M0JTQGNF2Z3TXZVVDZ8HRV7E"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1551,11 +1551,6 @@
       "clip_01M0JJKM9V0YPPF1E93A9PP8BZ"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZFETCSN778DZZPENQ9E9NS2",
-      "clip_01KZFEYPTMAAHB643AA5FZXYE5",
-      "clip_01KZFFBG267DQMK9MDNT2CSJS4",
-      "clip_01KZFFSM9MFQAXABYD6Z28E1TH",
-      "clip_01KZFGYHA2FZ2HTDVK600H1EQY",
       "clip_01KZFGZETZCZ7VTW7S1A25PCSK",
       "clip_01KZFHTC9B5M4581HX3ER70BS8",
       "clip_01KZFHY9AZK7G5Q92S1P6CEQDF",
@@ -1850,7 +1845,12 @@
       "clip_01M0H5GQM347CC65JJYQ60WPJ2",
       "clip_01M0JP7J2EGJ887FNWNETQH6KH",
       "clip_01M0JQVWFCHNDZPHCXTWQ4N0RD",
-      "clip_01M0JTGF5GE7XCQZYFM1K99BT3"
+      "clip_01M0JTGF5GE7XCQZYFM1K99BT3",
+      "clip_01M0JVA5HNEZ6ASDC7PCQRGN6J",
+      "clip_01M0JVAP16MHER681HZN4Y968Q",
+      "clip_01M0JVEAP518E562QERPB0SW56",
+      "clip_01M0JW00Q9QAGHGYREHHTY3A7Y",
+      "clip_01M0JW18JES9PF8NFT12Q27TBP"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2540,7 +2540,8 @@
       "clip_01M0G7KZ9K0SXM1RZ8RWT9Q75N",
       "clip_01M0G7MJJVRYB97EFP85HFFMCS",
       "clip_01M0GB3KFT6CM0HRXRKDVD5XPJ",
-      "clip_01M0JEH1V41XTY88HDRGYD72EP"
+      "clip_01M0JEH1V41XTY88HDRGYD72EP",
+      "clip_01M0JVKQ3764C52B18V93488GS"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3189,7 +3190,6 @@
       "clip_01M0J8XP08H3SQC499RRT0HK3V"
     ],
     "johtajanmatkassa": [
-      "clip_01KZF667F5K45R7MQFWQAW6T3V",
       "clip_01KZF6FRG314XMEWR24Y5D1M05",
       "clip_01KZFAHK5KW7737GGK5NAYX9QY",
       "clip_01KZFAQM73NPJ93K9QP7B59J56",
@@ -3488,7 +3488,8 @@
       "clip_01M0JKXXN9B64CZDFFERV5Q91A",
       "clip_01M0JMTBTDK1K92ZCE1PC14JNV",
       "clip_01M0JP18FFP2CFDYW1B5WTKZG2",
-      "clip_01M0JPQ72W8X9BSHJHDRP8DAAR"
+      "clip_01M0JPQ72W8X9BSHJHDRP8DAAR",
+      "clip_01M0JTRM75ZW9A3G2PVKFB4YN2"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3919,7 +3920,7 @@
   },
   "heartbeat": {
     "last": "2026-08-21T13:29:39Z",
-    "clips_since": 57
+    "clips_since": 67
   },
   "silent": {
     "twitch:skotti": {
@@ -3939,7 +3940,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-21T18:39:45Z",
+      "last_clip": "2026-08-21T19:21:39Z",
       "alerted": false
     },
     "kick:pact": {
@@ -3947,7 +3948,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-21T18:39:48Z",
+      "last_clip": "2026-08-21T19:21:44Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3959,7 +3960,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-21T18:51:55Z",
+      "last_clip": "2026-08-21T19:21:55Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -3975,7 +3976,7 @@
       "alerted": false
     },
     "kick:sampef2": {
-      "last_clip": "2026-08-21T15:53:00Z",
+      "last_clip": "2026-08-21T19:22:03Z",
       "alerted": false
     },
     "kick:pirkkislive": {
@@ -3995,7 +3996,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-21T18:02:05Z",
+      "last_clip": "2026-08-21T19:22:15Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
