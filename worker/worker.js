@@ -2,7 +2,7 @@
  * Telegram-webhook -> GitHub repository_dispatch.
  *
  * Klippi-ilmoituksessa on kolme nappia: [Zoomattu], [Koko kuva] ja
- * [Alkuperäinen] (klippi sellaisenaan, ilman rajausta). Napin
+ * [Lataa klippi] (klippi sellaisenaan, ilman rajausta). Napin
  * painallus tulee tänne callback_query-päivityksenä, ja tämä Worker poimii
  * alkuperäisestä viestistä Kick-klippilinkin ja käynnistää "Rajaa klippi"
  * -workflown GitHubissa.
@@ -22,18 +22,18 @@
 const KICK_CLIP_RE = /https?:\/\/kick\.com\/[A-Za-z0-9_.-]+\/clips\/[A-Za-z0-9_-]+/;
 const TWITCH_CLIP_RE = /https?:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\/\S+/;
 
-const MODEL_NAMES = { "1": "zoomattu", "2": "koko kuva", "3": "alkuperäinen" };
+const MODEL_NAMES = { "1": "zoomattu", "2": "koko kuva", "3": "lataus" };
 
 // Malli 3 ei rajaa mitään, joten "Rajataan" olisi siitä harhaanjohtavaa.
 function busyLabel(model) {
   return model === "3"
-    ? "⏳ Haetaan alkuperäistä"
+    ? "⏳ Ladataan klippiä"
     : `⏳ Rajataan: ${MODEL_NAMES[model]}`;
 }
 
 function startedText(model) {
   return model === "3"
-    ? "Haetaan alkuperäistä — tiedosto tulee tähän kun se on valmis."
+    ? "Ladataan klippiä — tiedosto tulee tähän kun se on valmis."
     : `Rajaus käynnistetty — ${MODEL_NAMES[model]}.`;
 }
 

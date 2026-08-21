@@ -88,9 +88,9 @@ Sen jälkeen: paina Kick-klippi-ilmoituksen nappia.
 |---|---|
 | **🔍 Zoomattu** | Rajaa 1080x1920 pystyvideoksi, kuvaan mennään sisään |
 | **🖼️ Koko kuva** | Rajaa 1080x1920 pystyvideoksi, mitään ei leikata pois |
-| **⬇️ Alkuperäinen** | Klippi sellaisenaan: ei rajausta, ei uudelleenpakkausta |
+| **⬇️ Lataa klippi** | Klippi sellaisenaan: ei rajausta, ei uudelleenpakkausta |
 
-Kaksi ensimmäistä tulevat videona. **Alkuperäinen** tulee tiedostona
+Kaksi ensimmäistä tulevat videona. **Lataa klippi** antaa tiedoston
 (`sendDocument`), jotta Telegram ei käsittele sitä mitenkään — lataamasi
 tiedosto on tavu tavulta se mikä Kickin soittimessa soi. Se ei siis toistu
 chatissa suoraan, vaan pitää ladata ensin. Vesileimaa ei ole: se ja klipin
@@ -100,7 +100,7 @@ joten samaa klippiä ei tule vahingossa ajettua kahdesti; jos rajaus kaatuu,
 napit palaavat uutta yritystä varten.
 
 50 MB on Telegramin raja kaikelle. Rajatut versiot mahtuvat aina, koska
-bitrate lasketaan kestosta. Alkuperäistä ei pakata pienemmäksi — se olisi
+bitrate lasketaan kestosta. Ladattavaa klippiä ei pakata pienemmäksi — se olisi
 juuri se mitä tällä napilla yritetään välttää — joten jos se ei mahdu,
 ilmoitus kertoo koon ja tiedoston saa Actions-ajon artifaktista.
 

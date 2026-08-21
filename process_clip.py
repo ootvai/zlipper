@@ -12,7 +12,7 @@ KICK-kortin, joten sitä ei käytetä.
 
 Ympäristömuuttujat:
   CLIP_URL             https://kick.com/<kanava>/clips/<clip_id>
-  MODEL                1 = zoomattu, 2 = koko kuva, 3 = alkuperäinen
+  MODEL                1 = zoomattu, 2 = koko kuva, 3 = lataus
   TELEGRAM_BOT_TOKEN   (GitHub secret)
   TELEGRAM_CHAT_ID     (GitHub secret)
   REQUEST_MESSAGE_ID   valinnainen: viesti johon vastataan
@@ -54,7 +54,7 @@ AUDIO_KBPS = 160
 # mahtumaan, fit_under_limit kiristää crf:ää erikseen.
 MIN_VIDEO_BPS = 900_000
 
-MODEL_NAMES = {"1": "zoomattu", "2": "koko kuva", "3": "alkuperäinen"}
+MODEL_NAMES = {"1": "zoomattu", "2": "koko kuva", "3": "lataus"}
 
 DEFAULT_CROP = {
     "width": 1080,
@@ -358,7 +358,7 @@ def send_original(channel, clip_id, clip_url, reply_to):
     megat = size / 1024 / 1024
 
     caption = (
-        f"⬇️ <b>Alkuperäinen · ei rajausta, ei pakkausta</b>\n"
+        f"⬇️ <b>Klippi sellaisenaan · ei rajausta, ei pakkausta</b>\n"
         f"Kick · {escape_html(channel)}\n"
         f"{clip_url}"
     )
@@ -373,7 +373,7 @@ def send_original(channel, clip_id, clip_url, reply_to):
             "Actions-ajon artifaktista (tallessa 7 vrk)."
         )
         raise ProcessError(
-            f"Alkuperäinen on {megat:.0f} MB eikä mahdu Telegramin rajaan."
+            f"Klippi on {megat:.0f} MB eikä mahdu Telegramin rajaan."
         )
 
     status = telegram.send_document(
@@ -385,7 +385,7 @@ def send_original(channel, clip_id, clip_url, reply_to):
         )
 
     update_request_buttons(
-        telegram.status_keyboard("✅ Alkuperäinen lähetetty")
+        telegram.status_keyboard("✅ Klippi lähetetty")
     )
     log(f"Valmis — {megat:.1f} MB dokumenttina.")
 
