@@ -1531,7 +1531,9 @@
       "clip_01KZEF56Q35HTB6SW42VS79KSM",
       "clip_01KZEMKN81QBPJY63BMK213SE3",
       "clip_01M0FZJTE12YYD5HAFE2BDGFF2",
-      "clip_01M0HYD8F6VK8SDZNT909ZSKPZ"
+      "clip_01M0HYD8F6VK8SDZNT909ZSKPZ",
+      "clip_01M0JCWWB5V1G52E4BW22GK1GV",
+      "clip_01M0JDFDNMPPSW5BW7RCAV6D1N"
     ],
     "kuhlmanvirallinen": [
       "clip_01KZF9HQ02VGECSCCN6EANTX9K",
@@ -3900,7 +3902,7 @@
   },
   "heartbeat": {
     "last": "2026-08-21T13:29:39Z",
-    "clips_since": 8
+    "clips_since": 10
   },
   "silent": {
     "twitch:skotti": {
@@ -3936,7 +3938,7 @@
       "alerted": false
     },
     "kick:shokkiofficial": {
-      "last_clip": "2026-08-21T10:56:26Z",
+      "last_clip": "2026-08-21T15:18:29Z",
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
