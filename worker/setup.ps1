@@ -120,7 +120,7 @@ $response = Invoke-RestMethod -Method Post `
     -Body @{
         url = $workerUrl
         secret_token = $webhookSecret
-        allowed_updates = '["message"]'
+        allowed_updates = '["message","callback_query"]'
     }
 if (-not $response.ok) { throw "setWebhook epaonnistui: $($response.description)" }
 Write-Host "  $($response.description)" -ForegroundColor Green
