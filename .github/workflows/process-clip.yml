@@ -5,6 +5,12 @@ name: Rajaa klippi
 #
 # HUOM: repository_dispatch ajaa workflown aina default-branchista, joten
 # tämän tiedoston on oltava mainissa ennen kuin putki toimii.
+# Ajon nimeen kirjoitetaan klippilinkki. Klippivahti lukee sen
+# Actions-APIsta tietaakseen, mille klipeille rajaus on jo
+# kaynnistetty — niiden katselukertoja ei enaa paivitella, koska
+# paivitys palauttaisi jo kuitatut napit takaisin viestiin.
+run-name: Rajaa ${{ github.event.client_payload.clip_url }}
+
 on:
   repository_dispatch:
     types: [process_clip]

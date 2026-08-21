@@ -27,6 +27,8 @@
   ],
   "poll_lookback_minutes": 60,
   "max_clip_age_hours": 24,
+  "views_track_hours": 6,
+  "views_max_edits_per_run": 12,
   "clipper_known_min_clips": 5,
   "clipper_trusted_min_clips": 25,
   "health_alert_after_failures": 3,
