@@ -1,8 +1,8 @@
 # zlipper
 
 Seuraa Twitch- ja Kick-kanavia ja ilmoittaa **Telegramiin** heti kun uusi
-klippi ilmestyy. Kick-klipin voi lisäksi ladata ja rajata pystyvideoksi
-painamalla ilmoituksen nappia. Kaikki pyörii GitHub Actionsissa —
+klippi ilmestyy. Kick-klipin voi lisäksi rajata pystyvideoksi tai ladata
+sellaisenaan painamalla ilmoituksen nappia. Kaikki pyörii GitHub Actionsissa —
 omaa palvelinta ei tarvita, kone saa olla kiinni.
 
 ```
@@ -82,12 +82,29 @@ webhookin uudelleen; pelkkä `wrangler deploy` ei riitä, koska
 `allowed_updates` on Telegramin päässä oleva lista eikä se muutu deployn
 mukana. Skripti kysyy vain botin tokenin.
 
-Sen jälkeen: paina Kick-klippi-ilmoituksen nappia **🔍 Zoomattu** tai
-**🖼️ Koko kuva**. Napit vaihtuvat tilaksi (`⏳ Rajataan` → `✅ Rajattu`),
+Sen jälkeen: paina Kick-klippi-ilmoituksen nappia.
+
+| Nappi | Mitä tekee |
+|---|---|
+| **🔍 Zoomattu** | Rajaa 1080x1920 pystyvideoksi, kuvaan mennään sisään |
+| **🖼️ Koko kuva** | Rajaa 1080x1920 pystyvideoksi, mitään ei leikata pois |
+| **⬇️ Alkuperäinen** | Klippi sellaisenaan: ei rajausta, ei uudelleenpakkausta |
+
+Kaksi ensimmäistä tulevat videona. **Alkuperäinen** tulee tiedostona
+(`sendDocument`), jotta Telegram ei käsittele sitä mitenkään — lataamasi
+tiedosto on tavu tavulta se mikä Kickin soittimessa soi. Se ei siis toistu
+chatissa suoraan, vaan pitää ladata ensin. Vesileimaa ei ole: se ja klipin
+perään liitetty KICK-mainoskortti tulivat vanhasta latausendpointista, ei
+toistolähteestä. Napit vaihtuvat tilaksi (`⏳ Rajataan` → `✅ Rajattu`),
 joten samaa klippiä ei tule vahingossa ajettua kahdesti; jos rajaus kaatuu,
 napit palaavat uutta yritystä varten.
 
-Numerovastaus **1** / **2** toimii yhä. Sitä tarvitaan ennen nappien
+50 MB on Telegramin raja kaikelle. Rajatut versiot mahtuvat aina, koska
+bitrate lasketaan kestosta. Alkuperäistä ei pakata pienemmäksi — se olisi
+juuri se mitä tällä napilla yritetään välttää — joten jos se ei mahdu,
+ilmoitus kertoo koon ja tiedoston saa Actions-ajon artifaktista.
+
+Numerovastaus **1** / **2** / **3** toimii yhä. Sitä tarvitaan ennen nappien
 käyttöönottoa lähetetyissä ilmoituksissa ja yli 48 h vanhoissa viesteissä,
 joiden sisältöä Telegram ei enää anna napin painalluksen mukana.
 

@@ -161,6 +161,29 @@ def send_video(path, caption="", reply_to_message_id=None):
     return status
 
 
+def send_document(path, caption="", reply_to_message_id=None):
+    """Lähettää tiedoston koskemattomana. Bot API:n yläraja on 50 MB.
+
+    sendVideo antaa Telegramille luvan käsitellä tiedostoa omalla
+    tavallaan. sendDocument ei: vastaanottaja saa täsmälleen ne tavut
+    jotka lähetettiin. Siksi rajaamaton alkuperäinen menee tätä kautta.
+    """
+    data = {
+        "chat_id": CHAT_ID,
+        "caption": caption,
+        "parse_mode": "HTML",
+    }
+    if reply_to_message_id:
+        data["reply_to_message_id"] = str(reply_to_message_id)
+    with open(path, "rb") as f:
+        status, _ = _call(
+            "sendDocument",
+            data=data,
+            files={"document": (os.path.basename(path), f, "video/mp4")},
+            timeout=300,
+        )
+    return status
+
 # ---------------------------------------------------------------------------
 # Inline-napit
 #
@@ -177,7 +200,10 @@ def crop_keyboard():
                 [
                     {"text": "🔍 Zoomattu", "callback_data": "crop:1"},
                     {"text": "🖼️ Koko kuva", "callback_data": "crop:2"},
-                ]
+                ],
+                [
+                    {"text": "⬇️ Alkuperäinen", "callback_data": "crop:3"},
+                ],
             ]
         }
     )

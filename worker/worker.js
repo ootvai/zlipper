@@ -1,12 +1,13 @@
 /**
  * Telegram-webhook -> GitHub repository_dispatch.
  *
- * Klippi-ilmoituksessa on kaksi nappia, [Zoomattu] ja [Koko kuva]. Napin
+ * Klippi-ilmoituksessa on kolme nappia: [Zoomattu], [Koko kuva] ja
+ * [Alkuperäinen] (klippi sellaisenaan, ilman rajausta). Napin
  * painallus tulee tänne callback_query-päivityksenä, ja tämä Worker poimii
  * alkuperäisestä viestistä Kick-klippilinkin ja käynnistää "Rajaa klippi"
  * -workflown GitHubissa.
  *
- * Vanha tapa — vastaa ilmoitukseen numerolla 1 tai 2 — toimii yhä. Ennen
+ * Vanha tapa — vastaa ilmoitukseen numerolla 1, 2 tai 3 — toimii yhä. Ennen
  * nappien käyttöönottoa lähetetyissä ilmoituksissa ei ole nappeja, ja
  * numerovastaus on myös varakeino jos nappi ei jostain syystä toimi.
  *
@@ -21,7 +22,20 @@
 const KICK_CLIP_RE = /https?:\/\/kick\.com\/[A-Za-z0-9_.-]+\/clips\/[A-Za-z0-9_-]+/;
 const TWITCH_CLIP_RE = /https?:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\/\S+/;
 
-const MODEL_NAMES = { "1": "zoomattu", "2": "koko kuva" };
+const MODEL_NAMES = { "1": "zoomattu", "2": "koko kuva", "3": "alkuperäinen" };
+
+// Malli 3 ei rajaa mitään, joten "Rajataan" olisi siitä harhaanjohtavaa.
+function busyLabel(model) {
+  return model === "3"
+    ? "⏳ Haetaan alkuperäistä"
+    : `⏳ Rajataan: ${MODEL_NAMES[model]}`;
+}
+
+function startedText(model) {
+  return model === "3"
+    ? "Haetaan alkuperäistä — tiedosto tulee tähän kun se on valmis."
+    : `Rajaus käynnistetty — ${MODEL_NAMES[model]}.`;
+}
 
 export default {
   async fetch(request, env) {
@@ -65,7 +79,7 @@ async function handleButton(env, query) {
     return ok();
   }
 
-  const match = /^crop:([12])$/.exec(query.data || "");
+  const match = /^crop:([123])$/.exec(query.data || "");
   if (!match) {
     await answer(env, query);
     return ok();
@@ -84,7 +98,7 @@ async function handleButton(env, query) {
     await answer(
       env,
       query,
-      "En saanut klippilinkkiä tästä viestistä. Vastaa viestiin numerolla 1 tai 2.",
+      "En saanut klippilinkkiä tästä viestistä. Vastaa viestiin numerolla 1, 2 tai 3.",
       true
     );
     return ok();
@@ -107,8 +121,8 @@ async function handleButton(env, query) {
   // Ei erillistä kuittausviestiä: tila näkyy itse ilmoituksessa, joten
   // chattiin ei kerry rinnalle ylimääräisiä rivejä. process_clip.py
   // vaihtaa napin tekstin uudestaan kun video on valmis tai rajaus kaatuu.
-  await answer(env, query, `Rajaus käynnistetty — ${MODEL_NAMES[model]}.`);
-  await setButtons(env, msg.chat.id, msg.message_id, statusKeyboard(`⏳ Rajataan: ${MODEL_NAMES[model]}`));
+  await answer(env, query, startedText(model));
+  await setButtons(env, msg.chat.id, msg.message_id, statusKeyboard(busyLabel(model)));
   return ok();
 }
 
@@ -127,7 +141,7 @@ async function handleReply(env, msg) {
 
   const source = msg.reply_to_message;
   if (!source) {
-    await reply(env, msg, "Vastaa numerolla siihen klippi-ilmoitukseen, jonka haluat rajata.");
+    await reply(env, msg, "Vastaa numerolla siihen klippi-ilmoitukseen, jota tarkoitat.");
     return ok();
   }
 
@@ -158,13 +172,13 @@ async function handleReply(env, msg) {
     env,
     msg,
     dispatched
-      ? `Rajaus käynnistetty — malli ${model} (${MODEL_NAMES[model]}). Video tulee tähän kun se on valmis.`
+      ? `${startedText(model)} (malli ${model})`
       : "GitHubin käynnistys epäonnistui. Katso Workerin loki."
   );
 
   if (dispatched && hasButtons) {
     // Ettei samaa klippiä aja vahingossa vielä napistakin.
-    await setButtons(env, source.chat.id, source.message_id, statusKeyboard(`⏳ Rajataan: ${MODEL_NAMES[model]}`));
+    await setButtons(env, source.chat.id, source.message_id, statusKeyboard(busyLabel(model)));
   }
 
   return ok();
