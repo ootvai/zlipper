@@ -128,13 +128,7 @@ def _call(method, data=None, files=None, timeout=30):
     return FAILED, None
 
 
-def send_message_tracked(text, reply_markup=None, disable_web_page_preview=False):
-    """Kuten send_message, mutta palauttaa myös viestin id:n.
-
-    Katselukertojen päivitys tarvitsee message_id:n, jotta samaan viestiin
-    voidaan myöhemmin kirjoittaa uusi lukema. Id on None jos lähetys ei
-    mennyt läpi tai Telegram ei jostain syystä palauttanut sitä.
-    """
+def send_message(text, reply_markup=None, disable_web_page_preview=False):
     data = {
         "chat_id": CHAT_ID,
         "text": text,
@@ -143,15 +137,7 @@ def send_message_tracked(text, reply_markup=None, disable_web_page_preview=False
     }
     if reply_markup is not None:
         data["reply_markup"] = reply_markup
-    status, payload = _call("sendMessage", data=data)
-    message_id = None
-    if payload:
-        message_id = (payload.get("result") or {}).get("message_id")
-    return status, message_id
-
-
-def send_message(text, reply_markup=None, disable_web_page_preview=False):
-    status, _ = send_message_tracked(text, reply_markup, disable_web_page_preview)
+    status, _ = _call("sendMessage", data=data)
     return status
 
 
@@ -233,25 +219,6 @@ def status_keyboard(label):
     return json.dumps(
         {"inline_keyboard": [[{"text": label, "callback_data": "noop"}]]}
     )
-
-def edit_message_text(message_id, text, reply_markup=None):
-    """Kirjoittaa jo lähetetyn viestin tekstin uusiksi. 48 h aikaraja.
-
-    HUOM: jos reply_markup jätetään pois, Telegram POISTAA viestin napit.
-    Kutsujan on siis aina kerrottava mitkä napit viestiin jäävät — ja
-    tiedettävä mitkä siinä tällä hetkellä ovat, koska Bot API ei anna
-    lukea lähetettyä viestiä.
-    """
-    data = {
-        "chat_id": CHAT_ID,
-        "message_id": str(message_id),
-        "text": text,
-        "parse_mode": "HTML",
-    }
-    if reply_markup is not None:
-        data["reply_markup"] = reply_markup
-    status, _ = _call("editMessageText", data=data)
-    return status
 
 
 def edit_reply_markup(message_id, reply_markup):
