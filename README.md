@@ -76,6 +76,12 @@ Se kysyy kolme asiaa:
 `TELEGRAM_WEBHOOK_SECRET` arvotaan automaattisesti — sitä ei tarvitse
 keksiä eikä muistaa.
 
+Jos Worker on jo pystyssä ja haluat vain päivittää sen uuteen versioon,
+aja `.\update-webhook.ps1`. Se deployaa Workerin ja rekisteröi
+webhookin uudelleen; pelkkä `wrangler deploy` ei riitä, koska
+`allowed_updates` on Telegramin päässä oleva lista eikä se muutu deployn
+mukana. Skripti kysyy vain botin tokenin.
+
 Sen jälkeen: paina Kick-klippi-ilmoituksen nappia **🔍 Zoomattu** tai
 **🖼️ Koko kuva**. Napit vaihtuvat tilaksi (`⏳ Rajataan` → `✅ Rajattu`),
 joten samaa klippiä ei tule vahingossa ajettua kahdesti; jos rajaus kaatuu,
