@@ -47,8 +47,10 @@ BROWSER_UA = (
 TELEGRAM_MAX_BYTES = 50 * 1024 * 1024
 
 # Budjetti johon enkoodaus tähtää. Rajaa pienempi, koska mp4-kontti vie
-# oman osansa eikä x264 osu kattoon tarkalleen.
-TELEGRAM_BUDGET_MB = 45
+# oman osansa eikä x264 osu kattoon tarkalleen. Mitattu ylitys on ~1 %
+# (45 MB budjetilla tulos oli 45,2-45,4 MB), joten 48 jättää yhä ~1,7 MB
+# marginaalin — ja fit_under_limit kiristää crf:ää jos se ei riitä.
+TELEGRAM_BUDGET_MB = 48
 AUDIO_KBPS = 160
 # Alaraja, ettei erittäin pitkä klippi mene mössöksi. Jos tämä ei riitä
 # mahtumaan, fit_under_limit kiristää crf:ää erikseen.
@@ -281,7 +283,7 @@ def bitrate_cap(duration):
     return max(bps, MIN_VIDEO_BPS)
 
 
-def run_ffmpeg(src, dest, video_filter, crf=20, cap=None):
+def run_ffmpeg(src, dest, video_filter, crf=20, cap=None, preset="slow"):
     """Enkoodaa lähteen. video_filter=None jättää kuvan koskematta.
 
     Rajausmalleissa suodinketju rakentaa pystykuvan. Mallissa 3 kuvaan ei
@@ -297,9 +299,10 @@ def run_ffmpeg(src, dest, video_filter, crf=20, cap=None):
         cmd += ["-map", "0:v:0", "-map", "0:a?", "-pix_fmt", "yuv420p"]
     cmd += [
         "-c:v", "libx264",
-        # slow pakkaa tehokkaammin kuin veryfast; 23 s klippi enkoodautui
-        # 7 sekunnissa, joten nopeus ei ole pullonkaula.
-        "-preset", "slow",
+        # Rajauksessa slow on halpa: klipit ovat lyhyitä ja 23 s klippi
+        # enkoodautui 7 sekunnissa. Pelkässä pakkauksessa se ei ole halpa,
+        # joten se preset annetaan erikseen — ks. fit_under_limit.
+        "-preset", preset,
         "-crf", str(crf),
     ]
     if cap:
@@ -317,7 +320,7 @@ def run_ffmpeg(src, dest, video_filter, crf=20, cap=None):
     return dest
 
 
-def fit_under_limit(src, dest, video_filter):
+def fit_under_limit(src, dest, video_filter, preset="slow"):
     """Enkoodaa niin että tulos mahtuu Telegramin rajaan.
 
     video_filter=None pakkaa kuvaa koskematta — sitä käyttää malli 3,
@@ -328,7 +331,7 @@ def fit_under_limit(src, dest, video_filter):
     if cap:
         log(f"Kesto {duration:.1f} s -> bitraten katto {cap / 1e6:.1f} Mbps")
 
-    run_ffmpeg(src, dest, video_filter, cap=cap)
+    run_ffmpeg(src, dest, video_filter, cap=cap, preset=preset)
     size = os.path.getsize(dest)
     log(f"Enkoodattu tiedosto {size / 1024 / 1024:.1f} MB")
     if size <= TELEGRAM_MAX_BYTES:
@@ -338,7 +341,7 @@ def fit_under_limit(src, dest, video_filter):
     # kiristetään portaittain eikä romahdeta kerralla.
     for crf in (23, 26):
         log(f"Yli rajan — uusi yritys crf {crf}.")
-        run_ffmpeg(src, dest, video_filter, crf=crf, cap=cap)
+        run_ffmpeg(src, dest, video_filter, crf=crf, cap=cap, preset=preset)
         size = os.path.getsize(dest)
         log(f"crf {crf}: {size / 1024 / 1024:.1f} MB")
         if size <= TELEGRAM_MAX_BYTES:
@@ -391,7 +394,13 @@ def send_original(channel, clip_id, clip_url, reply_to):
         # Eri tiedostonimi, jotta pakattu ja pakkaamaton erottuvat
         # toisistaan latauskansiossa.
         tiivis = os.path.join(WORK_DIR, f"{channel}-{clip_id}-pakattu.mp4")
-        tiivis, size = fit_under_limit(dest, tiivis, None)
+        # preset fast eikä slow: enkoodaus on tässä bitrate-rajoitettu
+        # (maxrate sitoo, crf ei), joten hitaampi preset ei tuota mitattavaa
+        # laatua. Mitattu 110 s klipillä 3,3 Mbps katolla: slow 19,4 s /
+        # SSIM 0,98994, fast 11,4 s / SSIM 0,98962. Ero on neljännessä
+        # desimaalissa, aika lähes puolittuu. Actions-ajossa slow vei
+        # enkoodaukseen 148 s koko 205 s ajosta.
+        tiivis, size = fit_under_limit(dest, tiivis, None, preset="fast")
         os.remove(dest)
         dest = tiivis
         pakattu = True
