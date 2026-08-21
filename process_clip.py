@@ -12,7 +12,7 @@ KICK-kortin, joten sitä ei käytetä.
 
 Ympäristömuuttujat:
   CLIP_URL             https://kick.com/<kanava>/clips/<clip_id>
-  MODEL                1 = zoomattu, 2 = koko kuva
+  MODEL                1 = zoomattu, 2 = koko kuva, 3 = alkuperäinen
   TELEGRAM_BOT_TOKEN   (GitHub secret)
   TELEGRAM_CHAT_ID     (GitHub secret)
   REQUEST_MESSAGE_ID   valinnainen: viesti johon vastataan
@@ -54,7 +54,7 @@ AUDIO_KBPS = 160
 # mahtumaan, fit_under_limit kiristää crf:ää erikseen.
 MIN_VIDEO_BPS = 900_000
 
-MODEL_NAMES = {"1": "zoomattu", "2": "koko kuva"}
+MODEL_NAMES = {"1": "zoomattu", "2": "koko kuva", "3": "alkuperäinen"}
 
 DEFAULT_CROP = {
     "width": 1080,
@@ -335,6 +335,62 @@ def fit_under_limit(src, dest, model, crop):
 
 
 # ---------------------------------------------------------------------------
+# MALLI 3: ALKUPERÄINEN SELLAISENAAN
+# ---------------------------------------------------------------------------
+
+def send_original(channel, clip_id, clip_url, reply_to):
+    """Lähettää klipin ilman rajausta ja ilman uudelleenpakkausta.
+
+    fetch_source muxaa HLS-lähteen MP4:ksi -c copy -kytkimellä, joten
+    kuva ja ääni ovat tarkalleen samat kuin Kickin omassa soittimessa.
+    Vesileimaa ei ole: se ja klipin perään liitetty KICK-mainoskortti
+    tulivat vanhasta latausendpointista, ei toistolähteestä.
+
+    Lähetys tehdään dokumenttina eikä videona, jotta Telegram ei käsittele
+    tiedostoa mitenkään. Se ei siis toistu chatissa suoraan, vaan pitää
+    ladata — mutta ladattu tiedosto on tavu tavulta se mikä lähetettiin.
+    """
+    # Tiedostonimi näkyy Telegramissa ja latauskansiossa, joten se
+    # rakennetaan kanavasta ja klipistä eikä työnimestä.
+    dest = os.path.join(WORK_DIR, f"{channel}-{clip_id}.mp4")
+    fetch_source(resolve_source(clip_id), dest)
+    size = os.path.getsize(dest)
+    megat = size / 1024 / 1024
+
+    caption = (
+        f"⬇️ <b>Alkuperäinen · ei rajausta, ei pakkausta</b>\n"
+        f"Kick · {escape_html(channel)}\n"
+        f"{clip_url}"
+    )
+
+    if size > TELEGRAM_MAX_BYTES:
+        # Ei pakata pienemmäksi: se olisi juuri se mitä tällä mallilla
+        # yritetään välttää.
+        telegram.send_message(
+            caption
+            + f"\n\n⚠️ Tiedosto on {megat:.0f} MB, eikä Telegram ota "
+            "vastaan yli 50 MB:tä. Rajattu versio mahtuu aina, tai hae tämä "
+            "Actions-ajon artifaktista (tallessa 7 vrk)."
+        )
+        raise ProcessError(
+            f"Alkuperäinen on {megat:.0f} MB eikä mahdu Telegramin rajaan."
+        )
+
+    status = telegram.send_document(
+        dest, caption=caption, reply_to_message_id=reply_to or None
+    )
+    if status != telegram.SENT:
+        raise ProcessError(
+            f"Tiedoston lähetys Telegramiin epäonnistui ({status})."
+        )
+
+    update_request_buttons(
+        telegram.status_keyboard("✅ Alkuperäinen lähetetty")
+    )
+    log(f"Valmis — {megat:.1f} MB dokumenttina.")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     clip_url = os.environ.get("CLIP_URL", "").strip()
@@ -342,15 +398,20 @@ def main():
     reply_to = os.environ.get("REQUEST_MESSAGE_ID", "").strip()
 
     if model not in MODEL_NAMES:
-        raise ProcessError(f"Tuntematon rajausmalli {model!r} (odotin 1 tai 2).")
+        raise ProcessError(f"Tuntematon malli {model!r} (odotin 1, 2 tai 3).")
 
     channel, clip_id = parse_clip_url(clip_url)
-    crop = load_crop_settings()
     os.makedirs(WORK_DIR, exist_ok=True)
-    raw = os.path.join(WORK_DIR, f"{clip_id}.src.mp4")
-    out = os.path.join(WORK_DIR, f"{clip_id}-malli{model}.mp4")
 
     log(f"Klippi {clip_id} kanavalta {channel}, malli {model}")
+
+    if model == "3":
+        send_original(channel, clip_id, clip_url, reply_to)
+        return
+
+    crop = load_crop_settings()
+    raw = os.path.join(WORK_DIR, f"{clip_id}.src.mp4")
+    out = os.path.join(WORK_DIR, f"{clip_id}-malli{model}.mp4")
 
     fetch_source(resolve_source(clip_id), raw)
     out, size = fit_under_limit(raw, out, model, crop)
