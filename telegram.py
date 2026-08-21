@@ -193,14 +193,20 @@ def send_document(path, caption="", reply_to_message_id=None):
 # ---------------------------------------------------------------------------
 
 def crop_keyboard():
-    """Napit, jotka korvaavat numerovastauksen klippi-ilmoituksessa."""
+    """Ilmoituksen napit. Vain lataus, koska vain sitä käytetään.
+
+    Rajausnapit (malli 1 zoomattu, malli 2 koko kuva) olivat aiemmin tässä,
+    mutta rajaus tehdään käytännössä käsin editorissa eikä nappeja painettu.
+    Kaksi käyttämätöntä nappia vei tilaa siltä yhdeltä jota painetaan, mikä
+    on puhelimella turha osumatarkkuusongelma.
+
+    Rajausta EI ole poistettu: process_clip.py osaa mallit 1 ja 2 yhä, ja
+    Worker ajaa ne numerovastauksesta. Jos rajausta joskus tarvitaan,
+    vastaa ilmoitukseen numerolla 1 tai 2.
+    """
     return json.dumps(
         {
             "inline_keyboard": [
-                [
-                    {"text": "🔍 Zoomattu", "callback_data": "crop:1"},
-                    {"text": "🖼️ Koko kuva", "callback_data": "crop:2"},
-                ],
                 [
                     {"text": "⬇️ Lataa klippi", "callback_data": "crop:3"},
                 ],
