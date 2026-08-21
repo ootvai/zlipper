@@ -332,7 +332,8 @@
       "ArtsyResilientOstrichSmoocherZ-_rV_cF57I1RVBkQT",
       "WanderingHeartlessPineappleBigBrother-yMzrQS8bRsh2HpcS",
       "BadSilkyGazellePlanking-EZv3AZeCy7he-6gB",
-      "ApatheticNeighborlySamosaWholeWheat-Mn_4Iqd0JkfrVa7F"
+      "ApatheticNeighborlySamosaWholeWheat-Mn_4Iqd0JkfrVa7F",
+      "SuccessfulMushySquidOSfrog-p1E8WuNA640tHLaS"
     ]
   },
   "kick": {
@@ -3898,7 +3899,7 @@
   },
   "heartbeat": {
     "last": "2026-08-21T13:29:39Z",
-    "clips_since": 5
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -3914,7 +3915,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-08-17T20:10:11Z",
+      "last_clip": "2026-08-21T14:23:50Z",
       "alerted": false
     },
     "kick:pullis": {
