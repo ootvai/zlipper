@@ -281,13 +281,21 @@ def bitrate_cap(duration):
     return max(bps, MIN_VIDEO_BPS)
 
 
-def run_ffmpeg(src, dest, model, crop, crf=20, cap=None):
-    cmd = [
-        "ffmpeg", "-y", "-loglevel", "error",
-        "-i", src,
-        "-filter_complex", build_filter(model, crop),
-        "-map", "[v]",
-        "-map", "0:a?",
+def run_ffmpeg(src, dest, video_filter, crf=20, cap=None):
+    """Enkoodaa lähteen. video_filter=None jättää kuvan koskematta.
+
+    Rajausmalleissa suodinketju rakentaa pystykuvan. Mallissa 3 kuvaan ei
+    kosketa lainkaan, vaan enkoodaus laskee pelkkää bitratea, jotta liian
+    iso tiedosto mahtuu Telegramin rajaan.
+    """
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", src]
+    if video_filter:
+        cmd += ["-filter_complex", video_filter, "-map", "[v]", "-map", "0:a?"]
+    else:
+        # Ilman suodinketjua virrat valitaan suoraan. yuv420p varmistaa
+        # ettei lähteen mahdollinen poikkeava pikselimuoto riko toistoa.
+        cmd += ["-map", "0:v:0", "-map", "0:a?", "-pix_fmt", "yuv420p"]
+    cmd += [
         "-c:v", "libx264",
         # slow pakkaa tehokkaammin kuin veryfast; 23 s klippi enkoodautui
         # 7 sekunnissa, joten nopeus ei ole pullonkaula.
@@ -309,16 +317,20 @@ def run_ffmpeg(src, dest, model, crop, crf=20, cap=None):
     return dest
 
 
-def fit_under_limit(src, dest, model, crop):
-    """Enkoodaa niin että tulos mahtuu Telegramin rajaan."""
+def fit_under_limit(src, dest, video_filter):
+    """Enkoodaa niin että tulos mahtuu Telegramin rajaan.
+
+    video_filter=None pakkaa kuvaa koskematta — sitä käyttää malli 3,
+    kun raakatiedosto on liian iso lähetettäväksi sellaisenaan.
+    """
     duration = probe_duration(src)
     cap = bitrate_cap(duration)
     if cap:
         log(f"Kesto {duration:.1f} s -> bitraten katto {cap / 1e6:.1f} Mbps")
 
-    run_ffmpeg(src, dest, model, crop, cap=cap)
+    run_ffmpeg(src, dest, video_filter, cap=cap)
     size = os.path.getsize(dest)
-    log(f"Rajattu tiedosto {size / 1024 / 1024:.1f} MB")
+    log(f"Enkoodattu tiedosto {size / 1024 / 1024:.1f} MB")
     if size <= TELEGRAM_MAX_BYTES:
         return dest, size
 
@@ -326,7 +338,7 @@ def fit_under_limit(src, dest, model, crop):
     # kiristetään portaittain eikä romahdeta kerralla.
     for crf in (23, 26):
         log(f"Yli rajan — uusi yritys crf {crf}.")
-        run_ffmpeg(src, dest, model, crop, crf=crf, cap=cap)
+        run_ffmpeg(src, dest, video_filter, crf=crf, cap=cap)
         size = os.path.getsize(dest)
         log(f"crf {crf}: {size / 1024 / 1024:.1f} MB")
         if size <= TELEGRAM_MAX_BYTES:
@@ -339,7 +351,7 @@ def fit_under_limit(src, dest, model, crop):
 # ---------------------------------------------------------------------------
 
 def send_original(channel, clip_id, clip_url, reply_to):
-    """Lähettää klipin ilman rajausta ja ilman uudelleenpakkausta.
+    """Lähettää klipin rajaamattomana, ensisijaisesti myös pakkaamatta.
 
     fetch_source muxaa HLS-lähteen MP4:ksi -c copy -kytkimellä, joten
     kuva ja ääni ovat tarkalleen samat kuin Kickin omassa soittimessa.
@@ -349,6 +361,15 @@ def send_original(channel, clip_id, clip_url, reply_to):
     Lähetys tehdään dokumenttina eikä videona, jotta Telegram ei käsittele
     tiedostoa mitenkään. Se ei siis toistu chatissa suoraan, vaan pitää
     ladata — mutta ladattu tiedosto on tavu tavulta se mikä lähetettiin.
+
+    Jos raakatiedosto ei mahdu Telegramin 50 MB:hen, se pakataan mahtumaan
+    kuvaa rajaamatta. Aiemmin tässä luovutettiin, koska pakkaamattomuus oli
+    koko mallin idea. Se osoittautui liian ehdottomaksi: 70 klipin otoksesta
+    19 % ylitti rajan, eli joka viides latausyritys palautti pelkän
+    virheilmoituksen. Lähde ei myöskään ole masteri vaan striimaajan
+    reaaliaikainen lähetysenkoodaus, joten preset slow -uudelleenpakkaus
+    45 MB:hen on siitä käytännössä erottamaton — ja joka tapauksessa
+    parempi kuin ei tiedostoa lainkaan.
     """
     # Tiedostonimi näkyy Telegramissa ja latauskansiossa, joten se
     # rakennetaan kanavasta ja klipistä eikä työnimestä.
@@ -363,17 +384,36 @@ def send_original(channel, clip_id, clip_url, reply_to):
         f"{clip_url}"
     )
 
+    pakattu = False
     if size > TELEGRAM_MAX_BYTES:
-        # Ei pakata pienemmäksi: se olisi juuri se mitä tällä mallilla
-        # yritetään välttää.
+        log(f"Raakatiedosto {megat:.1f} MB ylittää rajan — pakataan "
+            f"mahtumaan, kuvaa rajaamatta.")
+        # Eri tiedostonimi, jotta pakattu ja pakkaamaton erottuvat
+        # toisistaan latauskansiossa.
+        tiivis = os.path.join(WORK_DIR, f"{channel}-{clip_id}-pakattu.mp4")
+        tiivis, size = fit_under_limit(dest, tiivis, None)
+        os.remove(dest)
+        dest = tiivis
+        pakattu = True
+        caption = (
+            f"⬇️ <b>Klippi rajaamattomana · pakattu mahtumaan</b>\n"
+            f"Kick · {escape_html(channel)}\n"
+            f"Alkuperäinen {megat:.0f} MB ei mahtunut Telegramin rajaan. "
+            f"Kuvaa ei ole rajattu, vain bitrate on laskettu.\n"
+            f"{clip_url}"
+        )
+        megat = size / 1024 / 1024
+
+    if size > TELEGRAM_MAX_BYTES:
+        # Pakkauskaan ei riittänyt. Ei pitäisi tapahtua, koska bitrate_cap
+        # mitoitetaan kestosta, mutta ei jäädä hiljaa jos näin käy.
         telegram.send_message(
             caption
-            + f"\n\n⚠️ Tiedosto on {megat:.0f} MB, eikä Telegram ota "
-            "vastaan yli 50 MB:tä. Rajattu versio mahtuu aina, tai hae tämä "
+            + f"\n\n⚠️ Tiedosto on pakattunakin {megat:.0f} MB. Hae se "
             "Actions-ajon artifaktista (tallessa 7 vrk)."
         )
         raise ProcessError(
-            f"Klippi on {megat:.0f} MB eikä mahdu Telegramin rajaan."
+            f"Klippi on pakattunakin {megat:.0f} MB eikä mahdu rajaan."
         )
 
     status = telegram.send_document(
@@ -385,9 +425,12 @@ def send_original(channel, clip_id, clip_url, reply_to):
         )
 
     update_request_buttons(
-        telegram.status_keyboard("✅ Klippi lähetetty")
+        telegram.status_keyboard(
+            "✅ Klippi lähetetty (pakattu)" if pakattu else "✅ Klippi lähetetty"
+        )
     )
-    log(f"Valmis — {megat:.1f} MB dokumenttina.")
+    log(f"Valmis — {megat:.1f} MB dokumenttina"
+        + (" (pakattu)." if pakattu else "."))
 
 
 # ---------------------------------------------------------------------------
@@ -414,7 +457,7 @@ def main():
     out = os.path.join(WORK_DIR, f"{clip_id}-malli{model}.mp4")
 
     fetch_source(resolve_source(clip_id), raw)
-    out, size = fit_under_limit(raw, out, model, crop)
+    out, size = fit_under_limit(raw, out, build_filter(model, crop))
 
     caption = (
         f"✂️ <b>Rajattu · malli {model} ({MODEL_NAMES[model]})</b>\n"
