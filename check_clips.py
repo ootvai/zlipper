@@ -228,19 +228,17 @@ def get_twitch_clips(broadcaster_id, token, since_iso, max_pages=10):
     return clips
 
 
-def format_twitch_message(channel, clip, count=0, threshold=0):
-    title = escape_html(clip.get("title") or "Uusi klippi")
-    creator = escape_html(clip.get("creator_name") or "?")
-    views = clip.get("view_count", 0)
-    duration = clip.get("duration", 0)
-    star = "⭐ " if is_frequent(count, threshold) else ""
-    note = creator_note(count, threshold)
-    return (
-        f"{star}🟣 <b>Twitch · {escape_html(channel)}</b>\n"
-        f"<b>{title}</b>\n"
-        f"Klippasi: {creator}{note} · {duration:.0f}s · {views} katselua\n"
-        f"🕒 {format_time(clip.get('created_at'))}\n"
-        f"{clip['url']}"
+def format_twitch_message(channel, clip, count=0, tiers=(0, 0)):
+    return build_message(
+        title=clip.get("title"),
+        source=f"🟣 Twitch · {escape_html(channel)}",
+        duration=clip.get("duration"),
+        views=clip.get("view_count", 0),
+        creator=clip.get("creator_name"),
+        count=count,
+        tiers=tiers,
+        created_at=clip.get("created_at"),
+        link=clip["url"],
     )
 
 
@@ -338,38 +336,29 @@ def kick_creator(clip):
     return None
 
 
-def format_kick_message(channel, clip, count=0, threshold=0):
+def format_kick_message(channel, clip, count=0, tiers=(0, 0)):
     clip_id = clip.get("id")
-    title = escape_html(clip.get("title") or "Uusi klippi")
-    views = clip.get("views", clip.get("view_count", 0))
-    duration = clip.get("duration", 0)
 
     # HUOM: käytetään AINA rakennettua klippisivun URL:ia, ei clip_url-kenttää.
     # clip_url näytti osoittavan suoraan CDN-videotiedostoon, jolloin
     # Telegram lataa/avaa videon heti napautettaessa sen sijaan että
     # näyttäisi normaalin linkkiesikatselun. kick.com/<kanava>/clips/<id>
     # on aina tavallinen klippisivu, josta voi itse ladata halutessaan.
+    #
+    # Linkki on myös se, mistä Worker lukee klipin kun nappia painetaan,
+    # joten sen on pysyttävä viestissä omalla rivillään.
     link = f"https://kick.com/{channel}/clips/{clip_id}"
 
-    creator_name = kick_creator(clip)
-    star = "⭐ " if is_frequent(count, threshold) else ""
-    # Jos tekijää ei saada, jätetään koko maininta pois — parempi kuin "?"
-    if creator_name:
-        note = creator_note(count, threshold)
-        meta = (
-            f"Klippasi: {escape_html(creator_name)}{note} · "
-            f"{duration}s · {views} katselua"
-        )
-    else:
-        meta = f"{duration}s · {views} katselua"
-
-    return (
-        f"{star}🟢 <b>Kick · {escape_html(channel)}</b>\n"
-        f"<b>{title}</b>\n"
-        f"{meta}\n"
-        f"🕒 {format_time(clip.get('created_at'))}\n"
-        f"{link}\n"
-        f"✂️ Vastaa <b>1</b> = zoomattu · <b>2</b> = koko kuva"
+    return build_message(
+        title=clip.get("title"),
+        source=f"🟢 Kick · {escape_html(channel)}",
+        duration=clip.get("duration"),
+        views=clip.get("views", clip.get("view_count", 0)),
+        creator=kick_creator(clip),
+        count=count,
+        tiers=tiers,
+        created_at=clip.get("created_at"),
+        link=link,
     )
 
 
@@ -408,15 +397,72 @@ def bump_creator(creators, name):
     return count
 
 
-def creator_note(count, threshold):
-    """Teksti tekijän nimen perään, esim ' (23 klippiä)'. Tyhjä jos 1."""
-    if count < 2:
+def clipper_tiers(config):
+    """(tuttu, luotettava) — montako klippiä kumpikin porras vaatii."""
+    return (
+        config.get("clipper_known_min_clips", 5) or 0,
+        config.get("clipper_trusted_min_clips", 25) or 0,
+    )
+
+
+def clipper_line(name, count, tiers):
+    """Rivi klippaajasta, tai tyhjä jos tekijä ei vielä kerro mitään.
+
+    Aiemmin jokainen ilmoitus näytti "Klippasi: joku (1 klippiä)", mikä oli
+    pelkkää täytettä: kertaluontoinen klippaaja on tuntematon nimi. Nyt
+    maininta tulee vasta kun klippejä on kertynyt sen verran, että nimi
+    todella ennustaa jotain klipin laadusta.
+    """
+    if not name:
         return ""
-    return f" ({count} klippiä)"
+    known, trusted = tiers
+    if trusted > 0 and count >= trusted:
+        label = "⭐ Luotettava klippaaja"
+    elif known > 0 and count >= known:
+        label = "✂️ Tuttu klippaaja"
+    else:
+        return ""
+    return f"{label}: {escape_html(name)} · {count} klippiä"
 
 
-def is_frequent(count, threshold):
-    return threshold > 0 and count >= threshold
+def format_duration(raw):
+    """'42 s' tai '1:23'. Tyhjä jos kestoa ei tiedetä."""
+    try:
+        secs = int(round(float(raw)))
+    except (TypeError, ValueError):
+        return ""
+    if secs <= 0:
+        return ""
+    if secs < 60:
+        return f"{secs} s"
+    return f"{secs // 60}:{secs % 60:02d}"
+
+
+def build_message(title, source, duration, views, creator, count, tiers,
+                  created_at, link):
+    """Ilmoituksen runko, sama molemmille alustoille.
+
+    Otsikko on ainoa lihavoitu asia ja ensimmäisenä: Telegram ei tunne
+    fonttikokoja, joten järjestys ja ainoa <b> ovat kaikki mitä on
+    käytettävissä. Aiemmin kanavanimi oli yhtä vahva kuin otsikko, jolloin
+    silmä osui ensin kanavaan eikä siihen mitä klipissä tapahtuu.
+    """
+    meta = [source]
+    dur = format_duration(duration)
+    if dur:
+        meta.append(dur)
+    meta.append(f"{views} katselua")
+
+    lines = [
+        f"<b>{escape_html(title or 'Uusi klippi')}</b>",
+        " · ".join(meta),
+    ]
+    clipper = clipper_line(creator, count, tiers)
+    if clipper:
+        lines.append(clipper)
+    lines.append(f"🕒 {format_time(created_at)}")
+    lines.append(link)
+    return "\n".join(lines)
 
 
 def heartbeat(state, config, found_now):
@@ -599,11 +645,11 @@ def main():
         datetime.now(timezone.utc) - timedelta(minutes=lookback)
     ).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    # Klippaajan portaat: montako klippiä ennen "tuttu" ja "luotettava".
+    tiers = clipper_tiers(config)
+
     # Valinnainen: ohita klipit jotka ovat tätä vanhempia (tuntia).
     # 0 tai puuttuva = ei rajaa.
-    # Montako klippiä tekijältä ennen ⭐-merkkiä. 0 = ei merkkiä.
-    star_threshold = config.get("frequent_clipper_min_clips", 10) or 0
-
     max_age_h = config.get("max_clip_age_hours", 0) or 0
     max_age_min = max_age_h * 60 if max_age_h > 0 else None
 
@@ -646,10 +692,10 @@ def main():
                         seen.append(clip["id"])
                         continue
                     count = peek_creator(creators, name)
+                    # Twitch-klipeille ei nappeja: rajausputki osaa
+                    # toistaiseksi vain Kickin klipit.
                     status = telegram.send_message(
-                        format_twitch_message(
-                            channel, clip, count, star_threshold
-                        )
+                        format_twitch_message(channel, clip, count, tiers)
                     )
                     if status == telegram.FAILED:
                         # Ei merkitä nähdyksi — klippi yritetään uudelleen
@@ -683,7 +729,8 @@ def main():
                 continue
             count = peek_creator(creators, name)
             status = telegram.send_message(
-                format_kick_message(channel, clip, count, star_threshold)
+                format_kick_message(channel, clip, count, tiers),
+                reply_markup=telegram.crop_keyboard(),
             )
             if status == telegram.FAILED:
                 print(
