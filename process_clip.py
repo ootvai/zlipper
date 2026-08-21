@@ -16,6 +16,7 @@ Ympäristömuuttujat:
   TELEGRAM_BOT_TOKEN   (GitHub secret)
   TELEGRAM_CHAT_ID     (GitHub secret)
   REQUEST_MESSAGE_ID   valinnainen: viesti johon vastataan
+  MARKUP_MESSAGE_ID    valinnainen: viesti, jonka napit päivitetään
 """
 
 import json
@@ -61,6 +62,21 @@ DEFAULT_CROP = {
     "zoom_height_pct": 67,
     "blur_sigma": 40,
 }
+
+
+def update_request_buttons(markup):
+    """Vaihtaa alkuperäisen klippi-ilmoituksen napit.
+
+    Worker kertoo erikseen minkä viestin napit saa vaihtaa — se ei ole sama
+    kuin REQUEST_MESSAGE_ID, koska numerovastauksessa vastataan viestiin
+    jossa ei ole nappeja lainkaan. Tyhjä arvo tarkoittaa ettei nappeja ole.
+    Epäonnistuminen ei ole vika — viesti voi olla yli 48 h vanha — joten
+    paluuarvoa ei tarkisteta.
+    """
+    message_id = os.environ.get("MARKUP_MESSAGE_ID", "").strip()
+    if not message_id:
+        return
+    telegram.edit_reply_markup(message_id, markup)
 
 
 class ProcessError(Exception):
@@ -360,6 +376,10 @@ def main():
     )
     if status != telegram.SENT:
         raise ProcessError(f"Videon lähetys Telegramiin epäonnistui ({status}).")
+
+    update_request_buttons(
+        telegram.status_keyboard(f"✅ Rajattu: {MODEL_NAMES[model]}")
+    )
     log("Valmis.")
 
 
@@ -372,6 +392,7 @@ if __name__ == "__main__":
         telegram.send_message(
             f"❌ <b>Rajaus epäonnistui</b>\n{escape_html(str(e))}"
         )
+        update_request_buttons(telegram.crop_keyboard())
         sys.exit(1)
     except Exception as e:
         # Odottamaton poikkeus ohitti aiemmin ilmoituksen kokonaan: puuttuva
@@ -384,4 +405,5 @@ if __name__ == "__main__":
             f"{escape_html(type(e).__name__)}: {escape_html(str(e))}\n"
             f"Tarkemmat tiedot Actions-lokissa."
         )
+        update_request_buttons(telegram.crop_keyboard())
         sys.exit(1)

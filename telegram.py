@@ -16,6 +16,7 @@ kutsuja voi päättää merkitseekö klipin käsitellyksi:
             uudestaan seuraavalla ajolla
 """
 
+import json
 import os
 import time
 
@@ -157,4 +158,51 @@ def send_video(path, caption="", reply_to_message_id=None):
             files={"video": (os.path.basename(path), f, "video/mp4")},
             timeout=300,
         )
+    return status
+
+
+# ---------------------------------------------------------------------------
+# Inline-napit
+#
+# callback_data pidetään lyhyenä: Telegramin raja on 64 tavua, ja jos se
+# ylittyy, koko sendMessage hylätään 400:lla eli ilmoitus katoaisi. Klippi-
+# linkkiä ei siis pakata nappiin — Worker lukee sen viestin tekstistä.
+# ---------------------------------------------------------------------------
+
+def crop_keyboard():
+    """Napit, jotka korvaavat numerovastauksen klippi-ilmoituksessa."""
+    return json.dumps(
+        {
+            "inline_keyboard": [
+                [
+                    {"text": "🔍 Zoomattu", "callback_data": "crop:1"},
+                    {"text": "🖼️ Koko kuva", "callback_data": "crop:2"},
+                ]
+            ]
+        }
+    )
+
+
+def status_keyboard(label):
+    """Yksi nappi, joka vain kertoo viestin tilan (⏳ / ✅).
+
+    Nappi jää painettavaksi, mutta Worker vastaa "noop"-dataan pelkällä
+    kuittauksella. Näin napit eivät jää houkuttelemaan toiseen ajoon
+    samasta klipistä.
+    """
+    return json.dumps(
+        {"inline_keyboard": [[{"text": label, "callback_data": "noop"}]]}
+    )
+
+
+def edit_reply_markup(message_id, reply_markup):
+    """Vaihtaa jo lähetetyn viestin napit. Telegram sallii 48 h ajan."""
+    status, _ = _call(
+        "editMessageReplyMarkup",
+        data={
+            "chat_id": CHAT_ID,
+            "message_id": str(message_id),
+            "reply_markup": reply_markup,
+        },
+    )
     return status

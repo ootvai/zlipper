@@ -2,13 +2,13 @@
 
 Seuraa Twitch- ja Kick-kanavia ja ilmoittaa **Telegramiin** heti kun uusi
 klippi ilmestyy. Kick-klipin voi lisäksi ladata ja rajata pystyvideoksi
-vastaamalla ilmoitukseen numerolla. Kaikki pyörii GitHub Actionsissa —
+painamalla ilmoituksen nappia. Kaikki pyörii GitHub Actionsissa —
 omaa palvelinta ei tarvita, kone saa olla kiinni.
 
 ```
 Kick / Twitch  ──►  klippivahti (cron 10 min)  ──►  Telegram-ilmoitus
                                                           │
-                                             vastaat "1" tai "2"
+                                          painat [Zoomattu]/[Koko kuva]
                                                           ▼
                                             Cloudflare Worker (webhook)
                                                           │
@@ -76,8 +76,14 @@ Se kysyy kolme asiaa:
 `TELEGRAM_WEBHOOK_SECRET` arvotaan automaattisesti — sitä ei tarvitse
 keksiä eikä muistaa.
 
-Sen jälkeen: vastaa mihin tahansa Kick-klippi-ilmoitukseen numerolla
-**1** (zoomattu) tai **2** (koko kuva).
+Sen jälkeen: paina Kick-klippi-ilmoituksen nappia **🔍 Zoomattu** tai
+**🖼️ Koko kuva**. Napit vaihtuvat tilaksi (`⏳ Rajataan` → `✅ Rajattu`),
+joten samaa klippiä ei tule vahingossa ajettua kahdesti; jos rajaus kaatuu,
+napit palaavat uutta yritystä varten.
+
+Numerovastaus **1** / **2** toimii yhä. Sitä tarvitaan ennen nappien
+käyttöönottoa lähetetyissä ilmoituksissa ja yli 48 h vanhoissa viesteissä,
+joiden sisältöä Telegram ei enää anna napin painalluksen mukana.
 
 Putki päättyy siihen, että rajattu video tulee Telegramiin. Loput
 editointi tehdään käsin — mitään ei julkaista automaattisesti.
@@ -116,7 +122,8 @@ näyttönimeä: `kick.com/pullis` → `pullis`.
 |---|---|
 | `poll_lookback_minutes` | Kuinka kauas taaksepäin Twitchistä haetaan |
 | `max_clip_age_hours` | Tätä vanhemmista klipeistä ei ilmoiteta |
-| `frequent_clipper_min_clips` | Montako klippiä ennen ⭐-merkkiä |
+| `clipper_known_min_clips` | Montako klippiä ennen "✂️ Tuttu klippaaja" |
+| `clipper_trusted_min_clips` | Montako klippiä ennen "⭐ Luotettava klippaaja" |
 | `health_alert_after_failures` | Peräkkäisiä epäonnistumisia ennen hälytystä |
 | `heartbeat_hours` | Elonmerkin väli |
 | `silent_channel_days` | Milloin hiljaisesta kanavasta huomautetaan |

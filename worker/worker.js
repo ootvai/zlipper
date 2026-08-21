@@ -1,9 +1,14 @@
 /**
  * Telegram-webhook -> GitHub repository_dispatch.
  *
- * Kun klippivahdin ilmoitukseen vastataan Telegramissa numerolla 1 tai 2,
- * tämä Worker poimii alkuperäisestä viestistä Kick-klippilinkin ja
- * käynnistää "Rajaa klippi" -workflown GitHubissa.
+ * Klippi-ilmoituksessa on kaksi nappia, [Zoomattu] ja [Koko kuva]. Napin
+ * painallus tulee tänne callback_query-päivityksenä, ja tämä Worker poimii
+ * alkuperäisestä viestistä Kick-klippilinkin ja käynnistää "Rajaa klippi"
+ * -workflown GitHubissa.
+ *
+ * Vanha tapa — vastaa ilmoitukseen numerolla 1 tai 2 — toimii yhä. Ennen
+ * nappien käyttöönottoa lähetetyissä ilmoituksissa ei ole nappeja, ja
+ * numerovastaus on myös varakeino jos nappi ei jostain syystä toimi.
  *
  * Ympäristö (wrangler secret put / vars):
  *   TELEGRAM_BOT_TOKEN       botin token, kuittausviestien lähettämiseen
@@ -39,52 +44,140 @@ export default {
       return ok();
     }
 
-    const msg = update.message || update.edited_message;
-    if (!msg || !msg.text) return ok();
-
-    // Vain sallitusta chatista. Muut jätetään huomiotta hiljaisesti.
-    if (String(msg.chat?.id) !== String(env.ALLOWED_CHAT_ID)) return ok();
-
-    const model = msg.text.trim();
-    if (!MODEL_NAMES[model]) return ok();
-
-    const source = msg.reply_to_message;
-    if (!source) {
-      await reply(env, msg, "Vastaa numerolla siihen klippi-ilmoitukseen, jonka haluat rajata.");
-      return ok();
+    if (update.callback_query) {
+      return handleButton(env, update.callback_query);
     }
-
-    const sourceText = source.text || source.caption || "";
-    const kick = sourceText.match(KICK_CLIP_RE);
-
-    if (!kick) {
-      const note = TWITCH_CLIP_RE.test(sourceText)
-        ? "Twitch-klippejä ei voi rajata — putki toimii vain Kickillä."
-        : "En löytänyt viestistä Kick-klippilinkkiä.";
-      await reply(env, msg, note);
-      return ok();
-    }
-
-    const dispatched = await dispatch(env, {
-      clip_url: kick[0],
-      model,
-      message_id: msg.message_id,
-    });
-
-    await reply(
-      env,
-      msg,
-      dispatched
-        ? `Rajaus käynnistetty — malli ${model} (${MODEL_NAMES[model]}). Video tulee tähän kun se on valmis.`
-        : "GitHubin käynnistys epäonnistui. Katso Workerin loki."
-    );
-
-    return ok();
+    return handleReply(env, update.message || update.edited_message);
   },
 };
 
+// ---------------------------------------------------------------------------
+// Napit
+// ---------------------------------------------------------------------------
+
+async function handleButton(env, query) {
+  const msg = query.message;
+
+  // Tilanappi (⏳ / ✅) ei tee mitään — kuitataan vain, jotta Telegramin
+  // latauskehrä pysähtyy.
+  if (query.data === "noop") {
+    await answer(env, query, "Tämä nappi näyttää vain tilan.");
+    return ok();
+  }
+
+  const match = /^crop:([12])$/.exec(query.data || "");
+  if (!match) {
+    await answer(env, query);
+    return ok();
+  }
+  const model = match[1];
+
+  if (!msg || String(msg.chat?.id) !== String(env.ALLOWED_CHAT_ID)) {
+    await answer(env, query);
+    return ok();
+  }
+
+  // Telegram jättää viestin sisällön pois, jos viesti on hyvin vanha.
+  // Silloin linkkiä ei saada napista, mutta numerovastaus toimii yhä.
+  const kick = KICK_CLIP_RE.exec(msg.text || msg.caption || "");
+  if (!kick) {
+    await answer(
+      env,
+      query,
+      "En saanut klippilinkkiä tästä viestistä. Vastaa viestiin numerolla 1 tai 2.",
+      true
+    );
+    return ok();
+  }
+
+  const dispatched = await dispatch(env, {
+    clip_url: kick[0],
+    model,
+    message_id: msg.message_id,
+    // Napit ovat itse ilmoituksessa, joten process_clip.py päivittää ne
+    // samaan viestiin kun rajaus on valmis tai kaatuu.
+    markup_message_id: msg.message_id,
+  });
+
+  if (!dispatched) {
+    await answer(env, query, "GitHubin käynnistys epäonnistui. Katso Workerin loki.", true);
+    return ok();
+  }
+
+  // Ei erillistä kuittausviestiä: tila näkyy itse ilmoituksessa, joten
+  // chattiin ei kerry rinnalle ylimääräisiä rivejä. process_clip.py
+  // vaihtaa napin tekstin uudestaan kun video on valmis tai rajaus kaatuu.
+  await answer(env, query, `Rajaus käynnistetty — ${MODEL_NAMES[model]}.`);
+  await setButtons(env, msg.chat.id, msg.message_id, statusKeyboard(`⏳ Rajataan: ${MODEL_NAMES[model]}`));
+  return ok();
+}
+
+// ---------------------------------------------------------------------------
+// Numerovastaus (vanhat ilmoitukset ja varakeino)
+// ---------------------------------------------------------------------------
+
+async function handleReply(env, msg) {
+  if (!msg || !msg.text) return ok();
+
+  // Vain sallitusta chatista. Muut jätetään huomiotta hiljaisesti.
+  if (String(msg.chat?.id) !== String(env.ALLOWED_CHAT_ID)) return ok();
+
+  const model = msg.text.trim();
+  if (!MODEL_NAMES[model]) return ok();
+
+  const source = msg.reply_to_message;
+  if (!source) {
+    await reply(env, msg, "Vastaa numerolla siihen klippi-ilmoitukseen, jonka haluat rajata.");
+    return ok();
+  }
+
+  const sourceText = source.text || source.caption || "";
+  const kick = KICK_CLIP_RE.exec(sourceText);
+
+  if (!kick) {
+    const note = TWITCH_CLIP_RE.test(sourceText)
+      ? "Twitch-klippejä ei voi rajata — putki toimii vain Kickillä."
+      : "En löytänyt viestistä Kick-klippilinkkiä.";
+    await reply(env, msg, note);
+    return ok();
+  }
+
+  // Ennen nappien käyttöönottoa lähetetyissä ilmoituksissa ei ole nappeja,
+  // eikä niihin pidä niitä lisätä: jäljelle jäisi tilanappi jota kukaan ei
+  // enää päivitä. Vaihdetaan napit vain jos niitä on.
+  const hasButtons = Boolean(source.reply_markup);
+
+  const dispatched = await dispatch(env, {
+    clip_url: kick[0],
+    model,
+    message_id: msg.message_id,
+    markup_message_id: hasButtons ? source.message_id : undefined,
+  });
+
+  await reply(
+    env,
+    msg,
+    dispatched
+      ? `Rajaus käynnistetty — malli ${model} (${MODEL_NAMES[model]}). Video tulee tähän kun se on valmis.`
+      : "GitHubin käynnistys epäonnistui. Katso Workerin loki."
+  );
+
+  if (dispatched && hasButtons) {
+    // Ettei samaa klippiä aja vahingossa vielä napistakin.
+    await setButtons(env, source.chat.id, source.message_id, statusKeyboard(`⏳ Rajataan: ${MODEL_NAMES[model]}`));
+  }
+
+  return ok();
+}
+
+// ---------------------------------------------------------------------------
+
 function ok() {
   return new Response("ok", { status: 200 });
+}
+
+function statusKeyboard(label) {
+  return { inline_keyboard: [[{ text: label, callback_data: "noop" }]] };
 }
 
 async function dispatch(env, payload) {
@@ -106,14 +199,40 @@ async function dispatch(env, payload) {
   return true;
 }
 
-async function reply(env, msg, text) {
-  await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+async function telegram(env, method, body) {
+  const r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: msg.chat.id,
-      text,
-      reply_to_message_id: msg.message_id,
-    }),
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) {
+    console.log(`${method} epäonnistui`, r.status, await r.text());
+  }
+  return r.ok;
+}
+
+async function reply(env, msg, text) {
+  return telegram(env, "sendMessage", {
+    chat_id: msg.chat.id,
+    text,
+    reply_to_message_id: msg.message_id,
+  });
+}
+
+async function answer(env, query, text, alert = false) {
+  return telegram(env, "answerCallbackQuery", {
+    callback_query_id: query.id,
+    text: text || "",
+    show_alert: alert,
+  });
+}
+
+async function setButtons(env, chatId, messageId, markup) {
+  // Epäonnistuu esim. yli 48 h vanhalle viestille tai jos napit ovat jo
+  // samat. Kumpikaan ei ole vika, joten virhe vain lokitetaan.
+  return telegram(env, "editMessageReplyMarkup", {
+    chat_id: chatId,
+    message_id: messageId,
+    reply_markup: markup,
   });
 }
