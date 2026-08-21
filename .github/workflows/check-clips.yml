@@ -7,7 +7,6 @@ on:
   workflow_dispatch: {}   # manuaalinen ajo "Run workflow" -napista
 permissions:
   contents: write   # state.json:n commitointiin
-  actions: read     # katselukertaseuranta lukee omat Actions-ajot
 concurrency:
   group: klippivahti
   cancel-in-progress: false   # älä aja kahta rinnakkain, muuten state sotkeutuu
@@ -28,9 +27,6 @@ jobs:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Workflown oma token. Riittaa oman repon ajojen lukemiseen,
-          # eika sita tarvitse luoda eika kierrattaa.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python check_clips.py
       - name: Tallenna tila
         run: |
