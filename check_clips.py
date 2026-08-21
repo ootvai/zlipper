@@ -14,6 +14,7 @@ Ympäristömuuttujat (GitHub secrets):
 
 import json
 import os
+import re
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -465,6 +466,250 @@ def build_message(title, source, duration, views, creator, count, tiers,
     return "\n".join(lines)
 
 
+# ---------------------------------------------------------------------------
+# KATSELUKERTOJEN PÄIVITYS
+#
+# Lähetetyssä viestissä oleva luku ei päivity itsestään, joten viestit
+# joiden lukemaa seurataan pidetään muistissa (state["tracked"]) ja niihin
+# kirjoitetaan uusi lukema editMessageTextillä.
+#
+# Kaksi rajoitetta ohjaa toteutusta:
+#
+#   1. Muokkaus syö samaa ~1 viesti/s -budjettia kuin uudet ilmoitukset.
+#      Siksi muokataan vain jos lukema oikeasti muuttui, enintään
+#      views_max_edits_per_run kertaa ajossa, uusin klippi ensin.
+#
+#   2. editMessageText POISTAA viestin napit jos niitä ei anna mukaan, eikä
+#      Bot API anna lukea mitkä napit viestissä nyt on. Jos liittäisimme
+#      rajausnapit takaisin viestiin joka on jo kuitattu, sama klippi
+#      voitaisiin ajaa vahingossa toiseen kertaan. Siksi seuranta lopetetaan
+#      heti kun klippi on lähetetty rajattavaksi — se näkyy repon omista
+#      Actions-ajoista, joiden nimeen process-clip.yml kirjoittaa
+#      klippilinkin.
+# ---------------------------------------------------------------------------
+
+def track_hours(config):
+    """Kuinka kauan lähetetyn viestin lukemaa seurataan. 0 = ei lainkaan."""
+    return config.get("views_track_hours", 6) or 0
+
+
+def track_message(state, config, platform, channel, clip, message_id, count,
+                  tiers):
+    """Ottaa juuri lähetetyn ilmoituksen katselukertaseurantaan.
+
+    Viestin sisältö talletetaan kentittäin, jotta se voidaan myöhemmin
+    rakentaa uudestaan samanlaisena. Klippaajan lukema ja portaat
+    jäädytetään lähetyshetkeen, ettei vanha viesti muuttuisi takautuvasti
+    jos configia säädetään.
+    """
+    if not message_id or not track_hours(config):
+        return
+
+    if platform == "kick":
+        clip_id = str(clip.get("id"))
+        views = clip.get("views", clip.get("view_count", 0))
+        link = f"https://kick.com/{channel}/clips/{clip_id}"
+        creator = kick_creator(clip)
+    else:
+        clip_id = clip["id"]
+        views = clip.get("view_count", 0)
+        link = clip["url"]
+        creator = clip.get("creator_name")
+
+    state.setdefault("tracked", {})[str(message_id)] = {
+        "platform": platform,
+        "channel": channel,
+        "clip_id": clip_id,
+        "views": views,
+        "sent": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "title": clip.get("title"),
+        "duration": clip.get("duration"),
+        "created_at": clip.get("created_at"),
+        "creator": creator,
+        "count": count,
+        "tiers": list(tiers),
+        "link": link,
+    }
+
+
+def render_tracked(entry):
+    """Rakentaa seuratun viestin tekstin uudestaan tuoreella lukemalla."""
+    channel = escape_html(entry["channel"])
+    if entry["platform"] == "kick":
+        source = f"🟢 Kick · {channel}"
+    else:
+        source = f"🟣 Twitch · {channel}"
+    return build_message(
+        title=entry.get("title"),
+        source=source,
+        duration=entry.get("duration"),
+        views=entry.get("views", 0),
+        creator=entry.get("creator"),
+        count=entry.get("count", 0),
+        tiers=tuple(entry.get("tiers") or (0, 0)),
+        created_at=entry.get("created_at"),
+        link=entry["link"],
+    )
+
+
+def dispatched_clip_ids():
+    """Mitkä klipit on jo lähetetty rajattavaksi.
+
+    Luetaan repon omista Actions-ajoista: process-clip.yml kirjoittaa
+    klippilinkin ajon nimeen, ja workflown oma GITHUB_TOKEN riittää
+    lukemiseen. Merkintä ilmestyy sekunneissa napin painalluksesta.
+
+    Palauttaa None jos tietoa ei saatu. Kutsuja tulkitsee sen niin, ettei
+    katselukertoja päivitetä tällä ajolla — väärä päivitys palauttaisi
+    rajausnapit viestiin josta ne on jo kuitattu pois.
+    """
+    token = os.environ.get("GITHUB_TOKEN", "")
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not token or not repo:
+        return None
+
+    try:
+        r = requests.get(
+            f"https://api.github.com/repos/{repo}/actions/runs",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/vnd.github+json",
+                "User-Agent": "klippivahti",
+            },
+            params={"event": "repository_dispatch", "per_page": 50},
+            timeout=20,
+        )
+    except requests.RequestException as e:
+        print(f"Actions-ajojen haku epäonnistui: {e}")
+        return None
+
+    if r.status_code != 200:
+        print(f"Actions-ajojen haku -> HTTP {r.status_code}")
+        return None
+
+    try:
+        runs = r.json().get("workflow_runs", [])
+    except ValueError:
+        return None
+
+    ids = set()
+    for run in runs:
+        title = run.get("display_title") or run.get("name") or ""
+        m = re.search(r"clips/([A-Za-z0-9_-]+)", title)
+        if m:
+            ids.add(m.group(1))
+    return ids
+
+
+def fill_twitch_views(tracked, fresh, token):
+    """Hakee seurattujen Twitch-klippien lukemat yhdellä kutsulla.
+
+    Uusien klippien haku katsoo vain poll_lookback_minutes taaksepäin, joten
+    sitä vanhemmat seurattavat eivät ole siinä mukana. Helix ottaa sata
+    id:tä kerralla, joten tämä on yksi pyyntö määrästä riippumatta.
+    """
+    if not token:
+        return
+
+    have = fresh.setdefault("twitch", {})
+    missing = [
+        e["clip_id"] for e in tracked.values()
+        if e["platform"] == "twitch" and e["clip_id"] not in have
+    ]
+
+    for i in range(0, len(missing), 100):
+        batch = missing[i:i + 100]
+        try:
+            r = requests.get(
+                "https://api.twitch.tv/helix/clips",
+                headers=twitch_headers(token),
+                params=[("id", c) for c in batch],
+                timeout=20,
+            )
+        except requests.RequestException as e:
+            print(f"Twitch: seurattujen klippien haku epäonnistui ({e})")
+            return
+        if r.status_code != 200:
+            print(f"Twitch: seurattujen klippien haku -> HTTP {r.status_code}")
+            return
+        for c in r.json().get("data", []):
+            have[c["id"]] = c.get("view_count", 0)
+
+
+def tracked_priority(entry):
+    """Muokkausjärjestys: uusin ensin.
+
+    Ensisijaisesti lähetysaika, mutta se on sama kaikilla samassa ajossa
+    lähetetyillä viesteillä — silloin ratkaisee klipin oma ikä. Järjestys
+    merkitsee vain kun budjetti loppuu kesken: tuoreimman klipin lukema
+    liikkuu nopeimmin ja on se jota katsotaan.
+    """
+    floor = datetime.min.replace(tzinfo=timezone.utc)
+    return (
+        parse_ts(entry.get("sent")) or floor,
+        parse_ts(entry.get("created_at")) or floor,
+    )
+
+
+def refresh_view_counts(state, config, fresh, twitch_token):
+    """Päivittää seurattujen viestien katselukerrat."""
+    hours = track_hours(config)
+    tracked = state.setdefault("tracked", {})
+
+    if not hours:
+        state["tracked"] = {}
+        return
+
+    now = datetime.now(timezone.utc)
+    for mid, e in list(tracked.items()):
+        sent = parse_ts(e.get("sent"))
+        if sent is None or (now - sent).total_seconds() > hours * 3600:
+            del tracked[mid]
+    if not tracked:
+        return
+
+    dispatched = dispatched_clip_ids()
+    if dispatched is None:
+        print(
+            "Katselukerrat: en saanut listaa käynnistetyistä rajauksista, "
+            "ohitetaan päivitys tällä ajolla."
+        )
+        return
+    for mid, e in list(tracked.items()):
+        if e.get("clip_id") in dispatched:
+            del tracked[mid]
+    if not tracked:
+        return
+
+    fill_twitch_views(tracked, fresh, twitch_token)
+
+    budget = config.get("views_max_edits_per_run", 12) or 0
+    if budget <= 0:
+        return
+
+    edits = 0
+    for mid, e in sorted(
+        tracked.items(), key=lambda kv: tracked_priority(kv[1]), reverse=True
+    ):
+        if edits >= budget:
+            break
+        views = fresh.get(e["platform"], {}).get(e["clip_id"])
+        if views is None or views == e.get("views"):
+            continue
+
+        e["views"] = views
+        # Kickin viesteissä on napit; ne on annettava mukaan tai ne katoavat.
+        markup = telegram.crop_keyboard() if e["platform"] == "kick" else None
+        status = telegram.edit_message_text(mid, render_tracked(e), markup)
+        edits += 1
+        if status == telegram.REJECTED:
+            # Viesti on liian vanha, poistettu tai muuten muokkauskelvoton.
+            del tracked[mid]
+
+    if edits:
+        print(f"Katselukerrat päivitetty {edits} viestiin.")
+
+
 def heartbeat(state, config, found_now):
     """Lähettää säännöllisen elonmerkin Telegramiin.
 
@@ -665,10 +910,16 @@ def main():
 
     found = 0
 
+    # Tässä ajossa nähdyt katselukerrat. Seurannan päivitys lukee
+    # lukemansa täältä, joten Kickin osalta se ei maksa yhtään
+    # ylimääräistä pyyntöä — klippilistaus haetaan muutenkin.
+    fresh = {"twitch": {}, "kick": {}}
+    twitch_token = None
+
     # --- Twitch ---
     twitch_channels = [c.lower().strip() for c in config.get("twitch_channels", [])]
     if twitch_channels:
-        token = get_twitch_token()
+        token = twitch_token = get_twitch_token()
         if not token:
             detail = TOKEN_ERROR[0] if TOKEN_ERROR else "tunnukset puuttuvat"
             record("twitch", False, f"token: {detail}")
@@ -683,6 +934,8 @@ def main():
                 seen = state["twitch"].get(channel, [])
                 seen_set = set(seen)
                 clips = get_twitch_clips(bid, token, since_iso)
+                for c in clips:
+                    fresh["twitch"][c["id"]] = c.get("view_count", 0)
                 new = [c for c in clips if c["id"] not in seen_set]
                 new.sort(key=lambda c: c.get("created_at", ""))
                 for clip in new:
@@ -694,7 +947,7 @@ def main():
                     count = peek_creator(creators, name)
                     # Twitch-klipeille ei nappeja: rajausputki osaa
                     # toistaiseksi vain Kickin klipit.
-                    status = telegram.send_message(
+                    status, message_id = telegram.send_message_tracked(
                         format_twitch_message(channel, clip, count, tiers)
                     )
                     if status == telegram.FAILED:
@@ -710,6 +963,10 @@ def main():
                     seen.append(clip["id"])
                     if status == telegram.SENT:
                         found += 1
+                        track_message(
+                            state, config, "twitch", channel, clip,
+                            message_id, count, tiers,
+                        )
                 state["twitch"][channel] = prune(seen)
                 note_channel_activity(state, "twitch", channel, bool(new))
 
@@ -718,6 +975,10 @@ def main():
         seen = state["kick"].get(channel, [])
         seen_set = set(seen)
         clips = get_kick_clips(channel)
+        for c in clips:
+            fresh["kick"][str(c.get("id"))] = c.get(
+                "views", c.get("view_count", 0)
+            )
         new = [c for c in clips if str(c.get("id")) not in seen_set]
         new.sort(key=lambda c: c.get("created_at", ""))
         for clip in new:
@@ -728,7 +989,7 @@ def main():
                 seen.append(clip_id)
                 continue
             count = peek_creator(creators, name)
-            status = telegram.send_message(
+            status, message_id = telegram.send_message_tracked(
                 format_kick_message(channel, clip, count, tiers),
                 reply_markup=telegram.crop_keyboard(),
             )
@@ -742,8 +1003,14 @@ def main():
             seen.append(clip_id)
             if status == telegram.SENT:
                 found += 1
+                track_message(
+                    state, config, "kick", channel, clip,
+                    message_id, count, tiers,
+                )
         state["kick"][channel] = prune(seen)
         note_channel_activity(state, "kick", channel, bool(new))
+
+    refresh_view_counts(state, config, fresh, twitch_token)
 
     check_health(state, config)
     check_silent_channels(state, config)

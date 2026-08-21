@@ -99,6 +99,38 @@ toistolähteestä. Napit vaihtuvat tilaksi (`⏳ Rajataan` → `✅ Rajattu`),
 joten samaa klippiä ei tule vahingossa ajettua kahdesti; jos rajaus kaatuu,
 napit palaavat uutta yritystä varten.
 
+## Katselukerrat päivittyvät
+
+Ilmoituksessa oleva katselukertojen määrä ei ole jäädytetty lähetyshetkeen.
+Klippivahti pitää kirjaa lähettämistään viesteistä ja kirjoittaa niihin
+uuden lukeman `editMessageText`illä, kun luku on muuttunut. Samalla
+päivittyy myös rivi `🕒 21.8. klo 16:32 (11 min sitten)`.
+
+Kolme asiaa rajaa tätä:
+
+- **Seuranta kestää `views_track_hours` tuntia** lähetyksestä (oletus 6).
+  Sen jälkeen viesti jää sellaiseksi kuin se on. Telegram sallii
+  muokkauksen 48 h ajan, mutta klipin katselukertojen kasvu on käytännössä
+  ohi paljon aiemmin.
+- **Muokkaus syö samaa ~1 viesti/s -budjettia kuin uudet ilmoitukset.**
+  Siksi muokataan vain jos lukema oikeasti muuttui, enintään
+  `views_max_edits_per_run` kertaa ajossa, tuorein klippi ensin. Uudet
+  klippi-ilmoitukset lähetetään aina ensin.
+- **Seuranta loppuu heti kun klipille käynnistetään rajaus.** Tämä ei ole
+  makuasia: `editMessageText` poistaa viestin napit jos niitä ei anna
+  mukaan, eikä Bot API anna lukea mitkä napit viestissä nyt on. Jos
+  päivitys liittäisi rajausnapit takaisin jo kuitattuun viestiin, saman
+  klipin voisi ajaa vahingossa toiseen kertaan. Klippivahti tarkistaa
+  repon omista Actions-ajoista mille klipeille rajaus on jo käynnistetty —
+  siksi workflow tarvitsee oikeuden `actions: read`, ja siksi
+  `process-clip.yml` kirjoittaa klippilinkin ajon nimeen.
+
+Jos Actions-ajojen haku epäonnistuu, katselukertoja ei päivitetä sillä
+ajolla lainkaan. Vanhentunut viesti on pienempi haitta kuin herännyt nappi.
+
+Kickin lukemat tulevat ilmaiseksi: klippilistaus haetaan joka ajossa
+muutenkin. Twitchille tehdään yksi lisäkutsu, joka kattaa sata klippiä.
+
 50 MB on Telegramin raja kaikelle. Rajatut versiot mahtuvat aina, koska
 bitrate lasketaan kestosta. Ladattavaa klippiä ei pakata pienemmäksi — se olisi
 juuri se mitä tällä napilla yritetään välttää — joten jos se ei mahdu,
@@ -145,6 +177,8 @@ näyttönimeä: `kick.com/pullis` → `pullis`.
 |---|---|
 | `poll_lookback_minutes` | Kuinka kauas taaksepäin Twitchistä haetaan |
 | `max_clip_age_hours` | Tätä vanhemmista klipeistä ei ilmoiteta |
+| `views_track_hours` | Kuinka kauan ilmoituksen katselukertoja päivitetään. 0 = ei lainkaan |
+| `views_max_edits_per_run` | Enintään näin monta viestiä päivitetään yhdessä ajossa |
 | `clipper_known_min_clips` | Montako klippiä ennen "✂️ Tuttu klippaaja" |
 | `clipper_trusted_min_clips` | Montako klippiä ennen "⭐ Luotettava klippaaja" |
 | `health_alert_after_failures` | Peräkkäisiä epäonnistumisia ennen hälytystä |
