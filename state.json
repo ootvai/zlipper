@@ -1551,7 +1551,6 @@
       "clip_01M0JJKM9V0YPPF1E93A9PP8BZ"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZFACTKJ3C0WCAWNTYZMF8PX",
       "clip_01KZFETCSN778DZZPENQ9E9NS2",
       "clip_01KZFEYPTMAAHB643AA5FZXYE5",
       "clip_01KZFFBG267DQMK9MDNT2CSJS4",
@@ -1850,7 +1849,8 @@
       "clip_01M0H5E27T6VY72WWQX2AW92Z8",
       "clip_01M0H5GQM347CC65JJYQ60WPJ2",
       "clip_01M0JP7J2EGJ887FNWNETQH6KH",
-      "clip_01M0JQVWFCHNDZPHCXTWQ4N0RD"
+      "clip_01M0JQVWFCHNDZPHCXTWQ4N0RD",
+      "clip_01M0JTGF5GE7XCQZYFM1K99BT3"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3919,7 +3919,7 @@
   },
   "heartbeat": {
     "last": "2026-08-21T13:29:39Z",
-    "clips_since": 56
+    "clips_since": 57
   },
   "silent": {
     "twitch:skotti": {
@@ -3959,7 +3959,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-21T18:39:52Z",
+      "last_clip": "2026-08-21T18:51:55Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -4009,144 +4009,6 @@
     "kick:monnirs": {
       "last_clip": "2026-08-20T23:36:16Z",
       "alerted": false
-    }
-  },
-  "tracked": {
-    "4036": {
-      "platform": "kick",
-      "channel": "pullis",
-      "clip_id": "clip_01M0JQVRPYKHQ41XSDNYXKBB08",
-      "views": 1,
-      "sent": "2026-08-21T18:39:44Z",
-      "title": "Lassi kolahtaa",
-      "duration": 11,
-      "created_at": "2026-08-21T18:04:05.455408Z",
-      "creator": "Emppi",
-      "count": 2,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/pullis/clips/clip_01M0JQVRPYKHQ41XSDNYXKBB08"
-    },
-    "4037": {
-      "platform": "kick",
-      "channel": "pullis",
-      "clip_id": "clip_01M0JQY72KC0915QBP1XN5EKVG",
-      "views": 0,
-      "sent": "2026-08-21T18:39:45Z",
-      "title": "lassi",
-      "duration": 15,
-      "created_at": "2026-08-21T18:06:45.75872Z",
-      "creator": "Mortonki",
-      "count": 52,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/pullis/clips/clip_01M0JQY72KC0915QBP1XN5EKVG"
-    },
-    "4038": {
-      "platform": "kick",
-      "channel": "aapo_olervo",
-      "clip_id": "clip_01M0JS5NTQHA2C991E24111Z7G",
-      "views": 0,
-      "sent": "2026-08-21T18:39:48Z",
-      "title": "aapo on tyhmä",
-      "duration": 30,
-      "created_at": "2026-08-21T18:27:46.530029Z",
-      "creator": "huge_a_hole",
-      "count": 88,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/aapo_olervo/clips/clip_01M0JS5NTQHA2C991E24111Z7G"
-    },
-    "4039": {
-      "platform": "kick",
-      "channel": "kuhlmanvirallinen",
-      "clip_id": "clip_01M0JQVWFCHNDZPHCXTWQ4N0RD",
-      "views": 1,
-      "sent": "2026-08-21T18:39:52Z",
-      "title": "kehari löi päänsä",
-      "duration": 15,
-      "created_at": "2026-08-21T18:04:06.824602Z",
-      "creator": "Mortonki",
-      "count": 53,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/kuhlmanvirallinen/clips/clip_01M0JQVWFCHNDZPHCXTWQ4N0RD"
-    },
-    "4040": {
-      "platform": "kick",
-      "channel": "ogumtv",
-      "clip_id": "clip_01M0JSW7NBQ086TXR9YPA7ZPQB",
-      "views": 0,
-      "sent": "2026-08-21T18:39:55Z",
-      "title": "ghjhj",
-      "duration": 30,
-      "created_at": "2026-08-21T18:39:03.523805Z",
-      "creator": "urgotti",
-      "count": 104,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/ogumtv/clips/clip_01M0JSW7NBQ086TXR9YPA7ZPQB"
-    },
-    "4041": {
-      "platform": "kick",
-      "channel": "pirkkislive",
-      "clip_id": "clip_01M0JS0QX4NHXH0PD0QDFJ93MB",
-      "views": 0,
-      "sent": "2026-08-21T18:39:58Z",
-      "title": "Koppelo rajan takaa ",
-      "duration": 152,
-      "created_at": "2026-08-21T18:23:44.558091Z",
-      "creator": "epola",
-      "count": 454,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/pirkkislive/clips/clip_01M0JS0QX4NHXH0PD0QDFJ93MB"
-    },
-    "4042": {
-      "platform": "kick",
-      "channel": "ogumtv",
-      "clip_id": "clip_01M0JSYSB0NWDEW02XJ4B5QTFW",
-      "views": 0,
-      "sent": "2026-08-21T18:43:32Z",
-      "title": "ghjhj",
-      "duration": 36,
-      "created_at": "2026-08-21T18:40:17.304616Z",
-      "creator": "urgotti",
-      "count": 105,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/ogumtv/clips/clip_01M0JSYSB0NWDEW02XJ4B5QTFW"
-    },
-    "4043": {
-      "platform": "kick",
-      "channel": "ogumtv",
-      "clip_id": "clip_01M0JSYR6EHP9BTXG9Z5PWHWQ3",
-      "views": 0,
-      "sent": "2026-08-21T18:43:33Z",
-      "title": "samalla",
-      "duration": 41,
-      "created_at": "2026-08-21T18:40:45.105568Z",
-      "creator": "EgyptDeus",
-      "count": 25,
-      "tiers": [
-        5,
-        25
-      ],
-      "link": "https://kick.com/ogumtv/clips/clip_01M0JSYR6EHP9BTXG9Z5PWHWQ3"
     }
   }
 }
