@@ -166,7 +166,7 @@ def send_document(path, caption="", reply_to_message_id=None):
 
     sendVideo antaa Telegramille luvan käsitellä tiedostoa omalla
     tavallaan. sendDocument ei: vastaanottaja saa täsmälleen ne tavut
-    jotka lähetettiin. Siksi rajaamaton alkuperäinen menee tätä kautta.
+    jotka lähetettiin. Siksi rajaamaton klippi menee tätä kautta.
     """
     data = {
         "chat_id": CHAT_ID,
@@ -202,7 +202,7 @@ def crop_keyboard():
                     {"text": "🖼️ Koko kuva", "callback_data": "crop:2"},
                 ],
                 [
-                    {"text": "⬇️ Alkuperäinen", "callback_data": "crop:3"},
+                    {"text": "⬇️ Lataa klippi", "callback_data": "crop:3"},
                 ],
             ]
         }
