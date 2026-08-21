@@ -2117,8 +2117,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01KZHH6A87B8CJMVP85BSZK4VN",
-      "clip_01M039XGC2NY451XPYMKG0KVHP",
       "clip_01M03NJGE9305Z2R3WKZYCNJYK",
       "clip_01M07BFHHE0GY69PY8FTYNXDRV",
       "clip_01M07E37312PCYD5CXEDK00AZ8",
@@ -2416,7 +2414,9 @@
       "clip_01M0JK1M232XBE7CFAADQEYBGJ",
       "clip_01M0JMRVAF70T90QMR6ZPZ0J9F",
       "clip_01M0JNSJARNT3PDS9VESBG40FB",
-      "clip_01M0JSW7NBQ086TXR9YPA7ZPQB"
+      "clip_01M0JSW7NBQ086TXR9YPA7ZPQB",
+      "clip_01M0JSYSB0NWDEW02XJ4B5QTFW",
+      "clip_01M0JSYR6EHP9BTXG9Z5PWHWQ3"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3919,7 +3919,7 @@
   },
   "heartbeat": {
     "last": "2026-08-21T13:29:39Z",
-    "clips_since": 54
+    "clips_since": 56
   },
   "silent": {
     "twitch:skotti": {
@@ -3971,7 +3971,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-21T18:39:55Z",
+      "last_clip": "2026-08-21T18:43:33Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -4113,6 +4113,40 @@
         25
       ],
       "link": "https://kick.com/pirkkislive/clips/clip_01M0JS0QX4NHXH0PD0QDFJ93MB"
+    },
+    "4042": {
+      "platform": "kick",
+      "channel": "ogumtv",
+      "clip_id": "clip_01M0JSYSB0NWDEW02XJ4B5QTFW",
+      "views": 0,
+      "sent": "2026-08-21T18:43:32Z",
+      "title": "ghjhj",
+      "duration": 36,
+      "created_at": "2026-08-21T18:40:17.304616Z",
+      "creator": "urgotti",
+      "count": 105,
+      "tiers": [
+        5,
+        25
+      ],
+      "link": "https://kick.com/ogumtv/clips/clip_01M0JSYSB0NWDEW02XJ4B5QTFW"
+    },
+    "4043": {
+      "platform": "kick",
+      "channel": "ogumtv",
+      "clip_id": "clip_01M0JSYR6EHP9BTXG9Z5PWHWQ3",
+      "views": 0,
+      "sent": "2026-08-21T18:43:33Z",
+      "title": "samalla",
+      "duration": 41,
+      "created_at": "2026-08-21T18:40:45.105568Z",
+      "creator": "EgyptDeus",
+      "count": 25,
+      "tiers": [
+        5,
+        25
+      ],
+      "link": "https://kick.com/ogumtv/clips/clip_01M0JSYR6EHP9BTXG9Z5PWHWQ3"
     }
   }
 }
