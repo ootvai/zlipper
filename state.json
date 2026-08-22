@@ -2122,8 +2122,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M08BC0YH4BCTXH8NWJ4F04EW",
-      "clip_01M08C4HXEF8BMKVD1GMZN7PFZ",
       "clip_01M08CAXKJAMJNSGJMQ6QF6PHR",
       "clip_01M08DF6GXEE6A0Z151PJNNV9Y",
       "clip_01M08DKPVVM7EV0VD3NE2VNRNV",
@@ -2421,7 +2419,9 @@
       "clip_01M0NFRZ0H1WV16QK3RQP5NGKR",
       "clip_01M0NHN8TVEB8879RPEYSGZC7N",
       "clip_01M0NJEGRCFSY2ZTZT9PCV3Z04",
-      "clip_01M0NJGG5C2R1S03WBCJ35NHR9"
+      "clip_01M0NJGG5C2R1S03WBCJ35NHR9",
+      "clip_01M0NK9TSTHZ4SY29N0CYCBRSZ",
+      "clip_01M0NKK35AXZN7BX4GV9E8E745"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3934,7 +3934,7 @@
   },
   "heartbeat": {
     "last": "2026-08-22T14:01:40Z",
-    "clips_since": 62
+    "clips_since": 64
   },
   "silent": {
     "twitch:skotti": {
@@ -3986,7 +3986,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-22T20:28:45Z",
+      "last_clip": "2026-08-22T20:50:50Z",
       "alerted": false
     },
     "kick:sampef2": {
