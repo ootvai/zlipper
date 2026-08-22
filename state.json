@@ -947,7 +947,6 @@
       "clip_01M0JP4N4K3DGRA8EE9BP9FAHE"
     ],
     "aapo_olervo": [
-      "clip_01KYVTJZ5B5Y316WMW014BF32C",
       "clip_01KYWAB5F547Y2W8NF24PBA2AC",
       "clip_01KYWC7CWMQ3N21Y4EHMRSKW3M",
       "clip_01KYWD1TDXD5FH1HPNF0RCDG3A",
@@ -1246,7 +1245,8 @@
       "clip_01M0MJD13MV59SC7GY6G40CGCP",
       "clip_01M0MNTTVDPMK0H55Y11TH668F",
       "clip_01M0MP01HD7H494ZZMAN9GEWYP",
-      "clip_01M0N3A65DEAGRZQA6PFCB5GAM"
+      "clip_01M0N3A65DEAGRZQA6PFCB5GAM",
+      "clip_01M0N4K1H8GRTW187TVH6JMJXM"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1555,12 +1555,6 @@
       "clip_01M0MG31JX92EXCA7CVRY43570"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZHP1AHMJNNXNXH943RMWZGX",
-      "clip_01KZHP6VDBKC9FQ5YAWK1VT958",
-      "clip_01KZHPGFXG55C0JNYKNTGQV6ZB",
-      "clip_01KZHQGYETD0A8C3XY20362DAE",
-      "clip_01KZHQXHEW1MCG7N80BA2VPR2Z",
-      "clip_01KZHR9E04PQ6EECJQGB84T7HF",
       "clip_01KZHRF6T9JDKV5AF009A8J07B",
       "clip_01KZHRY05EWPMMHK179F1CG5H5",
       "clip_01KZHS0505FTCX5ZC8FWEXYCF8",
@@ -1854,7 +1848,13 @@
       "clip_01M0N3WK9RJHR2EVK9VC031PZS",
       "clip_01M0N42EA2TJTV7KGC8055D5FP",
       "clip_01M0N4428TNB67FR449W4XKB4J",
-      "clip_01M0N44FWDZA3KB1QJ3B0CT6SZ"
+      "clip_01M0N44FWDZA3KB1QJ3B0CT6SZ",
+      "clip_01M0N48TVAMMZ1QAWGMH53A735",
+      "clip_01M0N4A13E5028EKWACJEGE5K7",
+      "clip_01M0N4EGH9Q0S0567BVBJD2EDW",
+      "clip_01M0N4FRTABZ51ANE1W34A4J3H",
+      "clip_01M0N4JT8P0WG9X0QJPRZ0TE2J",
+      "clip_01M0N4VSEM5MDJXECB33ZKXB05"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3933,7 +3933,7 @@
   },
   "heartbeat": {
     "last": "2026-08-22T14:01:40Z",
-    "clips_since": 24
+    "clips_since": 31
   },
   "silent": {
     "twitch:skotti": {
@@ -3961,7 +3961,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-22T16:17:07Z",
+      "last_clip": "2026-08-22T16:44:01Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -3973,7 +3973,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-22T16:17:17Z",
+      "last_clip": "2026-08-22T16:44:11Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
