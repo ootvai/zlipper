@@ -763,6 +763,11 @@ def main():
         print(f"{found} uutta klippiä, ilmoitukset lähetetty.")
     else:
         print("Ei uusia klippejä.")
+        # Ajastettu ajo on hiljainen kun mitään ei löydy. Telegramista käsin
+        # pyydetty ei voi olla: muuten hiljaisuus voi tarkoittaa yhtä hyvin
+        # "ei uusia klippejä" kuin "komento ei mennyt perille".
+        if os.environ.get("REPORT_EMPTY") == "1":
+            telegram.send_message("Ei uusia klippejä.")
 
 
 if __name__ == "__main__":

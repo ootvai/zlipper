@@ -1,8 +1,28 @@
 name: Klippivahti
+
+# Ajon nimeen kirjoitetaan mika laukaisi sen, jotta Actions-listasta nakee
+# heti toimiiko Cloudflaren ajastin.
+run-name: Klippivahti (${{ github.event.client_payload.source || github.event_name }})
+
 on:
+  # ENSISIJAINEN LAUKAISIN ON CLOUDFLAREN CRON, EI TAMA.
+  #
+  # GitHubin ajastin ei laukaise cronia luvatusti. Mitattu 26.7.-22.8.2026
+  # (719 ajoa): luvattu 10 min toteutui mediaanilta 42,7 min valein, p90
+  # 109 min, pisin katkos 6 h, eika yksikaan vali osunut 10 minuuttiin.
+  # Jonotusaika oli aina 0 s, eli runnereita oli vapaana — ajot jaivat
+  # kokonaan laukeamatta, eivatka viivastyneet. Talla oli oikea seuraus:
+  # check_clips.py hakee Twitchista vain poll_lookback_minutes (60 min)
+  # taaksepain, joten yli tunnin katkoissa Twitch-klippeja jai kokonaan
+  # nakematta — 24,3 % kaikesta kuluneesta ajasta oli kattamatta.
+  #
+  # Oikea ajastin on nyt worker/wrangler.toml -> [triggers], joka kutsuu
+  # alla olevaa repository_dispatchia. Tama schedule-lohko jaa paalle
+  # varajarjestelmaksi: se ei maksa mitaan ja pelastaa jos Cloudflare on
+  # nurin. Paallekkaiset ajot hoitaa concurrency-ryhma.
+  repository_dispatch:
+    types: [check_clips]
   schedule:
-    # 10 min välein. GitHubin cron voi viivästyä muutamia minuutteja
-    # ruuhka-aikoina — se on normaalia, ei vika.
     - cron: "*/10 * * * *"
   workflow_dispatch: {}   # manuaalinen ajo "Run workflow" -napista
 permissions:
@@ -27,6 +47,9 @@ jobs:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Vain Telegramista kasin pyydetty ajo raportoi myos tyhjan
+          # tuloksen. Ajastettu ajo pysyy hiljaisena, kuten ennenkin.
+          REPORT_EMPTY: ${{ github.event.client_payload.report_empty }}
         run: python check_clips.py
       - name: Tallenna tila
         run: |

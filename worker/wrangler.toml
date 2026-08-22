@@ -13,3 +13,10 @@ GITHUB_REPO = "ootvai/zlipper"
 #   wrangler secret put ALLOWED_CHAT_ID
 #
 # Helpoiten: aja .\setup.ps1, joka tekee nämä ja rekisteröi webhookin.
+
+# Klippivahdin ajastin. GitHubin oma cron ei laukea luvatusti (mitattu:
+# mediaani 42,7 min, pisin katkos 6 h), joten oikea ajastin on taalla ja
+# GitHubin schedule-lohko jaa varajarjestelmaksi. Ilmaisplanilla saa 5
+# cron-triggeria per tili; tama on niista yksi.
+[triggers]
+crons = ["*/10 * * * *"]

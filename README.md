@@ -6,7 +6,7 @@ sellaisenaan painamalla ilmoituksen nappia. Kaikki pyörii GitHub Actionsissa �
 omaa palvelinta ei tarvita, kone saa olla kiinni.
 
 ```
-Kick / Twitch  ──►  klippivahti (cron 10 min)  ──►  Telegram-ilmoitus
+Kick / Twitch  ──►  klippivahti (10 min välein)  ──►  Telegram-ilmoitus
                                                           │
                                           painat [Zoomattu]/[Koko kuva]
                                                           ▼
@@ -24,10 +24,10 @@ Kick / Twitch  ──►  klippivahti (cron 10 min)  ──►  Telegram-ilmoitu
 
 | Tiedosto | Tehtävä |
 |---|---|
-| `check_clips.py` | Klippivahti. Ajetaan cronilla 10 min välein. |
+| `check_clips.py` | Klippivahti. Ajetaan 10 min välein. |
 | `process_clip.py` | Lataa Kick-klipin ja rajaa sen ffmpegillä. |
 | `telegram.py` | Yhteinen Telegram-lähetys uudelleenyrityksineen. |
-| `worker/worker.js` | Cloudflare Worker: Telegram-vastaus → GitHub-dispatch. |
+| `worker/worker.js` | Cloudflare Worker: Telegram-vastaus → GitHub-dispatch **ja** Klippivahdin ajastin. |
 | `config.json` | Seurattavat kanavat ja säädöt. |
 | `state.json` | Nähdyt klipit. Workflow committaa itse. |
 | `creators.json` | Klippaajakohtaiset laskurit. |
@@ -152,9 +152,50 @@ näyttönimeä: `kick.com/pullis` → `pullis`.
 | `silent_channel_days` | Milloin hiljaisesta kanavasta huomautetaan |
 | `crop` | Rajauksen mitat, zoom-osuus ja sumennus |
 
-Tarkistusväli on `.github/workflows/check-clips.yml`, rivi
-`cron: "*/10 * * * *"`. Alle 5 min ei kannata laittaa — GitHubin cron ei
-ole tarkka.
+## Ajastus
+
+Tarkistusväli asetetaan `worker/wrangler.toml`:n `[triggers]`-lohkossa,
+**ei** workflow-tiedostossa:
+
+```toml
+[triggers]
+crons = ["*/10 * * * *"]
+```
+
+Muutos astuu voimaan `npx wrangler deploy`llä.
+
+**Miksi ajastin on Cloudflaressa eikä GitHubissa.** GitHubin oma cron ei
+laukea luvatusti. Repon koko ajohistoriasta mitattuna (719 ajoa,
+26.7.–22.8.2026, cron `*/10`):
+
+| | |
+|---|---|
+| mediaani ajojen väli | 42,7 min |
+| p90 | 109 min |
+| pisin katkos | 365 min |
+| välejä ≤ 12 min | 0 kpl |
+
+Jonotusaika `created_at` → `run_started_at` oli mediaanilta ja
+maksimiltaan 0 s, eli runnereita oli koko ajan vapaana: ajot eivät
+viivästyneet ruuhkassa vaan **jäivät kokonaan laukeamatta**. Pudotetut
+ajot eivät myöskään kertaudu myöhemmin.
+
+Tällä oli konkreettinen seuraus. `check_clips.py` hakee Twitchistä vain
+`poll_lookback_minutes` (60 min) taaksepäin, joten yli tunnin katkoissa
+osa Twitch-klipeistä jäi kokonaan näkemättä — mitattuna **24,3 %
+kaikesta kuluneesta ajasta oli kattamatta**. Kick kestää katkot, koska
+sen haku selaa klippilistaa kursorilla ja vertaa `state.json`iin.
+
+GitHubin `schedule:`-lohko on jätetty päälle varajärjestelmäksi. Se ei
+maksa mitään ja pelastaa jos Cloudflare on nurin; päällekkäiset ajot
+hoitaa workflown `concurrency`-ryhmä.
+
+## Tarkistus käsin
+
+Telegramiin `/tarkista` (tai `/check`) käynnistää Klippivahdin heti
+odottamatta seuraavaa ajastettua ajoa. Käsin pyydetty ajo vastaa myös
+silloin kun mitään ei löytynyt, jotta hiljaisuus ei ole monitulkintaista.
+Ajastettu ajo pysyy hiljaisena kuten ennenkin.
 
 ## Nollaus
 
@@ -179,5 +220,6 @@ laskurit säilyvät, koska ne ovat erillisessä `creators.json`-tiedostossa.
 - **Telegramin 50 MB raja.** Bot API ei ota vastaan tätä suurempaa
   tiedostoa. Rajaus yrittää tiukempaa pakkausta kerran; jos sekään ei
   riitä, video jää vain Actions-artifaktiksi.
-- **Ajastuksen tarkkuus.** GitHubin cron voi viivästyä ruuhkassa.
-  Klipit tulevat kyllä perille, mutta ei sekunnin tarkkuudella.
+- **Ajastuksen tarkkuus.** Cloudflaren cron laukeaa luotettavasti, mutta
+  itse ajo käynnistyy ja asentaa riippuvuudet ~50 s ennen kuin ilmoitus
+  voi lähteä. Ilmoitus ei siis tule sekunnin tarkkuudella.
