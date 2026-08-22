@@ -1,5 +1,17 @@
 /**
- * Telegram-webhook -> GitHub repository_dispatch.
+ * Telegram-webhook -> GitHub repository_dispatch, seka Klippivahdin ajastin.
+ *
+ * Worker tekee kaksi asiaa:
+ *   1. fetch()     Telegramin nappi- ja vastausviestit -> "Rajaa klippi"
+ *   2. scheduled() cron-trigger 10 min valein -> "Klippivahti"
+ *
+ * Kohta 2 on olemassa siksi, etta GitHubin oma cron ei laukea luvatusti.
+ * Mitattu 26.7.-22.8.2026 valilta (719 ajoa): luvattu 10 minuutin cron
+ * toteutui mediaanilta 42,7 min valein, p90 109 min, pisin katkos 6 h.
+ * Ajot eivat viivastyneet vaan jaivat kokonaan laukeamatta (jonotusaika
+ * created_at -> run_started_at oli aina 0 s).
+ * Cloudflaren cron laukeaa luotettavasti, joten se ajaa saman workflown
+ * repository_dispatchilla. GitHubin schedule-lohko jaa varajarjestelmaksi.
  *
  * Klippi-ilmoituksessa on kolme nappia: [Zoomattu], [Koko kuva] ja
  * [Lataa klippi] (klippi sellaisenaan, ilman rajausta). Napin
@@ -23,6 +35,9 @@ const KICK_CLIP_RE = /https?:\/\/kick\.com\/[A-Za-z0-9_.-]+\/clips\/[A-Za-z0-9_-
 const TWITCH_CLIP_RE = /https?:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\/\S+/;
 
 const MODEL_NAMES = { "1": "zoomattu", "2": "koko kuva", "3": "lataus" };
+
+// Klippitarkistuksen kaynnistys kasin, odottamatta seuraavaa cronia.
+const CHECK_COMMANDS = new Set(["/tarkista", "/check"]);
 
 // Malli 3 ei rajaa mitään, joten "Rajataan" olisi siitä harhaanjohtavaa.
 function busyLabel(model) {
@@ -63,7 +78,29 @@ export default {
     }
     return handleReply(env, update.message || update.edited_message);
   },
+
+  // Cron-trigger (wrangler.toml [triggers]). Kaynnistaa Klippivahdin.
+  async scheduled(controller, env, ctx) {
+    const okDispatch = await dispatchWithRetry(env, "check_clips", {
+      source: "cloudflare-cron",
+    });
+    if (!okDispatch) {
+      // Ei ilmoiteta Telegramiin: yksi menetetty tikki tarkoittaa 10 min
+      // lisaviivetta, ei rikkinaista putkea, ja GitHubin oma schedule on
+      // yha paalla. Halytys joka tikista olisi pahempi kuin vika.
+      console.log("cron: dispatch epäonnistui kahdesti, ohitetaan tämä tikki");
+    }
+  },
 };
+
+// Yhden tikin menettaminen on turha hinta ohimenevasta 5xx:sta, joten
+// yritetaan kerran uudelleen. Enempaa ei kannata: seuraava tikki on
+// 10 min paassa.
+async function dispatchWithRetry(env, eventType, payload) {
+  if (await dispatch(env, eventType, payload)) return true;
+  await new Promise((r) => setTimeout(r, 2000));
+  return dispatch(env, eventType, payload);
+}
 
 // ---------------------------------------------------------------------------
 // Napit
@@ -104,7 +141,7 @@ async function handleButton(env, query) {
     return ok();
   }
 
-  const dispatched = await dispatch(env, {
+  const dispatched = await dispatch(env, "process_clip", {
     clip_url: kick[0],
     model,
     message_id: msg.message_id,
@@ -136,6 +173,25 @@ async function handleReply(env, msg) {
   // Vain sallitusta chatista. Muut jätetään huomiotta hiljaisesti.
   if (String(msg.chat?.id) !== String(env.ALLOWED_CHAT_ID)) return ok();
 
+  // Ryhmissä Telegram liittää komentoon botin nimen: "/tarkista@zlipperbot".
+  const command = msg.text.trim().split(/\s+/)[0].split("@")[0].toLowerCase();
+  if (CHECK_COMMANDS.has(command)) {
+    // report_empty: ajastettu ajo on hiljainen kun mitaan ei loydy, mutta
+    // kasin pyydetty ei voi olla — muuten et tieda menikö komento perille.
+    const started = await dispatch(env, "check_clips", {
+      source: "telegram",
+      report_empty: "1",
+    });
+    await reply(
+      env,
+      msg,
+      started
+        ? "Tarkistetaan klipit nyt. Kerron tuloksen kummin päin tahansa."
+        : "GitHubin käynnistys epäonnistui. Katso Workerin loki."
+    );
+    return ok();
+  }
+
   const model = msg.text.trim();
   if (!MODEL_NAMES[model]) return ok();
 
@@ -161,7 +217,7 @@ async function handleReply(env, msg) {
   // enää päivitä. Vaihdetaan napit vain jos niitä on.
   const hasButtons = Boolean(source.reply_markup);
 
-  const dispatched = await dispatch(env, {
+  const dispatched = await dispatch(env, "process_clip", {
     clip_url: kick[0],
     model,
     message_id: msg.message_id,
@@ -194,7 +250,7 @@ function statusKeyboard(label) {
   return { inline_keyboard: [[{ text: label, callback_data: "noop" }]] };
 }
 
-async function dispatch(env, payload) {
+async function dispatch(env, eventType, payload) {
   const url = `https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`;
   const r = await fetch(url, {
     method: "POST",
@@ -204,10 +260,10 @@ async function dispatch(env, payload) {
       "Content-Type": "application/json",
       "User-Agent": "zlipper-webhook",
     },
-    body: JSON.stringify({ event_type: "process_clip", client_payload: payload }),
+    body: JSON.stringify({ event_type: eventType, client_payload: payload }),
   });
   if (r.status !== 204) {
-    console.log("repository_dispatch epäonnistui", r.status, await r.text());
+    console.log(`repository_dispatch ${eventType} epäonnistui`, r.status, await r.text());
     return false;
   }
   return true;
