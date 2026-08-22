@@ -2117,7 +2117,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M07X72NX7W8AEZAVCZ5RRBW4",
       "clip_01M07XDE4KQYZTNNBJ26TQRD1N",
       "clip_01M07YQB3M4463EXDM3G6XJ6MG",
       "clip_01M080ZS7W4H0HRD2GBRXKES0X",
@@ -2416,7 +2415,8 @@
       "clip_01M0K5R8JRX82QXZJ4J5FJ7DRC",
       "clip_01M0K5ZSJ57BH9T341BENXXGRT",
       "clip_01M0K69A1CDMXBE8R4F5FXQQVW",
-      "clip_01M0K6DSYPKV39XRZ2WYH3F8NG"
+      "clip_01M0K6DSYPKV39XRZ2WYH3F8NG",
+      "clip_01M0M76WBE03N9M7HZJ9HPB51C"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -2651,7 +2651,8 @@
       "clip_01M0JS0QX4NHXH0PD0QDFJ93MB",
       "clip_01M0K7AKYZM5356BJF79Y0FBKM",
       "clip_01M0M0VQYJDRNNY0PFYMN7JKCA",
-      "clip_01M0M2DZFD6A28N5PNP8JHFSCJ"
+      "clip_01M0M2DZFD6A28N5PNP8JHFSCJ",
+      "clip_01M0M652PKR0QW43GJNCDEW3R8"
     ],
     "heikrisse": [
       "clip_01KXYCZHFTAFQ3HH4Z7PKP05PZ",
@@ -3923,7 +3924,7 @@
   },
   "heartbeat": {
     "last": "2026-08-22T01:47:34Z",
-    "clips_since": 5
+    "clips_since": 7
   },
   "silent": {
     "twitch:skotti": {
@@ -3975,7 +3976,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-21T22:36:53Z",
+      "last_clip": "2026-08-22T07:55:29Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -3983,7 +3984,7 @@
       "alerted": false
     },
     "kick:pirkkislive": {
-      "last_clip": "2026-08-22T06:56:06Z",
+      "last_clip": "2026-08-22T07:55:34Z",
       "alerted": false
     },
     "kick:heikrisse": {
