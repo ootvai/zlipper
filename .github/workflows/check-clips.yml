@@ -35,6 +35,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # ILMAN TATA SAMAT KLIPIT ILMOITETAAN KAHDESTI.
+          #
+          # checkout hakee oletuksena github.sha:n, joka lukitaan ajon
+          # LUONTIHETKELLA — ei sita mika haarassa on kun checkout
+          # oikeasti suoritetaan. Kaksi lahekkain luotua ajoa saavat
+          # siis saman state.jsonin, vaikka concurrency ajaa ne
+          # perakkain ja ensimmainen ehtii committoida omansa valissa.
+          # Jalkimmainen nakee silloin jo ilmoitetut klipit uusina.
+          #
+          # Mitattu 22.8.2026 klo 20:50 UTC: ajot 20:50:24 (schedule) ja
+          # 20:50:57 (cloudflare-cron), molemmilla head_sha=a38fb2b.
+          # Jalkimmaisen job alkoi 20:51:13 eli 4 s edellisen paatyttya
+          # — concurrency toimi, checkout ei. Samat klipit lahtivat
+          # Telegramiin kahdesti.
+          #
+          # Haaran karki riittaa: "Tallenna tila" tekee joka tapauksessa
+          # oman fetch + reset --hard -kierroksensa ennen committia.
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
