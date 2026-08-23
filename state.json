@@ -2131,7 +2131,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M08FJWZDP6Z7J0TQS1AE4V67",
       "clip_01M08GAYMM01MWNANH3M4JYYYX",
       "clip_01M08H0ZCSYHQSAZD9MDYYCGHN",
       "clip_01M08HJSBS9DBR2621N3EFSWFN",
@@ -2430,7 +2429,8 @@
       "clip_01M0QDDDV604899VSES1DDG9NM",
       "clip_01M0QM1W204ER6V87CNHF2QYP4",
       "clip_01M0QVYCKYGWYQV947DKP64VC5",
-      "clip_01M0QXX1RBMVV2EMWA2GFA3NXX"
+      "clip_01M0QXX1RBMVV2EMWA2GFA3NXX",
+      "clip_01M0QZSPS3DHZ1126918Z361Q3"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3213,7 +3213,8 @@
       "clip_01M0J8TEVGVJGDAV3GM6F98JGR",
       "clip_01M0J8W0AJG2R3RXV78TJ7GPG3",
       "clip_01M0J8XP08H3SQC499RRT0HK3V",
-      "clip_01M0QVS3NGTBTQM4JY9YV34AE4"
+      "clip_01M0QVS3NGTBTQM4JY9YV34AE4",
+      "clip_01M0QZRGKHQ3Q523W7M0SQTNAP"
     ],
     "johtajanmatkassa": [
       "clip_01KZGHEZRQVP687NAX4RA67KHB",
@@ -3946,7 +3947,7 @@
   },
   "heartbeat": {
     "last": "2026-08-23T14:01:49Z",
-    "clips_since": 32
+    "clips_since": 34
   },
   "silent": {
     "twitch:skotti": {
@@ -3998,7 +3999,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-08-23T18:31:31Z",
+      "last_clip": "2026-08-23T19:01:00Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -4018,7 +4019,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-23T17:51:30Z",
+      "last_clip": "2026-08-23T19:01:13Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
