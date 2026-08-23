@@ -314,7 +314,8 @@
       "OptimisticThirstyAlmondBIRB-mzv4HDPGbVGQJYF5",
       "PeacefulGrotesqueMarrowANELE-iuZNAI7nSqCor9hk",
       "TenuousBoxySalamanderFailFish-Wjyq10Tzwuowu135",
-      "TenuousGorgeousYakinikuMau5-41rRWtSIgZ9XPiMX"
+      "TenuousGorgeousYakinikuMau5-41rRWtSIgZ9XPiMX",
+      "StrangePolishedRingKappa-Mysf-pP3sKyRoE0H"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -948,7 +949,6 @@
       "clip_01M0N8G8M3SP0RQV13GKT0MJY6"
     ],
     "aapo_olervo": [
-      "clip_01KYZDWSBQYE6X0J21CCY7TBNX",
       "clip_01KYZYMFH9K44KW3MBN0DD3SVF",
       "clip_01KZ0N4XKQCG8ERMH911XWZ4E5",
       "clip_01KZ0PKD7GT19YV8DSC2RW10ZQ",
@@ -1247,7 +1247,8 @@
       "clip_01M0QSVC1TYSGZSDW4C0RW435S",
       "clip_01M0QSW5G30DFZ4WWBCXJRFFDA",
       "clip_01M0QSZEKXGAG4AKH2D8GQ9JZY",
-      "clip_01M0QVSQC5G3SS5EHX6K9H56V5"
+      "clip_01M0QVSQC5G3SS5EHX6K9H56V5",
+      "clip_01M0QX0WQD5C9MQCW5E861059Y"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -3943,7 +3944,7 @@
   },
   "heartbeat": {
     "last": "2026-08-23T14:01:49Z",
-    "clips_since": 27
+    "clips_since": 29
   },
   "silent": {
     "twitch:skotti": {
@@ -3955,7 +3956,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-23T14:01:09Z",
+      "last_clip": "2026-08-23T18:11:06Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -3971,7 +3972,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-23T17:51:15Z",
+      "last_clip": "2026-08-23T18:11:14Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
