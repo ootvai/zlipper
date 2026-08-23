@@ -313,7 +313,8 @@
       "ImpossibleSourOtterPanicBasket-ovlmX-sqhZgykJgo",
       "OptimisticThirstyAlmondBIRB-mzv4HDPGbVGQJYF5",
       "PeacefulGrotesqueMarrowANELE-iuZNAI7nSqCor9hk",
-      "TenuousBoxySalamanderFailFish-Wjyq10Tzwuowu135"
+      "TenuousBoxySalamanderFailFish-Wjyq10Tzwuowu135",
+      "TenuousGorgeousYakinikuMau5-41rRWtSIgZ9XPiMX"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -3938,8 +3939,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-08-23T02:01:43Z",
-    "clips_since": 32
+    "last": "2026-08-23T14:01:49Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -3951,7 +3952,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-18T17:54:55Z",
+      "last_clip": "2026-08-23T14:01:09Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
