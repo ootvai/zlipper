@@ -1441,7 +1441,8 @@
       "clip_01KZYPGQXDXC8TE2CRXKVZJQWT",
       "clip_01KZYPGYD88BH2GTY78JW77B41",
       "clip_01KZYQ98Z3BE9PQWMY5S3HQB9V",
-      "clip_01M083X61DH8B5FQHAQVYY4GQQ"
+      "clip_01M083X61DH8B5FQHAQVYY4GQQ",
+      "clip_01M0T9NGPQV2PNRC6DVMBT81W7"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1566,7 +1567,6 @@
       "clip_01M0Q1MNWJAVJSWQD5N3ZEY73X"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZNTJ68PS1RHYY89QWWFZ196",
       "clip_01KZNTNYQAWQ7Y2AQFWQ3MX8ZZ",
       "clip_01KZNXNMAH0ED4BEXZ6GF0MPMC",
       "clip_01KZNXZ6BPKBQN7B6JH7W2TSZ9",
@@ -1865,7 +1865,8 @@
       "clip_01M0R7B9RC50GGM9PVK4GC1G20",
       "clip_01M0RA6BVJSRNZEWBZ2YB7R2NN",
       "clip_01M0SRHN9BXT1CCPJ7FT1JVWV9",
-      "clip_01M0T6NMS25WRK4YZY3YETMF6X"
+      "clip_01M0T6NMS25WRK4YZY3YETMF6X",
+      "clip_01M0T9N7NXYW5DMATKCN35JBZB"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3641,7 +3642,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KY53V1JYPEV6KRBQK14ZGN7D",
       "clip_01KY59ZJ8ETH0PRTS60C7TT8CH",
       "clip_01KY5A26SRZR5S9RAQVCW5V9TB",
       "clip_01KY5AQ3HM5DDJSD0XFFV79RZY",
@@ -3940,7 +3940,8 @@
       "clip_01M0GPRETMH15FDJ2730FS16QY",
       "clip_01M0SW9N6PYGJB1J7J8MHPCMTJ",
       "clip_01M0SZZJDWVK2SBTZ2GRECAM3T",
-      "clip_01M0T012F95W7QTFYZPCF3QZK1"
+      "clip_01M0T012F95W7QTFYZPCF3QZK1",
+      "clip_01M0T9FS8TASDQ0RZGZJSCY068"
     ]
   },
   "health": {
@@ -3955,7 +3956,7 @@
   },
   "heartbeat": {
     "last": "2026-08-24T14:01:55Z",
-    "clips_since": 15
+    "clips_since": 18
   },
   "silent": {
     "twitch:skotti": {
@@ -3987,15 +3988,15 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-17T15:11:04Z",
-      "alerted": true
+      "last_clip": "2026-08-24T16:29:43Z",
+      "alerted": false
     },
     "kick:shokkiofficial": {
       "last_clip": "2026-08-23T10:17:24Z",
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-24T15:41:27Z",
+      "last_clip": "2026-08-24T16:29:46Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -4043,7 +4044,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-24T13:41:33Z",
+      "last_clip": "2026-08-24T16:30:01Z",
       "alerted": false
     }
   }
