@@ -650,8 +650,6 @@
       "clip_01M0TBJTK4W5XJ1ZNSN1TGP5JX"
     ],
     "pact": [
-      "clip_01KYFPQK72JTJMS0JYXWSK7KSJ",
-      "clip_01KYFQ41FPR48BMQ72CF7MD79P",
       "clip_01KYFQ5ARJDHB87DM2GZ0Q2G4Z",
       "clip_01KYFQ77AZEMZX2KNGC98GJJWD",
       "clip_01KYFQA4AD18FEGYS37J4PTP15",
@@ -949,7 +947,9 @@
       "clip_01M0SZSY0FSXFR5DECP8ZBQD1G",
       "clip_01M0T0Q73XACRXM1KTW4142VGE",
       "clip_01M0T35MRNZ1RETP9APCZHRB13",
-      "clip_01M0T3SF0SRJAFQ98ZP79MGGHD"
+      "clip_01M0T3SF0SRJAFQ98ZP79MGGHD",
+      "clip_01M0TBW9SWDE331EVDDXJ909EV",
+      "clip_01M0TC0458FDN27MMVEP23T06H"
     ],
     "aapo_olervo": [
       "clip_01KZ4DXXXGQ32PMY3AZJSB8DZ8",
@@ -2564,7 +2564,8 @@
       "clip_01M0R8VBWKEJ86149Z6V8D7BN7",
       "clip_01M0T3B7VY9TNRQE8PA7K66FE2",
       "clip_01M0T4TMKDS1F8H9P6KYR79R74",
-      "clip_01M0TARTS4TTNNGDCZWDQVKSBK"
+      "clip_01M0TARTS4TTNNGDCZWDQVKSBK",
+      "clip_01M0TBTJVW57WDAS5DZBASFMXF"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3643,7 +3644,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KY5AQ3HM5DDJSD0XFFV79RZY",
       "clip_01KY5GWKQZ55JZQ464Y0HCPGQD",
       "clip_01KY7G1676JV1SER7NBJ4Q3YKE",
       "clip_01KY7G111051QJEERP1WD06HFH",
@@ -3942,7 +3942,8 @@
       "clip_01M0T012F95W7QTFYZPCF3QZK1",
       "clip_01M0T9FS8TASDQ0RZGZJSCY068",
       "clip_01M0T9QPQ8C39FWVDDT59DWDMW",
-      "clip_01M0TBRNXBWBT9HPNDAFV4VSK7"
+      "clip_01M0TBRNXBWBT9HPNDAFV4VSK7",
+      "clip_01M0TBTT3X0JKYJ60C0YS1KHQV"
     ]
   },
   "health": {
@@ -3957,7 +3958,7 @@
   },
   "heartbeat": {
     "last": "2026-08-24T14:01:55Z",
-    "clips_since": 22
+    "clips_since": 26
   },
   "silent": {
     "twitch:skotti": {
@@ -3981,7 +3982,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-24T14:51:13Z",
+      "last_clip": "2026-08-24T17:11:14Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4013,7 +4014,7 @@
       "alerted": false
     },
     "kick:sampef2": {
-      "last_clip": "2026-08-24T17:01:40Z",
+      "last_clip": "2026-08-24T17:11:26Z",
       "alerted": false
     },
     "kick:pirkkislive": {
@@ -4045,7 +4046,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-24T17:07:29Z",
+      "last_clip": "2026-08-24T17:11:36Z",
       "alerted": false
     }
   }
