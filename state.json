@@ -650,7 +650,6 @@
       "clip_01M0T0J4HJNW1NPZN5NBHK15YR"
     ],
     "pact": [
-      "clip_01KYFPH9P1SWSD6TP0DWJEFBPF",
       "clip_01KYFPHD4WNWVP327B7P37QHF2",
       "clip_01KYFPQK72JTJMS0JYXWSK7KSJ",
       "clip_01KYFQ41FPR48BMQ72CF7MD79P",
@@ -949,10 +948,10 @@
       "clip_01M0N8G8M3SP0RQV13GKT0MJY6",
       "clip_01M0R1WE6QRMPABCQVXHVWY769",
       "clip_01M0SZSY0FSXFR5DECP8ZBQD1G",
-      "clip_01M0T0Q73XACRXM1KTW4142VGE"
+      "clip_01M0T0Q73XACRXM1KTW4142VGE",
+      "clip_01M0T35MRNZ1RETP9APCZHRB13"
     ],
     "aapo_olervo": [
-      "clip_01KZ3SEE91WGDJ62QYPB9FC5R9",
       "clip_01KZ3SG1ASFY699VYK8C8X6NWZ",
       "clip_01KZ3SZ227XF44DMM7K45FEGFF",
       "clip_01KZ3T543CYR39547FEN113497",
@@ -1251,7 +1250,8 @@
       "clip_01M0T19ZEKGYQPMAY1JERQHAKJ",
       "clip_01M0T2D2YKE8K69SSN3XFZV6K8",
       "clip_01M0T2T83JC6343WQ6KFCA89A8",
-      "clip_01M0T2V6689VZ303HR9TD5SS7C"
+      "clip_01M0T2V6689VZ303HR9TD5SS7C",
+      "clip_01M0T36K45P9QMRCMQYAGMD210"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -2560,7 +2560,8 @@
       "clip_01M0QNP5VP2HPPET3F2N90VAQ2",
       "clip_01M0QVTQB73J5Q0KC8GC3KRJY8",
       "clip_01M0R58PAD2XF9YE2YJ1FWFR4S",
-      "clip_01M0R8VBWKEJ86149Z6V8D7BN7"
+      "clip_01M0R8VBWKEJ86149Z6V8D7BN7",
+      "clip_01M0T3B7VY9TNRQE8PA7K66FE2"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3953,7 +3954,7 @@
   },
   "heartbeat": {
     "last": "2026-08-24T14:01:55Z",
-    "clips_since": 4
+    "clips_since": 7
   },
   "silent": {
     "twitch:skotti": {
@@ -3977,11 +3978,11 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-24T14:01:14Z",
+      "last_clip": "2026-08-24T14:41:16Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-24T14:31:18Z",
+      "last_clip": "2026-08-24T14:41:19Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4009,7 +4010,7 @@
       "alerted": false
     },
     "kick:sampef2": {
-      "last_clip": "2026-08-23T21:41:33Z",
+      "last_clip": "2026-08-24T14:41:30Z",
       "alerted": false
     },
     "kick:pirkkislive": {
