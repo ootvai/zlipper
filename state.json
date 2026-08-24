@@ -650,12 +650,6 @@
       "clip_01M0TBJTK4W5XJ1ZNSN1TGP5JX"
     ],
     "pact": [
-      "clip_01KYFQ5ARJDHB87DM2GZ0Q2G4Z",
-      "clip_01KYFQ77AZEMZX2KNGC98GJJWD",
-      "clip_01KYFQA4AD18FEGYS37J4PTP15",
-      "clip_01KYFQF6ANF7C7PJ3YTS1JDGRS",
-      "clip_01KYFQFCKW2C40Q73PWCTW2T73",
-      "clip_01KYFQGB50DSVGP0PY3AVQJJT2",
       "clip_01KYFQMJ44V58Z8GW8YV1VMW2S",
       "clip_01KYJ5W7AWG5S1Y14QNHCGYQJY",
       "clip_01KYJD26S3EY94PZ38R6EY1QMQ",
@@ -949,7 +943,13 @@
       "clip_01M0T35MRNZ1RETP9APCZHRB13",
       "clip_01M0T3SF0SRJAFQ98ZP79MGGHD",
       "clip_01M0TBW9SWDE331EVDDXJ909EV",
-      "clip_01M0TC0458FDN27MMVEP23T06H"
+      "clip_01M0TC0458FDN27MMVEP23T06H",
+      "clip_01M0TC8WN9FCGDVMA3849QCG7H",
+      "clip_01M0TCB3QAAFZN9276Y9S8JAD6",
+      "clip_01M0TCBGX3JZNDHS8HAC8GYSQJ",
+      "clip_01M0TCCG133B3TVT945Z44WMM9",
+      "clip_01M0TCFA8Q9NA0VRYAZX79QYCN",
+      "clip_01M0TCFNG3BSP3VNXJKXKRB3SX"
     ],
     "aapo_olervo": [
       "clip_01KZ4DXXXGQ32PMY3AZJSB8DZ8",
@@ -1567,7 +1567,6 @@
       "clip_01M0Q1MNWJAVJSWQD5N3ZEY73X"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZNTNYQAWQ7Y2AQFWQ3MX8ZZ",
       "clip_01KZNXNMAH0ED4BEXZ6GF0MPMC",
       "clip_01KZNXZ6BPKBQN7B6JH7W2TSZ9",
       "clip_01KZP3GY4ZEHRH71V9A7RNXM4B",
@@ -1866,7 +1865,8 @@
       "clip_01M0RA6BVJSRNZEWBZ2YB7R2NN",
       "clip_01M0SRHN9BXT1CCPJ7FT1JVWV9",
       "clip_01M0T6NMS25WRK4YZY3YETMF6X",
-      "clip_01M0T9N7NXYW5DMATKCN35JBZB"
+      "clip_01M0T9N7NXYW5DMATKCN35JBZB",
+      "clip_01M0TC3WDXH4H60AY1PAAHFZ53"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -3958,7 +3958,7 @@
   },
   "heartbeat": {
     "last": "2026-08-24T14:01:55Z",
-    "clips_since": 26
+    "clips_since": 33
   },
   "silent": {
     "twitch:skotti": {
@@ -3982,7 +3982,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-24T17:11:14Z",
+      "last_clip": "2026-08-24T17:21:20Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -3998,7 +3998,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-24T16:29:46Z",
+      "last_clip": "2026-08-24T17:21:31Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
