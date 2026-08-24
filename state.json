@@ -952,9 +952,6 @@
       "clip_01M0R1WE6QRMPABCQVXHVWY769"
     ],
     "aapo_olervo": [
-      "clip_01KZ22W228Z926XD640JJ0VQ1V",
-      "clip_01KZ231WFDS99PNMJPETHV72WS",
-      "clip_01KZ28GBMS0T0XJ4FGE7KCP40P",
       "clip_01KZ290Z2QDM6MPZPE3GRCQ201",
       "clip_01KZ28SCY3R3R50PT6CSPVVKWK",
       "clip_01KZ2AWVXQ6YTDPEVWBVEJ3GS5",
@@ -1251,7 +1248,10 @@
       "clip_01M0STPZWAFCM5ESPMJN4GARW4",
       "clip_01M0STRGC6JJQ623ZZ7HEG0NWY",
       "clip_01M0SXV0C24GPXABRDZ2HATX0K",
-      "clip_01M0SY95PRE3SJG831C5MR5BPS"
+      "clip_01M0SY95PRE3SJG831C5MR5BPS",
+      "clip_01M0SZ0T5Y9YZRCCXQN1ETZXMQ",
+      "clip_01M0SZ0M5RJV1B81Y8WVG347WT",
+      "clip_01M0SZ67RJ50RM3ZZ1HWJMRG1B"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -3953,7 +3953,7 @@
   },
   "heartbeat": {
     "last": "2026-08-24T02:01:49Z",
-    "clips_since": 27
+    "clips_since": 30
   },
   "silent": {
     "twitch:skotti": {
@@ -3981,7 +3981,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-24T13:21:16Z",
+      "last_clip": "2026-08-24T13:31:18Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
