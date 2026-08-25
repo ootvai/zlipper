@@ -352,7 +352,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01KY7R2J4RA1CMGFD1N007VE8N",
       "clip_01KY7R7KXSDF1HFWACT89ZY84T",
       "clip_01KY7SGE68FZ4S5PWFANJ8SP2Y",
       "clip_01KY7WAX04K7XDJXRG0D0N25NS",
@@ -651,10 +650,10 @@
       "clip_01M0WXT6YVNQ2Y4EV9AM02AVFZ",
       "clip_01M0X0B7A2YAZQ2AXTJNZK0CRH",
       "clip_01M0X0F9F1JSD8NT9SKS40HPXA",
-      "clip_01M0X6F8AF4X0X7XKBQYY19WCP"
+      "clip_01M0X6F8AF4X0X7XKBQYY19WCP",
+      "clip_01M0XAQ56XZZ4KSWN8RC0D61XW"
     ],
     "pact": [
-      "clip_01KYT03K3NENN2TN1WRFESD054",
       "clip_01KYT08CP52CMWZ9JMJ1T6T7C4",
       "clip_01KYT0G53QVTM1KYEXFD745H2X",
       "clip_01KYT0M2ABQ6GMM9RAVM64E2MF",
@@ -953,7 +952,8 @@
       "clip_01M0X5KNGASDRX4017WGZW2ECP",
       "clip_01M0X6TQEB9K74CTC3PT3D55R1",
       "clip_01M0X9E3EJ8KRVNJ17NE63H83J",
-      "clip_01M0X9RQ290PEVQJM0418QJMBD"
+      "clip_01M0X9RQ290PEVQJM0418QJMBD",
+      "clip_01M0XAMDMJCPRYTVSWF4YRYYT2"
     ],
     "aapo_olervo": [
       "clip_01KZ7ASAG4ZM70YVYX08E6C67Z",
@@ -3981,7 +3981,7 @@
   },
   "heartbeat": {
     "last": "2026-08-25T14:11:54Z",
-    "clips_since": 52
+    "clips_since": 54
   },
   "silent": {
     "twitch:skotti": {
@@ -4001,11 +4001,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-25T19:41:10Z",
+      "last_clip": "2026-08-25T20:48:39Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-25T20:31:13Z",
+      "last_clip": "2026-08-25T20:48:41Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
