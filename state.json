@@ -284,7 +284,8 @@
       "WealthyFitBarracudaAliens-0Zagc24hobQ6uxx8",
       "SpikyAggressiveCodMau5-BpwTRQ-RSxRq920P",
       "SuperPlausibleWalletBrainSlug-t8kp1V_JozhpIETN",
-      "EnjoyableShyCiderShadyLulu-qdKMck1RJx9h4W_4"
+      "EnjoyableShyCiderShadyLulu-qdKMck1RJx9h4W_4",
+      "GenerousTrappedLampKappaRoss-xvFXuDuSsOW5e4Zc"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -3963,7 +3964,7 @@
   },
   "heartbeat": {
     "last": "2026-08-25T02:11:33Z",
-    "clips_since": 10
+    "clips_since": 11
   },
   "silent": {
     "twitch:skotti": {
@@ -3971,8 +3972,8 @@
       "alerted": false
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-08-17T16:39:59Z",
-      "alerted": true
+      "last_clip": "2026-08-25T14:01:13Z",
+      "alerted": false
     },
     "twitch:henksuliini": {
       "last_clip": "2026-08-25T04:01:14Z",
