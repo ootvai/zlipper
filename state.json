@@ -352,8 +352,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01KY7PXAK324EFEF0X8HS0PENY",
-      "clip_01KY7PZF1VBCZ3PPC17CESEC8R",
       "clip_01KY7R1RYBYHKF3XSX5AMCJ4A5",
       "clip_01KY7R2J4RA1CMGFD1N007VE8N",
       "clip_01KY7R7KXSDF1HFWACT89ZY84T",
@@ -651,10 +649,11 @@
       "clip_01M0V7CDH60R00KTSQ8Q2SB32A",
       "clip_01M0W0VJVSD5PVKXWMGR18503W",
       "clip_01M0WWEBTAW5C7H8PXMW2MCJJK",
-      "clip_01M0WXT6YVNQ2Y4EV9AM02AVFZ"
+      "clip_01M0WXT6YVNQ2Y4EV9AM02AVFZ",
+      "clip_01M0X0B7A2YAZQ2AXTJNZK0CRH",
+      "clip_01M0X0F9F1JSD8NT9SKS40HPXA"
     ],
     "pact": [
-      "clip_01KYQEMZZHY46YNSWV368XX7EW",
       "clip_01KYQFHEZSE6Q3CFWSP46M3K5Z",
       "clip_01KYQFY9K2HE2TE2XPB68JSBDC",
       "clip_01KYQG3965HKQGKRC3TR34XTF3",
@@ -953,7 +952,8 @@
       "clip_01M0WZ6Z99JQES3J27A5BS4DJC",
       "clip_01M0WZB5Z0AD3JB83YBYPMMSBE",
       "clip_01M0WZMGV44CEB4FFVQWQ4YMKF",
-      "clip_01M0WZWXG95FMXQF065MAZ924P"
+      "clip_01M0WZWXG95FMXQF065MAZ924P",
+      "clip_01M0X0A1N9DG4MRY04A2ZDV6PG"
     ],
     "aapo_olervo": [
       "clip_01KZ73GZQFJF450QSG3D7CJTJB",
@@ -3242,7 +3242,8 @@
       "clip_01M0WRAHWRK7FG9JE9VA7BKHQP",
       "clip_01M0WXJ17EB57V8HH8KTJ31QZJ",
       "clip_01M0WXNTCN3A94V484V81A8X91",
-      "clip_01M0WYTMKWF3C35JTEWTHX0G17"
+      "clip_01M0WYTMKWF3C35JTEWTHX0G17",
+      "clip_01M0X0AX02RK8728470MPP931D"
     ],
     "johtajanmatkassa": [
       "clip_01KZK6G366S6XRZXFBCN59FX1R",
@@ -3976,7 +3977,7 @@
   },
   "heartbeat": {
     "last": "2026-08-25T14:11:54Z",
-    "clips_since": 30
+    "clips_since": 34
   },
   "silent": {
     "twitch:skotti": {
@@ -3996,11 +3997,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-25T17:01:10Z",
+      "last_clip": "2026-08-25T17:51:15Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-25T17:41:14Z",
+      "last_clip": "2026-08-25T17:51:18Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4048,7 +4049,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-25T17:21:42Z",
+      "last_clip": "2026-08-25T17:51:49Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
