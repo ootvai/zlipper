@@ -1446,7 +1446,8 @@
       "clip_01KZYPGYD88BH2GTY78JW77B41",
       "clip_01KZYQ98Z3BE9PQWMY5S3HQB9V",
       "clip_01M083X61DH8B5FQHAQVYY4GQQ",
-      "clip_01M0T9NGPQV2PNRC6DVMBT81W7"
+      "clip_01M0T9NGPQV2PNRC6DVMBT81W7",
+      "clip_01M0Z91DRYKXGKWSET1QK464JE"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -2103,7 +2104,8 @@
       "clip_01M0DDNX6WM4BVMMBJE6ECYR8Z",
       "clip_01M0YS128EGH1GT80814B9J9JC",
       "clip_01M0Z38X4FXH3FKZ2Y6EPMNWQ4",
-      "clip_01M0Z74ZH1Z6PSPTVD7BVJ8Q3Q"
+      "clip_01M0Z74ZH1Z6PSPTVD7BVJ8Q3Q",
+      "clip_01M0Z9G1HAKWB9C4MCNWE0H90T"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3670,8 +3672,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KY7G1676JV1SER7NBJ4Q3YKE",
-      "clip_01KY7G111051QJEERP1WD06HFH",
       "clip_01KY7G3BEVNW95JCCRGDMWQ5EW",
       "clip_01KY7GMXY6E0X7EV1SVFK5194W",
       "clip_01KY7M1XZT310EKZ81361DF0GH",
@@ -3969,7 +3969,9 @@
       "clip_01M0T9QPQ8C39FWVDDT59DWDMW",
       "clip_01M0TBRNXBWBT9HPNDAFV4VSK7",
       "clip_01M0TBTT3X0JKYJ60C0YS1KHQV",
-      "clip_01M0Z2GYFC9ABWCM08YRXSMSC0"
+      "clip_01M0Z2GYFC9ABWCM08YRXSMSC0",
+      "clip_01M0Z8VS3VTWRXYHN384ED7BC8",
+      "clip_01M0Z99300X7N3ANSG0K7X4QSE"
     ]
   },
   "health": {
@@ -3984,7 +3986,7 @@
   },
   "heartbeat": {
     "last": "2026-08-26T14:29:01Z",
-    "clips_since": 0
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -4016,7 +4018,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-24T16:29:43Z",
+      "last_clip": "2026-08-26T15:25:13Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4028,7 +4030,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-26T14:28:37Z",
+      "last_clip": "2026-08-26T15:25:21Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -4072,7 +4074,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-08-26T13:01:50Z",
+      "last_clip": "2026-08-26T15:25:45Z",
       "alerted": false
     }
   }
