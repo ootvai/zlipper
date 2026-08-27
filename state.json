@@ -323,7 +323,8 @@
       "GleamingGoodWalletPlanking-9R7Cl_KqLEh_ifUF",
       "RoundCallousEchidnaSmoocherZ-uMvVgJBkulYeItif",
       "ProudKindStrawberryNinjaGrumpy-3sjafDurGrqj5KuF",
-      "RelievedPreciousAlpacaPraiseIt-j5akCA-eVYy-4eJX"
+      "RelievedPreciousAlpacaPraiseIt-j5akCA-eVYy-4eJX",
+      "BlitheSuaveOkapiFUNgineer-YF-q5ZWnmxKxrh9R"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -656,7 +657,6 @@
       "clip_01M10P220HBX5R4GRHES03Q7QV"
     ],
     "pact": [
-      "clip_01KYT16G2N7M0DXYGHGKB2CB8C",
       "clip_01KYT1D41S41KPR9VSAN0YACAH",
       "clip_01KYT1HHZGFHCK5FJCH64R4TPV",
       "clip_01KYT1QZJNMJA22GYBN1SH06ZF",
@@ -955,7 +955,8 @@
       "clip_01M0ZT4ZDT67CQGTWHP3SXRVF0",
       "clip_01M0ZTH2ADNP547GV0YCX1Z61V",
       "clip_01M1009MNMF354J55QNNWA1Q2E",
-      "clip_01M100CGMPRXD9RFFS23AFM0JH"
+      "clip_01M100CGMPRXD9RFFS23AFM0JH",
+      "clip_01M12C5J0RHQ7JSVQMQWCCBN7T"
     ],
     "aapo_olervo": [
       "clip_01KZ9SY89KQYZWRN3QYBQE0PPK",
@@ -4016,7 +4017,7 @@
   },
   "heartbeat": {
     "last": "2026-08-27T14:41:02Z",
-    "clips_since": 17
+    "clips_since": 19
   },
   "silent": {
     "twitch:skotti": {
@@ -4028,7 +4029,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-27T18:40:42Z",
+      "last_clip": "2026-08-27T19:50:39Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4040,7 +4041,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-26T21:51:16Z",
+      "last_clip": "2026-08-27T19:50:43Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
