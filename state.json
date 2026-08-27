@@ -3277,7 +3277,8 @@
       "clip_01M0WYTMKWF3C35JTEWTHX0G17",
       "clip_01M0X0AX02RK8728470MPP931D",
       "clip_01M0X1THDJAXQY7E5HE9AHTHPQ",
-      "clip_01M0X2F0763TGHJEJCK4QSX5EV"
+      "clip_01M0X2F0763TGHJEJCK4QSX5EV",
+      "clip_01M11ZSPFS0DCGZYB7P9WR0MWJ"
     ],
     "johtajanmatkassa": [
       "clip_01KZKAWBWTN4ZWS4T1P4AS1GFP",
@@ -4011,7 +4012,7 @@
   },
   "heartbeat": {
     "last": "2026-08-27T14:41:02Z",
-    "clips_since": 4
+    "clips_since": 5
   },
   "silent": {
     "twitch:skotti": {
@@ -4083,7 +4084,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-25T18:21:28Z",
+      "last_clip": "2026-08-27T16:11:12Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
