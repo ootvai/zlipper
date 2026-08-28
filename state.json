@@ -355,8 +355,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01KZ3N73VN2B9YCER82NHA6GNJ",
-      "clip_01KZ3R3PFKHV96XP9XC6C02CHH",
       "clip_01KZ3TMVGJJXMWQQ191WXEYQ57",
       "clip_01KZ3TPA076E3Z4W7XN8ZS58QD",
       "clip_01KZ420MCM5AZ8SH2HSWW1XBNQ",
@@ -654,7 +652,9 @@
       "clip_01M12TQWNVH6P7R21HE51EPWPT",
       "clip_01M12VJHM0WQMWPBGF5D4R1ZTS",
       "clip_01M12WBY149JC4N101VPXPHD2P",
-      "clip_01M12WEYW0MM7PVPXFRRGQ4KF7"
+      "clip_01M12WEYW0MM7PVPXFRRGQ4KF7",
+      "clip_01M1404YH5V4Z6AW5XNW1AF5TW",
+      "clip_01M1408NWFDS7XKZP96YRZNVH9"
     ],
     "pact": [
       "clip_01KYT1D41S41KPR9VSAN0YACAH",
@@ -4017,7 +4017,7 @@
   },
   "heartbeat": {
     "last": "2026-08-28T02:41:14Z",
-    "clips_since": 4
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4037,7 +4037,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-28T00:40:40Z",
+      "last_clip": "2026-08-28T11:00:42Z",
       "alerted": false
     },
     "kick:pact": {
