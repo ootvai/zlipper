@@ -1501,7 +1501,10 @@
       "clip_01M16WMV81TYY5H4GJEXBKPE75",
       "clip_01M16X0P5EBQ653FK57QD0RK3B",
       "clip_01M16XD2W6EFJQ5Q1TJNSHQBWC",
-      "clip_01M16Y5WCE07MDJCKXB1X59SKJ"
+      "clip_01M16Y5WCE07MDJCKXB1X59SKJ",
+      "clip_01M16YXWCFXRG997TQKCM54GSF",
+      "clip_01M16YYJZ17VR02784CA0WGW7C",
+      "clip_01M16Z91X709TW22KH7S2B3VC4"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3337,7 +3340,6 @@
       "clip_01M14JSMCXGE0BGDK879R33XSF"
     ],
     "johtajanmatkassa": [
-      "clip_01KZKK9N34TV424HFZ3SH7RN07",
       "clip_01KZKKDFSE3S4A8T7EXRXQ7MN7",
       "clip_01KZKKMV9Z7TA9PBAHVPF19J3Q",
       "clip_01KZKKQ0EY6S51JQCS3W0Z4QTM",
@@ -3636,7 +3638,8 @@
       "clip_01M16F6EFK7DN43FKPK5218JXA",
       "clip_01M16FCGNW404J0RQ52059TVRJ",
       "clip_01M16FQ9T4DSE5855D1A2ZSGNV",
-      "clip_01M16FVC7V3WAW0DK62QXH00AS"
+      "clip_01M16FVC7V3WAW0DK62QXH00AS",
+      "clip_01M16Z392C3817Z5C8KT8F5GR1"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4069,7 +4072,7 @@
   },
   "heartbeat": {
     "last": "2026-08-29T02:51:16Z",
-    "clips_since": 47
+    "clips_since": 51
   },
   "silent": {
     "twitch:skotti": {
@@ -4101,7 +4104,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-29T14:20:45Z",
+      "last_clip": "2026-08-29T14:40:52Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4145,7 +4148,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-29T10:11:10Z",
+      "last_clip": "2026-08-29T14:41:18Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
