@@ -959,8 +959,6 @@
       "clip_01M19EZEMN76FTZEKSGCP5Z96P"
     ],
     "aapo_olervo": [
-      "clip_01KZEC8R9NNQ0T8XB250GDN0GJ",
-      "clip_01KZEMX8G56AARYYNQMC9WX8FP",
       "clip_01KZER4861SAWYVBTQ3T9HXE2M",
       "clip_01KZFPNT52CFEVAHRAQTVSR58Q",
       "clip_01KZFPSTN4D9XGRTZNERR1VP5T",
@@ -1258,7 +1256,9 @@
       "clip_01M18N808TM5ZNX70WKB50KQEZ",
       "clip_01M18NYQZ4WYAXJDFH4X0SENMH",
       "clip_01M19B9D7NNEHTWFZ94KNPFHCE",
-      "clip_01M19J0KQRWRF7SFJAXW05KJHP"
+      "clip_01M19J0KQRWRF7SFJAXW05KJHP",
+      "clip_01M19PC9C4B9F8HFXM4ER7HPG7",
+      "clip_01M19PCHRM1BAW2A6RCE0M0GGA"
     ],
     "jjuliaelisa": [
       "clip_01KYDRCMNHPFMH6PJ7GETW9360",
@@ -1526,7 +1526,8 @@
       "clip_01M19E38P943R50J9G21QM329Y",
       "clip_01M19E99MQBGGRSRTX9M4RBN0D",
       "clip_01M19EE64QXPVVGW9XH752WXPW",
-      "clip_01M19MWWV0J1VSBEX524H2VHTW"
+      "clip_01M19MWWV0J1VSBEX524H2VHTW",
+      "clip_01M19P56Y38T3J7YR8WWPT1YJV"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3367,7 +3368,6 @@
       "clip_01M17AVG9DSER18G02ACNR0N7D"
     ],
     "johtajanmatkassa": [
-      "clip_01KZM2ZQK2K00085F6QH9TX17A",
       "clip_01KZM4360956JRRZCQR4T1A3BM",
       "clip_01KZM453X676PZ46JJXY4N6E2G",
       "clip_01KZM4JS92BXCKX26024WES42F",
@@ -3666,7 +3666,8 @@
       "clip_01M1950ZZCQR5WJVX8DDBF311P",
       "clip_01M195EF1CSCTH2GPQQ1QXM80Y",
       "clip_01M1978Q70R95V5N4QR4XCVMFG",
-      "clip_01M19MJ76GX18X92VBKX5W5DXQ"
+      "clip_01M19MJ76GX18X92VBKX5W5DXQ",
+      "clip_01M19NXGNK6V9T97T9X2T46YAB"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4099,7 +4100,7 @@
   },
   "heartbeat": {
     "last": "2026-08-30T15:01:36Z",
-    "clips_since": 2
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4127,11 +4128,11 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-08-30T14:50:55Z",
+      "last_clip": "2026-08-30T16:01:04Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-30T15:40:59Z",
+      "last_clip": "2026-08-30T16:01:05Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4175,7 +4176,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-30T15:31:26Z",
+      "last_clip": "2026-08-30T16:01:20Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
