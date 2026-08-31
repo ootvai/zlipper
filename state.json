@@ -1544,7 +1544,8 @@
       "clip_01M1ACDQAFEQZAQ7MF53586C79",
       "clip_01M1ADN860ZS5NZW5E3SFXD8DH",
       "clip_01M1B8VN5S1H3YH74GPJ7C3VF7",
-      "clip_01M1BCYYF6GYDXB92JK91AACTJ"
+      "clip_01M1BCYYF6GYDXB92JK91AACTJ",
+      "clip_01M1BEJPJZRE7JHS5Y8AMQC7W1"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4118,7 +4119,7 @@
   },
   "heartbeat": {
     "last": "2026-08-31T03:11:21Z",
-    "clips_since": 6
+    "clips_since": 7
   },
   "silent": {
     "twitch:skotti": {
@@ -4150,7 +4151,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-08-31T08:00:48Z",
+      "last_clip": "2026-08-31T08:30:46Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
