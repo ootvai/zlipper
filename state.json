@@ -356,8 +356,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01KZDJH2W79AZG0ZEQQZNHR4AG",
-      "clip_01KZDJHWK7DJTJP0YYC82MVDAF",
       "clip_01KZDY1FM90JNTSGG53RF20J4K",
       "clip_01KZEEGXQJ69D47NF2TF194TET",
       "clip_01KZER0JPY93VPSK92KJWW3HCQ",
@@ -655,12 +653,11 @@
       "clip_01M1AD186A8PYRBKFMV5KG0G9D",
       "clip_01M1CJAMRG75WV021Z3H9AY9SM",
       "clip_01M1CJAHMF8QAVW5E1MDH4SRNP",
-      "clip_01M1CJRSVVD7BSFBCZBJ2SBY09"
+      "clip_01M1CJRSVVD7BSFBCZBJ2SBY09",
+      "clip_01M1CKA3HZ6C7BRE0ABH3CRZM7",
+      "clip_01M1CKMYGCCXVTS0Z7YM9D8YR3"
     ],
     "pact": [
-      "clip_01KZ1SV1E83P2RFSD5FJMH6TYY",
-      "clip_01KZ1SZW7DA9E712891AT62AEK",
-      "clip_01KZ20399BAS2DKWYDTW3DED77",
       "clip_01KZ223HTF2A732XGHXDHNJ85E",
       "clip_01KZ25FB5QF8P8GT7MZCBEJSMG",
       "clip_01KZ25MY0JH6R509PH708T0QZ5",
@@ -957,7 +954,10 @@
       "clip_01M1CH3FZ0KBF5P8SZV0ZXP2DK",
       "clip_01M1CJ3JRC7KDBBMN1SYMJW7VC",
       "clip_01M1CJGWATYVGHEYYDHXE7AENK",
-      "clip_01M1CJQ1N041SYE1QPDS3VHWK3"
+      "clip_01M1CJQ1N041SYE1QPDS3VHWK3",
+      "clip_01M1CK4QRSDETB93AM01K78QV8",
+      "clip_01M1CK7NWGYD41KH6YXH25F3QV",
+      "clip_01M1CKCNAQVSENGV4F5TSGV4TZ"
     ],
     "aapo_olervo": [
       "clip_01KZFPNT52CFEVAHRAQTVSR58Q",
@@ -2241,7 +2241,8 @@
       "clip_01M1CJW1K6A0K97KC5NQ0JGCXA",
       "clip_01M1CJX996Z15CH8Z70KDYR8R6",
       "clip_01M1CJW3JSTVY69M7SMYVGRWAY",
-      "clip_01M1CK19SQW8V8E1RSCA1JSFJK"
+      "clip_01M1CK19SQW8V8E1RSCA1JSFJK",
+      "clip_01M1CK6WVZ0KR42V5H8K22XHGT"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3425,10 +3426,11 @@
       "clip_01M1CHZXW3K7AFHTYHZWGSSBZS",
       "clip_01M1CJEGFFQ9CP03BWAPXZ6BYQ",
       "clip_01M1CJT1CD5XX1EVTQRV3YFFMT",
-      "clip_01M1CJZB0JZ6QA30Q8KPV9W7AA"
+      "clip_01M1CJZB0JZ6QA30Q8KPV9W7AA",
+      "clip_01M1CK71MSQXWVS0M12A2KHTWM",
+      "clip_01M1CKBW8VPPDFFVP5P788VYH6"
     ],
     "johtajanmatkassa": [
-      "clip_01KZM7QE6XK12QE7PRK5R3QGTE",
       "clip_01KZM8496CXBBKWRRA6DVGVG79",
       "clip_01KZN87RSMB5MRGM17YQXQXGA5",
       "clip_01KZN8AZM6NNAZD6HNW20RPB7M",
@@ -3727,7 +3729,8 @@
       "clip_01M1BQX26ENDDC6CDMK2T0FVKP",
       "clip_01M1BR5Z9JQR6E42HKTXBC0EFT",
       "clip_01M1BXD3P60GVVEBDHN7A5B6E6",
-      "clip_01M1CHGM12RAMN1YR5F55SQJKN"
+      "clip_01M1CHGM12RAMN1YR5F55SQJKN",
+      "clip_01M1CKNZYQS960C4D4MVS840PK"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4161,7 +4164,7 @@
   },
   "heartbeat": {
     "last": "2026-08-31T15:11:30Z",
-    "clips_since": 49
+    "clips_since": 58
   },
   "silent": {
     "twitch:skotti": {
@@ -4181,11 +4184,11 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-08-31T19:00:43Z",
+      "last_clip": "2026-08-31T19:10:44Z",
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-08-31T19:00:44Z",
+      "last_clip": "2026-08-31T19:10:48Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4205,7 +4208,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-31T19:00:56Z",
+      "last_clip": "2026-08-31T19:10:57Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -4233,11 +4236,11 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-31T19:01:06Z",
+      "last_clip": "2026-08-31T19:11:11Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-31T18:41:07Z",
+      "last_clip": "2026-08-31T19:11:13Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
