@@ -2215,7 +2215,10 @@
       "clip_01M11R2KEG3K6ADAF2V95C5K0V",
       "clip_01M16KKJE6XQVRFRGE3EQ2338K",
       "clip_01M171QSEB7S44VVFHXV4X7M9X",
-      "clip_01M1BX8R7AM1FE8RBX71DX0Q0P"
+      "clip_01M1BX8R7AM1FE8RBX71DX0Q0P",
+      "clip_01M1BX90SAA06JQA59CCVAJB5K",
+      "clip_01M1BXHD9BF9X5BFDV3MGF7YX1",
+      "clip_01M1BXP412ERXZ6CFX00323Y5Y"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3389,7 +3392,6 @@
       "clip_01M17AVG9DSER18G02ACNR0N7D"
     ],
     "johtajanmatkassa": [
-      "clip_01KZM6JWKFFT2H0412N600Q63T",
       "clip_01KZM75EM2R32QECC5E9GA0559",
       "clip_01KZM7QE6XK12QE7PRK5R3QGTE",
       "clip_01KZM8496CXBBKWRRA6DVGVG79",
@@ -3688,7 +3690,8 @@
       "clip_01M1BQHHR5QN7BFVF3MJFEFCHQ",
       "clip_01M1BQRMT5SXK96F8EH606ZTW3",
       "clip_01M1BQX26ENDDC6CDMK2T0FVKP",
-      "clip_01M1BR5Z9JQR6E42HKTXBC0EFT"
+      "clip_01M1BR5Z9JQR6E42HKTXBC0EFT",
+      "clip_01M1BXD3P60GVVEBDHN7A5B6E6"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4121,7 +4124,7 @@
   },
   "heartbeat": {
     "last": "2026-08-31T03:11:21Z",
-    "clips_since": 16
+    "clips_since": 20
   },
   "silent": {
     "twitch:skotti": {
@@ -4165,7 +4168,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-31T12:40:50Z",
+      "last_clip": "2026-08-31T12:51:01Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -4197,7 +4200,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-08-31T11:11:14Z",
+      "last_clip": "2026-08-31T12:51:18Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
