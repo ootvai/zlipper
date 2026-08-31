@@ -4125,7 +4125,7 @@
   "silent": {
     "twitch:skotti": {
       "last_clip": "2026-08-24T11:21:10Z",
-      "alerted": false
+      "alerted": true
     },
     "twitch:saarelansaara": {
       "last_clip": "2026-08-25T14:01:13Z",
