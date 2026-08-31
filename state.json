@@ -1672,7 +1672,6 @@
       "clip_01M16YMBNHMJK32Z6KBY92J2SR"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZSGMW5R2CXQHN8SNSEAB6S9",
       "clip_01KZSJ49CRNW529RMBCJTVE8PD",
       "clip_01KZSK8MWCZW73AE8G0WRTQF3B",
       "clip_01KZSNF1K2S4SN9CRQFC1G81PX",
@@ -1971,7 +1970,8 @@
       "clip_01M0ZTGW343PSNZY2T3FE7YBZQ",
       "clip_01M1AX3MBYC00B8Z281CX1PH38",
       "clip_01M1AXR7V3ZJ6C6QKB0ED05NJT",
-      "clip_01M1B0E83AN0PFP0EW58Q0RDS8"
+      "clip_01M1B0E83AN0PFP0EW58Q0RDS8",
+      "clip_01M1C3QAC7BWWGTW1A0EZMJKY3"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -2224,7 +2224,8 @@
       "clip_01M1C0D32S11MXKD7ECZYEQNS9",
       "clip_01M1C0K5K8MP74B3Y4G9ERT0R1",
       "clip_01M1C0V06GPAGA55TN7CVT56EP",
-      "clip_01M1C2ACBR2QHD5CVXPB3XH245"
+      "clip_01M1C2ACBR2QHD5CVXPB3XH245",
+      "clip_01M1C40TQG5G30RY2ZBPVWWBMZ"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -4130,7 +4131,7 @@
   },
   "heartbeat": {
     "last": "2026-08-31T03:11:21Z",
-    "clips_since": 26
+    "clips_since": 28
   },
   "silent": {
     "twitch:skotti": {
@@ -4170,11 +4171,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-31T04:21:01Z",
+      "last_clip": "2026-08-31T14:40:55Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-08-31T14:10:59Z",
+      "last_clip": "2026-08-31T14:40:58Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
