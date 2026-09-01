@@ -352,7 +352,8 @@
       "TentativeCreativeDogAliens-sg3C0OJ3Sr34kd49",
       "GlutenFreeExquisiteSowYouDontSay-hjz1rMs2N1OwPnZw",
       "SoftRelentlessDaikonSoonerLater-qeYS4ZJZBBpyxJU7",
-      "AmericanFuriousCroquetteChocolateRain-j8zyKcC-t5JcbmGO"
+      "AmericanFuriousCroquetteChocolateRain-j8zyKcC-t5JcbmGO",
+      "PricklyTacitMeatloafUWot-OYD0XttmpuBG5MAJ"
     ]
   },
   "kick": {
@@ -4190,7 +4191,7 @@
   },
   "heartbeat": {
     "last": "2026-09-01T15:31:10Z",
-    "clips_since": 3
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -4206,7 +4207,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-09-01T14:50:46Z",
+      "last_clip": "2026-09-01T16:10:52Z",
       "alerted": false
     },
     "kick:pullis": {
