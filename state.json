@@ -353,7 +353,8 @@
       "GlutenFreeExquisiteSowYouDontSay-hjz1rMs2N1OwPnZw",
       "SoftRelentlessDaikonSoonerLater-qeYS4ZJZBBpyxJU7",
       "AmericanFuriousCroquetteChocolateRain-j8zyKcC-t5JcbmGO",
-      "PricklyTacitMeatloafUWot-OYD0XttmpuBG5MAJ"
+      "PricklyTacitMeatloafUWot-OYD0XttmpuBG5MAJ",
+      "HeartlessToughGoldfishSuperVinlin-MiZ_VdT18nEzfGW8"
     ]
   },
   "kick": {
@@ -1264,7 +1265,6 @@
       "clip_01M1ET78YYVK4Y1ZSVKVSF8TQ3"
     ],
     "jjuliaelisa": [
-      "clip_01KYDT2199YK8GKA4HVMM8TKYM",
       "clip_01KYDT3X3NF1YJR44CKM4HFPR9",
       "clip_01KYDXT5A11GJZJ3M9XB22QGRT",
       "clip_01KYEEF16XZXGNAYSPXXDYCWC4",
@@ -1563,7 +1563,8 @@
       "clip_01M1EF7ZX12TJXHM0BJMQJZD0R",
       "clip_01M1EJWB8ZV955VC7MZKAFTP7Z",
       "clip_01M1EK0EV9MMBQFBSVXGR55Y3Z",
-      "clip_01M1ERKN6170X7KR85K916X6W5"
+      "clip_01M1ERKN6170X7KR85K916X6W5",
+      "clip_01M1EX4XR6XK0XY7V3KZN14NRR"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4191,7 +4192,7 @@
   },
   "heartbeat": {
     "last": "2026-09-01T15:31:10Z",
-    "clips_since": 4
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4207,7 +4208,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-09-01T16:10:52Z",
+      "last_clip": "2026-09-01T16:40:42Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -4223,7 +4224,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-01T15:20:49Z",
+      "last_clip": "2026-09-01T16:40:48Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
