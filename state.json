@@ -354,7 +354,8 @@
       "SoftRelentlessDaikonSoonerLater-qeYS4ZJZBBpyxJU7",
       "AmericanFuriousCroquetteChocolateRain-j8zyKcC-t5JcbmGO",
       "PricklyTacitMeatloafUWot-OYD0XttmpuBG5MAJ",
-      "HeartlessToughGoldfishSuperVinlin-MiZ_VdT18nEzfGW8"
+      "HeartlessToughGoldfishSuperVinlin-MiZ_VdT18nEzfGW8",
+      "GrossCleanGoblinPoooound-8E7D1S_cdqOVXAQv"
     ]
   },
   "kick": {
@@ -3456,11 +3457,10 @@
       "clip_01M1CJT1CD5XX1EVTQRV3YFFMT",
       "clip_01M1CJZB0JZ6QA30Q8KPV9W7AA",
       "clip_01M1CK71MSQXWVS0M12A2KHTWM",
-      "clip_01M1CKBW8VPPDFFVP5P788VYH6"
+      "clip_01M1CKBW8VPPDFFVP5P788VYH6",
+      "clip_01M1EY0SQJTTAYCQZWRPHE22XX"
     ],
     "johtajanmatkassa": [
-      "clip_01KZN87RSMB5MRGM17YQXQXGA5",
-      "clip_01KZN8AZM6NNAZD6HNW20RPB7M",
       "clip_01KZNBHB43DYWYAYRVGKZEQXX5",
       "clip_01KZNFVBMENVZE8MBKYBATC91C",
       "clip_01KZNHF5NKHKN2K3NKRYZDJ10Y",
@@ -3758,7 +3758,9 @@
       "clip_01M1BXD3P60GVVEBDHN7A5B6E6",
       "clip_01M1CHGM12RAMN1YR5F55SQJKN",
       "clip_01M1CKNZYQS960C4D4MVS840PK",
-      "clip_01M1EKPGE6DG3H9YGXN3RA1DX0"
+      "clip_01M1EKPGE6DG3H9YGXN3RA1DX0",
+      "clip_01M1EXZJYZZ79RE76BTTF20KB8",
+      "clip_01M1EY0PQQPSJZQ0HXNVCEM6G1"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4192,7 +4194,7 @@
   },
   "heartbeat": {
     "last": "2026-09-01T15:31:10Z",
-    "clips_since": 6
+    "clips_since": 10
   },
   "silent": {
     "twitch:skotti": {
@@ -4208,7 +4210,7 @@
       "alerted": false
     },
     "twitch:s11r1sof1a": {
-      "last_clip": "2026-09-01T16:40:42Z",
+      "last_clip": "2026-09-01T16:50:41Z",
       "alerted": false
     },
     "kick:pullis": {
@@ -4264,11 +4266,11 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-08-31T19:11:11Z",
+      "last_clip": "2026-09-01T16:51:09Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-01T13:51:13Z",
+      "last_clip": "2026-09-01T16:51:12Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
