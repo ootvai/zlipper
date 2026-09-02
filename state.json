@@ -1266,7 +1266,6 @@
       "clip_01M1EZ3VF2HGM1SVS194KNND7J"
     ],
     "jjuliaelisa": [
-      "clip_01KYEMJ4J2SHCH3FMSXG1NKSJR",
       "clip_01KYEMHB3FG2EC7K6S7SXD1H9Z",
       "clip_01KYEPFNWC90B0GYPHQFE0A2H2",
       "clip_01KYEZNFQXEZ7P3802VKJFFRYR",
@@ -1565,7 +1564,8 @@
       "clip_01M1GKT9B1QQRMEZB61TJBYPFE",
       "clip_01M1GM9Q418KGRJQJVE3XRAFVR",
       "clip_01M1GMZ3CBV0CGYNEXPFBNYC05",
-      "clip_01M1GN7KSRJ36QTHKG5B5CJZ0P"
+      "clip_01M1GN7KSRJ36QTHKG5B5CJZ0P",
+      "clip_01M1GNX61Y3A6T62ZJJ9276RWC"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4198,7 +4198,7 @@
   },
   "heartbeat": {
     "last": "2026-09-02T03:31:19Z",
-    "clips_since": 8
+    "clips_since": 9
   },
   "silent": {
     "twitch:skotti": {
@@ -4230,7 +4230,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-02T09:00:52Z",
+      "last_clip": "2026-09-02T09:10:47Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
