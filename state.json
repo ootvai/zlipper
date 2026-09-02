@@ -325,7 +325,8 @@
       "ProudKindStrawberryNinjaGrumpy-3sjafDurGrqj5KuF",
       "RelievedPreciousAlpacaPraiseIt-j5akCA-eVYy-4eJX",
       "BlitheSuaveOkapiFUNgineer-YF-q5ZWnmxKxrh9R",
-      "BillowingHeartlessCatSquadGoals-o2yOZf8eI13rVp4f"
+      "BillowingHeartlessCatSquadGoals-o2yOZf8eI13rVp4f",
+      "AlluringUnusualCrocodileAllenHuhu-I1RyDLEaSPWC030U"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -3471,7 +3472,6 @@
       "clip_01M1F2MMH1ZZVPPCK6TC10W2NJ"
     ],
     "johtajanmatkassa": [
-      "clip_01KZNSKCPWYHCJW8A61EWTPSKZ",
       "clip_01KZNW8G7RHNY82QR36T44PT9X",
       "clip_01KZNWAFDJ6Q1MEBQF8NWXA9FP",
       "clip_01KZNYNZV1HWMAFH7YBYNSTWJ2",
@@ -3770,7 +3770,8 @@
       "clip_01M1EY0PQQPSJZQ0HXNVCEM6G1",
       "clip_01M1F2DWSXZJB0EN0VZKHQZ45X",
       "clip_01M1F7GGQ2RG88VEJ8RR73WAVA",
-      "clip_01M1GCE0HP853ZTSNCT8RYXVXZ"
+      "clip_01M1GCE0HP853ZTSNCT8RYXVXZ",
+      "clip_01M1H9N8JGTQ5N4P07R17GMWD5"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4204,7 +4205,7 @@
   },
   "heartbeat": {
     "last": "2026-09-02T03:31:19Z",
-    "clips_since": 23
+    "clips_since": 25
   },
   "silent": {
     "twitch:skotti": {
@@ -4216,7 +4217,7 @@
       "alerted": true
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-08-31T16:00:41Z",
+      "last_clip": "2026-09-02T15:00:41Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4280,7 +4281,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-02T06:31:01Z",
+      "last_clip": "2026-09-02T15:01:02Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
