@@ -285,7 +285,8 @@
       "SpikyAggressiveCodMau5-BpwTRQ-RSxRq920P",
       "SuperPlausibleWalletBrainSlug-t8kp1V_JozhpIETN",
       "EnjoyableShyCiderShadyLulu-qdKMck1RJx9h4W_4",
-      "GenerousTrappedLampKappaRoss-xvFXuDuSsOW5e4Zc"
+      "GenerousTrappedLampKappaRoss-xvFXuDuSsOW5e4Zc",
+      "HumbleMotionlessCoyoteFloof-GV1YyZOvMctKSEml"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -4227,7 +4228,7 @@
   },
   "heartbeat": {
     "last": "2026-09-03T15:41:11Z",
-    "clips_since": 16
+    "clips_since": 17
   },
   "silent": {
     "twitch:skotti": {
@@ -4235,8 +4236,8 @@
       "alerted": true
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-08-25T14:01:13Z",
-      "alerted": true
+      "last_clip": "2026-09-03T18:30:40Z",
+      "alerted": false
     },
     "twitch:henksuliini": {
       "last_clip": "2026-09-03T15:50:41Z",
