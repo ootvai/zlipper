@@ -286,7 +286,8 @@
       "SuperPlausibleWalletBrainSlug-t8kp1V_JozhpIETN",
       "EnjoyableShyCiderShadyLulu-qdKMck1RJx9h4W_4",
       "GenerousTrappedLampKappaRoss-xvFXuDuSsOW5e4Zc",
-      "HumbleMotionlessCoyoteFloof-GV1YyZOvMctKSEml"
+      "HumbleMotionlessCoyoteFloof-GV1YyZOvMctKSEml",
+      "HedonisticVibrantCoyoteOSkomodo-mB6fucDEEJ164Bk3"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -3107,7 +3108,8 @@
       "clip_01M1KH9Z4Z3R1FYAH26D1TH35T",
       "clip_01M1KJ3YF2PGGR28GX38PZ9HQH",
       "clip_01M1KZR60SF7MBTSSWSKHF714A",
-      "clip_01M1M1G3RMBRD8A8YG23JWJ15Q"
+      "clip_01M1M1G3RMBRD8A8YG23JWJ15Q",
+      "clip_01M1M9G6VGSC7YXCDE6BWJBSFT"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -4228,7 +4230,7 @@
   },
   "heartbeat": {
     "last": "2026-09-03T15:41:11Z",
-    "clips_since": 17
+    "clips_since": 19
   },
   "silent": {
     "twitch:skotti": {
@@ -4236,7 +4238,7 @@
       "alerted": true
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-09-03T18:30:40Z",
+      "last_clip": "2026-09-03T18:50:40Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -4292,7 +4294,7 @@
       "alerted": true
     },
     "kick:heikrisse": {
-      "last_clip": "2026-09-03T16:31:02Z",
+      "last_clip": "2026-09-03T18:51:08Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
