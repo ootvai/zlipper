@@ -329,7 +329,8 @@
       "BlitheSuaveOkapiFUNgineer-YF-q5ZWnmxKxrh9R",
       "BillowingHeartlessCatSquadGoals-o2yOZf8eI13rVp4f",
       "AlluringUnusualCrocodileAllenHuhu-I1RyDLEaSPWC030U",
-      "ChillyGrossGullBCouch-jD7FfwvJGGH3RU7D"
+      "ChillyGrossGullBCouch-jD7FfwvJGGH3RU7D",
+      "BelovedSnappyTigerHassanChop-LqmA7wEHMEFZ0IGG"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -1273,7 +1274,6 @@
       "clip_01M1PQ9XW7FVPNKDJDHPQHQ50R"
     ],
     "jjuliaelisa": [
-      "clip_01KWXDCRS9MR8EZKDGK52R7EAY",
       "clip_01KX4KR1D9A9DF91JQR6RNSVYZ",
       "clip_01KX51T1R92XD216038ZTPMTN1",
       "clip_01KX523AADH6D26FWS5CFGT92K",
@@ -1572,7 +1572,8 @@
       "clip_01M1KNWZ9HNDECSESGEX759R2J",
       "clip_01M1M78PMAGKJ2CC50T7XFA1TE",
       "clip_01M1MN18AE5G3R36VYZZJ4FTXG",
-      "clip_01M1NZSK1123T2JKF6SFW55BQW"
+      "clip_01M1NZSK1123T2JKF6SFW55BQW",
+      "clip_01M1PSB60XP3EJAV0EHPG6NKXV"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4239,7 +4240,7 @@
   },
   "heartbeat": {
     "last": "2026-09-04T15:41:31Z",
-    "clips_since": 1
+    "clips_since": 3
   },
   "silent": {
     "twitch:skotti": {
@@ -4251,7 +4252,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-03T15:50:41Z",
+      "last_clip": "2026-09-04T18:10:56Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4271,7 +4272,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-04T10:40:57Z",
+      "last_clip": "2026-09-04T18:11:06Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
