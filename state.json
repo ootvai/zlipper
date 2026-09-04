@@ -330,7 +330,8 @@
       "BillowingHeartlessCatSquadGoals-o2yOZf8eI13rVp4f",
       "AlluringUnusualCrocodileAllenHuhu-I1RyDLEaSPWC030U",
       "ChillyGrossGullBCouch-jD7FfwvJGGH3RU7D",
-      "BelovedSnappyTigerHassanChop-LqmA7wEHMEFZ0IGG"
+      "BelovedSnappyTigerHassanChop-LqmA7wEHMEFZ0IGG",
+      "ExcitedPiliableCocoaStrawBeary-sgXJUVSNEYL_0Bj6"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -972,7 +973,6 @@
       "clip_01M1M5WPBKQYAW71F4JQA94N2J"
     ],
     "aapo_olervo": [
-      "clip_01KZRQCT241EBN7ESZA3DMH6A8",
       "clip_01KZS94BDH1255P10WHVGJMQ3B",
       "clip_01KZVPX9QWXRRT0K3P7SP7BKP5",
       "clip_01KZWZWWQPTAZMDVF4KS568S96",
@@ -1271,10 +1271,10 @@
       "clip_01M1PEM92VSHYYVB43RFANEE4V",
       "clip_01M1PQ9XW7FVPNKDJDHPQHQ50R",
       "clip_01M1PTDT9KPHMN6A9SHKNCA03X",
-      "clip_01M1PVQD2KCXBPTV9754FT6KG9"
+      "clip_01M1PVQD2KCXBPTV9754FT6KG9",
+      "clip_01M1PW69T74ADQ146E375PN4TX"
     ],
     "jjuliaelisa": [
-      "clip_01KX4KR1D9A9DF91JQR6RNSVYZ",
       "clip_01KX51T1R92XD216038ZTPMTN1",
       "clip_01KX523AADH6D26FWS5CFGT92K",
       "clip_01KX6A4GNB9KDB7MX1YPHNT2KY",
@@ -1573,7 +1573,8 @@
       "clip_01M1M78PMAGKJ2CC50T7XFA1TE",
       "clip_01M1MN18AE5G3R36VYZZJ4FTXG",
       "clip_01M1NZSK1123T2JKF6SFW55BQW",
-      "clip_01M1PSB60XP3EJAV0EHPG6NKXV"
+      "clip_01M1PSB60XP3EJAV0EHPG6NKXV",
+      "clip_01M1PWK45N9DWAJE5V9CZRRWRS"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3119,7 +3120,8 @@
       "clip_01M1NK3YS9TS2CNA8X64E8X41W",
       "clip_01M1NNX30K9FFZ5V64D7QS4W22",
       "clip_01M1P8Y17RCZGXF6XVN10KBYKG",
-      "clip_01M1PCA8S80XAT79E0YK92XE4R"
+      "clip_01M1PCA8S80XAT79E0YK92XE4R",
+      "clip_01M1PWD763EWXNCVJPCJ55M181"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -4240,7 +4242,7 @@
   },
   "heartbeat": {
     "last": "2026-09-04T15:41:31Z",
-    "clips_since": 10
+    "clips_since": 14
   },
   "silent": {
     "twitch:skotti": {
@@ -4252,7 +4254,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-04T18:10:56Z",
+      "last_clip": "2026-09-04T19:01:55Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4268,11 +4270,11 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-04T18:51:05Z",
+      "last_clip": "2026-09-04T19:02:00Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-04T18:11:06Z",
+      "last_clip": "2026-09-04T19:02:03Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4304,7 +4306,7 @@
       "alerted": true
     },
     "kick:heikrisse": {
-      "last_clip": "2026-09-04T14:21:22Z",
+      "last_clip": "2026-09-04T19:02:13Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
