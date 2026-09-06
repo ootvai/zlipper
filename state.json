@@ -4236,7 +4236,7 @@
   },
   "health": {
     "twitch": {
-      "fails": 1,
+      "fails": 0,
       "alerted": false
     },
     "kick": {
