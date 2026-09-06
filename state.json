@@ -331,7 +331,8 @@
       "AlluringUnusualCrocodileAllenHuhu-I1RyDLEaSPWC030U",
       "ChillyGrossGullBCouch-jD7FfwvJGGH3RU7D",
       "BelovedSnappyTigerHassanChop-LqmA7wEHMEFZ0IGG",
-      "ExcitedPiliableCocoaStrawBeary-sgXJUVSNEYL_0Bj6"
+      "ExcitedPiliableCocoaStrawBeary-sgXJUVSNEYL_0Bj6",
+      "AmericanMiniatureCocoaKreygasm-4O6m8-oWspYQNPZH"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -672,8 +673,6 @@
       "clip_01M1SY82YEVKZABNX54PJTM14M"
     ],
     "pact": [
-      "clip_01KZ6X29ZXGD9BDF1QT90HP51G",
-      "clip_01KZ6XBWKFEBFA1FGBZ7FXJTTG",
       "clip_01KZ6XNKVVVG8YJVM3EDSDQ0WS",
       "clip_01KZ6XNBNCRNTFVSBF30YM7DM4",
       "clip_01KZ6XQ70ARCXXJVAZWDXZQSMA",
@@ -971,7 +970,9 @@
       "clip_01M1TXW7MQ1GKH4Y4907A2XC43",
       "clip_01M1TYA40M25JBHRA1QDF9S93G",
       "clip_01M1TYD4PDT613G80YAXKD6ZCF",
-      "clip_01M1TYKDD8H9WE1999HDYAHMZY"
+      "clip_01M1TYKDD8H9WE1999HDYAHMZY",
+      "clip_01M1TYTKPGGJF6SWZ4WQZQCFQ8",
+      "clip_01M1TZ3YEDMWE98GB4SV3M2131"
     ],
     "aapo_olervo": [
       "clip_01KZZSEW2Y0TV2SR94CTXT4QX0",
@@ -4244,7 +4245,7 @@
   },
   "heartbeat": {
     "last": "2026-09-06T03:51:53Z",
-    "clips_since": 6
+    "clips_since": 9
   },
   "silent": {
     "twitch:skotti": {
@@ -4256,7 +4257,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-04T19:01:55Z",
+      "last_clip": "2026-09-06T09:01:16Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4268,7 +4269,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-06T08:51:27Z",
+      "last_clip": "2026-09-06T09:01:23Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
