@@ -1702,7 +1702,6 @@
       "clip_01M16YMBNHMJK32Z6KBY92J2SR"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZSJ49CRNW529RMBCJTVE8PD",
       "clip_01KZSK8MWCZW73AE8G0WRTQF3B",
       "clip_01KZSNF1K2S4SN9CRQFC1G81PX",
       "clip_01KZVGYA3R2CEWF8Q4PR68NDK2",
@@ -2001,7 +2000,8 @@
       "clip_01M1AX3MBYC00B8Z281CX1PH38",
       "clip_01M1AXR7V3ZJ6C6QKB0ED05NJT",
       "clip_01M1B0E83AN0PFP0EW58Q0RDS8",
-      "clip_01M1C3QAC7BWWGTW1A0EZMJKY3"
+      "clip_01M1C3QAC7BWWGTW1A0EZMJKY3",
+      "clip_01M1V34ERT0Y5ZK2CV9AAFH04R"
     ],
     "pottukoiralive": [
       "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
@@ -4245,7 +4245,7 @@
   },
   "heartbeat": {
     "last": "2026-09-06T03:51:53Z",
-    "clips_since": 11
+    "clips_since": 12
   },
   "silent": {
     "twitch:skotti": {
@@ -4285,7 +4285,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-08-31T14:40:55Z",
+      "last_clip": "2026-09-06T10:11:28Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
