@@ -1277,9 +1277,6 @@
       "clip_01M1RZC6YE150X0JRNM3XHKFJS"
     ],
     "jjuliaelisa": [
-      "clip_01KYAWR8Y9S15CFJ5QWRSTCW4Y",
-      "clip_01KYAX9ZPCF73TWHZ9QTACV157",
-      "clip_01KYAYR15E65XQB9Q9EWM02THA",
       "clip_01KYAYT5D3FVZDWE5GMAEZSMEM",
       "clip_01KYB07RZ14SZ5KSVB0CHYXAET",
       "clip_01KYB0PZ7W47A0D7K1Q9P8PYJN",
@@ -1576,7 +1573,10 @@
       "clip_01M1VMYZW9QTMTFC4QWWSCWY2N",
       "clip_01M1VN2V9TEEC6CNPJJZ72H3C1",
       "clip_01M1VPJ5RMQFT9Y2NGY7P6CVF3",
-      "clip_01M1VQ32QDK5SGBW7Y9F93W9BN"
+      "clip_01M1VQ32QDK5SGBW7Y9F93W9BN",
+      "clip_01M1VQFE1B6XSW4KJT6G37Y097",
+      "clip_01M1VQ5V57BK25FDCGGK0R15NT",
+      "clip_01M1VQHZVFGPH3T4ENZ7D32Q1D"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3512,7 +3512,6 @@
       "clip_01M1F2MMH1ZZVPPCK6TC10W2NJ"
     ],
     "johtajanmatkassa": [
-      "clip_01KZVR5CYHR2E98A8THXPVNWR7",
       "clip_01KZW1BDW6H1J2V60139J8PXZQ",
       "clip_01KZX0M1BJA0H89AZR3JG69PSJ",
       "clip_01KZX0RYER34JJV5HKEQQ0QP7X",
@@ -3811,7 +3810,8 @@
       "clip_01M1S9AKM192Y8EDAEBBZN4SEZ",
       "clip_01M1S9HGVEDN32VRWNFKWMTE6K",
       "clip_01M1SG9744320J6KGEVC3WMSDX",
-      "clip_01M1VAC0GNTF69TDZAQ45S5N47"
+      "clip_01M1VAC0GNTF69TDZAQ45S5N47",
+      "clip_01M1VQ7Y4CNQ50JWNQVANM2AD3"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -3931,7 +3931,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZ4NCTQX4BJKNXHTDRX9YPWE",
       "clip_01KZ4VGBMSQRA5VR3QQXKA6MAA",
       "clip_01KZ5VQY29FQ3D3PNQ24CJJXB3",
       "clip_01KZ60C6J1DGPRQRJMTCD4875T",
@@ -4230,7 +4229,8 @@
       "clip_01M1VG37AREVCWFXM0RW5EQX17",
       "clip_01M1VHX787SJ67J2M9NGZCY40K",
       "clip_01M1VM6WK03R67AQ7J69K8SWZX",
-      "clip_01M1VM8R5K6CWRVMHCFR6767AK"
+      "clip_01M1VM8R5K6CWRVMHCFR6767AK",
+      "clip_01M1VQPYBR3VQM4TSWHYMJSXYG"
     ]
   },
   "health": {
@@ -4245,7 +4245,7 @@
   },
   "heartbeat": {
     "last": "2026-09-06T15:51:54Z",
-    "clips_since": 1
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4277,7 +4277,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-06T16:01:30Z",
+      "last_clip": "2026-09-06T16:11:27Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4321,7 +4321,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-06T12:21:49Z",
+      "last_clip": "2026-09-06T16:11:52Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -4333,7 +4333,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-06T15:11:57Z",
+      "last_clip": "2026-09-06T16:11:57Z",
       "alerted": false
     }
   }
