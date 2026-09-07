@@ -288,7 +288,8 @@
       "GenerousTrappedLampKappaRoss-xvFXuDuSsOW5e4Zc",
       "HumbleMotionlessCoyoteFloof-GV1YyZOvMctKSEml",
       "HedonisticVibrantCoyoteOSkomodo-mB6fucDEEJ164Bk3",
-      "FragileGrotesqueWallabyChefFrank-2YFnnOg6nsfdnn_x"
+      "FragileGrotesqueWallabyChefFrank-2YFnnOg6nsfdnn_x",
+      "ArborealMoldyOkapiPeoplesChamp-41HkgIyVvBacjgj8"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -2009,7 +2010,6 @@
       "clip_01M1VCEKBTP23F981YNRNGNA7N"
     ],
     "pottukoiralive": [
-      "clip_01KY0P02KVT0SNGFGPA4BXB73X",
       "clip_01KY0R9DCAXENWDFF81R64GK3C",
       "clip_01KY0TSKVRPT1Q953P5R5P439V",
       "clip_01KY0TTR0E6BATHH5KQK0G7C16",
@@ -2308,7 +2308,8 @@
       "clip_01M1YH455CZJVKD8J0SJM38Q5N",
       "clip_01M1YJG69EXKR9MXC0F5PDHDZN",
       "clip_01M1YJGW9ZGQPCJDPT3Z5T608T",
-      "clip_01M1YJPH7NJ6NX2CM64RZ8BXVR"
+      "clip_01M1YJPH7NJ6NX2CM64RZ8BXVR",
+      "clip_01M1YJWWPJMPKX5PJFEX14J465"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -4259,7 +4260,7 @@
   },
   "heartbeat": {
     "last": "2026-09-07T16:01:43Z",
-    "clips_since": 28
+    "clips_since": 30
   },
   "silent": {
     "twitch:skotti": {
@@ -4267,7 +4268,7 @@
       "alerted": true
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-09-07T17:41:03Z",
+      "last_clip": "2026-09-07T18:51:06Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -4303,7 +4304,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-09-07T18:41:23Z",
+      "last_clip": "2026-09-07T18:51:18Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
