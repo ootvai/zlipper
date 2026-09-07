@@ -333,7 +333,10 @@
       "BelovedSnappyTigerHassanChop-LqmA7wEHMEFZ0IGG",
       "ExcitedPiliableCocoaStrawBeary-sgXJUVSNEYL_0Bj6",
       "AmericanMiniatureCocoaKreygasm-4O6m8-oWspYQNPZH",
-      "SleepyTastyLEDOMGScoots-Ctk77NKEKSaBUdjq"
+      "SleepyTastyLEDOMGScoots-Ctk77NKEKSaBUdjq",
+      "SecretiveRacyDugongCorgiDerp-LGVC-Ubl0IQ9WjPn",
+      "DarlingResoluteDadRlyTho-y-4gcSrdyo0sBKok",
+      "PatientObeseJellyfishNotLikeThis-9uSwn-hpsSnO1XQ6"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -372,10 +375,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01M063TWYV6ZJT530XATZTCFGG",
-      "clip_01M063MCJWN00AF9XMJ0C0SZ68",
-      "clip_01M0647PTK8HAWWJ4QXG7Z9BRB",
-      "clip_01M064THR0Y0CEAMWTG9HVD8ZT",
       "clip_01M0651YXR3JGE3HWBESGVZ26S",
       "clip_01M065DWXKTH01A528D1RD2173",
       "clip_01M065RVAEFNA3HKXH93ZGYVVG",
@@ -671,7 +670,11 @@
       "clip_01M1Y5VGD23F1NRA2JKMGT8ZAJ",
       "clip_01M1Y80AHZG7B2HE07YG11XW19",
       "clip_01M1YAHCTD19E3GKKPDD0V6ADW",
-      "clip_01M1YC3044VFM844GXHRJCH5K2"
+      "clip_01M1YC3044VFM844GXHRJCH5K2",
+      "clip_01M1YCRP60Q97T0Z4RZSRPSRV4",
+      "clip_01M1YCT0692G0HZ2CM0JR2N13A",
+      "clip_01M1YCWNVF93ECZYAVA49RWCWW",
+      "clip_01M1YCYHT8FVBQV288QFMMW06S"
     ],
     "pact": [
       "clip_01KZ6YVXCZG1HSBN1M4D7Z6GP7",
@@ -3939,9 +3942,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZ6MZHSES23Z77JPMYNVA4CF",
-      "clip_01KZ6Q1F928A0YGXR4GZ37CTV4",
-      "clip_01KZ6S3WE9VKFG62D5GNQK3P5F",
       "clip_01KZ73B49SPPX9AP9DZ1CEYWAH",
       "clip_01KZ8CVG0737E69ZFHS322M5AS",
       "clip_01KZ8G4ENKHXMVGCZHABNKV9KP",
@@ -4238,7 +4238,10 @@
       "clip_01M1Y6FPT11QHAZBQJN0DTERRW",
       "clip_01M1Y6FJ0HS3DHJST9FWZ7JNXH",
       "clip_01M1Y6HVVW3Z74KE31YP4YQNP1",
-      "clip_01M1YBRG7QHDMNJSV88YKPN731"
+      "clip_01M1YBRG7QHDMNJSV88YKPN731",
+      "clip_01M1YCVMMF45JD284KCXMVWY2B",
+      "clip_01M1YCTGJ6M9QA2D0016T3J67Z",
+      "clip_01M1YCXN1PW39BM3YYTPFZ7B9K"
     ]
   },
   "health": {
@@ -4253,7 +4256,7 @@
   },
   "heartbeat": {
     "last": "2026-09-07T16:01:43Z",
-    "clips_since": 4
+    "clips_since": 14
   },
   "silent": {
     "twitch:skotti": {
@@ -4265,7 +4268,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-07T16:51:01Z",
+      "last_clip": "2026-09-07T17:01:14Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4273,7 +4276,7 @@
       "alerted": false
     },
     "kick:pullis": {
-      "last_clip": "2026-09-07T16:51:04Z",
+      "last_clip": "2026-09-07T17:01:20Z",
       "alerted": false
     },
     "kick:pact": {
@@ -4341,7 +4344,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-07T16:41:28Z",
+      "last_clip": "2026-09-07T17:01:45Z",
       "alerted": false
     }
   }
