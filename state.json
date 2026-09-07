@@ -2009,9 +2009,6 @@
       "clip_01M1VCEKBTP23F981YNRNGNA7N"
     ],
     "pottukoiralive": [
-      "clip_01KY0M17YWSGQ3AR17FX3ACCZ8",
-      "clip_01KY0MCBTDJERX8ZP2TT17C85Q",
-      "clip_01KY0ME4HHYJFGBPBWM3GQSDP0",
       "clip_01KY0P02KVT0SNGFGPA4BXB73X",
       "clip_01KY0R9DCAXENWDFF81R64GK3C",
       "clip_01KY0TSKVRPT1Q953P5R5P439V",
@@ -2308,7 +2305,10 @@
       "clip_01M1XWKBJBKV75DDB6MVC6EG23",
       "clip_01M1XWTD8SEKF9WJK007J8VW67",
       "clip_01M1YD995NNZ50FESP80ECSMVP",
-      "clip_01M1YH455CZJVKD8J0SJM38Q5N"
+      "clip_01M1YH455CZJVKD8J0SJM38Q5N",
+      "clip_01M1YJG69EXKR9MXC0F5PDHDZN",
+      "clip_01M1YJGW9ZGQPCJDPT3Z5T608T",
+      "clip_01M1YJPH7NJ6NX2CM64RZ8BXVR"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -4259,7 +4259,7 @@
   },
   "heartbeat": {
     "last": "2026-09-07T16:01:43Z",
-    "clips_since": 25
+    "clips_since": 28
   },
   "silent": {
     "twitch:skotti": {
@@ -4303,7 +4303,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-09-07T18:21:23Z",
+      "last_clip": "2026-09-07T18:41:23Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
