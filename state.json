@@ -1285,7 +1285,6 @@
       "clip_01M20WRK1FAJJJ6KYW5M0YN40N"
     ],
     "jjuliaelisa": [
-      "clip_01KYCRGDDP5DE3TZZ14HM4ED4F",
       "clip_01KYD8CE3G1CRQ1GWJ8DEDPNSA",
       "clip_01KYD8WT7BY5RZ6BAYZDZXKPBE",
       "clip_01KYDHD3PXY1ZKF51XMYY95Q6H",
@@ -1584,7 +1583,8 @@
       "clip_01M20MQRMVH9NCGMZ3ZMFVGNYR",
       "clip_01M20N42ZZWERY3QQX44M6BD19",
       "clip_01M20W74SMN4Q820FRZB0T0XQB",
-      "clip_01M20WB7HPHY2N2ZSSXN2XQYKN"
+      "clip_01M20WB7HPHY2N2ZSSXN2XQYKN",
+      "clip_01M20XEJ5V89SVSJKBZCRTYT98"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1710,7 +1710,6 @@
       "clip_01M16YMBNHMJK32Z6KBY92J2SR"
     ],
     "kuhlmanvirallinen": [
-      "clip_01KZZZVEFE927354W2TVQTWYQB",
       "clip_01M004A98MTNCMHXKYYW5X3Z2V",
       "clip_01M0049B41DP7CS6X581J0Y4EQ",
       "clip_01M00JVA92GX57MMKMK7PFD2EX",
@@ -2009,7 +2008,8 @@
       "clip_01M20SVVKX6JWBSJYFJ4CCQP4R",
       "clip_01M20SV4VT7TENSS9Y59AR32RQ",
       "clip_01M20TRJGVMTZ321TDWZ7HNXZC",
-      "clip_01M20VF0XJRYMTMVGZP3W36BWW"
+      "clip_01M20VF0XJRYMTMVGZP3W36BWW",
+      "clip_01M20X6APR4V2CY7J9VHE8HX9C"
     ],
     "pottukoiralive": [
       "clip_01KY7QK98JPBKZY5WTTCASYSAD",
@@ -4263,7 +4263,7 @@
   },
   "heartbeat": {
     "last": "2026-09-08T16:11:20Z",
-    "clips_since": 2
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -4295,7 +4295,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-08T16:11:02Z",
+      "last_clip": "2026-09-08T16:31:00Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4303,7 +4303,7 @@
       "alerted": true
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-08T16:01:07Z",
+      "last_clip": "2026-09-08T16:31:05Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
