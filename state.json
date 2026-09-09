@@ -1289,7 +1289,6 @@
       "clip_01M23E70WWJN60Z8W8T9C3F47G"
     ],
     "jjuliaelisa": [
-      "clip_01KYMXD9M77PJWB2Z1FNQF29MW",
       "clip_01KYN0X5YXDKQ9KGAF4CRMEHRT",
       "clip_01KYN1B1KDY0J6FWF0GC07AEV2",
       "clip_01KYN1RQ78EHE6D539H00EEVA2",
@@ -1588,7 +1587,8 @@
       "clip_01M236DJBRGFWQFGA50VSDMP5H",
       "clip_01M23705G3QZCF5H4678BDQ87S",
       "clip_01M237G4KJ9YCWBY0WDWAAGRKF",
-      "clip_01M23BEQXZWM03T0KDMQXSW2FN"
+      "clip_01M23BEQXZWM03T0KDMQXSW2FN",
+      "clip_01M23EH1YSAB8GJTG0F8CMFEAD"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1715,7 +1715,6 @@
       "clip_01M22ZA7VZNTFKKF7QXQS6C9GR"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M03DCXHH1715JJPYEMWCA4XV",
       "clip_01M03DJP4975DGTPY9A55DT8GV",
       "clip_01M03EE89MC0VYFY2TPKVANMEP",
       "clip_01M03EM97NQW11VMQ87HJM3JTF",
@@ -2014,10 +2013,10 @@
       "clip_01M21JKEBCRGDWQMBJC1N8QP0C",
       "clip_01M21JM2R30K18C0W76CGM3DTE",
       "clip_01M21KAFJQ7REX7NVGHJBXS9W5",
-      "clip_01M21NHS3WD9BRT2HCY3DXKTFA"
+      "clip_01M21NHS3WD9BRT2HCY3DXKTFA",
+      "clip_01M23ESR859KJW4YSTJEZKBTA7"
     ],
     "pottukoiralive": [
-      "clip_01KX5P73BE1W9MWCC7H5177K13",
       "clip_01KX5PCGG2VT0M6JZFJJ5TJPWW",
       "clip_01KX6CNSKZ30DB97FAN76RD8ZD",
       "clip_01KX6CQRVB097QZG4WC5172YQV",
@@ -2316,7 +2315,8 @@
       "clip_01M22Z4YFBTEKT3Q5EWXK7PYWB",
       "clip_01M236JGVRMJBV7G7YCXD53PR8",
       "clip_01M238KM9VTDZ51QEY1BFGJQAM",
-      "clip_01M23DD2X1666TSNH8KR0PT5VG"
+      "clip_01M23DD2X1666TSNH8KR0PT5VG",
+      "clip_01M23EMVDRMSGBV2B9FREH8WXQ"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -4268,7 +4268,7 @@
   },
   "heartbeat": {
     "last": "2026-09-09T04:11:44Z",
-    "clips_since": 44
+    "clips_since": 47
   },
   "silent": {
     "twitch:skotti": {
@@ -4300,7 +4300,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-09T15:20:31Z",
+      "last_clip": "2026-09-09T16:10:28Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4308,11 +4308,11 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-08T23:31:39Z",
+      "last_clip": "2026-09-09T16:10:33Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-09-09T15:50:35Z",
+      "last_clip": "2026-09-09T16:10:36Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
