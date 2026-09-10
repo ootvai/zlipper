@@ -988,9 +988,6 @@
       "clip_01M23DYTY8672HHRGTQESSY5NY"
     ],
     "aapo_olervo": [
-      "clip_01M0D4R5E1EABGCN9H1A21W8TW",
-      "clip_01M0DBMRSCX4A6SFVCBHKYDS5E",
-      "clip_01M0F5QMFG2JCXCTKC0BF7QKXC",
       "clip_01M0FEQ9NHJ3CXN2DYAHZF0H0P",
       "clip_01M0FHMMZGRWM4BHSNMYMNM51H",
       "clip_01M0FPM7ED30NA04J7HR4N01BF",
@@ -1287,7 +1284,10 @@
       "clip_01M25DP9J6ATSZB8M2SRYA8DE3",
       "clip_01M25FXXNC0YVE2KVAPWMKXMKB",
       "clip_01M25NP7GGFTC7B6EFGM97TG1R",
-      "clip_01M25P4R1EK5E99FP7NJFQC5QK"
+      "clip_01M25P4R1EK5E99FP7NJFQC5QK",
+      "clip_01M25RES6GQJMY0EN8TSDC8F0A",
+      "clip_01M25RKDZZZ9KNJE9YQ118EAHN",
+      "clip_01M25RQ29JH0ZV3G7JS8NAPTTR"
     ],
     "jjuliaelisa": [
       "clip_01KYNC5WWGBWCE8Q6PQQVZJ8PY",
@@ -3969,7 +3969,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZ8M580AFWMDHYW1SD58MR66",
       "clip_01KZ8QM6XYHTZP8KAWC686X3M8",
       "clip_01KZ8VXCVXCP9MB6HEB3BPFE96",
       "clip_01KZ90JC2KAVG3WY22VSTZR5JN",
@@ -4268,7 +4267,8 @@
       "clip_01M25FZD448R7RJQYXGGX4Q6QX",
       "clip_01M25HCR6WCZJZ3VNPXEAF10MD",
       "clip_01M25HX298BZAWKNG9DB54E3NP",
-      "clip_01M25R2FGYPGW6Z6DFRM5FVT7Y"
+      "clip_01M25R2FGYPGW6Z6DFRM5FVT7Y",
+      "clip_01M25RE5GP2VHHXERAPPHFCQZ9"
     ]
   },
   "health": {
@@ -4283,7 +4283,7 @@
   },
   "heartbeat": {
     "last": "2026-09-10T04:21:28Z",
-    "clips_since": 25
+    "clips_since": 29
   },
   "silent": {
     "twitch:skotti": {
@@ -4311,7 +4311,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-10T13:01:17Z",
+      "last_clip": "2026-09-10T13:41:05Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4371,7 +4371,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-10T13:31:40Z",
+      "last_clip": "2026-09-10T13:41:37Z",
       "alerted": false
     }
   }
