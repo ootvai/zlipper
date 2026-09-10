@@ -3554,9 +3554,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M080WFJSMZBRXBAP3874WHVF",
-      "clip_01M0849BQESSZFQBPCEDZ760PR",
-      "clip_01M08961NM3PW7BS9RDES20G8D",
       "clip_01M08988YE4P942RY2D48E408Z",
       "clip_01M091YPD8RJ1QM2WJMCQS0VTF",
       "clip_01M09YKWX2SCYE9CC1NTYHKWGH",
@@ -3853,7 +3850,10 @@
       "clip_01M07HDPFKNR1KXJ1PTN5CK2E3",
       "clip_01M07QRSD1MX5A1FC0AGBKRD3P",
       "clip_01M07R9E54KDRCK814NP97G8WH",
-      "clip_01M07RZT0T5J7DFQNXG9FW63YD"
+      "clip_01M07RZT0T5J7DFQNXG9FW63YD",
+      "clip_01M07S2SMMS7CGW3GJ7C89HK0P",
+      "clip_01M07SDX6H4HFZ8DWK315XFGAD",
+      "clip_01M07X2694GH937DX3Y0RRP5BB"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4363,7 +4363,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-10T20:01:27Z",
+      "last_clip": "2026-09-10T20:11:23Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
