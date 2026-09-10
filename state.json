@@ -688,7 +688,6 @@
       "clip_01M21HKK3PE88VREE18DHDBDXB"
     ],
     "pact": [
-      "clip_01KZ743CTYAD39M5NZ714Z29MN",
       "clip_01KZ75QHC0WJ4EF7JV8P6JJFCM",
       "clip_01KZ82R3K906A1JTED8XMXBPE5",
       "clip_01KZ92CBCVR49YC3NGJR58073J",
@@ -987,12 +986,10 @@
       "clip_01M2665F6ZRKMEZV02AART69XM",
       "clip_01M266VH36V6RZRDF3NP4CKRR9",
       "clip_01M267T7ACHV99S9YK878V7ERD",
-      "clip_01M2687S5M03R9TJWD3KP3GP8K"
+      "clip_01M2687S5M03R9TJWD3KP3GP8K",
+      "clip_01M268BKJ7JZYMJ55J4HNCYR9M"
     ],
     "aapo_olervo": [
-      "clip_01M0FVE6QBKN2NHCDEH2GYZTYN",
-      "clip_01M0FYJR32WX0MFXCRVTRNHDQS",
-      "clip_01M0G0K67EPB54CN1GVVR7D3VA",
       "clip_01M0G15YTJWA39NA74PVYDRQ4A",
       "clip_01M0G1HP7NXSSFAWEQ7EYFJNRT",
       "clip_01M0G3PKBCJSPQYT2TPX40K6NK",
@@ -1289,10 +1286,12 @@
       "clip_01M25WWR3D16A4NJYQSTR1G7VH",
       "clip_01M25XC1BS0V95M5SN60K0QHHE",
       "clip_01M2665MQBMWM7PC38FF69EW3X",
-      "clip_01M26724PPJT880NHE6V64JYVQ"
+      "clip_01M26724PPJT880NHE6V64JYVQ",
+      "clip_01M268CZ6995DH3A0H5ZE712PE",
+      "clip_01M268JGSSF5C2D8ZDZC33XAR4",
+      "clip_01M268MWWRFBX1GEYRB8P3FHX5"
     ],
     "jjuliaelisa": [
-      "clip_01KYNCMP06XB5DMWPR0MG53KZD",
       "clip_01KYNE1AD26AV9XV2J0BJ8Q7QS",
       "clip_01KYNEVR3D9ACF7WBTB1P6TDMN",
       "clip_01KYQRA1GG768RRT0G5R9NECVX",
@@ -1591,7 +1590,8 @@
       "clip_01M2412HJ96P3WVTP4J21JS24Q",
       "clip_01M24H77M5AF8M1GKJA2VCA1H0",
       "clip_01M24MJR1J7J2SCTHG2D73QM58",
-      "clip_01M262RFMV56ZG8S3Y7B7Q8WPV"
+      "clip_01M262RFMV56ZG8S3Y7B7Q8WPV",
+      "clip_01M268QJ2HBP3T4NCE3KZ6BK1Z"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4287,7 +4287,7 @@
   },
   "heartbeat": {
     "last": "2026-09-10T16:31:37Z",
-    "clips_since": 14
+    "clips_since": 19
   },
   "silent": {
     "twitch:skotti": {
@@ -4311,15 +4311,15 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-10T18:11:11Z",
+      "last_clip": "2026-09-10T18:21:01Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-10T17:50:57Z",
+      "last_clip": "2026-09-10T18:21:07Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-10T16:41:00Z",
+      "last_clip": "2026-09-10T18:21:10Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
