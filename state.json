@@ -346,7 +346,8 @@
       "GiftedTangibleSlothRiPepperonis-C7dHawm1xkmGRgEa",
       "LongTastyNarwhalTTours-qgIsbInHB4GRAJ6R",
       "DeliciousNeighborlyCookieAllenHuhu-Gf2w3RWI1kULRkKh",
-      "EnchantingRespectfulPidgeonDAESuppy-fkIzwdBrLr-YccwJ"
+      "EnchantingRespectfulPidgeonDAESuppy-fkIzwdBrLr-YccwJ",
+      "GleamingShakingTomatoKappaRoss-hh_JIVkyarsoYDPd"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -687,7 +688,6 @@
       "clip_01M21HKK3PE88VREE18DHDBDXB"
     ],
     "pact": [
-      "clip_01KZ720XQFWQKXGNTWXEYP7VJW",
       "clip_01KZ71ZF7VEN3814YE8STED3NF",
       "clip_01KZ7335F60EA74692SD3TN1B9",
       "clip_01KZ73411HKP9YZ5WFW9VNM4K3",
@@ -986,7 +986,8 @@
       "clip_01M23DYTY8672HHRGTQESSY5NY",
       "clip_01M264HQDEKXHHP3PFTTY8D770",
       "clip_01M264QAWF6RYPN9G9P2K0SEQM",
-      "clip_01M26512MVPDAFYNQKH53NEP6G"
+      "clip_01M26512MVPDAFYNQKH53NEP6G",
+      "clip_01M265RVSYFE719TF2YD6Y0MGS"
     ],
     "aapo_olervo": [
       "clip_01M0FSF96W32QJ0FPA7ZHVN142",
@@ -3553,9 +3554,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M02V6Y8W8HHPKDAWZ7BS8T4H",
-      "clip_01M02VAFMYTVNAHJNRFDTBW9GW",
-      "clip_01M02VEEF6YN9T0QN6AY87PYY9",
       "clip_01M02WQE68ZARDWZGEZ0SQMB0V",
       "clip_01M02XC98WH6W5R9WPB4T4DBME",
       "clip_01M02XYNB9PQZFYJ7J1WDJ2K6H",
@@ -3852,7 +3850,10 @@
       "clip_01M020PR4VNQKQK001674H9SS5",
       "clip_01M020WQHYKAGRRTWPN01VZXED",
       "clip_01M022CM6VZKQ9D0C006K1SBYX",
-      "clip_01M02PD1TTCWARXRRDXC1DQDRY"
+      "clip_01M02PD1TTCWARXRRDXC1DQDRY",
+      "clip_01M02PWA3GQ7YTFJA1MD3N1V9W",
+      "clip_01M02TEEFJ6XZWQQ28HRNH15NP",
+      "clip_01M02TRC6SHF71QBVE5590YC1K"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4286,7 +4287,7 @@
   },
   "heartbeat": {
     "last": "2026-09-10T16:31:37Z",
-    "clips_since": 4
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4298,7 +4299,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-10T16:01:07Z",
+      "last_clip": "2026-09-10T17:30:59Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4310,7 +4311,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-10T17:16:57Z",
+      "last_clip": "2026-09-10T17:31:04Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4362,7 +4363,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-10T17:21:15Z",
+      "last_clip": "2026-09-10T17:31:29Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
