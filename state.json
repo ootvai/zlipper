@@ -687,7 +687,6 @@
       "clip_01M21HKK3PE88VREE18DHDBDXB"
     ],
     "pact": [
-      "clip_01KZ720NXH43TS802H52HZQZAG",
       "clip_01KZ720XQFWQKXGNTWXEYP7VJW",
       "clip_01KZ71ZF7VEN3814YE8STED3NF",
       "clip_01KZ7335F60EA74692SD3TN1B9",
@@ -986,7 +985,8 @@
       "clip_01M23DQW1RQ8X6PK496Q8GHVBR",
       "clip_01M23DYTY8672HHRGTQESSY5NY",
       "clip_01M264HQDEKXHHP3PFTTY8D770",
-      "clip_01M264QAWF6RYPN9G9P2K0SEQM"
+      "clip_01M264QAWF6RYPN9G9P2K0SEQM",
+      "clip_01M26512MVPDAFYNQKH53NEP6G"
     ],
     "aapo_olervo": [
       "clip_01M0FSF96W32QJ0FPA7ZHVN142",
@@ -3553,10 +3553,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M020PR4VNQKQK001674H9SS5",
-      "clip_01M020WQHYKAGRRTWPN01VZXED",
-      "clip_01M022CM6VZKQ9D0C006K1SBYX",
-      "clip_01M02PD1TTCWARXRRDXC1DQDRY",
       "clip_01M02PWA3GQ7YTFJA1MD3N1V9W",
       "clip_01M02TEEFJ6XZWQQ28HRNH15NP",
       "clip_01M02TK529642CRWZPPRCZXBC2",
@@ -3852,7 +3848,11 @@
       "clip_01M00EBSBM4AY027Q7BCZ5E4K3",
       "clip_01M00FJBBR5218KCHAQGKXZV2K",
       "clip_01M00FYZKKGZYXZ6S3TEWCQKA6",
-      "clip_01M00G3E04KDS5KQK72SJM05PG"
+      "clip_01M00G3E04KDS5KQK72SJM05PG",
+      "clip_01M00HN7HK0HZHY94KC87QDEB9",
+      "clip_01M00J548FGNDS2GMW69VNF41T",
+      "clip_01M00T7DCJVF25EJTMK4SEB8D1",
+      "clip_01M00TZJRFFE8TQXZ79V83B8E5"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4286,7 +4286,7 @@
   },
   "heartbeat": {
     "last": "2026-09-10T16:31:37Z",
-    "clips_since": 3
+    "clips_since": 4
   },
   "silent": {
     "twitch:skotti": {
@@ -4310,7 +4310,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-10T17:10:55Z",
+      "last_clip": "2026-09-10T17:16:57Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4362,7 +4362,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-10T17:11:12Z",
+      "last_clip": "2026-09-10T17:17:18Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
