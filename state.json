@@ -345,7 +345,8 @@
       "AgileRoughCarabeefCopyThis-R6IqddmpUVWWBerK",
       "GiftedTangibleSlothRiPepperonis-C7dHawm1xkmGRgEa",
       "LongTastyNarwhalTTours-qgIsbInHB4GRAJ6R",
-      "DeliciousNeighborlyCookieAllenHuhu-Gf2w3RWI1kULRkKh"
+      "DeliciousNeighborlyCookieAllenHuhu-Gf2w3RWI1kULRkKh",
+      "EnchantingRespectfulPidgeonDAESuppy-fkIzwdBrLr-YccwJ"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -3971,7 +3972,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZ8VXCVXCP9MB6HEB3BPFE96",
       "clip_01KZ90JC2KAVG3WY22VSTZR5JN",
       "clip_01KZ91MXBJN7RC6VGDDF54M239",
       "clip_01KZ91P4ZEENZ7JMHYKSNA9GEB",
@@ -4270,7 +4270,8 @@
       "clip_01M25HX298BZAWKNG9DB54E3NP",
       "clip_01M25R2FGYPGW6Z6DFRM5FVT7Y",
       "clip_01M25RE5GP2VHHXERAPPHFCQZ9",
-      "clip_01M25ZCBZTRSVPSJTCW6XND1DR"
+      "clip_01M25ZCBZTRSVPSJTCW6XND1DR",
+      "clip_01M260C7J9J4Y2A7YVRSZPNX6Y"
     ]
   },
   "health": {
@@ -4285,7 +4286,7 @@
   },
   "heartbeat": {
     "last": "2026-09-10T04:21:28Z",
-    "clips_since": 40
+    "clips_since": 42
   },
   "silent": {
     "twitch:skotti": {
@@ -4297,7 +4298,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-10T01:20:53Z",
+      "last_clip": "2026-09-10T16:01:07Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4373,7 +4374,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-10T15:41:30Z",
+      "last_clip": "2026-09-10T16:01:36Z",
       "alerted": false
     }
   }
