@@ -688,8 +688,6 @@
       "clip_01M21HKK3PE88VREE18DHDBDXB"
     ],
     "pact": [
-      "clip_01KZ75QHC0WJ4EF7JV8P6JJFCM",
-      "clip_01KZ82R3K906A1JTED8XMXBPE5",
       "clip_01KZ92CBCVR49YC3NGJR58073J",
       "clip_01KZ93SZGH3F45CFA8WBSR1A1V",
       "clip_01KZ93Z1XNKFGJ8M9K5HH30PXB",
@@ -987,7 +985,9 @@
       "clip_01M266VH36V6RZRDF3NP4CKRR9",
       "clip_01M267T7ACHV99S9YK878V7ERD",
       "clip_01M2687S5M03R9TJWD3KP3GP8K",
-      "clip_01M268BKJ7JZYMJ55J4HNCYR9M"
+      "clip_01M268BKJ7JZYMJ55J4HNCYR9M",
+      "clip_01M28QEHZ4H0C09Z0DXD4C9G33",
+      "clip_01M28QN5TVPHEMDRG84VEBB3YD"
     ],
     "aapo_olervo": [
       "clip_01M0JKZNVM8HR4AWP459KMHJSZ",
@@ -4289,7 +4289,7 @@
   },
   "heartbeat": {
     "last": "2026-09-11T16:41:51Z",
-    "clips_since": 5
+    "clips_since": 7
   },
   "silent": {
     "twitch:skotti": {
@@ -4313,7 +4313,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-10T18:21:01Z",
+      "last_clip": "2026-09-11T17:21:26Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
