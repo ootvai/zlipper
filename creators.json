@@ -111,7 +111,7 @@
   "perustiedot": 24,
   "ggslettu": 1,
   "halinalleinen": 1,
-  "epola": 655,
+  "epola": 656,
   "badsanta81": 2,
   "janiro": 1,
   "isomunkki": 109,
@@ -341,7 +341,7 @@
   "dococulus": 4,
   "tqe92": 13,
   "ghettomac": 1,
-  "lihis": 2,
+  "lihis": 3,
   "terveystarkastaja": 1,
   "forzakiller4": 1,
   "ripuli_meisseli": 4,
@@ -1183,5 +1183,6 @@
   "jerez02": 1,
   "don_asetik": 1,
   "glglgl": 1,
-  "kick_herne": 2
+  "kick_herne": 2,
+  "karhu": 1
 }
