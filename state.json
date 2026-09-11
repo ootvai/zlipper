@@ -3974,7 +3974,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZ91P96RR77CQ4JYW9D1DKH4",
       "clip_01KZ92DKAGXM922E27D4E45YAB",
       "clip_01KZ97P55H2GC12K43GRGA4D0M",
       "clip_01KZ9842B34HZGY4YF5PKRZSHG",
@@ -4273,7 +4272,8 @@
       "clip_01M267WBYK7TM2E82Z51YYXXVH",
       "clip_01M288XTSGR3PAG0C5BCK7SFKC",
       "clip_01M289FW7ATHQRD0C6F7TTQ187",
-      "clip_01M28A0R2BHJHKKDEFANDRADZC"
+      "clip_01M28A0R2BHJHKKDEFANDRADZC",
+      "clip_01M28B1R6HHE7M1N675VVS46QC"
     ]
   },
   "health": {
@@ -4288,7 +4288,7 @@
   },
   "heartbeat": {
     "last": "2026-09-11T04:41:29Z",
-    "clips_since": 16
+    "clips_since": 17
   },
   "silent": {
     "twitch:skotti": {
@@ -4376,7 +4376,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-11T13:21:52Z",
+      "last_clip": "2026-09-11T13:41:49Z",
       "alerted": false
     }
   }
