@@ -3262,7 +3262,8 @@
       "clip_01KW9YA18HCXNCMJB2CFTNM9ZA",
       "clip_01KWHRGFNEW52N65QTW82XGDKD",
       "clip_01KWHTBWYA14R9GMPGN40EBPYH",
-      "clip_01M2AR43Q07PWQ8RTTE56R515X"
+      "clip_01M2AR43Q07PWQ8RTTE56R515X",
+      "clip_01M2ARVBJSJVEF6R1S5KGRHQ6H"
     ],
     "bundachiara": [
       "clip_01KW1Y87J6J9EKM87DPJEKV45K",
@@ -3560,7 +3561,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M0CQVWP6APAMHPJXJCW5TH3K",
       "clip_01M0CR7V89H833YDNNJ9T9WM46",
       "clip_01M0CZJVFCPMSZFDZ66XR289YZ",
       "clip_01M0D18DXYZ1N052PZX76YWJHD",
@@ -3859,7 +3859,8 @@
       "clip_01M2AGJNT64EGS5D3BVXSA6FDM",
       "clip_01M2AGR01TGPB4MMX9ZENSE5YW",
       "clip_01M2AGTPP4ECGVXEZ33RN5BN9P",
-      "clip_01M2AH33T9Y79H52MJK3SNJQ9Z"
+      "clip_01M2AH33T9Y79H52MJK3SNJQ9Z",
+      "clip_01M2ARKDQ370ZDXSKSC5GJX0H9"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4293,7 +4294,7 @@
   },
   "heartbeat": {
     "last": "2026-09-12T04:50:49Z",
-    "clips_since": 9
+    "clips_since": 11
   },
   "silent": {
     "twitch:skotti": {
@@ -4361,7 +4362,7 @@
       "alerted": true
     },
     "kick:jetistriimaa": {
-      "last_clip": "2026-09-12T12:11:22Z",
+      "last_clip": "2026-09-12T12:20:47Z",
       "alerted": false
     },
     "kick:bundachiara": {
@@ -4369,7 +4370,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-12T10:10:47Z",
+      "last_clip": "2026-09-12T12:20:51Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
