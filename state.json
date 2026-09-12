@@ -2814,7 +2814,8 @@
       "clip_01M242QVR0VCBNFNJVB98QACPM",
       "clip_01M25YKZYHA9T6WMH7S0DVXQHN",
       "clip_01M26JMT6BTGKZJCHPMRP5K48Z",
-      "clip_01M291P8RH0QD0ZRPXFKCDR942"
+      "clip_01M291P8RH0QD0ZRPXFKCDR942",
+      "clip_01M2B9Q9CPJYV6MT3DYVQ09RZ9"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -4300,7 +4301,7 @@
   },
   "heartbeat": {
     "last": "2026-09-12T16:50:57Z",
-    "clips_since": 0
+    "clips_since": 1
   },
   "silent": {
     "twitch:skotti": {
@@ -4356,7 +4357,7 @@
       "alerted": true
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-11T20:21:29Z",
+      "last_clip": "2026-09-12T17:20:39Z",
       "alerted": false
     },
     "kick:pirkkislive": {
