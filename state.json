@@ -3261,7 +3261,8 @@
       "clip_01KW9T8JQSA7ZZXEVD2XZ1FT4R",
       "clip_01KW9YA18HCXNCMJB2CFTNM9ZA",
       "clip_01KWHRGFNEW52N65QTW82XGDKD",
-      "clip_01KWHTBWYA14R9GMPGN40EBPYH"
+      "clip_01KWHTBWYA14R9GMPGN40EBPYH",
+      "clip_01M2AR43Q07PWQ8RTTE56R515X"
     ],
     "bundachiara": [
       "clip_01KW1Y87J6J9EKM87DPJEKV45K",
@@ -4292,7 +4293,7 @@
   },
   "heartbeat": {
     "last": "2026-09-12T04:50:49Z",
-    "clips_since": 8
+    "clips_since": 9
   },
   "silent": {
     "twitch:skotti": {
@@ -4360,8 +4361,8 @@
       "alerted": true
     },
     "kick:jetistriimaa": {
-      "last_clip": "2026-07-29T15:27:52Z",
-      "alerted": true
+      "last_clip": "2026-09-12T12:11:22Z",
+      "alerted": false
     },
     "kick:bundachiara": {
       "last_clip": "2026-09-09T22:01:29Z",
