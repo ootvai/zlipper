@@ -2030,7 +2030,6 @@
       "clip_01M2445V5834GVWJD9WAB3GKMS"
     ],
     "pottukoiralive": [
-      "clip_01KXBTTBZRVRK4JAZVHMT44YCR",
       "clip_01KXC14ZN6HJ27NYBKQ5SDWCQ0",
       "clip_01KXC7YDBMDG1FNDENC30GMQK3",
       "clip_01KXG7QSJC028PPAYSSC0M24KK",
@@ -2329,7 +2328,8 @@
       "clip_01M2DXK2W1CT0RWZPWGPFE5R4K",
       "clip_01M2DYRTXZBAX5H3MBDQM5GY37",
       "clip_01M2DZ8J8BKNV6R278DZ6KYD4K",
-      "clip_01M2DZJXX8KMGERY03DKA92VZT"
+      "clip_01M2DZJXX8KMGERY03DKA92VZT",
+      "clip_01M2E0G3PVQZJWX34TEAYHPAHW"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -2825,7 +2825,9 @@
       "clip_01M2DSMQVN2EKW409JEGMCSAEP",
       "clip_01M2DSRRPPJA5Y460GGCP7XZH3",
       "clip_01M2DT9GDNX2NNR9G32WGP0E87",
-      "clip_01M2DTYFNJXNQX5C8730PFJH13"
+      "clip_01M2DTYFNJXNQX5C8730PFJH13",
+      "clip_01M2E00K7ZG7ZA1JZA68KTKPMF",
+      "clip_01M2E0DMJG0YYRX6J86WQ78WKJ"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -4312,7 +4314,7 @@
   },
   "heartbeat": {
     "last": "2026-09-13T17:01:49Z",
-    "clips_since": 18
+    "clips_since": 21
   },
   "silent": {
     "twitch:skotti": {
@@ -4356,7 +4358,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-09-13T18:21:10Z",
+      "last_clip": "2026-09-13T18:31:16Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -4368,7 +4370,7 @@
       "alerted": true
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-13T17:01:38Z",
+      "last_clip": "2026-09-13T18:31:21Z",
       "alerted": false
     },
     "kick:pirkkislive": {
