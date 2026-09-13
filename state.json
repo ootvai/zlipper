@@ -3982,7 +3982,8 @@
       "clip_01M0WAPVAK8QKG7Q2NQJ2CBKE6",
       "clip_01M14QBN7BRYCRB67RQNCET6N7",
       "clip_01M1CF8MBA9NW0KSMW7ND4RR01",
-      "clip_01M2DK82DDED4SW083B7S6DMN0"
+      "clip_01M2DK82DDED4SW083B7S6DMN0",
+      "clip_01M2E4XAA9BACH4WEBQP3C55NQ"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -4319,7 +4320,7 @@
   },
   "heartbeat": {
     "last": "2026-09-13T17:01:49Z",
-    "clips_since": 30
+    "clips_since": 31
   },
   "silent": {
     "twitch:skotti": {
@@ -4399,7 +4400,7 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-09-13T14:41:17Z",
+      "last_clip": "2026-09-13T19:51:21Z",
       "alerted": false
     },
     "kick:whyisabell": {
