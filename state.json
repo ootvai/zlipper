@@ -693,7 +693,6 @@
       "clip_01M2BFMBY7CA6PDNBM716YGDC2"
     ],
     "pact": [
-      "clip_01KZ9E3CEPPRVWT672X7S2P1KF",
       "clip_01KZ9E478D3V6NVBMQENJBB4XR",
       "clip_01KZ9EFFHXEDKV5PWAJ2GM0M9F",
       "clip_01KZ9EFAMB76458RV44FQJTM1F",
@@ -992,7 +991,8 @@
       "clip_01M28QYBY1AG2QBDHVMSFNCJ9S",
       "clip_01M28SMA6GJY0J5B8ASDW8XAD9",
       "clip_01M2D5CPYPGSNB4BW54BMXHT2A",
-      "clip_01M2D5GK53PNM47XDR4BPDKYYV"
+      "clip_01M2D5GK53PNM47XDR4BPDKYYV",
+      "clip_01M2DK7FA9XKWKMHK5W1D4C3P2"
     ],
     "aapo_olervo": [
       "clip_01M0MFWTGYW61J0MC87G1YAMBJ",
@@ -2819,7 +2819,8 @@
       "clip_01M2DE5A83F20S27BHCC95W4QF",
       "clip_01M2DE6DWS63V2CW0HRY7RMDGZ",
       "clip_01M2DGNN3GD8E540JGVXX1HWBZ",
-      "clip_01M2DHXS0W45EP43GHQA32FV6Y"
+      "clip_01M2DHXS0W45EP43GHQA32FV6Y",
+      "clip_01M2DKD197073BEXQ3ZSFY2B8H"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3968,7 +3969,8 @@
       "clip_01M0DT1TCWBACQPA305AN2MC42",
       "clip_01M0WAPVAK8QKG7Q2NQJ2CBKE6",
       "clip_01M14QBN7BRYCRB67RQNCET6N7",
-      "clip_01M1CF8MBA9NW0KSMW7ND4RR01"
+      "clip_01M1CF8MBA9NW0KSMW7ND4RR01",
+      "clip_01M2DK82DDED4SW083B7S6DMN0"
     ],
     "whyisabell": [
       "clip_01KVTZ8BW9QYAQADH6FHK043KR",
@@ -4305,7 +4307,7 @@
   },
   "heartbeat": {
     "last": "2026-09-13T04:51:34Z",
-    "clips_since": 19
+    "clips_since": 22
   },
   "silent": {
     "twitch:skotti": {
@@ -4329,7 +4331,7 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-13T10:40:32Z",
+      "last_clip": "2026-09-13T14:40:58Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
@@ -4361,7 +4363,7 @@
       "alerted": true
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-13T14:21:09Z",
+      "last_clip": "2026-09-13T14:41:09Z",
       "alerted": false
     },
     "kick:pirkkislive": {
@@ -4385,8 +4387,8 @@
       "alerted": false
     },
     "kick:thisgirlispower": {
-      "last_clip": "2026-08-31T18:01:20Z",
-      "alerted": true
+      "last_clip": "2026-09-13T14:41:17Z",
+      "alerted": false
     },
     "kick:whyisabell": {
       "last_clip": "2026-07-29T15:28:14Z",
