@@ -391,10 +391,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01M06D77JFWQFTYTER7QEPKG6T",
-      "clip_01M06DAXK1WE8Y78JEESNB4ZH7",
-      "clip_01M06F08TQEWQNW5RNNJSAQKW4",
-      "clip_01M06MGPXNYY699E3V21PJDZPC",
       "clip_01M06RGE27TAYFSRHDRNF98CZP",
       "clip_01M07VBXKBZJKG2WTJ7MNXCG4Q",
       "clip_01M0829WK2XPED9VVEPRZ6AFB4",
@@ -690,7 +686,11 @@
       "clip_01M2BAY5WA2JAG93JXH3X0S5RP",
       "clip_01M2BFF9M6SK93MD0RA1YKQVC5",
       "clip_01M2BFFHK8FB8V3YX9AKNGZM19",
-      "clip_01M2BFMBY7CA6PDNBM716YGDC2"
+      "clip_01M2BFMBY7CA6PDNBM716YGDC2",
+      "clip_01M2DTFR6XMC5ET8HDQ51DSCG6",
+      "clip_01M2DTMHYD2EQQ5CPC81F943QH",
+      "clip_01M2DTP7MPY0QVFH2M1DFPMX8Z",
+      "clip_01M2DTHD129MSWWP8P8K65AM9X"
     ],
     "pact": [
       "clip_01KZ9E478D3V6NVBMQENJBB4XR",
@@ -2823,7 +2823,8 @@
       "clip_01M2DKD197073BEXQ3ZSFY2B8H",
       "clip_01M2DKQC6ZDG9SFWWEWX467GXY",
       "clip_01M2DSMQVN2EKW409JEGMCSAEP",
-      "clip_01M2DSRRPPJA5Y460GGCP7XZH3"
+      "clip_01M2DSRRPPJA5Y460GGCP7XZH3",
+      "clip_01M2DT9GDNX2NNR9G32WGP0E87"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3576,7 +3577,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M0FCMSJDGJ8NEKCYBRQZRY2F",
       "clip_01M0FD13TJ9TXYR0D0A4EPXZFP",
       "clip_01M0FD9KM0NB13JZT632XME60P",
       "clip_01M0FHMF1C5NH9T6VMDN0M5JWY",
@@ -3875,7 +3875,8 @@
       "clip_01M2DE1H9FW2V1CR5T0A6T1C53",
       "clip_01M2DQFWN4RAT257D5WNEC8R41",
       "clip_01M2DQN2P3F7VWDSTN8W120TF3",
-      "clip_01M2DQSYRV3566PDGAYDKBZ157"
+      "clip_01M2DQSYRV3566PDGAYDKBZ157",
+      "clip_01M2DTD50HNSKBXZ07WMXX9K31"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4310,7 +4311,7 @@
   },
   "heartbeat": {
     "last": "2026-09-13T04:51:34Z",
-    "clips_since": 40
+    "clips_since": 46
   },
   "silent": {
     "twitch:skotti": {
@@ -4330,7 +4331,7 @@
       "alerted": true
     },
     "kick:pullis": {
-      "last_clip": "2026-09-12T19:00:38Z",
+      "last_clip": "2026-09-13T16:51:08Z",
       "alerted": false
     },
     "kick:pact": {
@@ -4366,7 +4367,7 @@
       "alerted": true
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-13T16:41:19Z",
+      "last_clip": "2026-09-13T16:51:21Z",
       "alerted": false
     },
     "kick:pirkkislive": {
@@ -4386,7 +4387,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-13T16:01:44Z",
+      "last_clip": "2026-09-13T16:51:29Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
