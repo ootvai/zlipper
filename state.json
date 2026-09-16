@@ -2874,7 +2874,8 @@
       "clip_01M2K85SMX045JF8KR67MWD231",
       "clip_01M2KY4X3GSTK0YHBZ5RBZC7FH",
       "clip_01M2KYPQ46CTAG2B87VJZJJZKH",
-      "clip_01M2MZX31BCE1VNZMRVB09N2X0"
+      "clip_01M2MZX31BCE1VNZMRVB09N2X0",
+      "clip_01M2N1YWG0HTZJJDPN7AE3KPRV"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -3650,7 +3651,6 @@
       "clip_01M242R8H395NC5Y5Q4C81HZJV"
     ],
     "johtajanmatkassa": [
-      "clip_01M0VRXMP1QFD0GWVN3M2RGZWZ",
       "clip_01M0WGWFVDWDF0APZ37BAQJF7X",
       "clip_01M0WTQWMKWTC425ZV1CJX0S5G",
       "clip_01M0WYWARWCQVZEGWNMSKZPY3Z",
@@ -3949,7 +3949,8 @@
       "clip_01M2K21AS3WC8J5HAVA1K23V64",
       "clip_01M2N0DG8NR4912E99CEHHFKQM",
       "clip_01M2N0KQB13GXNXQ8TWR03BMDY",
-      "clip_01M2N1DWJQFV8FFXWV82NR3741"
+      "clip_01M2N1DWJQFV8FFXWV82NR3741",
+      "clip_01M2N23SKA332C4NV2HAK4F067"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4071,7 +4072,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZBYA5VMQ89W514Y3DQ3M9EV",
       "clip_01KZC0754R6QC6MR3PQVXF49M1",
       "clip_01KZC2KWRQQNE7NF9QAHW013P1",
       "clip_01KZC2PQR2D7XC56JW3K4CZHQN",
@@ -4370,7 +4370,8 @@
       "clip_01M2JRBS053XRDS6Y7185TY60Y",
       "clip_01M2JRG6BBS1S6EGKFA4XGD9Z2",
       "clip_01M2K2CTVA5V2R675Z758Q2D48",
-      "clip_01M2K37V5ES3PWPK8MKKGYZ49J"
+      "clip_01M2K37V5ES3PWPK8MKKGYZ49J",
+      "clip_01M2N2DDVC8F8X6XHMHZ92J9BJ"
     ]
   },
   "health": {
@@ -4385,7 +4386,7 @@
   },
   "heartbeat": {
     "last": "2026-09-16T05:31:22Z",
-    "clips_since": 9
+    "clips_since": 12
   },
   "silent": {
     "twitch:skotti": {
@@ -4441,7 +4442,7 @@
       "alerted": true
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-16T11:41:16Z",
+      "last_clip": "2026-09-16T12:21:19Z",
       "alerted": false
     },
     "kick:pirkkislive": {
@@ -4461,7 +4462,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-16T12:01:22Z",
+      "last_clip": "2026-09-16T12:21:29Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -4473,7 +4474,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-15T18:01:35Z",
+      "last_clip": "2026-09-16T12:21:33Z",
       "alerted": false
     }
   }
