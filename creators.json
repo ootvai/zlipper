@@ -202,7 +202,7 @@
   "pilkkipena": 3,
   "aitosokkeli": 16,
   "luiccci": 2,
-  "tonninseteli": 30,
+  "tonninseteli": 31,
   "sairaanomainen": 14,
   "pekkis33": 1,
   "lassiisoitataksi": 3,
@@ -496,7 +496,7 @@
   "seppo_koo": 2,
   "kasetti": 2,
   "loirirs": 1,
-  "tomppafin": 48,
+  "tomppafin": 49,
   "jaakko_juutis12": 1,
   "bitttss": 6,
   "vittunaama": 8,
@@ -1215,5 +1215,8 @@
   "donalddigitall": 3,
   "saatanantunarit": 1,
   "hoseluisblanco": 1,
-  "kovakolli": 1
+  "kovakolli": 1,
+  "binku": 1,
+  "mapatti": 1,
+  "j6ni": 1
 }
