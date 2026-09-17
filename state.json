@@ -395,7 +395,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01M12TQWNVH6P7R21HE51EPWPT",
       "clip_01M12VJHM0WQMWPBGF5D4R1ZTS",
       "clip_01M12WBY149JC4N101VPXPHD2P",
       "clip_01M12WEYW0MM7PVPXFRRGQ4KF7",
@@ -694,7 +693,8 @@
       "clip_01M2RD7AARBM4YB6NNBZVR0WCR",
       "clip_01M2RDTXJVY2ZJSGK0HZ7X26H9",
       "clip_01M2RDZSTY162BQ6V0C2F5DXT3",
-      "clip_01M2RF2FABZT5JQY53P1KVX5SP"
+      "clip_01M2RF2FABZT5JQY53P1KVX5SP",
+      "clip_01M2RGBJKA4MK9XBJC1MKWJNFN"
     ],
     "pact": [
       "clip_01KZC2VRH5E6FQMHHCY1NGPGNF",
@@ -1301,8 +1301,6 @@
       "clip_01M2REAC0YBPN0MZDA60WKEHZ5"
     ],
     "jjuliaelisa": [
-      "clip_01KZ6EERG91MAKWYMQJVET89F4",
-      "clip_01KZ6F7RX1RNM2A7K5726GDR8Q",
       "clip_01KZ6HAQ6K7X4J79KXDXEJ0CF6",
       "clip_01KZ6JYR4K4M36DN4QNE57ZEGQ",
       "clip_01KZ6KJTYNN8A5RAK3NDH8685X",
@@ -1600,7 +1598,9 @@
       "clip_01M26Q3SZTMAGFAJJ1NYTDRMCW",
       "clip_01M2MV0F4E1YFRRHNS4T7B2YH5",
       "clip_01M2RB9ADRJG90HCC5W0R0RT80",
-      "clip_01M2RFC1WA3ZSVKB1N4HEZ539B"
+      "clip_01M2RFC1WA3ZSVKB1N4HEZ539B",
+      "clip_01M2RGAKTH50KC6VBSE2B4WD45",
+      "clip_01M2RGCTRFTZHHZ6FAG96C536K"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -3662,7 +3662,6 @@
       "clip_01M2QE6PNJXGR3KE4YH3VNW9PD"
     ],
     "johtajanmatkassa": [
-      "clip_01M18MX1WP9WJAV9NPX1NYY58S",
       "clip_01M18N2AH9M7JKTKA7JXESTKET",
       "clip_01M1945DZTR42PW6HCM96KE4Z1",
       "clip_01M1950ZZCQR5WJVX8DDBF311P",
@@ -3961,7 +3960,8 @@
       "clip_01M2RAS4G7HBMHZ4BA26YDXA2P",
       "clip_01M2RAV0SM5H5EP3G0GZVBYNDW",
       "clip_01M2RBP3PMG3BQKZV3V3HC5CR1",
-      "clip_01M2RCBXPM348TX6FDRP89JDEQ"
+      "clip_01M2RCBXPM348TX6FDRP89JDEQ",
+      "clip_01M2RG9MNZCYGTZ27706T0YC2A"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4397,7 +4397,7 @@
   },
   "heartbeat": {
     "last": "2026-09-17T17:40:53Z",
-    "clips_since": 36
+    "clips_since": 40
   },
   "silent": {
     "twitch:skotti": {
@@ -4417,7 +4417,7 @@
       "alerted": true
     },
     "kick:pullis": {
-      "last_clip": "2026-09-17T20:00:32Z",
+      "last_clip": "2026-09-17T20:20:20Z",
       "alerted": false
     },
     "kick:pact": {
@@ -4429,7 +4429,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-17T20:10:39Z",
+      "last_clip": "2026-09-17T20:20:27Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4473,7 +4473,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-17T19:10:54Z",
+      "last_clip": "2026-09-17T20:20:46Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
