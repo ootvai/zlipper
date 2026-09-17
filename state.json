@@ -1301,7 +1301,6 @@
       "clip_01M2REAC0YBPN0MZDA60WKEHZ5"
     ],
     "jjuliaelisa": [
-      "clip_01KZ6JYR4K4M36DN4QNE57ZEGQ",
       "clip_01KZ6KJTYNN8A5RAK3NDH8685X",
       "clip_01KZ6MQ46JCBZ5G8KAQEK47GKT",
       "clip_01KZ6MV38PBCV7H1WMQJ6X8Z5B",
@@ -1600,7 +1599,8 @@
       "clip_01M2RFC1WA3ZSVKB1N4HEZ539B",
       "clip_01M2RGAKTH50KC6VBSE2B4WD45",
       "clip_01M2RGCTRFTZHHZ6FAG96C536K",
-      "clip_01M2RGSFZN921PZS7PRGMJNWCW"
+      "clip_01M2RGSFZN921PZS7PRGMJNWCW",
+      "clip_01M2RHRYVYMPRXG9G8BYQ2JXFS"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -1733,10 +1733,6 @@
       "clip_01M2R6Y9661ZG2T4M988GFAJS6"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M03YJTBRQX4XAMW65S1TRR74",
-      "clip_01M03YQW7ZV574CXNPD0JGCNJV",
-      "clip_01M03ZM7TPC8C3BVCJQKMFK34Y",
-      "clip_01M040F6YYE6795830Q9WWXJ2C",
       "clip_01M041TF7VW5XGYCCV5MRVM2S9",
       "clip_01M043JA8BYMV540913Z74SDEZ",
       "clip_01M043WJTHYJ7XMXJBEYR5BZVV",
@@ -2032,7 +2028,11 @@
       "clip_01M243HVVAHCWQV4F9X9C8MMM8",
       "clip_01M243PPE2PD14G9PRTBDNG0MF",
       "clip_01M243VQ0CEE1ZEA6CW9TK9KDH",
-      "clip_01M2445V5834GVWJD9WAB3GKMS"
+      "clip_01M2445V5834GVWJD9WAB3GKMS",
+      "clip_01M2RHJTY7X8JC9V8TPDCET0T4",
+      "clip_01M2RHW1M1TJBX2AV6DNG8PVXW",
+      "clip_01M2RHWZ82X4PRH25NAPGFA5T4",
+      "clip_01M2RHZWDTXWEH6XNG2HP2GZ9K"
     ],
     "pottukoiralive": [
       "clip_01KXGJFR6P4T2NWM8YC3PYRSCX",
@@ -2371,7 +2371,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M08MYE8WYV1RAVA4321451E7",
       "clip_01M08MZSSP0XD3BHRP5GY42YFY",
       "clip_01M08N33EB220BDV6MPYT42Z7R",
       "clip_01M08NN6XM6XTJN811DXTCC6EB",
@@ -2670,7 +2669,8 @@
       "clip_01M1MH4J9B7JHEMZJJJN410HK3",
       "clip_01M1MH3C2T1EPJ4FZDK5WWQGP0",
       "clip_01M2NABET8F4SV65PJNBAGR0XA",
-      "clip_01M2RGZR3RZQQXV1GF5DVVREV3"
+      "clip_01M2RGZR3RZQQXV1GF5DVVREV3",
+      "clip_01M2RHY81VPEPDEFHWZ9XD7A9A"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3662,7 +3662,6 @@
       "clip_01M2QE6PNJXGR3KE4YH3VNW9PD"
     ],
     "johtajanmatkassa": [
-      "clip_01M1950ZZCQR5WJVX8DDBF311P",
       "clip_01M195EF1CSCTH2GPQQ1QXM80Y",
       "clip_01M1978Q70R95V5N4QR4XCVMFG",
       "clip_01M19MJ76GX18X92VBKX5W5DXQ",
@@ -3961,7 +3960,8 @@
       "clip_01M2RCBXPM348TX6FDRP89JDEQ",
       "clip_01M2RG9MNZCYGTZ27706T0YC2A",
       "clip_01M2RGRWQ8EGT6BKT3J58MSJVA",
-      "clip_01M2RGZ40410M8FX74P39HSFEB"
+      "clip_01M2RGZ40410M8FX74P39HSFEB",
+      "clip_01M2RHRG94JCG4TV8W0F2HYBE2"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4397,7 +4397,7 @@
   },
   "heartbeat": {
     "last": "2026-09-17T17:40:53Z",
-    "clips_since": 45
+    "clips_since": 52
   },
   "silent": {
     "twitch:skotti": {
@@ -4429,7 +4429,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-17T20:30:48Z",
+      "last_clip": "2026-09-17T20:50:27Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4437,8 +4437,8 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-09T22:26:07Z",
-      "alerted": true
+      "last_clip": "2026-09-17T20:50:35Z",
+      "alerted": false
     },
     "kick:pottukoiralive": {
       "last_clip": "2026-09-15T09:21:51Z",
@@ -4449,7 +4449,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-09-17T20:30:57Z",
+      "last_clip": "2026-09-17T20:50:39Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -4473,7 +4473,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-17T20:31:08Z",
+      "last_clip": "2026-09-17T20:50:50Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
