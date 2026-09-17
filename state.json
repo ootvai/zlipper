@@ -1301,7 +1301,6 @@
       "clip_01M2REAC0YBPN0MZDA60WKEHZ5"
     ],
     "jjuliaelisa": [
-      "clip_01KZ6HAQ6K7X4J79KXDXEJ0CF6",
       "clip_01KZ6JYR4K4M36DN4QNE57ZEGQ",
       "clip_01KZ6KJTYNN8A5RAK3NDH8685X",
       "clip_01KZ6MQ46JCBZ5G8KAQEK47GKT",
@@ -1600,7 +1599,8 @@
       "clip_01M2RB9ADRJG90HCC5W0R0RT80",
       "clip_01M2RFC1WA3ZSVKB1N4HEZ539B",
       "clip_01M2RGAKTH50KC6VBSE2B4WD45",
-      "clip_01M2RGCTRFTZHHZ6FAG96C536K"
+      "clip_01M2RGCTRFTZHHZ6FAG96C536K",
+      "clip_01M2RGSFZN921PZS7PRGMJNWCW"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -2371,7 +2371,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M08MX93QVN599Q74K04GGKJT",
       "clip_01M08MYE8WYV1RAVA4321451E7",
       "clip_01M08MZSSP0XD3BHRP5GY42YFY",
       "clip_01M08N33EB220BDV6MPYT42Z7R",
@@ -2670,7 +2669,8 @@
       "clip_01M1MCB4P345CRNZ9NKJ0NWAD2",
       "clip_01M1MH4J9B7JHEMZJJJN410HK3",
       "clip_01M1MH3C2T1EPJ4FZDK5WWQGP0",
-      "clip_01M2NABET8F4SV65PJNBAGR0XA"
+      "clip_01M2NABET8F4SV65PJNBAGR0XA",
+      "clip_01M2RGZR3RZQQXV1GF5DVVREV3"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -3662,8 +3662,6 @@
       "clip_01M2QE6PNJXGR3KE4YH3VNW9PD"
     ],
     "johtajanmatkassa": [
-      "clip_01M18N2AH9M7JKTKA7JXESTKET",
-      "clip_01M1945DZTR42PW6HCM96KE4Z1",
       "clip_01M1950ZZCQR5WJVX8DDBF311P",
       "clip_01M195EF1CSCTH2GPQQ1QXM80Y",
       "clip_01M1978Q70R95V5N4QR4XCVMFG",
@@ -3961,7 +3959,9 @@
       "clip_01M2RAV0SM5H5EP3G0GZVBYNDW",
       "clip_01M2RBP3PMG3BQKZV3V3HC5CR1",
       "clip_01M2RCBXPM348TX6FDRP89JDEQ",
-      "clip_01M2RG9MNZCYGTZ27706T0YC2A"
+      "clip_01M2RG9MNZCYGTZ27706T0YC2A",
+      "clip_01M2RGRWQ8EGT6BKT3J58MSJVA",
+      "clip_01M2RGZ40410M8FX74P39HSFEB"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4397,7 +4397,7 @@
   },
   "heartbeat": {
     "last": "2026-09-17T17:40:53Z",
-    "clips_since": 40
+    "clips_since": 44
   },
   "silent": {
     "twitch:skotti": {
@@ -4429,7 +4429,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-17T20:20:27Z",
+      "last_clip": "2026-09-17T20:30:48Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
@@ -4449,7 +4449,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-09-16T14:41:14Z",
+      "last_clip": "2026-09-17T20:30:57Z",
       "alerted": false
     },
     "kick:sampef2": {
@@ -4473,7 +4473,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-17T20:20:46Z",
+      "last_clip": "2026-09-17T20:31:08Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
