@@ -3660,8 +3660,6 @@
       "clip_01M2QE6PNJXGR3KE4YH3VNW9PD"
     ],
     "johtajanmatkassa": [
-      "clip_01M16Z392C3817Z5C8KT8F5GR1",
-      "clip_01M18M68MHG7DZ581928558DSJ",
       "clip_01M18MAV5DHG9T21R13VWCY343",
       "clip_01M18MECAYF4ZRCQYAEYMGZ28V",
       "clip_01M18MKDV5HW0V8RVVKSE4JP9N",
@@ -3959,7 +3957,9 @@
       "clip_01M2NYC3KMNAD8JTEM0FSE71AD",
       "clip_01M2Q52RM27CZ32R568YNRJH3Z",
       "clip_01M2QPZR488FAZW9X7N39JYTNX",
-      "clip_01M2R61SGASFCQBT34SC6WTD74"
+      "clip_01M2R61SGASFCQBT34SC6WTD74",
+      "clip_01M2R65137VGR3BNKTTHTQHWKM",
+      "clip_01M2R6AX7TPMKRZ6RRPGE3RHN9"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4395,7 +4395,7 @@
   },
   "heartbeat": {
     "last": "2026-09-17T05:40:46Z",
-    "clips_since": 51
+    "clips_since": 53
   },
   "silent": {
     "twitch:skotti": {
@@ -4471,7 +4471,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-17T17:20:45Z",
+      "last_clip": "2026-09-17T17:31:24Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
