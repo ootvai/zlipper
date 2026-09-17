@@ -1733,11 +1733,6 @@
       "clip_01M2R6Y9661ZG2T4M988GFAJS6"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M041TF7VW5XGYCCV5MRVM2S9",
-      "clip_01M043JA8BYMV540913Z74SDEZ",
-      "clip_01M043WJTHYJ7XMXJBEYR5BZVV",
-      "clip_01M044VWPVE070Q5ZWZHMM3A0W",
-      "clip_01M044XNA75WFJ4441HQNCPF1F",
       "clip_01M04694JG4Q0MBF304KXMCAQF",
       "clip_01M048KC3VABNW97S7MZY72VPF",
       "clip_01M04ACTRJFEKS6NTQKPR36XFQ",
@@ -2032,7 +2027,12 @@
       "clip_01M2RHJTY7X8JC9V8TPDCET0T4",
       "clip_01M2RHW1M1TJBX2AV6DNG8PVXW",
       "clip_01M2RHWZ82X4PRH25NAPGFA5T4",
-      "clip_01M2RHZWDTXWEH6XNG2HP2GZ9K"
+      "clip_01M2RHZWDTXWEH6XNG2HP2GZ9K",
+      "clip_01M2RJ4GB3CNKQDD1ECDGSC14X",
+      "clip_01M2RJ88BW32R76ZAJ83M9CBQY",
+      "clip_01M2RJAY068NV3VK5J3CEDR5ND",
+      "clip_01M2RJHSY68QEGCTVZ2RD6AYCM",
+      "clip_01M2RJK59G65MMB974H26JB3FQ"
     ],
     "pottukoiralive": [
       "clip_01KXGJFR6P4T2NWM8YC3PYRSCX",
@@ -2371,7 +2371,6 @@
       "clip_01KSTMB15GCYXF0TXZBV7GPKQA"
     ],
     "ogumtv": [
-      "clip_01M08MZSSP0XD3BHRP5GY42YFY",
       "clip_01M08N33EB220BDV6MPYT42Z7R",
       "clip_01M08NN6XM6XTJN811DXTCC6EB",
       "clip_01M08P0DG9V7RRS8PM04WHFEKZ",
@@ -2670,7 +2669,8 @@
       "clip_01M1MH3C2T1EPJ4FZDK5WWQGP0",
       "clip_01M2NABET8F4SV65PJNBAGR0XA",
       "clip_01M2RGZR3RZQQXV1GF5DVVREV3",
-      "clip_01M2RHY81VPEPDEFHWZ9XD7A9A"
+      "clip_01M2RHY81VPEPDEFHWZ9XD7A9A",
+      "clip_01M2RJ49A1XNSKA0SVSXJNBV18"
     ],
     "sampef2": [
       "clip_01KY2Z0TS299G8W55D547NYZSE",
@@ -4397,7 +4397,7 @@
   },
   "heartbeat": {
     "last": "2026-09-17T17:40:53Z",
-    "clips_since": 52
+    "clips_since": 58
   },
   "silent": {
     "twitch:skotti": {
@@ -4437,7 +4437,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-17T20:50:35Z",
+      "last_clip": "2026-09-17T21:00:44Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -4449,7 +4449,7 @@
       "alerted": true
     },
     "kick:ogumtv": {
-      "last_clip": "2026-09-17T20:50:39Z",
+      "last_clip": "2026-09-17T21:00:47Z",
       "alerted": false
     },
     "kick:sampef2": {
