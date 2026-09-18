@@ -296,7 +296,8 @@
       "CulturedDignifiedPotSwiftRage-IxWij-3trFeqCuDo",
       "DifferentLivelyBulgogiTwitchRPG-vlfoUJk5_ODijk7G",
       "KitschyBlindingPrariedogMingLee-HmUm5SnGSAanuT1R",
-      "AverageWealthySmoothieSwiftRage-7eb4UZxUYp27dYvz"
+      "AverageWealthySmoothieSwiftRage-7eb4UZxUYp27dYvz",
+      "GloriousTameTortoiseSMOrc-TxNEWwG1Mw_AEWnX"
     ],
     "henksuliini": [
       "BlightedElegantPuddingBleedPurple-zdTPSgXb-wRdVWC-",
@@ -3664,10 +3665,6 @@
       "clip_01M2QE6PNJXGR3KE4YH3VNW9PD"
     ],
     "johtajanmatkassa": [
-      "clip_01M1BQD80471M59H4QQSBJRT3N",
-      "clip_01M1BQHHR5QN7BFVF3MJFEFCHQ",
-      "clip_01M1BQRMT5SXK96F8EH606ZTW3",
-      "clip_01M1BQX26ENDDC6CDMK2T0FVKP",
       "clip_01M1BR5Z9JQR6E42HKTXBC0EFT",
       "clip_01M1BXD3P60GVVEBDHN7A5B6E6",
       "clip_01M1CHGM12RAMN1YR5F55SQJKN",
@@ -3963,7 +3960,11 @@
       "clip_01M2T53XNEQ4CYKNKMAKN7HXRZ",
       "clip_01M2TFF6Q11GQ8Y52B5HDXRY3N",
       "clip_01M2TGTWEX5EZ89T9X57VDMXYZ",
-      "clip_01M2TS2RCVA0CZBT3YPQKCJPQ1"
+      "clip_01M2TS2RCVA0CZBT3YPQKCJPQ1",
+      "clip_01M2TSS5PYMHVM7A4JKRJ5DJJ0",
+      "clip_01M2TSXTH3KVD6C5X9AW5BYQQC",
+      "clip_01M2TT35HGDR9D7ZW2KV0VJHM1",
+      "clip_01M2TT7RMNVBR626AM7AYCB70M"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4085,7 +4086,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZH5AZT23GJWAJK0FNNE4S39",
       "clip_01KZH74WA4PJFFGQ71A0Z0VHX1",
       "clip_01KZH97GRB9MDPJH8278N085V5",
       "clip_01KZHAA3155PPJ56C73N5Z1YAT",
@@ -4384,7 +4384,8 @@
       "clip_01M2TNQ65YGMSR28GRDAYZM7JR",
       "clip_01M2TNVN6KGJR7VN9K2EC9SC36",
       "clip_01M2TPJ39YSZ2ETGXHXFQ152YP",
-      "clip_01M2TSA6W8SF2WGB57GDYRABG1"
+      "clip_01M2TSA6W8SF2WGB57GDYRABG1",
+      "clip_01M2TT0K1417H40CKER7YWT2ZR"
     ]
   },
   "health": {
@@ -4398,8 +4399,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-09-18T05:50:48Z",
-    "clips_since": 45
+    "last": "2026-09-18T17:51:03Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -4407,7 +4408,7 @@
       "alerted": true
     },
     "twitch:saarelansaara": {
-      "last_clip": "2026-09-12T16:24:13Z",
+      "last_clip": "2026-09-18T17:50:39Z",
       "alerted": false
     },
     "twitch:henksuliini": {
@@ -4475,7 +4476,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-18T17:30:54Z",
+      "last_clip": "2026-09-18T17:51:00Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -4487,7 +4488,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-18T17:40:52Z",
+      "last_clip": "2026-09-18T17:51:03Z",
       "alerted": false
     }
   }
