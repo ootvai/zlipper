@@ -1733,7 +1733,8 @@
       "clip_01M28RPD25TRW1KM8RS4YJ4QE0",
       "clip_01M28RTF0J3MTD0AWRZ43CZ2D5",
       "clip_01M2R6Y9661ZG2T4M988GFAJS6",
-      "clip_01M2T6PT7FY32GBFV6NVKEV21G"
+      "clip_01M2T6PT7FY32GBFV6NVKEV21G",
+      "clip_01M2WFC0TZ8JR3CTCV749Z481E"
     ],
     "kuhlmanvirallinen": [
       "clip_01M05JV74Q8W1FPS36NNYJJ75C",
@@ -4402,7 +4403,7 @@
   },
   "heartbeat": {
     "last": "2026-09-19T06:00:54Z",
-    "clips_since": 1
+    "clips_since": 2
   },
   "silent": {
     "twitch:skotti": {
@@ -4438,7 +4439,7 @@
       "alerted": false
     },
     "kick:shokkiofficial": {
-      "last_clip": "2026-09-18T12:10:58Z",
+      "last_clip": "2026-09-19T09:20:27Z",
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
