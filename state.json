@@ -1001,8 +1001,6 @@
       "clip_01M2TRGSC3XMP3Y2X0N98TTQZM"
     ],
     "aapo_olervo": [
-      "clip_01M11K8HG5PMD02HQR61ZKQNNF",
-      "clip_01M11MK4GW8FG9EE0Z6G6ZD3BP",
       "clip_01M11S52YF1YA0W73KCJ3JGZQH",
       "clip_01M13PY4G1AZWYFN5SKMHF8KP3",
       "clip_01M13RKSNZ9TJ5FPSD0JXZ2S06",
@@ -1300,7 +1298,9 @@
       "clip_01M2TFHH597SZF80561GHRVGJW",
       "clip_01M2WA4R42SRDDHE4CM8EYR90J",
       "clip_01M2WVPRRZP3EH9W0BHM5J6J30",
-      "clip_01M2X4W246NEJCCJNPZF5PHCMV"
+      "clip_01M2X4W246NEJCCJNPZF5PHCMV",
+      "clip_01M2XHCAX4Z3VM12PKE4FTXDA3",
+      "clip_01M2XHG90RD1ZVJT5R85X1B1NT"
     ],
     "jjuliaelisa": [
       "clip_01KZ6T5EW5BES25NBC2246W46T",
@@ -1737,7 +1737,6 @@
       "clip_01M2WFC0TZ8JR3CTCV749Z481E"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M05QPTY01TP0C8RJ9N1QPABT",
       "clip_01M05VA3KR88EEMK7HF5CD5ZRR",
       "clip_01M05VGWADBM9SRYVPNVE0Z4TT",
       "clip_01M05W7PMFNM8R85HR1VC1G0V4",
@@ -2036,7 +2035,8 @@
       "clip_01M2X44XNN52QZNMK045ZCB5AC",
       "clip_01M2XC3NBB169ZRG4BYRPGRD3D",
       "clip_01M2XD298TX5EJ3XKFNM2086FS",
-      "clip_01M2XE42W44FH0JWA159F0VCDH"
+      "clip_01M2XE42W44FH0JWA159F0VCDH",
+      "clip_01M2XHG6R3Z68HTGKXXQ1YWPJN"
     ],
     "pottukoiralive": [
       "clip_01KXGSRC200V25DST5FN3RM238",
@@ -4400,7 +4400,7 @@
   },
   "health": {
     "twitch": {
-      "fails": 1,
+      "fails": 0,
       "alerted": false
     },
     "kick": {
@@ -4410,7 +4410,7 @@
   },
   "heartbeat": {
     "last": "2026-09-19T18:00:58Z",
-    "clips_since": 3
+    "clips_since": 6
   },
   "silent": {
     "twitch:skotti": {
@@ -4438,7 +4438,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-19T15:40:26Z",
+      "last_clip": "2026-09-19T19:20:29Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4450,7 +4450,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-19T18:20:28Z",
+      "last_clip": "2026-09-19T19:20:33Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
