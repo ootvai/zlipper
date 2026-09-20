@@ -1738,9 +1738,6 @@
       "clip_01M30107C2YDVMH7426M6KVE84"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M06G786QHRMKG8PEPXQYMB2V",
-      "clip_01M06G7WJW9HF3861K7EK4KJBG",
-      "clip_01M06GSDSK124YSH1HFJDME2BP",
       "clip_01M06GSFFJ26Q9W44JC1PA3CR9",
       "clip_01M06GZPCPK1TV6EA9JC570CBS",
       "clip_01M06H6B5FCMF1BG7VJ5JM4MEP",
@@ -2037,7 +2034,10 @@
       "clip_01M2XQ1HETVRJDV08YQKC3FXAB",
       "clip_01M2YP54P987E57M0EJJCEZT86",
       "clip_01M2ZZZQ8C0QKE2E4HD6T45J4J",
-      "clip_01M300YMDXWCK83NPDS6JT80V1"
+      "clip_01M300YMDXWCK83NPDS6JT80V1",
+      "clip_01M302J6HZEEA79GXHKP61V282",
+      "clip_01M302JWJ8FSRFNKM0RF50JKA6",
+      "clip_01M302RF6B89X5XSV8D102AP64"
     ],
     "pottukoiralive": [
       "clip_01KXV8JF9KMKKXRD6AZENWGKGQ",
@@ -3679,9 +3679,6 @@
       "clip_01M2YS98Z6X34G8JN3P7RJ4MFX"
     ],
     "johtajanmatkassa": [
-      "clip_01M234Q3KB7RZVT7GY314XH528",
-      "clip_01M23T6WMGSN8WCMKGTREGW3MD",
-      "clip_01M23T77FVX68JWCAQYDY9Z0Y5",
       "clip_01M23T8P4PAGXGK0HFWKTJX5VJ",
       "clip_01M25B4W28M9N7055XW9XEBS08",
       "clip_01M25B95SNMRW8CZDWB5ECD2ZA",
@@ -3978,7 +3975,10 @@
       "clip_01M2ZXXSTDD92N6KT85SZ5T98H",
       "clip_01M3010BMSBVHDVS3EW9P24D1S",
       "clip_01M3015GRC118DREFAG6D34CSJ",
-      "clip_01M301KX0SXD5NMJAE7ZA6Q41N"
+      "clip_01M301KX0SXD5NMJAE7ZA6Q41N",
+      "clip_01M302NC9X234W2EASCG99NV3Z",
+      "clip_01M302S3PJSPGH9M8S36R9DVF5",
+      "clip_01M302T11H91CP0T5J3M428CS2"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4414,7 +4414,7 @@
   },
   "heartbeat": {
     "last": "2026-09-20T18:11:35Z",
-    "clips_since": 7
+    "clips_since": 13
   },
   "silent": {
     "twitch:skotti": {
@@ -4454,7 +4454,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-20T18:31:15Z",
+      "last_clip": "2026-09-20T19:01:30Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
@@ -4490,7 +4490,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-20T18:41:28Z",
+      "last_clip": "2026-09-20T19:01:46Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
