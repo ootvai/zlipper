@@ -699,7 +699,6 @@
       "clip_01M2Z0ERH0V9C9QFKP944HD500"
     ],
     "pact": [
-      "clip_01KZC7HRWBY6TBNDK5NN9XV92B",
       "clip_01KZCBQYCY4R3R8K5J80PP1MG8",
       "clip_01KZDK9C0NK114YSPJ3CVCHH4Y",
       "clip_01KZDKAR8NBRW6Z5D2YFGT448M",
@@ -998,10 +997,10 @@
       "clip_01M2TQRY7Y9KGA9FWH1DJJ728M",
       "clip_01M2TQWDQ89DR429ZTS4Y0GY9J",
       "clip_01M2TRGSC3XMP3Y2X0N98TTQZM",
-      "clip_01M2Z31VYJ2VVVG9PXCBX7XCTY"
+      "clip_01M2Z31VYJ2VVVG9PXCBX7XCTY",
+      "clip_01M2Z93JVRNEXB8WJ9AMRA1ACD"
     ],
     "aapo_olervo": [
-      "clip_01M140X9XT5C6SDN06ZA557P6E",
       "clip_01M144CK25ZN6HB50T3MFZDPV1",
       "clip_01M144ECMTWK1E9GG7X0XTT2VZ",
       "clip_01M144GREWQ1AQDFN2RZZPNQ6E",
@@ -1300,7 +1299,8 @@
       "clip_01M2YMWWCSRC405YWD823V6V2C",
       "clip_01M2YWMZAK9M0G3641JK1D2F8Y",
       "clip_01M2YZHWG096K49BWVJ4S8CM7W",
-      "clip_01M2Z6Y8ZZC6S3MBF6JKAXCFA1"
+      "clip_01M2Z6Y8ZZC6S3MBF6JKAXCFA1",
+      "clip_01M2Z93QFS3QSBYVWJK0W4JZJZ"
     ],
     "jjuliaelisa": [
       "clip_01KZ6T5EW5BES25NBC2246W46T",
@@ -2039,8 +2039,6 @@
       "clip_01M2YP54P987E57M0EJJCEZT86"
     ],
     "pottukoiralive": [
-      "clip_01KXRTRNYDXHD08AEMXB732VZN",
-      "clip_01KXSH0TR2JGJ63MA8K0BKHAH5",
       "clip_01KXTSQYCKZ3T9K7MX2JH2CMRX",
       "clip_01KXTVB279H4BDW5D884F0V8XD",
       "clip_01KXV82XZDPX88T6QWXZC1ANP3",
@@ -2338,7 +2336,9 @@
       "clip_01M2Z2SKT6N5EH3271CQX5FQ87",
       "clip_01M2Z3CYR3WFRXECJ3HRE0T0W6",
       "clip_01M2Z7N00KE5TT5GX4RRJER5AT",
-      "clip_01M2Z81GKFT49AWP8BE2P9V82M"
+      "clip_01M2Z81GKFT49AWP8BE2P9V82M",
+      "clip_01M2Z8TZ3XY3YH9WKQ3NHNHBAJ",
+      "clip_01M2Z9784QN0DGN1DFCENYY6J2"
     ],
     "magamed_gadiev": [
       "clip_01KSTMB6P12GW2YY0P3CED20N0",
@@ -3677,7 +3677,6 @@
       "clip_01M2YS98Z6X34G8JN3P7RJ4MFX"
     ],
     "johtajanmatkassa": [
-      "clip_01M1SG9744320J6KGEVC3WMSDX",
       "clip_01M1VAC0GNTF69TDZAQ45S5N47",
       "clip_01M1VQ7Y4CNQ50JWNQVANM2AD3",
       "clip_01M1VVS80QEYGWY3CYK2KA6JFM",
@@ -3976,7 +3975,8 @@
       "clip_01M2Z19FF69WD6HPPN45Z88BHE",
       "clip_01M2Z1X6JARAWVMJGX7JKBBX2Z",
       "clip_01M2Z5N5Z9ATC75DDREG6WYSHP",
-      "clip_01M2Z86VMSPX7SXWD435BEY27W"
+      "clip_01M2Z86VMSPX7SXWD435BEY27W",
+      "clip_01M2Z8R6B27AN4RHBTT3FFQYDG"
     ],
     "thisgirlispower": [
       "clip_01J7JSGP15CADXXJZFNWNFT9EA",
@@ -4098,7 +4098,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01KZHKG83ESH0G7R826QFFNY6X",
       "clip_01KZHKWW44K8CV5ZJE9GAX23ZE",
       "clip_01KZHKWR8C63VQDGW6RCNMXYRW",
       "clip_01KZHKZYF0YGN9DKKRQMD8AS3Y",
@@ -4397,7 +4396,8 @@
       "clip_01M2V3B76428KHPSH7V76PE2M4",
       "clip_01M2V45VG10DNSYWWPEMR9CX0B",
       "clip_01M2V49XJBXF08BGD2FS4FVCDW",
-      "clip_01M2V4YNJW97RXGQRB4SM2V450"
+      "clip_01M2V4YNJW97RXGQRB4SM2V450",
+      "clip_01M2Z92G7J2C02Y2SQN13J6490"
     ]
   },
   "health": {
@@ -4412,7 +4412,7 @@
   },
   "heartbeat": {
     "last": "2026-09-20T06:10:43Z",
-    "clips_since": 34
+    "clips_since": 40
   },
   "silent": {
     "twitch:skotti": {
@@ -4436,11 +4436,11 @@
       "alerted": false
     },
     "kick:pact": {
-      "last_clip": "2026-09-20T09:50:20Z",
+      "last_clip": "2026-09-20T11:30:19Z",
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-20T10:50:23Z",
+      "last_clip": "2026-09-20T11:30:22Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4456,7 +4456,7 @@
       "alerted": false
     },
     "kick:pottukoiralive": {
-      "last_clip": "2026-09-20T11:10:33Z",
+      "last_clip": "2026-09-20T11:30:31Z",
       "alerted": false
     },
     "kick:magamed_gadiev": {
@@ -4488,7 +4488,7 @@
       "alerted": false
     },
     "kick:johtajanmatkassa": {
-      "last_clip": "2026-09-20T11:20:52Z",
+      "last_clip": "2026-09-20T11:30:45Z",
       "alerted": false
     },
     "kick:thisgirlispower": {
@@ -4500,7 +4500,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-18T21:00:59Z",
+      "last_clip": "2026-09-20T11:30:49Z",
       "alerted": false
     }
   }
