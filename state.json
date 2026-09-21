@@ -362,7 +362,8 @@
       "BlueDeterminedLlamaCharlieBitMe-vAU55gz24XRI_EXx",
       "BrightTameCheetahSaltBae-XbJIB2AJe7vxasIO",
       "AntsyAlertTrayDxCat-wUuYrMfD5kFw0CLe",
-      "FastElatedPenguinOSfrog-Mqqnp9pMjEYySGAU"
+      "FastElatedPenguinOSfrog-Mqqnp9pMjEYySGAU",
+      "YawningElegantAardvarkRickroll-VWM8Bi9njkvRSuMD"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -4421,7 +4422,7 @@
   },
   "heartbeat": {
     "last": "2026-09-21T06:21:26Z",
-    "clips_since": 22
+    "clips_since": 23
   },
   "silent": {
     "twitch:skotti": {
@@ -4433,7 +4434,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-21T10:41:09Z",
+      "last_clip": "2026-09-21T10:51:04Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
