@@ -1011,9 +1011,6 @@
       "clip_01M354F641RB53J57FTVZEXAZA"
     ],
     "aapo_olervo": [
-      "clip_01M173NMGKV5Y7SFAJFAZFWY7J",
-      "clip_01M174PX8BYQJPGDRF1WF965BG",
-      "clip_01M177JD0CER9JAV7T5K9E1EZ8",
       "clip_01M18MN2SJYPKXRGY86D8TXBXP",
       "clip_01M18N808TM5ZNX70WKB50KQEZ",
       "clip_01M18NYQZ4WYAXJDFH4X0SENMH",
@@ -1310,7 +1307,10 @@
       "clip_01M34ZJMY0Y85018X7MQNRQ7Y8",
       "clip_01M353YAS5A2M6KKDHQ3XCQD62",
       "clip_01M3555KH1BR4CJ00MWEVTWCJZ",
-      "clip_01M355EKKSEWDV7KWN8TKF92H6"
+      "clip_01M355EKKSEWDV7KWN8TKF92H6",
+      "clip_01M355JRD3F79WJC32CKR3PJRA",
+      "clip_01M355YC6E7ZZK9P1K4Y2FQGKQ",
+      "clip_01M35632CG1NBFDBBX3Q3XBD43"
     ],
     "jjuliaelisa": [
       "clip_01KZ6TFAV2F6RXFH3YT1EGW7B6",
@@ -1749,7 +1749,6 @@
       "clip_01M304DNBCZ6NYJ5D7MEG2QHHP"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M0B6GW308B6TA5HQJB372YS6",
       "clip_01M0B7YJAJV655S6YHZ604DZW4",
       "clip_01M0B81FREAKNHDTWENCDGNRSJ",
       "clip_01M0B995T62F3CJPTEBGMVKCC6",
@@ -2048,7 +2047,8 @@
       "clip_01M350FFKXWRNTQJ9XWTYDAWG5",
       "clip_01M352072JREACN1CCH130B22Z",
       "clip_01M35336ED4BR1GBE4VY2JF8SW",
-      "clip_01M354GR0E0P67413K47Q35J98"
+      "clip_01M354GR0E0P67413K47Q35J98",
+      "clip_01M355Z6P6DA9RF1WCV2V47GB0"
     ],
     "pottukoiralive": [
       "clip_01KXV8JF9KMKKXRD6AZENWGKGQ",
@@ -4441,8 +4441,8 @@
     }
   },
   "heartbeat": {
-    "last": "2026-09-22T06:31:41Z",
-    "clips_since": 44
+    "last": "2026-09-22T18:31:42Z",
+    "clips_since": 0
   },
   "silent": {
     "twitch:skotti": {
@@ -4470,7 +4470,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-22T18:21:13Z",
+      "last_clip": "2026-09-22T18:31:25Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4482,7 +4482,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-22T18:11:27Z",
+      "last_clip": "2026-09-22T18:31:30Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
