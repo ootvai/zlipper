@@ -367,7 +367,8 @@
       "DeliciousQuaintCobblerVoteYea-o_-n1vo_ciKXiPhV",
       "BlatantStupidFiddleheadsSmoocherZ-63t22Lde3x-s-QBT",
       "SweetBoldPistachioDogFace-oAEcbr12_gx78_4p",
-      "AbrasiveShortDragonflySMOrc-NUUg_EksN1o-aJOw"
+      "AbrasiveShortDragonflySMOrc-NUUg_EksN1o-aJOw",
+      "CrazySoftRaisinCorgiDerp-5KL1EjTO9jJedwuj"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -1748,7 +1749,6 @@
       "clip_01M304DNBCZ6NYJ5D7MEG2QHHP"
     ],
     "kuhlmanvirallinen": [
-      "clip_01M0B526GTSWQ9QYQQE5E0VYAD",
       "clip_01M0B52G3M3MGG3G8V0KK95G2J",
       "clip_01M0B53XJ285AXEYJD3A3DCEV4",
       "clip_01M0B578QAFT343V8JQ65CVEDA",
@@ -2047,7 +2047,8 @@
       "clip_01M34YB618M7Z3Y0FNPWM6RTH8",
       "clip_01M34YXKSD8MEV3HTBNBC55775",
       "clip_01M34Z152E3Q01ZR6JWVGZ2QNB",
-      "clip_01M34ZCN78EE57SV9R21RSQ93F"
+      "clip_01M34ZCN78EE57SV9R21RSQ93F",
+      "clip_01M350FFKXWRNTQJ9XWTYDAWG5"
     ],
     "pottukoiralive": [
       "clip_01KXV8JF9KMKKXRD6AZENWGKGQ",
@@ -4436,7 +4437,7 @@
   },
   "heartbeat": {
     "last": "2026-09-22T06:31:41Z",
-    "clips_since": 25
+    "clips_since": 27
   },
   "silent": {
     "twitch:skotti": {
@@ -4448,7 +4449,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-22T07:41:07Z",
+      "last_clip": "2026-09-22T17:01:29Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4476,7 +4477,7 @@
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
-      "last_clip": "2026-09-22T16:41:17Z",
+      "last_clip": "2026-09-22T17:01:38Z",
       "alerted": false
     },
     "kick:pottukoiralive": {
