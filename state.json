@@ -366,7 +366,8 @@
       "YawningElegantAardvarkRickroll-VWM8Bi9njkvRSuMD",
       "DeliciousQuaintCobblerVoteYea-o_-n1vo_ciKXiPhV",
       "BlatantStupidFiddleheadsSmoocherZ-63t22Lde3x-s-QBT",
-      "SweetBoldPistachioDogFace-oAEcbr12_gx78_4p"
+      "SweetBoldPistachioDogFace-oAEcbr12_gx78_4p",
+      "AbrasiveShortDragonflySMOrc-NUUg_EksN1o-aJOw"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -4426,7 +4427,7 @@
   },
   "heartbeat": {
     "last": "2026-09-22T06:31:41Z",
-    "clips_since": 0
+    "clips_since": 1
   },
   "silent": {
     "twitch:skotti": {
@@ -4438,7 +4439,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-21T19:51:04Z",
+      "last_clip": "2026-09-22T07:41:07Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
