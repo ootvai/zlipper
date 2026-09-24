@@ -370,7 +370,8 @@
       "AbrasiveShortDragonflySMOrc-NUUg_EksN1o-aJOw",
       "CrazySoftRaisinCorgiDerp-5KL1EjTO9jJedwuj",
       "BlueArborealAdminArgieB8-KA7K_sQQx8Dodtr3",
-      "GorgeousPoliteOpossumSoBayed-wRW3tmis2sckx4nb"
+      "GorgeousPoliteOpossumSoBayed-wRW3tmis2sckx4nb",
+      "CoweringRelievedPeanutKeepo-eX_Gsl1hrvySbqQ8"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -4140,7 +4141,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01M02P3AN94P9C70GCGC0E19YY",
       "clip_01M02QR5M4B3F6X6Y17KZ0FY4V",
       "clip_01M02QZRV93VCEATQ0N0YFFBJD",
       "clip_01M02S5GPP2TR3BJA1Y1X08KPE",
@@ -4439,7 +4439,8 @@
       "clip_01M3A10NDPNXTNYPWSJGJ9D015",
       "clip_01M3A4CSN33KZ90ND4429E6BBC",
       "clip_01M3A4R4BVCDGM87SCBAQJ8QN1",
-      "clip_01M3A4SV902TV71EKP9N2FD1S7"
+      "clip_01M3A4SV902TV71EKP9N2FD1S7",
+      "clip_01M3A82H5ZX3FG95VNBJZS762V"
     ]
   },
   "health": {
@@ -4454,7 +4455,7 @@
   },
   "heartbeat": {
     "last": "2026-09-24T06:51:37Z",
-    "clips_since": 43
+    "clips_since": 45
   },
   "silent": {
     "twitch:skotti": {
@@ -4466,7 +4467,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-24T16:41:21Z",
+      "last_clip": "2026-09-24T17:41:22Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4542,7 +4543,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-24T16:51:49Z",
+      "last_clip": "2026-09-24T17:41:56Z",
       "alerted": false
     }
   }
