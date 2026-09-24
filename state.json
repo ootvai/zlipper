@@ -372,7 +372,8 @@
       "BlueArborealAdminArgieB8-KA7K_sQQx8Dodtr3",
       "GorgeousPoliteOpossumSoBayed-wRW3tmis2sckx4nb",
       "CoweringRelievedPeanutKeepo-eX_Gsl1hrvySbqQ8",
-      "VastSparklyTapirDxCat-rqN66v8u1iqgcRur"
+      "VastSparklyTapirDxCat-rqN66v8u1iqgcRur",
+      "VastHyperKeyboardMoreCowbell-7uBwUzArpgJTYQ44"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -1317,7 +1318,6 @@
       "clip_01M3A3YB976T1QAYNPQ9Z8PDWE"
     ],
     "jjuliaelisa": [
-      "clip_01KZ73PVJ3M00J643F7P0EFVGS",
       "clip_01KZ73QR5F9383X9KP0Y40F7HF",
       "clip_01KZ73XNBMXXFJ4TBECSQWG5VQ",
       "clip_01KZ76001QDAWW63R6NSX7H4CP",
@@ -1616,7 +1616,8 @@
       "clip_01M2T7PWES8FY63TWZBRT9B3NM",
       "clip_01M2T9NVXBQS6WPT6ZDD1NPMPZ",
       "clip_01M348NB8Z0AWYRN4GEFMYE2M4",
-      "clip_01M3AERWBPXCF9763SBJ0HY4Z3"
+      "clip_01M3AERWBPXCF9763SBJ0HY4Z3",
+      "clip_01M3AFNFJRDD0BCRBN3G1SAQ4X"
     ],
     "shokkiofficial": [
       "clip_01KV00A9HDNYSGM3CZ9PCY9STY",
@@ -4459,7 +4460,7 @@
   },
   "heartbeat": {
     "last": "2026-09-24T19:01:57Z",
-    "clips_since": 6
+    "clips_since": 8
   },
   "silent": {
     "twitch:skotti": {
@@ -4471,7 +4472,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-24T18:21:10Z",
+      "last_clip": "2026-09-24T20:01:28Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4491,7 +4492,7 @@
       "alerted": false
     },
     "kick:jjuliaelisa": {
-      "last_clip": "2026-09-24T19:41:12Z",
+      "last_clip": "2026-09-24T20:01:33Z",
       "alerted": false
     },
     "kick:shokkiofficial": {
