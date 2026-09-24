@@ -368,7 +368,8 @@
       "BlatantStupidFiddleheadsSmoocherZ-63t22Lde3x-s-QBT",
       "SweetBoldPistachioDogFace-oAEcbr12_gx78_4p",
       "AbrasiveShortDragonflySMOrc-NUUg_EksN1o-aJOw",
-      "CrazySoftRaisinCorgiDerp-5KL1EjTO9jJedwuj"
+      "CrazySoftRaisinCorgiDerp-5KL1EjTO9jJedwuj",
+      "BlueArborealAdminArgieB8-KA7K_sQQx8Dodtr3"
     ],
     "s11r1sof1a": [
       "JollySincereFlamingoWOOP-C7WUpldrF0Gp7-Lr",
@@ -1011,7 +1012,6 @@
       "clip_01M37M7AEBRENZSDHSVTV8NF0C"
     ],
     "aapo_olervo": [
-      "clip_01M1KH546YSWA274T4FPWNKCJC",
       "clip_01M1KJ4D5TC9Q90QRCGK4769MJ",
       "clip_01M1KJ6N9RAN2ZVK0VMZ718HDJ",
       "clip_01M1KJ91J8XZXWCEKYSE8WBF96",
@@ -1310,7 +1310,8 @@
       "clip_01M39NTS7RXDZ5D1MFEAZYD6DF",
       "clip_01M39PM9Z8H1XFSDJF4V61S67R",
       "clip_01M39PM85RBZ7FFQ9M4JK5411G",
-      "clip_01M39XXXFM7A8QHJCSHRFFPM6N"
+      "clip_01M39XXXFM7A8QHJCSHRFFPM6N",
+      "clip_01M3A3YB976T1QAYNPQ9Z8PDWE"
     ],
     "jjuliaelisa": [
       "clip_01KZ6TFAV2F6RXFH3YT1EGW7B6",
@@ -1746,7 +1747,8 @@
       "clip_01M2T6PT7FY32GBFV6NVKEV21G",
       "clip_01M2WFC0TZ8JR3CTCV749Z481E",
       "clip_01M30107C2YDVMH7426M6KVE84",
-      "clip_01M304DNBCZ6NYJ5D7MEG2QHHP"
+      "clip_01M304DNBCZ6NYJ5D7MEG2QHHP",
+      "clip_01M3A3ZTD826F4HZ503AZV10BB"
     ],
     "kuhlmanvirallinen": [
       "clip_01M0G1X1MFMXD8KTHY4K8ZQ48K",
@@ -4449,7 +4451,7 @@
   },
   "heartbeat": {
     "last": "2026-09-24T06:51:37Z",
-    "clips_since": 29
+    "clips_since": 32
   },
   "silent": {
     "twitch:skotti": {
@@ -4461,7 +4463,7 @@
       "alerted": false
     },
     "twitch:henksuliini": {
-      "last_clip": "2026-09-22T17:01:29Z",
+      "last_clip": "2026-09-24T16:31:24Z",
       "alerted": false
     },
     "twitch:s11r1sof1a": {
@@ -4477,7 +4479,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-24T14:51:20Z",
+      "last_clip": "2026-09-24T16:31:31Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4485,7 +4487,7 @@
       "alerted": false
     },
     "kick:shokkiofficial": {
-      "last_clip": "2026-09-20T19:29:45Z",
+      "last_clip": "2026-09-24T16:31:36Z",
       "alerted": false
     },
     "kick:kuhlmanvirallinen": {
