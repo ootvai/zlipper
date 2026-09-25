@@ -3427,7 +3427,6 @@
       "clip_01M2GJZ4HQ51K8V9K089YHGY8N"
     ],
     "bundachiara": [
-      "clip_01KW26SKKHD4F2NSZSBR211897",
       "clip_01KW2701Q46XH9SESEP6SJYCT8",
       "clip_01KW28263H89QG65W06H60QFNZ",
       "clip_01KW2DYQ5HAJN3C97V1YJZBP4A",
@@ -3726,7 +3725,8 @@
       "clip_01M2XES8CNTGASZ9T2EWEKARVX",
       "clip_01M2YS62SJ6KE41V5QFRHMXPDE",
       "clip_01M2YS98Z6X34G8JN3P7RJ4MFX",
-      "clip_01M3AP35EB84HG0GS4RG7WG8NH"
+      "clip_01M3AP35EB84HG0GS4RG7WG8NH",
+      "clip_01M3CDSRFRY03MZ0DJJKS9KJD7"
     ],
     "johtajanmatkassa": [
       "clip_01M035SSE55B6S9PF8PT0HDSRM",
@@ -4150,7 +4150,6 @@
       "clip_01KYN1V1QX8WX05XN39TQJNJRP"
     ],
     "monnirs": [
-      "clip_01M031REAXPS8CHY8468CDDM32",
       "clip_01M031QZBP1B9E3G6M0ZH7XGJT",
       "clip_01M032R26ZEQJ13E0JKY26X3B4",
       "clip_01M037CKWPFG13T2CVMCJHHVD8",
@@ -4449,7 +4448,8 @@
       "clip_01M3C7WRNR36ECT0VSXQVKDGN8",
       "clip_01M3C9B2QQPZP2HH7NFA69XT2X",
       "clip_01M3C9C0AAHCAMCF8R83203MCZ",
-      "clip_01M3CBTDMTTK4PZXVT03NRAVFG"
+      "clip_01M3CBTDMTTK4PZXVT03NRAVFG",
+      "clip_01M3CDTPP57TZ86JYDCTBN1J0A"
     ]
   },
   "health": {
@@ -4464,7 +4464,7 @@
   },
   "heartbeat": {
     "last": "2026-09-25T07:02:03Z",
-    "clips_since": 22
+    "clips_since": 24
   },
   "silent": {
     "twitch:skotti": {
@@ -4536,7 +4536,7 @@
       "alerted": true
     },
     "kick:bundachiara": {
-      "last_clip": "2026-09-24T21:51:28Z",
+      "last_clip": "2026-09-25T14:01:50Z",
       "alerted": false
     },
     "kick:johtajanmatkassa": {
@@ -4552,7 +4552,7 @@
       "alerted": true
     },
     "kick:monnirs": {
-      "last_clip": "2026-09-25T13:31:46Z",
+      "last_clip": "2026-09-25T14:01:56Z",
       "alerted": false
     }
   }
