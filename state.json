@@ -412,7 +412,6 @@
   },
   "kick": {
     "pullis": [
-      "clip_01M2GTSAP6VF0YCSAEY8ADWEM9",
       "clip_01M2GTRAXSRFK7QJJBV6PE4EZ8",
       "clip_01M2GTY966QRCVJ5G9V76PRYRD",
       "clip_01M2GXPGZ7D9HXQJKS39Z7JPJS",
@@ -711,7 +710,8 @@
       "clip_01M3CWQE437FW0MGBGYH7CH5HD",
       "clip_01M3CWB8E2GBJ8PH511DPJ6RAZ",
       "clip_01M3CYYNM2Y5D3BFQ9NERG6GJ9",
-      "clip_01M3D047RJ7HW2VQ15ZP2YWHEA"
+      "clip_01M3D047RJ7HW2VQ15ZP2YWHEA",
+      "clip_01M3D47RQFMBQM6EXBX7CWJYP2"
     ],
     "pact": [
       "clip_01KZRXGT468NYZZ591QT3KK9H7",
@@ -2946,7 +2946,8 @@
       "clip_01M3BKGTKGRVB39N0K995K3160",
       "clip_01M3CXMB5MJ0HFCWJVQ4FH5PND",
       "clip_01M3CYYPHVVKPZ507EZFQGXN90",
-      "clip_01M3D092JG46XGY5R51H31Q9G8"
+      "clip_01M3D092JG46XGY5R51H31Q9G8",
+      "clip_01M3D4FNVZ2BV98WMQQEPE77R1"
     ],
     "pirkkislive": [
       "clip_01KW6RZ98AAXJKE76GV0QA8H4B",
@@ -4467,7 +4468,7 @@
   },
   "heartbeat": {
     "last": "2026-09-25T19:02:08Z",
-    "clips_since": 8
+    "clips_since": 10
   },
   "silent": {
     "twitch:skotti": {
@@ -4487,7 +4488,7 @@
       "alerted": true
     },
     "kick:pullis": {
-      "last_clip": "2026-09-25T19:21:11Z",
+      "last_clip": "2026-09-25T20:41:11Z",
       "alerted": false
     },
     "kick:pact": {
@@ -4523,7 +4524,7 @@
       "alerted": false
     },
     "kick:sampef2": {
-      "last_clip": "2026-09-25T19:31:33Z",
+      "last_clip": "2026-09-25T20:41:32Z",
       "alerted": false
     },
     "kick:pirkkislive": {
