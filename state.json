@@ -1016,8 +1016,6 @@
       "clip_01M3EDNS6QQ44PRNAKYXFMHA4Y"
     ],
     "aapo_olervo": [
-      "clip_01M1PQ9XW7FVPNKDJDHPQHQ50R",
-      "clip_01M1PTDT9KPHMN6A9SHKNCA03X",
       "clip_01M1PVQD2KCXBPTV9754FT6KG9",
       "clip_01M1PW69T74ADQ146E375PN4TX",
       "clip_01M1RBXF3BP24DCR7C0GMJ2J3P",
@@ -1315,7 +1313,9 @@
       "clip_01M3E9V68YPAFAEPCCES2XQ8NC",
       "clip_01M3EAZQF777FCDAV0AQG0MG9E",
       "clip_01M3EBK27X1A6YGY8A8G43Z9TY",
-      "clip_01M3EKM76FV3D9ZQYAKDHTJZTE"
+      "clip_01M3EKM76FV3D9ZQYAKDHTJZTE",
+      "clip_01M3ENHN40YCM99XMJ4CDPS0QD",
+      "clip_01M3ENWG2RFBE8N9DPATE5GYT4"
     ],
     "jjuliaelisa": [
       "clip_01KZ78CWPSFPZC9AP5GNJRPTWW",
@@ -3069,7 +3069,8 @@
       "clip_01M0RFHXX3PFY8XM0HJDA6K934",
       "clip_01M3EERTMRSFF8VFJR6S8BJNPD",
       "clip_01M3EK4FJAY4TR69H7MB68HBJ5",
-      "clip_01M3EK5H2YAE6JJBB67WHM38JJ"
+      "clip_01M3EK5H2YAE6JJBB67WHM38JJ",
+      "clip_01M3ENSSV7CZNTN61VRBG02HBC"
     ],
     "heikrisse": [
       "clip_01KXYCZHFTAFQ3HH4Z7PKP05PZ",
@@ -3308,7 +3309,8 @@
       "clip_01M2MY3VTW0A12HJ4Q0GFW66TH",
       "clip_01M2ND03TFHP06TNPN2GQY77C8",
       "clip_01M2QDAYE3J5ZG5X7C50GKHBB4",
-      "clip_01M2R8VFNG8TF7Q4YMYRY95FCT"
+      "clip_01M2R8VFNG8TF7Q4YMYRY95FCT",
+      "clip_01M3ENGZ1FM8FKB68KHCERVJE7"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -4471,7 +4473,7 @@
   },
   "heartbeat": {
     "last": "2026-09-26T07:11:27Z",
-    "clips_since": 18
+    "clips_since": 22
   },
   "silent": {
     "twitch:skotti": {
@@ -4499,7 +4501,7 @@
       "alerted": false
     },
     "kick:aapo_olervo": {
-      "last_clip": "2026-09-26T10:20:51Z",
+      "last_clip": "2026-09-26T11:00:56Z",
       "alerted": false
     },
     "kick:jjuliaelisa": {
@@ -4531,12 +4533,12 @@
       "alerted": false
     },
     "kick:pirkkislive": {
-      "last_clip": "2026-09-26T10:21:10Z",
+      "last_clip": "2026-09-26T11:01:13Z",
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-09-17T18:20:40Z",
-      "alerted": true
+      "last_clip": "2026-09-26T11:01:16Z",
+      "alerted": false
     },
     "kick:jetistriimaa": {
       "last_clip": "2026-09-14T18:41:40Z",
