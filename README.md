@@ -1,5 +1,19 @@
 # zlipper
 
+> **JÄÄDYTETTY 26.9.2026.** Korvattu klippihetket
+> Livellä, joka vahtii samoja katsojien klippejä pilvessä ja arvioi ne.
+> Mitään ei ole poistettu: vain `Klippivahti`-työnkulku
+> (`check-clips.yml`) on otettu pois käytöstä GitHubissa. Cloudflaren
+> ajastin laukaisee yhä `repository_dispatch`in 10 min välein, mutta
+> pois käytöstä olevaa työnkulkua se ei käynnistä. Latausnapit
+> (`process-clip.yml`) toimivat edelleen vanhoissa ilmoituksissa.
+>
+> **Takaisin käyttöön:** GitHub → Actions → Klippivahti → *Enable workflow*.
+> Seuraava Cloudflaren tikitys (≤ 10 min) käynnistää ajon. Ensimmäinen
+> ajo ilmoittaa kerralla kaikki alle `max_clip_age_hours` (24 h) vanhat
+> klipit, joita ei ole nähty. Varaudu siis ilmoitusryöppyyn.
+> Twitchistä tulevat vain `poll_lookback_minutes`-ikkunan klipit.
+
 Seuraa Twitch- ja Kick-kanavia ja ilmoittaa **Telegramiin** heti kun uusi
 klippi ilmestyy. Kick-klipin voi lisäksi rajata pystyvideoksi tai ladata
 sellaisenaan painamalla ilmoituksen nappia. Kaikki pyörii GitHub Actionsissa —
