@@ -3311,7 +3311,8 @@
       "clip_01M2QDAYE3J5ZG5X7C50GKHBB4",
       "clip_01M2R8VFNG8TF7Q4YMYRY95FCT",
       "clip_01M3ENGZ1FM8FKB68KHCERVJE7",
-      "clip_01M3EQKJCG1SXM2EENV3HAKC19"
+      "clip_01M3EQKJCG1SXM2EENV3HAKC19",
+      "clip_01M3F0D9TS1GYV3V8WPQS1QXBB"
     ],
     "jetistriimaa": [
       "clip_01KWHTF53FJ4C0Y6BM735AWNGD",
@@ -4474,7 +4475,7 @@
   },
   "heartbeat": {
     "last": "2026-09-26T07:11:27Z",
-    "clips_since": 35
+    "clips_since": 36
   },
   "silent": {
     "twitch:skotti": {
@@ -4538,7 +4539,7 @@
       "alerted": false
     },
     "kick:heikrisse": {
-      "last_clip": "2026-09-26T11:31:47Z",
+      "last_clip": "2026-09-26T14:11:12Z",
       "alerted": false
     },
     "kick:jetistriimaa": {
